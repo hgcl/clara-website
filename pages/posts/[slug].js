@@ -17,7 +17,7 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    // <Layout preview={preview}>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -42,7 +42,7 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
-    </Layout>
+    // </Layout>
   )
 }
 
