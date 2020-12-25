@@ -2,11 +2,12 @@ import PostPreview from '../components/post-preview'
 
 export default function MoreStories({ posts }) {
   return (
-    <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+    <section className="flex">
+      <h2 className="flex-auto mb-8 mr-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         Here's What's New
       </h2>
-      <div>
+      {/* TODO: Add centering layout in following div */}
+      <div className="flex-auto max-w-2xl mt-4">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

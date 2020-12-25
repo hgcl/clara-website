@@ -1,6 +1,6 @@
 ---
 title: 'Dynamic Routing and Static Generation'
-excerpt: 'Lorem ipsum dolor elit.'
+excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2020-06-16T05:35:07.322Z'
 ogImage:
