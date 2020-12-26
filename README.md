@@ -4,7 +4,7 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Connect Github repository to clarale.com ✅
 - Add h-card (profile) to homepage ✅
 - Add Webmentions
-- Add microformats
+- Add h-entry microformats: e-content ✅ p-name ✅ dt-published ✅ p-author h-card ✅
 - Add menu
 - Review branding: typeface, colours 
 - ? Add portfolio
