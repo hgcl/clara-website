@@ -19,8 +19,13 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      // TODO select a fewer number of font sizes and harmonize
       fontSize: {
-        '5xl': '2.5rem',
+        'xs': '.75rem',
+        'lg': '1.125rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
