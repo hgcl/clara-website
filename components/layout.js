@@ -1,5 +1,5 @@
 import Alert from '../components/alert'
-// import Footer from '../components/footer'
+import Footer from '../components/footer'
 import Meta from '../components/meta'
 
 // Alert at page top + footer
@@ -12,7 +12,7 @@ export default function Layout({ preview, children }) {
         <Alert preview={preview} />
         <main>{children}</main>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
