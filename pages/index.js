@@ -29,10 +29,28 @@ export default function Index({ allPosts }) {
           )} */}
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
-        <ul>
-          <li><a href="https://twitter.com/clara__le" rel="me">@clara__le on Twitter</a></li>
-          <li><a href="https://github.com/hgcl" rel="me">Github</a></li>
-        </ul>
+        <section className="h-card hidden">
+
+          {/* About me */}
+          <span class="p-name">Clara Le</span>
+          <span class="p-note">Hey! I'm Clara, polymath and currently working as a designer.</span>
+
+          {/* <!-- Profile picture -->
+          <img class="u-photo" src="#"/> */}
+
+          {/* Links */}
+          <a class="u-url u-uid" href="https://clarale.com"></a>
+          <a class="u-url" rel="me" href="https://twitter.com/clara__le"></a>
+          <a class="u-url" rel="me" href="https://github.com/hgcl"></a>
+
+          {/* Categories */}
+          <span class="p-category">Digital Garden</span>
+          <span class="p-category">Design</span>
+          <span class="p-category">Exploring</span>
+          <span class="p-category">Cooking and DIY Projects</span>
+          <span class="p-category">Sci-fi Books</span>
+
+        </section>
       </Layout>
     </>
   )
