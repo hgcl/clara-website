@@ -1,6 +1,11 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@layer base {
+  html {
+    @apply bg-gray-dark text-white;
+  }
+}
 
 /* Start purging... */
 @tailwind components;

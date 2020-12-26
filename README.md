@@ -7,6 +7,6 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Add microformats
 - Add menu
 - Review branding: typeface, colours 
-- Add portfolio?
-- Add digital garden
-- Add book tracker
+- ? Add portfolio
+- Connect digital garden
+- Connect book tracker
