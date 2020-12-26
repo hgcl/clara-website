@@ -2,9 +2,12 @@
 
 /* Write your own custom base styles here */
 @layer base {
-  html {
-    @apply bg-gray-dark text-white;
-  }
+	html {
+		@apply bg-gray-dark text-white;
+	}
+	a:hover {
+		@apply text-accent transition duration-500;
+	}
 }
 
 /* Start purging... */
