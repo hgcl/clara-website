@@ -1,7 +1,6 @@
 ---
-title: 'Dynamic Routing and Static Generation 2'
+title: 'Blog Post Example'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet.  Nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2020-07-16T05:35:07.322Z'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
