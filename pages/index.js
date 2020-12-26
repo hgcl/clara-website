@@ -35,8 +35,8 @@ export default function Index({ allPosts }) {
           <span class="p-name">Clara Le</span>
           <span class="p-note">Hey! I'm Clara, polymath and currently working as a designer.</span>
 
-          {/* <!-- Profile picture -->
-          <img class="u-photo" src="#"/> */}
+          {/* Profile picture */}
+          <img class="u-photo" src="/assets/blog/authors/clara_20180514_132853_small.jpg"/>
 
           {/* Links */}
           <a class="u-url u-uid" href="https://clarale.com"></a>
