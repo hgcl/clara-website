@@ -1,7 +1,7 @@
 // import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 // import CoverImage from './cover-image'
-import Link from 'next/link'
+import Link from '../components/link'
 
 export default function PostPreview({
   title,
@@ -16,11 +16,11 @@ export default function PostPreview({
       {/* <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
-      <h3 className="text-3xl mb-2 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
+      <Link as={`/posts/${slug}`} href="/posts/[slug]" className="no-underline">
+        <h3 className="text-3xl mb-2 leading-snug">
+          {title}
+        </h3>
+      </Link>
       <div className="text-xs tracking-widest uppercase mb-4">
         <DateFormatter dateString={date} />
       </div>

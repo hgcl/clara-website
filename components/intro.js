@@ -1,3 +1,4 @@
+import Link from "../components/link"
 import { WEBSITE_NAME } from '../lib/constants'
 
 export default function Intro() {
@@ -16,6 +17,9 @@ export default function Intro() {
         </a>{' '}
         and {CMS_NAME}.
       </h4> */}
+      <h4>
+      <Link href="/posts/example-2/">Designer</Link> by day and polymath all-year long. You will find me writing, reading or travelling.
+      </h4>
     </section>
   )
 }
