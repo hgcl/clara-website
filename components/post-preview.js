@@ -16,7 +16,7 @@ export default function PostPreview({
       {/* <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
-      <Link as={`/posts/${slug}`} href="/posts/[slug]" className="no-underline">
+      <Link as={`/posts/${slug}`} href="/posts/[slug]" className="capitalize">
         <h3 className="text-3xl mb-2 leading-snug">{title}</h3>
       </Link>
       <div className="text-xs tracking-widest uppercase mb-4">
