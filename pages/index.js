@@ -32,23 +32,23 @@ export default function Index({ allPosts }) {
         <section className="h-card hidden">
 
           {/* About me */}
-          <span class="p-name">Clara Le</span>
-          <span class="p-note">Hey! I'm Clara, polymath and currently working as a designer.</span>
+          <span className="p-name">Clara Le</span>
+          <span className="p-note">Hey! I'm Clara, polymath and currently working as a designer.</span>
 
           {/* Profile picture */}
-          <img class="u-photo" src="/assets/blog/authors/clara_20180514_132853_small.jpg"/>
+          <img className="u-photo" src="/assets/blog/authors/clara_20180514_132853_small.jpg"/>
 
           {/* Links */}
-          <a class="u-url u-uid" href="https://clarale.com"></a>
-          <a class="u-url" rel="me" href="https://twitter.com/clara__le"></a>
-          <a class="u-url" rel="me" href="https://github.com/hgcl"></a>
+          <a className="u-url u-uid" href="https://clarale.com"></a>
+          <a className="u-url" rel="me" href="https://twitter.com/clara__le"></a>
+          <a className="u-url" rel="me" href="https://github.com/hgcl"></a>
 
           {/* Categories */}
-          <span class="p-category">Digital Garden</span>
-          <span class="p-category">Design</span>
-          <span class="p-category">Exploring</span>
-          <span class="p-category">Cooking and DIY Projects</span>
-          <span class="p-category">Sci-fi Books</span>
+          <span className="p-category">Digital Garden</span>
+          <span className="p-category">Design</span>
+          <span className="p-category">Exploring</span>
+          <span className="p-category">Cooking and DIY Projects</span>
+          <span className="p-category">Sci-fi Books</span>
 
         </section>
       </Layout>
