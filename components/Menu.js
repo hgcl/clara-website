@@ -4,8 +4,8 @@ import BurgerIcon from "../components/BurgerIcon";
 import Link from "./link";
 
 const overlayStyle = {
-  background: '#801336',
-  opacity: 0.95,
+  background: '#a52722',
+  opacity: 0.93,
 };
 
 const contentStyle = {
