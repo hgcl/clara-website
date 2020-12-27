@@ -13,4 +13,6 @@ const BurgerIcon = ({ open, ...props }) => (
   </div>
 );
 
+// TODO add menu animation https://codingislove.com/hamburger-navigation-bar/
+
 export default BurgerIcon;

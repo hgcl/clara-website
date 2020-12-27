@@ -3,8 +3,12 @@ import Popup from "reactjs-popup";
 import BurgerIcon from "../components/BurgerIcon";
 import Link from "./link";
 
+const overlayStyle = {
+  background: '#801336',
+  opacity: 0.95,
+};
+
 const contentStyle = {
-  background: "rgba(255,255,255,0)",
   width: "80%",
   border: "none",
 };
@@ -12,7 +16,7 @@ const contentStyle = {
 const Menu = () => (
   <Popup
     modal
-    overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+    overlayStyle={overlayStyle}
     contentStyle={contentStyle}
     closeOnDocumentClick={false}
     trigger={(open) => <BurgerIcon open={open} />}

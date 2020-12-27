@@ -6,14 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: "#ffe700",
+        accent: "#EE4540",
         white: "#E5E7EB",
         black: "#0f0f0f",
         gray: {
           dark: "#171717",
         },
         red: "#B91C1C",
-        blue: "##93C5FD",
+        blue: "#93C5FD",
       },
       spacing: {
         '2': '2px',
