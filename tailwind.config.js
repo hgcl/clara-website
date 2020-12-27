@@ -1,3 +1,6 @@
+// Add typeface https://github.com/KyleAMathews/typefaces
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
@@ -18,6 +21,10 @@ module.exports = {
       },
       lineHeight: {
         tight: 1.2,
+      },
+      fontFamily: {
+        // TODO replace with new font
+        sans: ['typeface-open-sans', ...defaultTheme.fontFamily.sans]
       },
       // TODO select a fewer number of font sizes and harmonize
       fontSize: {
