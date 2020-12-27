@@ -7,7 +7,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
+  // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   return (
     <>
