@@ -9,6 +9,11 @@
 	a:hover {
 		@apply text-accent transition duration-500;
 	}
+	h1,
+	h2,
+	h3 {
+		@apply font-serif;
+	}
 }
 
 /* Start purging... */

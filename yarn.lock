@@ -1786,6 +1786,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+fontsource-vesper-libre@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-vesper-libre/-/fontsource-vesper-libre-4.0.0.tgz#0978faee2bf180b05a40757fa27dc3c58ab0e320"
+  integrity sha512-YIb3Qo+QvaxaflKYvXC4vzwaTioTrsLuKbi5fBGVIO/0zA5JRdvaXZGrGKQVj/2grt4cK40/sqPCPAe6iW5J8A==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"

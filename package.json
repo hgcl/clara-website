@@ -9,6 +9,7 @@
   "dependencies": {
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
+    "fontsource-vesper-libre": "^4.0.0",
     "gray-matter": "4.0.2",
     "next": "latest",
     "react": "^16.13.0",
