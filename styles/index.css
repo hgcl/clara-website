@@ -2,18 +2,18 @@
 
 /* Write your own custom base styles here */
 @layer base {
-  html {
-    @apply bg-gray-dark text-white;
-  }
-  /* TODO add a rainbow gradient transition on link hover */
-  a:hover {
-    @apply text-accent transition duration-500;
-  }
-  h1,
-  h2,
-  h3 {
-    @apply font-serif;
-  }
+	html {
+		@apply bg-gray-dark text-white;
+	}
+	/* TODO add a rainbow gradient transition on link hover */
+	a:hover {
+		@apply text-accent transition duration-500;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply font-serif;
+	}
 }
 
 /* Start purging... */

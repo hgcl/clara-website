@@ -1786,6 +1786,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+fontsource-source-sans-pro@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-source-sans-pro/-/fontsource-source-sans-pro-4.0.0.tgz#aa2dcdc178f4d6ba08815449431d78fb4a78fe65"
+  integrity sha512-1PHVhsemInovKS6TJ2voUzo4akMov2bJB5KkVxdymXkZZ8KVLsz6p1ku4TPQBJjiHFfSG71K8oLty44unmhMiw==
+
 fontsource-vesper-libre@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/fontsource-vesper-libre/-/fontsource-vesper-libre-4.0.0.tgz#0978faee2bf180b05a40757fa27dc3c58ab0e320"

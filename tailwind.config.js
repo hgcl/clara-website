@@ -1,4 +1,4 @@
-// Add typeface via https://fontsource.github.io/search-directory/#inconsolata
+// Add typeface via https://fontsource.github.io/search-directory/
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -47,7 +47,7 @@ module.exports = {
       fontFamily: {
         // TODO replace sans serif with better font
         serif: ["Vesper\\ Libre", ...defaultTheme.fontFamily.serif],
-        // sans: ['Vesper\\ Libre', ...defaultTheme.fontFamily.sans],
+        sans: ["Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans],
       },
       // TODO select a fewer number of font sizes and harmonize
       fontSize: {
