@@ -6,7 +6,6 @@ export default function MoreStories({ posts }) {
       <h2 className="flex-auto mb-8 mr-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         Here's What's New
       </h2>
-      {/* TODO: Add centering layout in following div */}
       <div className="flex-auto max-w-2xl mt-4">
         {posts.map((post) => (
           <PostPreview
