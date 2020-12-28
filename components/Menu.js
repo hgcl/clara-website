@@ -5,7 +5,7 @@ import Link from "./link";
 
 const overlayStyle = {
   // TODO get these inline styles in theme
-  background: '#a52722',
+  background: "#a52722",
   opacity: 0.93,
 };
 
