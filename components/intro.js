@@ -8,12 +8,11 @@ export default function Intro() {
         {WEBSITE_NAME}
       </h1>
       <p className="text-2xl md:text-4xl">
-        {/* TODO add portfolio links */}
-        <Link href="/posts/example-2/">Designer</Link> by day and polymath
+        <Link href="https://www.behance.net/hgclaralebca2">Designer</Link> by day and polymath
         all-year long. You will find me{" "}
-        <Link href="/posts/example-2/">writing</Link>,{" "}
-        <Link href="/posts/example-2/">reading</Link> or{" "}
-        <Link href="/posts/example-2/">travelling</Link>.
+        <Link href="/blog">writing</Link>,{" "}
+        <Link href="https://clarasbooks.vercel.app/">reading</Link> or{" "}
+        <Link href="https://www.eaudepoisson.com/">travelling</Link>.
       </p>
     </section>
   );

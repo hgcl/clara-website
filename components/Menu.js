@@ -29,13 +29,10 @@ const Menu = () => (
             <Link href="/">Home</Link>
           </li>
           <li onClick={close}>
-            <Link href="/">Link 1</Link>
+            <Link href="/blog">Writing</Link>
           </li>
           <li onClick={close}>
-            <Link href="/">Link 2</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/">Link 3</Link>
+            <Link href="https://clarasbooks.vercel.app/">Reading</Link>
           </li>
         </ul>
       </div>
