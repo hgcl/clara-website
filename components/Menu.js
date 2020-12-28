@@ -1,3 +1,5 @@
+// Menu from this package https://react-popup.elazizi.com/
+
 import React from "react";
 import Popup from "reactjs-popup";
 import BurgerIcon from "../components/BurgerIcon";
@@ -33,6 +35,12 @@ const Menu = () => (
           </li>
           <li onClick={close}>
             <Link href="https://clarasbooks.vercel.app/">Reading</Link>
+          </li>
+          <li onClick={close}>
+            <Link href="https://twitter.com/clara__le">Twitter</Link>
+          </li>
+          <li onClick={close}>
+            <Link href="https://www.etsy.com/shop/lifeundercontrol/">Etsy</Link>
           </li>
         </ul>
       </div>
