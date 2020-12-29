@@ -12,4 +12,5 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Add Webmentions
 - ? Add portfolio
 - Connect digital garden
-- Connect book tracker
+- Connect book tracker ✅
+- Set up MDX ✅
