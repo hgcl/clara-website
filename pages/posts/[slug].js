@@ -34,7 +34,7 @@ export default function Post({ source, post, preview }) {
             <article className="mb-32">
               <Head>
                 <title>Clara Le</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
               <PostHeader
                 title={post.title}
