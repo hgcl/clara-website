@@ -8,12 +8,14 @@
     "format": "prettier --write . --ignore-path ./.gitignore"
   },
   "dependencies": {
+    "@next/mdx": "^10.0.4",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "fontsource-source-sans-pro": "^4.0.0",
     "fontsource-vesper-libre": "^4.0.0",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "next-mdx-remote": "^2.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "reactjs-popup": "^2.0.4",
