@@ -5,6 +5,10 @@ module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
     extend: {
+      boxShadow: {
+        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
+        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
+      },
       colors: {
         accent: "#EE4540",
         white: "#E5E7EB",
@@ -15,34 +19,9 @@ module.exports = {
         red: "#B91C1C",
         blue: "#93C5FD",
       },
-      spacing: {
-        2: "2px",
-        4: "4px",
-        xs: "8px",
-        sm: "16px",
-        md: "24px",
-        lg: "32px",
-        xl: "40px",
-        "2xl": "48px",
-        "3xl": "56px",
-        "4xl": "64px",
-        28: "7rem",
-      },
-      inset: {
-        xs: "8px",
-        sm: "16px",
-        md: "24px",
-        lg: "32px",
-        xl: "40px",
-        "2xl": "48px",
-        "3xl": "56px",
-        "4xl": "64px",
-      },
-      letterSpacing: {
-        tighter: "-.04em",
-      },
-      lineHeight: {
-        tight: 1.2,
+      flex: {
+        "1/3": "1 1 8rem",
+        "2/3": "2 2 16rem",
       },
       fontFamily: {
         // TODO replace sans serif with better font
@@ -60,9 +39,34 @@ module.exports = {
         "7xl": "4.5rem",
         "8xl": "6.25rem",
       },
-      boxShadow: {
-        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
+      inset: {
+        xs: "8px",
+        sm: "16px",
+        md: "24px",
+        lg: "32px",
+        xl: "40px",
+        "2xl": "48px",
+        "3xl": "56px",
+        "4xl": "64px",
+      },
+      letterSpacing: {
+        tighter: "-.04em",
+      },
+      lineHeight: {
+        tight: 1.2,
+      },
+      spacing: {
+        2: "2px",
+        4: "4px",
+        xs: "8px",
+        sm: "16px",
+        md: "24px",
+        lg: "32px",
+        xl: "40px",
+        "2xl": "48px",
+        "3xl": "56px",
+        "4xl": "64px",
+        28: "7rem",
       },
     },
   },
