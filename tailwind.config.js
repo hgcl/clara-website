@@ -20,8 +20,7 @@ module.exports = {
         blue: "#93C5FD",
       },
       flex: {
-        "1": "1 1 8rem",
-        "2": "2 2 16rem",
+        "2": "2 2 0%",
       },
       fontFamily: {
         // TODO replace sans serif with better font
@@ -54,9 +53,6 @@ module.exports = {
       },
       lineHeight: {
         tight: 1.2,
-      },
-       minWidth: {
-        '128': "128px",
       },
       spacing: {
         2: "2px",
