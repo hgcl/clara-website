@@ -55,6 +55,9 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+       minWidth: {
+        '128': "128px",
+      },
       spacing: {
         2: "2px",
         4: "4px",
