@@ -4,6 +4,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
+    flex: {
+        "1": "1 1 0%",
+        "2": "2 2 0%",
+      },
     extend: {
       boxShadow: {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
@@ -18,10 +22,6 @@ module.exports = {
         },
         red: "#B91C1C",
         blue: "#93C5FD",
-      },
-      flex: {
-        1: "1 1 0%",
-        2: "2 2 0%",
       },
       fontFamily: {
         // TODO replace sans serif with better font

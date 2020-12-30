@@ -5,13 +5,13 @@ import Link from "./link";
 export default function TopicTwoColumns({ topic, href, children }) {
   return (
     <Flex>
-      <Column size="1">
+      <Column>
         <p>
           <Link href={href}>{topic}</Link>
           &ensp;→
         </p>
       </Column>
-      <Column size="2">{children}</Column>
+      <Column double>{children}</Column>
     </Flex>
   );
 }
