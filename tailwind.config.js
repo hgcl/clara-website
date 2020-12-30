@@ -5,9 +5,9 @@ module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
     flex: {
-        "1": "1 1 0%",
-        "2": "2 2 0%",
-      },
+      1: "1 1 0%",
+      2: "2 2 0%",
+    },
     extend: {
       boxShadow: {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
@@ -18,6 +18,7 @@ module.exports = {
         white: "#E5E7EB",
         black: "#0f0f0f",
         gray: {
+          regular: "#96989e",
           dark: "#171717",
         },
         red: "#B91C1C",

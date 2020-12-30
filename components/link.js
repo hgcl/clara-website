@@ -7,14 +7,14 @@ export default function Link({ href, as, children, className }) {
   };
   if (isExternal) {
     return (
-      <a className={`${className}`} href={href} style={linkstyle}>
+      <a className={`${className} tracking-wide`} href={href} style={linkstyle}>
         {children}
       </a>
     );
   }
   return (
     <NextLink href={href} as={as}>
-      <a className={`${className}`} style={linkstyle}>
+      <a className={`${className} tracking-wide`} style={linkstyle}>
         {children}
       </a>
     </NextLink>
