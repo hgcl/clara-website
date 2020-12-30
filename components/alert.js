@@ -1,5 +1,5 @@
 import Container from "./container";
-import Link from "../components/Link";
+import Link from "./Link";
 
 export default function Alert({ preview }) {
   return (
