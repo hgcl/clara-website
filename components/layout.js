@@ -1,5 +1,5 @@
 import Alert from "../components/alert";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Meta from "../components/meta";
 import Menu from "../components/Menu";
 
