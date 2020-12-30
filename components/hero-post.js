@@ -1,4 +1,4 @@
-import Avatar from "../components/avatar";
+// import Avatar from "../components/avatar";
 import DateFormatter from "../components/date-formatter";
 import CoverImage from "../components/cover-image";
 import Link from "next/link";
