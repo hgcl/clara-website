@@ -1,4 +1,4 @@
-import Link from "../components/Link";
+import Link from "./Link";
 import { WEBSITE_NAME } from "../lib/constants";
 
 export default function Intro() {

@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import Container from "../../components/container";
-import PostBody from "../../components/post-body";
+import Container from "../../components/Container";
+import PostBody from "../../components/PostBody";
 import Header from "../../components/Header";
-import PostHeader from "../../components/post-header";
+import PostHeader from "../../components/PostHeader";
 import Layout from "../../components/Layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
-import PostTitle from "../../components/post-title";
+import PostTitle from "../../components/PostTitle";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 // mdx

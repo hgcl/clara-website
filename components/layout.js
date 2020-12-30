@@ -1,6 +1,6 @@
 import Alert from "./Alert";
 import Footer from "./Footer";
-import Meta from "./meta";
+import Meta from "./Meta";
 import Menu from "./Menu";
 
 // Alert at page top + footer

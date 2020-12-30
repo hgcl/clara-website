@@ -1,4 +1,4 @@
-import Container from "./container";
+import Container from "./Container";
 import Link from "./Link";
 
 export default function Alert({ preview }) {

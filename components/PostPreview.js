@@ -1,7 +1,7 @@
-// import Avatar from '../components/avatar'
-import DateFormatter from "../components/date-formatter";
-// import CoverImage from './cover-image'
-import LinkTitle from "../components/LinkTitle";
+// import Avatar from '../components/Avatar';
+import DateFormatter from "./DateFormatter";
+// import CoverImage from './CoverImage';
+import LinkTitle from "./LinkTitle";
 
 export default function PostPreview({
   title,

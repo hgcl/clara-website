@@ -1,8 +1,8 @@
 // Code very similar to MoreStories.js
 
 import Header from "../components/Header";
-import Container from "../components/container";
-import PostPreview from "../components/post-preview";
+import Container from "../components/Container";
+import PostPreview from "../components/PostPreview";
 
 export default function MorePosts({ posts }) {
   return (
