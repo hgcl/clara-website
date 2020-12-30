@@ -1,6 +1,6 @@
 // Code very similar to more-stories.js
 
-import Header from "../components/header";
+import Header from "../components/Header";
 import Container from "../components/container";
 import PostPreview from "../components/post-preview";
 

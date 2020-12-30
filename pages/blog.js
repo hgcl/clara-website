@@ -3,7 +3,7 @@
 import { getAllPosts } from "../lib/api";
 import MorePosts from "../components/MorePosts";
 import Layout from "../components/layout";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Container from "../components/container";
 
 export default function Index({ allPosts }) {
