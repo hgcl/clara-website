@@ -3,7 +3,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import BurgerIcon from "../components/BurgerIcon";
-import Link from "./Link";
+import Link from "./link";
 
 const overlayStyle = {
   // TODO get these inline styles in theme

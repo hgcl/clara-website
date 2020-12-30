@@ -1,13 +1,12 @@
-// Code very similar to more-stories.js
-
-import Header from "../components/header";
-import Container from "../components/container";
 import PostPreview from "../components/post-preview";
 
-export default function MorePosts({ posts }) {
+export default function MoreStories({ posts }) {
   return (
-    <Container>
-      <div className="max-w-2xl mx-auto">
+    <section className="lg:flex">
+      <h2 className="flex-auto mb-8 mr-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+        Here's What's New
+      </h2>
+      <div className="flex-auto max-w-2xl mt-4">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -20,6 +19,6 @@ export default function MorePosts({ posts }) {
           />
         ))}
       </div>
-    </Container>
+    </section>
   );
 }

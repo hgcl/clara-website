@@ -1,7 +1,7 @@
-// import Alert from "./Alert";
-import Footer from "./Footer";
-import Meta from "./Meta";
-import Menu from "./Menu";
+import Alert from "../components/alert";
+import Footer from "../components/footer";
+import Meta from "../components/meta";
+import Menu from "../components/Menu";
 
 // Alert at page top + footer
 
@@ -10,7 +10,7 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen">
-        {/* <Alert preview={preview} /> */}
+        <Alert preview={preview} />
         <Menu />
         <main>{children}</main>
       </div>

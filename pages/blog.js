@@ -1,10 +1,10 @@
-// import Avatar from '../components/Avatar';
-// import CoverImage from './CoverImage';
+// import Avatar from '../components/avatar'
+// import CoverImage from './cover-image'
 import { getAllPosts } from "../lib/api";
 import MorePosts from "../components/MorePosts";
-import Layout from "../components/Layout";
-import Header from "../components/Header";
-import Container from "../components/Container";
+import Layout from "../components/layout";
+import Header from "../components/header";
+import Container from "../components/container";
 
 export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]

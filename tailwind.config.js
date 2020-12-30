@@ -10,7 +10,7 @@ module.exports = {
         medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
       colors: {
-        accent: "#ef4f37",
+        accent: "#EE4540",
         white: "#E5E7EB",
         black: "#0f0f0f",
         gray: {
