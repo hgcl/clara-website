@@ -2,7 +2,7 @@
 // import CoverImage from './cover-image'
 import { getAllPosts } from "../lib/api";
 import MorePosts from "../components/MorePosts";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Container from "../components/container";
 

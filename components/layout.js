@@ -1,7 +1,7 @@
 import Alert from "./Alert";
-import Footer from "../components/Footer";
-import Meta from "../components/meta";
-import Menu from "../components/Menu";
+import Footer from "./Footer";
+import Meta from "./meta";
+import Menu from "./Menu";
 
 // Alert at page top + footer
 
