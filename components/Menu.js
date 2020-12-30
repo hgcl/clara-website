@@ -2,7 +2,7 @@
 
 import React from "react";
 import Popup from "reactjs-popup";
-import BurgerIcon from "../components/BurgerIcon";
+import BurgerIcon from "./BurgerIcon";
 import Link from "./link";
 
 const overlayStyle = {
