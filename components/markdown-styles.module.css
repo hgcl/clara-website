@@ -1,65 +1,65 @@
 /* Citations */
 .markdown blockquote {
-	@apply border-l-4 pl-6 my-8;
+  @apply border-l-4 pl-6 my-8;
 }
 .markdown q {
-	quotes: "“" "”" "‘" "’" "“" "”" "‘" "’" "“" "”";
+  quotes: "“" "”" "‘" "’" "“" "”" "‘" "’" "“" "”";
 }
 .markdown cite {
-	/* Used for creative works: book names, movies, etc. */
-	@apply italic;
+  /* Used for creative works: book names, movies, etc. */
+  @apply italic;
 }
 
 /* Lists */
 .markdown ul {
-	@apply list-outside list-disc pl-8;
+  @apply list-outside list-disc pl-8;
 }
 .markdown ol {
-	@apply list-outside list-decimal pl-8;
+  @apply list-outside list-decimal pl-8;
 }
 .markdown li {
-	@apply pl-3 mb-3;
+  @apply pl-3 mb-3;
 }
 
 .markdown {
-	@apply text-lg leading-relaxed;
+  @apply text-lg leading-relaxed;
 }
 
 /* Divider */
 .markdown hr {
-	position: relative;
-	padding: 3rem 0;
-	border: none;
+  position: relative;
+  padding: 3rem 0;
+  border: none;
 }
 .markdown hr:before {
-	content: "§";
-	@apply text-white text-3xl font-serif text-center absolute right-0 left-0 top-sm;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg);
+  content: "§";
+  @apply text-white text-3xl font-serif text-center absolute right-0 left-0 top-sm;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol {
-	@apply mb-5;
+  @apply mb-5;
 }
 
 .markdown a {
-	font-variant-caps: all-small-caps;
+  font-variant-caps: all-small-caps;
 }
 
 /* Headings */
 .markdown h1,
 .markdown h2,
 .markdown h3 {
-	@apply capitalize;
+  @apply capitalize;
 }
 
 .markdown h2 {
-	@apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-	@apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-snug;
 }
