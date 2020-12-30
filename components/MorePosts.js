@@ -1,4 +1,4 @@
-// Code very similar to more-stories.js
+// Code very similar to MoreStories.js
 
 import Header from "../components/Header";
 import Container from "../components/container";
