@@ -3,18 +3,16 @@ import FigCaption from "./FigCaption";
 import Figure from "./Figure";
 
 export default function FeaturedArtistImage({
-  imageHref,
+  artistHref,
   imageSrc,
   imageAlt,
   artistName,
 }) {
   return (
     <Figure>
-      <a href={imageHref}>
         <img src={imageSrc} alt={imageAlt} />
-      </a>
       <FigCaption>
-        Featured artist: <Link href={imageHref}>{artistName}</Link>
+        Featured artist: <Link href={artistHref}>{artistName}</Link>
       </FigCaption>
     </Figure>
   );

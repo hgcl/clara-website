@@ -87,7 +87,8 @@ module.exports = {
                 marginBottom: em(32, 18),
               },
               figure: {
-                marginTop: em(32, 18),
+                // marginTop: em(32, 18),
+                marginTop: em(12, 18),
                 marginBottom: em(32, 18),
               },
               "figure > *": {
@@ -97,7 +98,8 @@ module.exports = {
               "figure figcaption": {
                 fontSize: em(16, 18),
                 lineHeight: round(24 / 16),
-                marginTop: em(16, 16),
+                // marginTop: em(16, 16),
+                marginTop: em(8, 16),
               },
               code: {
                 fontSize: em(16, 18),
@@ -274,7 +276,8 @@ module.exports = {
                 marginBottom: em(40, 20),
               },
               figure: {
-                marginTop: em(40, 20),
+                // marginTop: em(40, 20),
+                marginTop: em(12, 20),
                 marginBottom: em(40, 20),
               },
               "figure > *": {
