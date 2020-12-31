@@ -7,8 +7,7 @@ export default function TopicTwoColumns({ topic, href, children }) {
     <Flex>
       <Column>
         <p>
-          <Link href={href}>{topic}</Link>
-          &ensp;→
+          <Link href={href}>{topic}&ensp;→</Link>
         </p>
       </Column>
       <Column double>{children}</Column>

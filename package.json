@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@next/mdx": "^10.0.4",
+    "@tailwindcss/typography": "^0.3.1",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "fontsource-source-sans-pro": "^4.0.0",

@@ -44,7 +44,7 @@ export default function Post({ source, post, preview }) {
               />
               {/* <PostBody content={post.content} /> */}
               <div
-                className={`${markdownStyles["markdown"]} e-content max-w-2xl mx-auto`}
+                className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
               >
                 {contentmdx}
               </div>
