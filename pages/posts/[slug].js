@@ -1,3 +1,4 @@
+// MVP imports
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
@@ -9,11 +10,15 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
-// mdx
+
+// MDX related imports
 import markdownStyles from "../../components/markdown-styles.module.css";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import AllPostComponents from "../../components/AllPostComponents";
+
+// framer-motion imports, https://www.framer.com/api/motion/examples/
+import ScrollIndicator from "../../components/ScrollIndicator";
 
 const components = AllPostComponents;
 
@@ -32,6 +37,7 @@ export default function Post({ source, post, preview }) {
         ) : (
           <>
             <article className="mb-32">
+              <ScrollIndicator className="fixed hidden md:block bottom-2 left-2 w-8 h-8 text-gray-regular" />
               <Head>
                 <title>Clara Le</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
