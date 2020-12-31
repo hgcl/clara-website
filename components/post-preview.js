@@ -12,16 +12,16 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div className="mb-10">
+    <div className="mb-12">
       {/* <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
-      <h3 className="text-3xl mb-2 leading-snug">
+      <h3 className="text-3xl mb-1 leading-snug">
         <LinkTitle as={`/posts/${slug}`} href="/posts/[slug]">
           {title}
         </LinkTitle>
       </h3>
-      <div className="text-xs tracking-widest uppercase mb-4">
+      <div className="text-xs tracking-widest uppercase mb-2">
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-normal">{excerpt}</p>

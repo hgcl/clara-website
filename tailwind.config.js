@@ -1,4 +1,5 @@
-// Add typeface via https://fontsource.github.io/search-directory/
+// Default tailwindcss config fallback at "tailwindcss/stubs/defaultConfig.stub.js"
+// Default spacing scale: https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -9,10 +10,6 @@ module.exports = {
       2: "2 2 0%",
     },
     extend: {
-      boxShadow: {
-        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
-      },
       colors: {
         accent: "#ef4f37",
         white: "#E5E7EB",
@@ -21,52 +18,34 @@ module.exports = {
           regular: "#96989e",
           dark: "#171717",
         },
-        red: "#B91C1C",
-        blue: "#93C5FD",
       },
       fontFamily: {
-        // TODO replace sans serif with better font
         serif: ["Vesper\\ Libre", ...defaultTheme.fontFamily.serif],
         sans: ["Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans],
       },
-      // TODO select a fewer number of font sizes and harmonize
       fontSize: {
-        xs: ".75rem",
-        lg: "1.125rem",
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
-        "4xl": "2.25rem",
-        "6xl": "2.75rem",
         "7xl": "4.5rem",
         "8xl": "6.25rem",
       },
       inset: {
-        xs: "8px",
-        sm: "16px",
-        md: "24px",
-        lg: "32px",
-        xl: "40px",
-        "2xl": "48px",
-        "3xl": "56px",
-        "4xl": "64px",
-      },
-      letterSpacing: {
-        tighter: "-.04em",
+        1: "0.25rem",
+        2: "0.5rem",
+        3: "0.75rem",
+        4: "1rem",
+        5: "1.25rem",
+        6: "1.5rem",
+        8: "2rem",
+        10: "2.5rem",
+        12: "3rem",
+        20: "5rem",
+        24: "6rem",
+        28: "7rem",
+        32: "8rem",
       },
       lineHeight: {
         tight: 1.2,
       },
       spacing: {
-        2: "2px",
-        4: "4px",
-        xs: "8px",
-        sm: "16px",
-        md: "24px",
-        lg: "32px",
-        xl: "40px",
-        "2xl": "48px",
-        "3xl": "56px",
-        "4xl": "64px",
         28: "7rem",
       },
     },

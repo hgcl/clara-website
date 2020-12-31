@@ -33,7 +33,7 @@
 }
 .markdown hr:before {
   content: "§";
-  @apply text-white text-3xl font-serif text-center absolute right-0 left-0 top-sm;
+  @apply text-white text-3xl font-serif text-center absolute right-0 left-0 top-4;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
