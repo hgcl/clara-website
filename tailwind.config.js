@@ -41,7 +41,7 @@ module.exports = {
               lineHeight: round(32 / 18),
               p: {
                 // marginTop: em(24, 18),
-                marginTop: '0',
+                marginTop: "0",
                 marginBottom: em(24, 18),
               },
               '[class~="lead"]': {
@@ -229,7 +229,7 @@ module.exports = {
               lineHeight: round(36 / 20),
               p: {
                 // marginTop: em(24, 20),
-                marginTop: '0',
+                marginTop: "0",
                 marginBottom: em(24, 20),
               },
               '[class~="lead"]': {
