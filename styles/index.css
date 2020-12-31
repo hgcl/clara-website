@@ -21,9 +21,19 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+@layer components {
+  .comment {
+    @apply text-gray-regular tracking-wide all-small-caps;
+  }
+}
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer utilities {
+  .all-small-caps {
+    font-variant-caps: all-small-caps;
+  }
+}
