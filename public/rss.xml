@@ -1,0 +1,36 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog - Clara Le</title>
+      <link>https://clarale.com/blog</link>
+      <description>[...]</description>
+      <language>en</language>
+      <lastBuildDate>Sat, 26 Dec 2020 05:35:07 GMT</lastBuildDate>
+      <atom:link href="https://clarale.com/rss.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://clarale.com/blog/8-remote-christmas</guid>
+    <title>#8 Remote Christmas</title>
+    <link>https://clarale.com/blog/8-remote-christmas</link>
+    <description>Weekly Review #8: remote Christmas, sci-fi books and the IndieWeb</description>
+    <pubDate>Sat, 26 Dec 2020 05:35:07 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>https://clarale.com/blog/7-living-better-with-less</guid>
+    <title>#7 Living Better With Less</title>
+    <link>https://clarale.com/blog/7-living-better-with-less</link>
+    <description>Weekly Review #7: fostering conversations, how to live better with less, a new anti-library section</description>
+    <pubDate>Sat, 19 Dec 2020 05:35:07 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>https://clarale.com/blog/6-bringing-home-some-old-records</guid>
+    <title>#6 Bringing home some old records</title>
+    <link>https://clarale.com/blog/6-bringing-home-some-old-records</link>
+    <description>Weekly Review #6: data visualization book, second-hand records, old movies and open-source apps</description>
+    <pubDate>Sat, 12 Dec 2020 05:35:07 GMT</pubDate>
+  </item>
+
+    </channel>
+  </rss>
