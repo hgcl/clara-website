@@ -33,10 +33,10 @@ module.exports = {
               },
             },
             ul: {
-              listStyleType: 'disc', // new
+              listStyleType: "disc", // new
             },
             li: {
-              listStyleType: 'decimal', // new
+              listStyleType: "decimal", // new
             },
           },
         },
