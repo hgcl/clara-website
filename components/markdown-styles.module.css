@@ -32,5 +32,5 @@
 .markdown h1,
 .markdown h2,
 .markdown h3 {
-  @apply capitalize;
+  @apply capitalize tracking-tighter;
 }
