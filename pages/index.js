@@ -8,7 +8,7 @@ import Head from "next/head";
 
 export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
-  // const morePosts = allPosts.slice(1)
+  const latestPosts = allPosts.slice(0, 3);
   return (
     <>
       <Layout>
@@ -27,7 +27,7 @@ export default function Index({ allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          {allPosts.length > 0 && <MoreStories posts={latestPosts} />}
         </Container>
         <section className="h-card hidden">
           {/* About me */}
