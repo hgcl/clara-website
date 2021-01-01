@@ -6,7 +6,12 @@ export default function Link({ href, as, children, className }) {
   const isExternal = href.startsWith("http");
   if (isExternal) {
     return (
-      <a className={`capitalize ${className}`} href={href}>
+      <a
+        className={`capitalize ${className}`}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );

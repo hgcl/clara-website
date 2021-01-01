@@ -31,13 +31,13 @@ const Menu = () => (
             <Link href="/">Home</Link>
           </li>
           <li onClick={close}>
+            <Link href="/now">Now</Link>
+          </li>
+          <li onClick={close}>
             <Link href="/blog">Writing</Link>
           </li>
           <li onClick={close}>
             <Link href="https://clarasbooks.vercel.app/">Reading</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="https://twitter.com/clara__le">Twitter</Link>
           </li>
           <li onClick={close}>
             <Link href="https://www.etsy.com/shop/lifeundercontrol/">Etsy</Link>

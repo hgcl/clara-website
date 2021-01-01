@@ -4,7 +4,12 @@ export default function Link({ href, as, children, className }) {
   const isExternal = href.startsWith("http");
   if (isExternal) {
     return (
-      <a className={`${className} tracking-wide all-small-caps`} href={href}>
+      <a
+        className={`${className} tracking-wide all-small-caps`}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );
