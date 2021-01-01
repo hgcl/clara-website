@@ -7,7 +7,7 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Add h-entry microformats (h-entry) ✅
 - Add menu ✅
 - Review basic branding: typeface, colours ✅
-- Add About blog, about and now pages ✅
+- Add Blog, About and Now pages ✅
 - Add token-endpoint (https://tokens.indieauth.com/)
 - Add Webmentions
 - ? Add portfolio
@@ -15,4 +15,4 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Connect book tracker ✅
 - Set up MDX ✅
 - Add tailwindcss typography ✅
-- Add RSS feed
+- Add RSS feed ✅
