@@ -37,7 +37,7 @@ export default function Post({ source, post, preview }) {
         ) : (
           <>
             <article className="mb-32">
-              <ScrollIndicator className="fixed hidden md:block bottom-2 left-2 w-8 h-8 text-gray-regular" />
+              <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
               <Head>
                 <title>Clara Le</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
