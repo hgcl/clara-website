@@ -31,6 +31,9 @@ const Menu = () => (
             <Link href="/">Home</Link>
           </li>
           <li onClick={close}>
+            <Link href="/about">About</Link>
+          </li>
+          <li onClick={close}>
             <Link href="/now">Now</Link>
           </li>
           <li onClick={close}>

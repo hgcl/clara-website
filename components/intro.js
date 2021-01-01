@@ -8,11 +8,11 @@ export default function Intro() {
         {WEBSITE_NAME}
       </h1>
       <p className="text-2xl md:text-4xl">
-        Polymath, currently{" "}
+        <Link href="/about">Polymath</Link>, currently{" "}
         <Link href="https://www.behance.net/hgclaralebca2">Designer</Link>. See
         what I am <Link href="/blog">writing</Link>,{" "}
-        <Link href="https://clarasbooks.vercel.app/">reading</Link> or currently{" "}
-        <Link href="/now">doing</Link>.
+        <Link href="https://clarasbooks.vercel.app/">reading</Link> or{" "}
+        <Link href="/now">doing now</Link>.
       </p>
     </section>
   );

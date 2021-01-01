@@ -13,7 +13,7 @@ export default function Now({}) {
           <div
             className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
           >
-            {/* TODO add date  */}
+            {/* TODO add date updated */}
             <p>
               Winter time in Berlin is not the most exciting time–especially if
               you are in semi-lockdown. I spend most of this indoor time
