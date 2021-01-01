@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2021-01-01",
+    "title": "Half of a Yellow Sun",
+    "author": "Chimamanda Ngozi Adichie",
+    "rating": 5,
+    "isbn": "0007200285",
+    "review": "Super bouquin, dommage que personne connaisse."
+  },
+  {
+    "date": "2020-01-01",
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "rating": 4,
+    "isbn": "067942850X",
+    "review": "Blah blah."
+  }
+]
