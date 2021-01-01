@@ -1,30 +1,33 @@
 import Container from "./container";
 import { EXAMPLE_PATH } from "../lib/constants";
+import Link from "./link";
+
+// icons
+import IconTwitter from "../public/icons/IconTwitter";
+import IconEtsy from "../public/icons/IconEtsy";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-dark h-32">
-      {/* <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/basic-features/pages"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
-          </div>
+    <footer className="bg-gray-dark h-40">
+      <div className="flex flex-col items-center text-gray-regular h-full justify-end mb-16">
+        <div className="flex flex-row items-center mb-8">
+          <span className="mx-2">
+            <Link href="https://twitter.com/clara__le">
+              <IconTwitter />
+            </Link>
+          </span>
+          <span className="mx-2">
+            <Link href="https://lifeundercontrol.etsy.com">
+              <IconEtsy />
+            </Link>
+          </span>
         </div>
-      </Container> */}
+        <p className="text-center">
+          I built this website with{" "}
+          <Link href="https://nextjs.org/">Next.js</Link> and{" "}
+          <Link href="https://tailwindcss.com/">tailwindcss</Link>.
+        </p>
+      </div>
     </footer>
   );
 }
