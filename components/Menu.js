@@ -42,9 +42,6 @@ const Menu = () => (
           <li onClick={close}>
             <Link href="https://clarasbooks.vercel.app/">Reading</Link>
           </li>
-          <li onClick={close}>
-            <Link href="https://www.etsy.com/shop/lifeundercontrol/">Etsy</Link>
-          </li>
         </ul>
       </div>
     )}

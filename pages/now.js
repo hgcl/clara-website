@@ -4,6 +4,7 @@ import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import TopicTwoColumns from "../components/TopicTwoColumns";
+import DatePost from "../components/DatePost";
 
 export default function Now({}) {
   return (
@@ -14,12 +15,12 @@ export default function Now({}) {
           <div
             className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
           >
-            {/* TODO add date updated */}
+            <DatePost dateString="2021-01-01 17:04:10" lastUpdated />
             <p>
               Winter in Berlin is not the most exciting period–especially if you
               are in semi-lockdown. I spend most of this indoor time reading,
-              learning new things, making half-baked resolutions and baking
-              bread.
+              learning new things, baking break and making half-baked
+              resolutions.
             </p>
             <h2>Current projects</h2>
             <TopicTwoColumns topic="Building my website">
