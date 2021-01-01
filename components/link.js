@@ -1,11 +1,15 @@
 import NextLink from "next/link";
 
-export default function Link({ href, as, children, className }) {
+export default function Link({ href, as, children, className, variant }) {
   const isExternal = href.startsWith("http");
+  const linkStyles =
+    variant === "heading"
+      ? `capitalize ${className}`
+      : `${className} tracking-wide all-small-caps`;
   if (isExternal) {
     return (
       <a
-        className={`${className} tracking-wide all-small-caps`}
+        className={linkStyles}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -16,7 +20,7 @@ export default function Link({ href, as, children, className }) {
   }
   return (
     <NextLink href={href} as={as}>
-      <a className={`${className} tracking-wide all-small-caps`}>{children}</a>
+      <a className={linkStyles}>{children}</a>
     </NextLink>
   );
 }

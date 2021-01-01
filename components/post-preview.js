@@ -1,7 +1,7 @@
 // import Avatar from './avatar'
 import DateFormatter from "./date-formatter";
 // import CoverImage from './cover-image'
-import LinkTitle from "./LinkTitle";
+import Link from "./link";
 
 export default function PostPreview({
   title,
@@ -17,9 +17,9 @@ export default function PostPreview({
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
       <h3 className="text-3xl mb-1 leading-snug">
-        <LinkTitle as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" variant="heading">
           {title}
-        </LinkTitle>
+        </Link>
       </h3>
       <div className="text-xs tracking-widest uppercase mb-2">
         <DateFormatter dateString={date} />
