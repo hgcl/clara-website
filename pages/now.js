@@ -18,7 +18,8 @@ export default function Now({}) {
             <p>
               Winter in Berlin is not the most exciting period–especially if you
               are in semi-lockdown. I spend most of this indoor time reading,
-              learning new things, making half-baked resolutions and baking bread.
+              learning new things, making half-baked resolutions and baking
+              bread.
             </p>
             <h2>Current projects</h2>
             <TopicTwoColumns topic="Building my website">
@@ -33,7 +34,9 @@ export default function Now({}) {
             <TopicTwoColumns topic="Thinking better">
               <p>
                 I am exploring better ways to learn and think. I started
-                systematically taking notes of what I read (with <Link href="https://hypothes.is/">hypothes.is</Link>) and nurturing my{" "}
+                systematically taking notes of what I read (with{" "}
+                <Link href="https://hypothes.is/">hypothes.is</Link>) and
+                nurturing my{" "}
                 <Link href="https://hgcl.github.io/digital-garden/">
                   digital garden
                 </Link>
@@ -46,7 +49,8 @@ export default function Now({}) {
               <Link href="https://datavizhandbook.info/">
                 The Data Visualization Handbook
               </Link>{" "}
-              by Koponen and Hildén. It is very rich in content, so I am slowly going through it from the beginning.
+              by Koponen and Hildén. It is very rich in content, so I am slowly
+              going through it from the beginning.
             </p>
             <p className="comment">
               Inspired by the{" "}

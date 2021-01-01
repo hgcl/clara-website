@@ -1,6 +1,6 @@
 import React from "react";
 
-function IconTwitter({height}) {
+function IconTwitter({ height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
