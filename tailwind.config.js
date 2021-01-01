@@ -32,6 +32,12 @@ module.exports = {
                 color: "#ef4f37",
               },
             },
+            ul: {
+              listStyleType: 'disc', // new
+            },
+            li: {
+              listStyleType: 'decimal', // new
+            },
           },
         },
         lg: {
@@ -124,10 +130,12 @@ module.exports = {
               ol: {
                 marginTop: em(24, 18),
                 marginBottom: em(24, 18),
+                paddingLeft: em(36, 18), // new
               },
               ul: {
                 marginTop: em(24, 18),
                 marginBottom: em(24, 18),
+                paddingLeft: em(36, 18), // new
               },
               li: {
                 marginTop: em(12, 18),
@@ -312,10 +320,12 @@ module.exports = {
               ol: {
                 marginTop: em(24, 20),
                 marginBottom: em(24, 20),
+                paddingLeft: em(40, 20), // new
               },
               ul: {
                 marginTop: em(24, 20),
                 marginBottom: em(24, 20),
+                paddingLeft: em(40, 20), // new
               },
               li: {
                 marginTop: em(12, 20),
