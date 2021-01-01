@@ -35,7 +35,7 @@ module.exports = {
             ul: {
               listStyleType: "disc", // new
             },
-            li: {
+            ol: {
               listStyleType: "decimal", // new
             },
           },
