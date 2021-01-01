@@ -1,5 +1,5 @@
 // Set up RSS feed based on https://dev.to/emilioschepis/adding-a-statically-generated-rss-feed-to-a-next-js-9-3-blog-58id
-import fs from 'fs';
+import fs from "fs";
 
 // import Avatar from '../components/avatar'
 // import CoverImage from './cover-image'
