@@ -421,6 +421,9 @@ module.exports = {
           ],
         },
       },
+      borderWidth: {
+        1: "1px",
+      },
       colors: {
         accent: "#ef4f37",
         white: "#E5E7EB",
@@ -438,6 +441,9 @@ module.exports = {
         "7xl": "4.5rem",
         "8xl": "6.25rem",
       },
+      // gridTemplateColumns: {
+      //   'book-grid': 'repeat(auto-fill, minmax(150px, 1fr))',
+      // },
       inset: {
         1: "0.25rem",
         2: "0.5rem",
