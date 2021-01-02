@@ -11,8 +11,8 @@ export default function Intro() {
         <Link href="/about">Polymath</Link>, currently{" "}
         <Link href="https://www.behance.net/hgclaralebca2">Designer</Link>. See
         what I am <Link href="/blog">writing</Link>,{" "}
-        <Link href="/books">reading</Link> or{" "}
-        <Link href="/now">doing now</Link>.
+        <Link href="/books">reading</Link> or <Link href="/now">doing now</Link>
+        .
       </p>
     </section>
   );

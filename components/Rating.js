@@ -10,10 +10,7 @@ const Rating = ({ rating }) => {
         />
       ))}
       {[...Array(emptyDots)].map((_, index) => (
-        <span
-          key={`dot-empty-${index}`}
-          className={`${dotStyle}`}
-        />
+        <span key={`dot-empty-${index}`} className={`${dotStyle}`} />
       ))}
     </div>
   );
