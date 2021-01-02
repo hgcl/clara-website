@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { getAllBooks } from "../lib/api";
 import Layout from "../components/layout";
 import Header from "../components/header";
@@ -10,13 +12,14 @@ export default function Books({ allBooks }) {
     "grid-template-columns": "repeat(auto-fill, minmax(150px, 1fr))",
   };
   return (
-    <>
-      <Layout>
-        <Container>
-          <Header />
-          <section className="grid gap-x-6 gap-y-8" style={gridStyle}>
-            {/* TODO sort books by date */}
-            {allBooks.map((book) => {
+    <Layout title={"Books"}>
+      <Container>
+        <Header />
+        <section className="grid gap-x-6 gap-y-8" style={gridStyle}>
+          {/* TODO sort books by date */}
+          {allBooks
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((book) => {
               const {
                 date,
                 title,
@@ -27,8 +30,9 @@ export default function Books({ allBooks }) {
                 isbn,
                 review,
               } = book;
+
               return (
-                <article>
+                <article key={isbn}>
                   <img
                     src={coverUrl}
                     className="object-cover h-64 shadow-2xl"
@@ -47,10 +51,9 @@ export default function Books({ allBooks }) {
                 </article>
               );
             })}
-          </section>
-        </Container>
-      </Layout>
-    </>
+        </section>
+      </Container>
+    </Layout>
   );
 }
 
