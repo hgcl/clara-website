@@ -3,15 +3,15 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
 import BookGrid from "../components/BookGrid";
-import booksData from "../lib/booksData.js";
+import antilibraryData from "../lib/antilibraryData.js";
 
-export default function Books({ allBooks }) {
+export default function Antilibrary({ allBooks }) {
   return (
-    <Layout title={"Books"}>
+    <Layout title={"Antilibrary"}>
       <Container>
         <Header
           pageDescription={
-            "My library of books, starting with the most recent reads"
+            "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
         <BookGrid books={allBooks} />
@@ -21,7 +21,7 @@ export default function Books({ allBooks }) {
 }
 
 export async function getStaticProps() {
-  const allBooks = await getAllBooks(booksData);
+  const allBooks = await getAllBooks(antilibraryData);
 
   return {
     props: { allBooks },
