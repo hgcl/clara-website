@@ -7,7 +7,6 @@ export default function BookGrid({ books }) {
   };
   return (
     <section className="grid gap-x-6 gap-y-8" style={gridStyle}>
-      {/* TODO sort books by date */}
       {books
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .map((book) => {
@@ -30,9 +29,11 @@ export default function BookGrid({ books }) {
                   {title}
                 </h2>
                 <p className="mt-1 text-gray-regular leading-snug">{author}</p>
-                <p className="text-gray-regular">
-                  <Rating rating={rating} />
-                </p>
+                {rating && (
+                  <p className="text-gray-regular">
+                    <Rating rating={rating} />
+                  </p>
+                )}
               </ul>
             </article>
           );
