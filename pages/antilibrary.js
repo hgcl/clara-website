@@ -17,8 +17,7 @@ export default function Antilibrary({ allBooks }) {
 }
 
 export async function getStaticProps() {
-  const booksJson = antilibraryData;
-  const allBooks = await getAllBooks(booksJson);
+  const allBooks = await getAllBooks(antilibraryData);
 
   return {
     props: { allBooks },

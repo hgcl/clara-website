@@ -21,8 +21,7 @@ export default function Books({ allBooks }) {
 }
 
 export async function getStaticProps() {
-  const booksJson = booksData;
-  const allBooks = await getAllBooks(booksJson);
+  const allBooks = await getAllBooks(booksData);
 
   return {
     props: { allBooks },
