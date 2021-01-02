@@ -37,10 +37,10 @@ export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   return (
-      <Layout title="Blog">
-        <Container>
-          <Header />
-          {/* {heroPost && (
+    <Layout title="Blog">
+      <Container>
+        <Header />
+        {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               // coverImage={heroPost.coverImage}
@@ -50,9 +50,9 @@ export default function Index({ allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {allPosts.length > 0 && <MorePosts posts={allPosts} />}
-        </Container>
-      </Layout>
+        {allPosts.length > 0 && <MorePosts posts={allPosts} />}
+      </Container>
+    </Layout>
   );
 }
 
