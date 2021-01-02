@@ -8,7 +8,7 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Add menu ✅
 - Review basic branding: typeface, colours ✅
 - Add Blog, About and Now pages ✅
-- Add token-endpoint (https://tokens.indieauth.com/)
+- Add (https://tokens.indieauth.com/)
 - Add Webmentions
 - ? Add portfolio
 - Connect digital garden ✅

@@ -1,0 +1,82 @@
+[
+  {
+    "date": "2017-06-28",
+    "title": "Half of a Yellow Sun",
+    "author": "Chimamanda Ngozi Adichie",
+    "rating": 5,
+    "isbn": "0007200285",
+    "review": "Super bouquin, dommage que personne connaisse."
+  },
+  {
+    "date": "2020-03-15",
+    "title": "How to Be Danish",
+    "author": "Patrick Kingsley",
+    "rating": 4,
+    "isbn": "1476755485",
+    "review": ""
+  },
+  {
+    "date": "2020-03-06",
+    "title": "The Bear and the Nightingale",
+    "author": "Katherine Arden",
+    "rating": 3,
+    "isbn": "178503104X",
+    "review": ""
+  },
+  {
+    "date": "2020-01-01",
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "rating": 4,
+    "isbn": "067942850X",
+    "review": ""
+  },
+  {
+    "date": "2020-02-19",
+    "title": "The Stone Sky",
+    "author": "N.K. Jemisin",
+    "rating": 4,
+    "isbn": "0316229245",
+    "review": ""
+  },
+  {
+    "date": "2020-02-20",
+    "title": "The Obelisk Gate",
+    "author": "N.K. Jemisin",
+    "rating": 5,
+    "isbn": "0356508366",
+    "review": ""
+  },
+  {
+    "date": "2020-02-21",
+    "title": "The Fifth Season",
+    "author": "N.K. Jemisin",
+    "rating": 4,
+    "isbn": "0356508196",
+    "review": ""
+  },
+  {
+    "date": "2020-02-25",
+    "title": "The Starless Sea",
+    "author": "Erin Morgenstern",
+    "rating": 4,
+    "isbn": "9780735207875",
+    "review": ""
+  },
+  {
+    "date": "2020-01-28",
+    "title": "Recursion",
+    "author": "Blake Crouch",
+    "rating": 3,
+    "isbn": "9781984826015",
+    "review": ""
+  },
+  {
+    "date": "2020-01-23",
+    "title": "The Testaments",
+    "author": "Margaret Atwood",
+    "rating": 4,
+    "isbn": "0525562621",
+    "review": ""
+  }
+]

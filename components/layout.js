@@ -5,10 +5,10 @@ import Menu from "./Menu";
 
 // Alert at page top + footer
 
-export default function Layout({ preview, children }) {
+export default function Layout({ preview, children, title }) {
   return (
     <>
-      <Meta />
+      <Meta title={title} />
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
         <Menu />
