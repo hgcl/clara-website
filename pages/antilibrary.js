@@ -7,7 +7,7 @@ import antilibraryData from "../lib/antilibraryData.js";
 
 export default function Antilibrary({ allBooks }) {
   return (
-    <Layout title={"Anti-Library"}>
+    <Layout title={"Antilibrary"}>
       <Container>
         <Header pageDescription={"Books I plan to read or wish I had read."} />
         <BookGrid books={allBooks} />
