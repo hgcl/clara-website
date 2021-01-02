@@ -67,7 +67,7 @@ export default function About({}) {
             <li>I speak French, English, Vietnamese and broken German.</li>
             <li>I learned to play the ukulele while backpacking.</li>
             <li>
-              Starting to do improvisational theatre at school was
+              Joining the improvisational theatre club at school was
               life-changing.
             </li>
             <li>
