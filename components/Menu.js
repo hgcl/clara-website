@@ -40,7 +40,7 @@ const Menu = () => (
             <Link href="/blog">Writing</Link>
           </li>
           <li onClick={close}>
-            <Link href="https://clarasbooks.vercel.app/">Reading</Link>
+            <Link href="/books">Reading</Link>
           </li>
         </ul>
       </div>
