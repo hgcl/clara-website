@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import { getAllBooks } from "../lib/api";
 import Layout from "../components/layout";
 import Header from "../components/header";
@@ -14,7 +12,11 @@ export default function Books({ allBooks }) {
   return (
     <Layout title={"Books"}>
       <Container>
-        <Header />
+        <Header
+          pageDescription={
+            "My library of books, starting with the most recent reads"
+          }
+        />
         <section className="grid gap-x-6 gap-y-8" style={gridStyle}>
           {/* TODO sort books by date */}
           {allBooks
@@ -38,7 +40,7 @@ export default function Books({ allBooks }) {
                     className="object-cover h-64 shadow-2xl"
                   />
                   <ul>
-                    <h2 className="mt-4 capitalize text-xl leading-snug">
+                    <h2 className="mt-4 capitalize text-xl tracking-tight leading-snug">
                       {title}
                     </h2>
                     <p className="mt-1 text-gray-regular leading-snug">

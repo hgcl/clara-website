@@ -8,7 +8,7 @@ export default function About({}) {
   return (
     <Layout title="About">
       <Container>
-        <Header />
+        <Header pageDescription={"You asked to know more about me, so ..."} />
         <div
           className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
         >

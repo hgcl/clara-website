@@ -39,7 +39,7 @@ export default function Index({ allPosts }) {
   return (
     <Layout title="Blog">
       <Container>
-        <Header />
+        <Header pageDescription={"Welcome to my mind, good luck."} />
         {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
