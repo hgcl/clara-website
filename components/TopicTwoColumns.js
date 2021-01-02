@@ -9,7 +9,7 @@ export default function TopicTwoColumns({ topic, href, children }) {
         <Link href={href}>{topic}&ensp;→</Link>
       </p>
     ) : (
-      <p className="all-small-caps">{topic}</p>
+      <p className="all-small-caps tracking-wide">{topic}</p>
     );
 
   return (
