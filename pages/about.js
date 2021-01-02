@@ -6,8 +6,7 @@ import Link from "../components/link";
 
 export default function About({}) {
   return (
-    <>
-      <Layout>
+      <Layout title="About">
         <Container>
           <Header />
           <div
@@ -86,6 +85,5 @@ export default function About({}) {
           </div>
         </Container>
       </Layout>
-    </>
   );
 }

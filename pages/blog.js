@@ -37,8 +37,7 @@ export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   return (
-    <>
-      <Layout>
+      <Layout title="Blog">
         <Container>
           <Header />
           {/* {heroPost && (
@@ -54,7 +53,6 @@ export default function Index({ allPosts }) {
           {allPosts.length > 0 && <MorePosts posts={allPosts} />}
         </Container>
       </Layout>
-    </>
   );
 }
 

@@ -8,8 +8,7 @@ import DatePost from "../components/DatePost";
 
 export default function Now({}) {
   return (
-    <>
-      <Layout>
+      <Layout title="Now">
         <Container>
           <Header />
           <div
@@ -60,6 +59,5 @@ export default function Now({}) {
           </div>
         </Container>
       </Layout>
-    </>
   );
 }
