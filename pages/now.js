@@ -10,7 +10,7 @@ export default function Now({}) {
   return (
     <Layout title="Now">
       <Container>
-        <Header />
+        <Header pageDescription={"What I'm currently doing"} />
         <div
           className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
         >

@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { WEBSITE_NAME } from "../lib/constants";
 
-export default function Header() {
+export default function Header({ pageDescription }) {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/">
-        <a>{WEBSITE_NAME}</a>
-      </Link>
-    </h2>
+    <>
+      <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mt-8">
+        <Link href="/">
+          <a>{WEBSITE_NAME}</a>
+        </Link>
+      </h2>
+      <div className="comment mb-20 ml-1 tracking-wide">{pageDescription}</div>
+    </>
   );
 }
