@@ -9,7 +9,7 @@ export default function Antilibrary({ allBooks }) {
   return (
     <Layout title={"Antilibrary"}>
       <Container>
-        <Header pageDescription={"Books I plan to read or wish I had read."} />
+        <Header pageDescription={"My secret antilibrary—a.k.a. books I plan to read or wish I had read"} />
         <BookGrid books={allBooks} />
       </Container>
     </Layout>
