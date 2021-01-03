@@ -6,6 +6,7 @@ import Link from "./link";
 import IconTwitter from "../public/icons/IconTwitter";
 import IconEtsy from "../public/icons/IconEtsy";
 import IconRss from "../public/icons/IconRss";
+import IconGithub from "../public/icons/IconGithub";
 
 export default function Footer() {
   const iconStyle = `mx-2 fill-current`;
@@ -21,6 +22,11 @@ export default function Footer() {
           <span className={iconStyle}>
             <Link href="https://lifeundercontrol.etsy.com">
               <IconEtsy height="h-4" />
+            </Link>
+          </span>
+          <span className={iconStyle}>
+            <Link href="https://github.com/hgcl/">
+              <IconGithub height="h-4" />
             </Link>
           </span>
           <span className={iconStyle}>
