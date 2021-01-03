@@ -60,7 +60,7 @@ export default function About({}) {
               twenty children.
             </li>
             <li>
-              My favourite book is <cite>Stories of Your Life and Others</cite>{" "}
+              My favorite book is <cite>Stories of Your Life and Others</cite>{" "}
               by Ted Chiang.
             </li>
             <li>I studied business and information systems at university.</li>
