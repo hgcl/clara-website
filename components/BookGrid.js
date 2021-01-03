@@ -1,4 +1,5 @@
 import Rating from "../components/Rating";
+import Image from "next/image";
 
 export default function BookGrid({ books }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -23,7 +24,12 @@ export default function BookGrid({ books }) {
 
           return (
             <article key={isbn}>
-              <img src={coverUrl} className="object-cover h-64 shadow-2xl" />
+              <Image
+                src={coverUrl}
+                className="object-cover shadow-2xl"
+                height="312rem"
+                width="200rem"
+              />
               <ul>
                 <h2 className="mt-4 capitalize text-xl tracking-tight leading-snug">
                   {title}
