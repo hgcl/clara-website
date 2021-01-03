@@ -17,7 +17,7 @@ export default function PostPreview({
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
       <h3 className="text-3xl mb-1 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]" variant="heading">
+        <Link as={`/blog/${slug}`} href="/blog/[slug]" variant="heading">
           {title}
         </Link>
       </h3>
