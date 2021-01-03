@@ -18,7 +18,7 @@ export default function Now({}) {
           <p>
             Winter in Berlin is not the most exciting period–especially if you
             are in semi-lockdown. I spend most of this indoor time reading,
-            learning new things, baking break and making half-baked resolutions.
+            learning new things, baking bread and making half-baked resolutions.
           </p>
           <h2>Current projects</h2>
           <TopicTwoColumns topic="Building my website">
