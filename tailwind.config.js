@@ -17,8 +17,8 @@ module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   variants: {
     extend: {
-      textColor: ['active'],
-    }
+      textColor: ["active"],
+    },
   },
   theme: {
     flex: {

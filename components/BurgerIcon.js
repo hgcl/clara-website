@@ -1,6 +1,6 @@
 import React from "react";
 
-const styleBar = "bg-white absolute h-1 left-12 w-10"
+const styleBar = "bg-white absolute h-1 left-12 w-10";
 
 const BurgerIcon = ({ open, ...props }) => (
   <div
