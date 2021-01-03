@@ -26,7 +26,7 @@ const Menu = () => (
   >
     {(close) => (
       <div className="menu w-full block text-center p-0">
-        <ul className="relative text-3xl">
+        <ul className="relative text-3xl list-none">
           <li onClick={close}>
             <Link href="/">Home</Link>
           </li>

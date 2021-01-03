@@ -2,18 +2,29 @@
 
 /* Write your own custom base styles here */
 @layer base {
-  html {
-    @apply bg-gray-dark text-white;
-  }
-  /* TODO add a rainbow gradient transition on link hover */
-  a:hover {
-    @apply text-accent transition duration-500;
-  }
-  h1,
-  h2,
-  h3 {
-    @apply font-serif;
-  }
+	html {
+		@apply bg-gray-dark text-white;
+	}
+	/* TODO add a rainbow gradient transition on link hover */
+	a:hover,
+	a:active,
+	a:focus {
+		@apply text-accent;
+	}
+	a:hover {
+		@apply transition duration-500;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply font-serif;
+	}
+	ul {
+		@apply list-disc;
+	}
+	ol {
+		@apply list-decimal;
+	}
 }
 
 /* Start purging... */
@@ -22,9 +33,9 @@
 
 /* Write you own custom component styles here */
 @layer components {
-  .comment {
-    @apply text-gray-regular tracking-wide all-small-caps;
-  }
+	.comment {
+		@apply text-gray-regular tracking-wide all-small-caps;
+	}
 }
 
 /* Start purging... */
@@ -33,7 +44,7 @@
 
 /* Your own custom utilities */
 @layer utilities {
-  .all-small-caps {
-    font-variant-caps: all-small-caps;
-  }
+	.all-small-caps {
+		font-variant-caps: all-small-caps;
+	}
 }

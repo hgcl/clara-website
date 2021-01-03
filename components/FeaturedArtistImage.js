@@ -10,7 +10,7 @@ export default function FeaturedArtistImage({
 }) {
   return (
     <Figure>
-      <img src={imageSrc} alt={imageAlt} />
+      <img src={imageSrc} alt={imageAlt}/>
       <FigCaption>
         Featured artist: <Link href={artistHref}>{artistName}</Link>
       </FigCaption>

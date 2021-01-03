@@ -15,6 +15,11 @@ const em = (px, base) => `${round(px / base)}em`;
 
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
+  variants: {
+    extend: {
+      textColor: ['active'],
+    }
+  },
   theme: {
     flex: {
       1: "1 1 0%",
@@ -26,18 +31,6 @@ module.exports = {
         DEFAULT: {
           css: {
             color: "#E5E7EB",
-            a: {
-              color: "#E5E7EB",
-              "&:hover": {
-                color: "#ef4f37",
-              },
-            },
-            ul: {
-              listStyleType: "disc", // new
-            },
-            ol: {
-              listStyleType: "decimal", // new
-            },
           },
         },
         lg: {
