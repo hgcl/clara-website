@@ -6,7 +6,7 @@ export default function BookGrid({ books }) {
     "grid-template-columns": "repeat(auto-fill, minmax(150px, 1fr))",
   };
   return (
-    <section className="grid gap-x-6 gap-y-8" style={gridStyle}>
+    <section className="grid gap-y-8 gap-x-4 md:gap-x-6" style={gridStyle}>
       {books
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .map((book) => {
