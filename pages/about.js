@@ -12,7 +12,6 @@ export default function About({}) {
         <div
           className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
         >
-          {/* TODO add date updated  */}
           <h2>2 words</h2>
           <p>ebullient polymath</p>
           <h2>20 seconds</h2>
