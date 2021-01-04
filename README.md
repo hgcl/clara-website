@@ -14,5 +14,5 @@ Building my website with Next.js, starting with [this template](https://github.c
 - Connect digital garden ✅
 - Connect book tracker ✅
 - Set up MDX ✅
-- Add tailwindcss typography ✅
+- Add Tailwind Typography ✅
 - Add RSS feed ✅
