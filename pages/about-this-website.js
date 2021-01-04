@@ -5,7 +5,7 @@ import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import DatePost from "../components/DatePost";
 
-export default function About({}) {
+export default function AboutWebsite({}) {
   return (
     <Layout title="About this website">
       <Container>
