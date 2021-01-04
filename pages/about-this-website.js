@@ -19,6 +19,13 @@ export default function About({}) {
             mentioned below. I used a lot of copy-pasting, lack the right
             terminology and best practices—so don't take my word for it.
           </p>
+          <h2>The big picture</h2>
+          <p>I envision this website as my personal corner of the internet—my very own playground. I am experimenting on it and have a few things planned ahead. Check out the <Link href="https://github.com/hgcl/clara-website/blob/main/README.md">Roadmap</Link> to know more.</p>
+          <p>
+            Feel free to send me any feedback / improvement ideas on Twitter{" "}
+            <Link href="https://twitter.com/clara__le">@clara__le</Link>
+          </p>
+          
           <h2>Building Blocks</h2>
           <ul>
             <li>
@@ -39,7 +46,7 @@ export default function About({}) {
               <Link href="https://github.com/tailwindlabs/tailwindcss-typography">
                 Tailwind Typography
               </Link>{" "}
-              to generate responsive styling
+              to generate responsive text styling
             </li>
             <li>
               <Link href="https://github.com/jonschlinkert/gray-matter">
@@ -80,7 +87,7 @@ export default function About({}) {
             </Link>
             .
           </p>
-          <h2>Tools</h2>
+          <h2>Tools & Extensions</h2>
           <p>
             This list will be useless for more seasoned coders, but might be
             handy for someone just starting out—past me would have appreciated
@@ -120,14 +127,10 @@ export default function About({}) {
                 Insert Date String
               </Link>{" "}
               just makes it easier to insert the current ISO date with{" "}
-              <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>I</kbd>{" "}
+              <kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>I</kbd>{" "}
               <span className="comment">(VS Code extension)</span>
             </li>
           </ul>
-          <p>
-            Feel free to send me any feedback / improvement ideas on Twitter{" "}
-            <Link href="https://twitter.com/clara__le">@clara__le</Link>
-          </p>
         </div>
       </Container>
     </Layout>
