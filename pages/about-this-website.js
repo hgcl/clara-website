@@ -7,7 +7,7 @@ import DatePost from "../components/DatePost";
 
 export default function About({}) {
   return (
-    <Layout title="About">
+    <Layout title="About this website">
       <Container>
         <Header pageDescription={"About this website"} />
         <div
@@ -77,6 +77,10 @@ export default function About({}) {
             <li>
               <Link href="https://github.com/date-fns/date-fns">dates-fns</Link>{" "}
               to manipulate dates
+            </li>
+            <li>
+              <Link href="https://github.com/fontsource/fontsource">Fontsource</Link>{" "}
+              to easily set up self-hosted font bundles
             </li>
             <li>
               <Link href="https://openlibrary.org/developers/api">
