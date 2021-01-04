@@ -9,6 +9,7 @@ import Column from "../components/Column";
 import Image from "next/image";
 
 export default function Portfolio({}) {
+  const imageMargins = "lg:-mx-40";
   const imageWidth = "700rem";
   const imageHeight = "450rem";
   const imageFit = "cover";
@@ -33,7 +34,7 @@ export default function Portfolio({}) {
               had +90k visits, +1,700 orders and a rating of 5/5 stars on
               average.
             </p>
-            <Flex className="lg:-mx-40">
+            <Flex className={imageMargins}>
               <Column>
                 <Image
                   alt="Homepage of Life Under Control on Etsy"
@@ -42,6 +43,7 @@ export default function Portfolio({}) {
                   width={imageWidth}
                   objectFit={imageFit}
                   objectPosition="top left"
+                  loading="eager"
                 />
               </Column>
               <Column>
@@ -58,6 +60,48 @@ export default function Portfolio({}) {
           </section>
 
           <section className={sectionStyle}>
+            <h2>The Berlin Walls: Street Art Walks in Berlin</h2>
+            <p>
+              When arriving in Berlin in 2018, Robin and I were amazed by how
+              street art covered everything—walls, bridges and cars. From the
+              big murals to the small stickers, we explored our first
+              neighborhood through the urban art lens. A 50-page street art
+              walking guide was born of it.
+            </p>
+            <Flex className={imageMargins}>
+              <Column>
+                <Image
+                  alt="The Berlin Walls: Street Art Walks in Berlin"
+                  src="/assets/portfolio/berlinwalls.jpg"
+                  height={imageHeight}
+                  width={imageWidth}
+                  objectFit={imageFit}
+                />
+              </Column>
+              <Column>
+                <Image
+                  alt="The Berlin Walls: Street Art Walks in Berlin"
+                  src="/assets/portfolio/berlinwalls2.jpg"
+                  height={imageHeight}
+                  width={imageWidth}
+                  objectFit={imageFit}
+                  objectPosition="left"
+                />
+              </Column>
+              <Column>
+                <Image
+                  alt="The Berlin Walls: Street Art Walks in Berlin"
+                  src="/assets/portfolio/berlinwalls3.jpg"
+                  height={imageHeight}
+                  width={imageWidth}
+                  objectFit={imageFit}
+                  objectPosition="20% 0%"
+                />
+              </Column>
+            </Flex>
+          </section>
+
+          <section className={sectionStyle}>
             <h2>Dynamic Landing Page</h2>
             <p>
               Here is a complete rework of the home and service pages of an SEO
@@ -66,7 +110,7 @@ export default function Portfolio({}) {
               its benefits, before diving more into the features. Bonus: the
               animated illustrations also bring additional dynamism and clarity.
             </p>
-            <Flex className="lg:-mx-40">
+            <Flex className={imageMargins}>
               <Column>
                 <Image
                   alt="Homepage of Handmade SEO"
@@ -97,7 +141,7 @@ export default function Portfolio({}) {
               illustrations made with Blender, Illustrator and Photoshop
               respectively.
             </p>
-            <Flex className="lg:-mx-40">
+            <Flex className={imageMargins}>
               <div className={customColumnStyle}>
                 <Image
                   alt="Realistic donut created with Blender"

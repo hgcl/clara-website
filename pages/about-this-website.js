@@ -79,7 +79,9 @@ export default function AboutWebsite({}) {
               to manipulate dates
             </li>
             <li>
-              <Link href="https://github.com/fontsource/fontsource">Fontsource</Link>{" "}
+              <Link href="https://github.com/fontsource/fontsource">
+                Fontsource
+              </Link>{" "}
               to easily set up self-hosted font bundles
             </li>
             <li>

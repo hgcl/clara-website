@@ -9,10 +9,9 @@ export default function Intro() {
       </h1>
       <p className="text-2xl md:text-4xl">
         <Link href="/about">Polymath</Link>, currently{" "}
-        <Link href="/portfolio">Designer</Link>. See
-        what I am <Link href="/blog">writing</Link>,{" "}
-        <Link href="/books">reading</Link> or <Link href="/now">doing now</Link>
-        .
+        <Link href="/portfolio">Designer</Link>. See what I am{" "}
+        <Link href="/blog">writing</Link>, <Link href="/books">reading</Link> or{" "}
+        <Link href="/now">doing now</Link>.
       </p>
     </section>
   );
