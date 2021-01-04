@@ -42,6 +42,9 @@ const Menu = () => (
           <li onClick={close}>
             <Link href="/books">Reading</Link>
           </li>
+          <li onClick={close}>
+            <Link href="/portfolio">Portfolio</Link>
+          </li>
         </ul>
       </div>
     )}
