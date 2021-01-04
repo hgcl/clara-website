@@ -20,12 +20,20 @@ export default function About({}) {
             terminology and best practices—so don't take my word for it.
           </p>
           <h2>The big picture</h2>
-          <p>I envision this website as my personal corner of the internet—my very own playground. I am experimenting on it and have a few things planned ahead. Check out the <Link href="https://github.com/hgcl/clara-website/blob/main/README.md">Roadmap</Link> to know more.</p>
+          <p>
+            I envision this website as my personal corner of the internet—my
+            very own playground. I am experimenting on it and have a few things
+            planned ahead. Check out the{" "}
+            <Link href="https://github.com/hgcl/clara-website/blob/main/README.md">
+              Roadmap
+            </Link>{" "}
+            to know more.
+          </p>
           <p>
             Feel free to send me any feedback / improvement ideas on Twitter{" "}
             <Link href="https://twitter.com/clara__le">@clara__le</Link>
           </p>
-          
+
           <h2>Building Blocks</h2>
           <ul>
             <li>
