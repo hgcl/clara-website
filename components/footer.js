@@ -37,7 +37,8 @@ export default function Footer() {
         </div>
         <p className="text-center">
           This website is built with{" "}
-          <Link href="https://nextjs.org/">Next.js</Link>. <Link href="/about-this-website">Learn more about it.</Link>
+          <Link href="https://nextjs.org/">Next.js</Link>.{" "}
+          <Link href="/about-this-website">Learn more about it.</Link>
         </p>
       </div>
     </footer>
