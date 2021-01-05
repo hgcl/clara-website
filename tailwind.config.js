@@ -26,7 +26,11 @@ module.exports = {
       2: "2 2 0%",
     },
     fontFamily: {
-      'smallcaps': ["SourceSansProSmallCaps", "Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans]
+      smallcaps: [
+        "SourceSansProSmallCaps",
+        "Source\\ Sans\\ Pro",
+        ...defaultTheme.fontFamily.sans,
+      ],
     },
     extend: {
       typography: {

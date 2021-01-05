@@ -3,38 +3,38 @@
 /* Write your own custom base styles here */
 
 @layer base {
-	@font-face {
-		font-family: "SourceSansProSmallCaps";
-		src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
-		font-weight: 400;
-		font-style: normal;
-	}
-	html {
-		@apply bg-gray-dark text-white;
-	}
-	/* TODO add a rainbow gradient transition on link hover */
-	a:hover,
-	a:active,
-	a:focus {
-		@apply text-accent;
-	}
-	a:hover {
-		@apply transition duration-500;
-	}
-	h1,
-	h2,
-	h3 {
-		@apply font-serif;
-	}
-	ul {
-		@apply list-disc;
-	}
-	ol {
-		@apply list-decimal;
-	}
-	kbd {
-		@apply text-sm bg-black px-2 py-1 rounded;
-	}
+  @font-face {
+    font-family: "SourceSansProSmallCaps";
+    src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  html {
+    @apply bg-gray-dark text-white;
+  }
+  /* TODO add a rainbow gradient transition on link hover */
+  a:hover,
+  a:active,
+  a:focus {
+    @apply text-accent;
+  }
+  a:hover {
+    @apply transition duration-500;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  kbd {
+    @apply text-sm bg-black px-2 py-1 rounded;
+  }
 }
 
 /* Start purging... */
@@ -43,9 +43,9 @@
 
 /* Write you own custom component styles here */
 @layer components {
-	.comment {
-		@apply text-gray-regular;
-	}
+  .comment {
+    @apply text-gray-regular;
+  }
 }
 
 /* Start purging... */
@@ -54,8 +54,8 @@
 
 /* Your own custom utilities */
 @layer utilities {
-	.all-small-caps {
-		font-variant-caps: all-small-caps;
-		@apply font-smallcaps;
-	}
+  .all-small-caps {
+    font-variant-caps: all-small-caps;
+    @apply font-smallcaps;
+  }
 }
