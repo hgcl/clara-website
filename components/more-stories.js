@@ -3,7 +3,7 @@ import PostPreview from "./post-preview";
 export default function MoreStories({ posts }) {
   return (
     <section className="lg:flex">
-      <h2 className="flex-auto mb-8 mr-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="flex-auto mb-8 mr-8 text-6xl md:text-7xl font-medium tracking-tighter leading-tight">
         Here's What's New
       </h2>
       <div className="flex-auto max-w-2xl mt-2">
