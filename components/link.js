@@ -5,7 +5,7 @@ export default function Link({ href, as, children, className, variant }) {
   const linkStyles =
     variant === "heading"
       ? `capitalize ${className}`
-      : `${className} all-small-caps`;
+      : `${className} all-small-caps transition duration-500 hover:text-accent focus:text-accent`;
   if (isExternal) {
     return (
       <a
