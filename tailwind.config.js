@@ -25,6 +25,9 @@ module.exports = {
       1: "1 1 0%",
       2: "2 2 0%",
     },
+    fontFamily: {
+      'smallcaps': ["SourceSansProSmallCaps", "Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans]
+    },
     extend: {
       typography: {
         // Not possible to override p TopMargin without resetting all the sizes / spacings. I chose to override *everything* instead until tailwindcss typography supports different margins.

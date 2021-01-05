@@ -5,7 +5,7 @@ export default function Link({ href, as, children, className, variant }) {
   const linkStyles =
     variant === "heading"
       ? `capitalize ${className}`
-      : `${className} tracking-wide all-small-caps`;
+      : `${className} all-small-caps`;
   if (isExternal) {
     return (
       <a
