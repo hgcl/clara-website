@@ -22,7 +22,7 @@ const Menu = () => (
     overlayStyle={overlayStyle}
     contentStyle={contentStyle}
     closeOnDocumentClick={false}
-    trigger={(open) => <BurgerIcon open={open} />}
+    trigger={(open) => <BurgerIcon aria-label="Menu" open={open} />}
   >
     {(close) => (
       <div className="menu w-full block text-center p-0">
