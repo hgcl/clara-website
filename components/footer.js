@@ -15,23 +15,23 @@ export default function Footer() {
       <div className="flex flex-col items-center text-gray-regular h-full justify-end mb-16">
         <div className="flex flex-row items-center mb-8">
           <span className={iconStyle}>
-            <Link href="https://twitter.com/clara__le">
+            <Link href="https://twitter.com/clara__le" aria-label="Twitter">
               <IconTwitter height={iconHeight} fill={iconFill} />
             </Link>
           </span>
           <span className={iconStyle}>
-            <Link href="https://lifeundercontrol.etsy.com">
+            <Link href="https://lifeundercontrol.etsy.com" aria-label="Etsy">
               <IconEtsy height={iconHeight} fill={iconFill} />
             </Link>
           </span>
           <span className={iconStyle}>
-            <Link href="https://github.com/hgcl/">
+            <Link href="https://github.com/hgcl/" aria-label="GitHub">
               <IconGithub height={iconHeight} fill={iconFill} />
             </Link>
           </span>
           <span className={iconStyle}>
             <Link href="/rss.xml">
-              <IconRss height={iconHeight} fill={iconFill} />
+              <IconRss height={iconHeight} fill={iconFill} aria-label="RSS" />
             </Link>
           </span>
         </div>
