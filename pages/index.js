@@ -5,7 +5,6 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import Hcard from "../components/Hcard";
 
 export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
@@ -46,7 +45,6 @@ export default function Index({ allPosts }) {
           )} */}
         {allPosts.length > 0 && <MoreStories posts={latestPosts} />}
       </Container>
-      <Hcard />
     </Layout>
   );
 }
