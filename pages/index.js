@@ -13,6 +13,7 @@ export default function Index({ allPosts }) {
   return (
     <Layout>
       <Head>
+        <link rel="preload" as="font" href="/fonts/SourceSansPro-Regular.otf" type="opentype" crossorigin="anonymous"></link>
         <title>Clara Le</title>
       </Head>
       <Container>
