@@ -28,6 +28,13 @@
   kbd {
     @apply text-sm bg-black px-2 py-1 rounded;
   }
+  a {
+    @apply transition duration-500;
+  }
+  a:hover,
+  a:focus {
+    @apply text-accent;
+  }
 }
 
 /* Start purging... */
@@ -37,7 +44,7 @@
 /* Write you own custom component styles here */
 @layer components {
   .comment {
-    @apply text-gray-regular;
+    @apply text-gray-regular all-small-caps;
   }
 }
 

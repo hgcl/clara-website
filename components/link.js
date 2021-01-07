@@ -9,12 +9,10 @@ export default function Link({
   ...props
 }) {
   const isExternal = href.startsWith("http");
-  const commonStyles =
-    "transition duration-500 hover:text-accent focus:text-accent";
   const linkStyles =
     variant === "heading"
-      ? `${className} ${commonStyles} capitalize`
-      : `${className} ${commonStyles} all-small-caps`;
+      ? `${className} capitalize`
+      : `${className} all-small-caps`;
   if (isExternal) {
     return (
       <a
