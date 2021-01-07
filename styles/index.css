@@ -9,6 +9,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+    unicode-range: U+000-2AF; /* Download small caps ranges */
   }
   html {
     @apply bg-gray-dark text-white;
