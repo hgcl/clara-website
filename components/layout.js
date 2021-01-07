@@ -2,7 +2,7 @@
 import Footer from "./footer";
 import Meta from "./meta";
 import Menu from "./Menu";
-import Hcard from "../components/Hcard";
+import Hcard from "./Hcard";
 
 // Alert at page top + footer
 
