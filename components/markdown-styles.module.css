@@ -39,3 +39,11 @@
 .markdown h3 {
   @apply capitalize tracking-tighter;
 }
+
+/* Code */
+.markdown code {
+  @apply text-sm bg-black px-2 py-1 rounded;
+}
+.markdown pre {
+  @apply text-sm bg-black px-4 py-4 rounded;
+}
