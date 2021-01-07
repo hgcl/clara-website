@@ -21,15 +21,16 @@ export default function Index({ allPosts }) {
           crossorigin="anonymous"
         ></link>
         <title>Clara Le</title>
-        {/* Webmentions */}
+        {/* Following says where I want to receive webmentions */}
         <link
           rel="webmention"
           href="https://webmention.io/clarale.com/webmention"
         />
         <link rel="pingback" href="https://webmention.io/clarale.com/xmlrpc" />
-        {/* Authorization endpoint */}
+        {/* Authorization endpoint and set up microsub endpoint */}
         <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
         <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/591"/>
       </Head>
       <Container>
         <Intro />
