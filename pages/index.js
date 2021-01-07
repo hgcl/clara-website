@@ -21,6 +21,15 @@ export default function Index({ allPosts }) {
           crossorigin="anonymous"
         ></link>
         <title>Clara Le</title>
+        {/* Webmentions */}
+        <link
+          rel="webmention"
+          href="https://webmention.io/clarale.com/webmention"
+        />
+        <link rel="pingback" href="https://webmention.io/clarale.com/xmlrpc" />
+        {/* Authorization endpoint */}
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
       </Head>
       <Container>
         <Intro />
