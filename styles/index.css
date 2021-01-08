@@ -49,6 +49,9 @@
   .book-overlay {
     @apply bg-black bg-opacity-90 max-w-screen-sm;
   }
+  .menu-overlay {
+    @apply bg-accent2 bg-opacity-90;
+  }
 }
 
 /* Start purging... */

@@ -5,27 +5,17 @@ import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
 import Link from "./link";
 
-const overlayStyle = {
-  // TODO get these inline styles in theme
-  background: "#a52722",
-  opacity: 0.93,
-};
-
-const contentStyle = {
-  width: "80%",
-  border: "none",
-};
-
 const Menu = () => (
   <Popup
+    className="menu"
     modal
-    overlayStyle={overlayStyle}
-    contentStyle={contentStyle}
-    closeOnDocumentClick={false}
     trigger={(open) => <BurgerIcon aria-label="Menu" open={open} />}
   >
     {(close) => (
-      <div className="menu w-full block text-center p-0">
+      <div
+        onClick={close}
+        className="menu top-0 left-0 w-screen h-screen text-center flex justify-center items-center"
+      >
         <ul className="relative text-3xl list-none">
           <li onClick={close}>
             <Link href="/">Home</Link>

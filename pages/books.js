@@ -18,7 +18,7 @@ export default function Books({ allBooks }) {
             </>
           }
         />
-        <BookGrid books={allBooks} />
+        <BookGrid books={allBooks} dateLabel="Read on" />
       </Container>
     </Layout>
   );

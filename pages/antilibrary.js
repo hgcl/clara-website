@@ -14,7 +14,7 @@ export default function Antilibrary({ allBooks }) {
             "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
-        <BookGrid books={allBooks} />
+        <BookGrid books={allBooks} dateLabel="Added on" />
       </Container>
     </Layout>
   );
