@@ -462,6 +462,9 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      opacity: {
+        90: ".9",
+      },
       spacing: {
         28: "7rem",
       },
