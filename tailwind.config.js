@@ -426,6 +426,7 @@ module.exports = {
       },
       colors: {
         accent: "#ef4f37",
+        accent2: "#a52722",
         white: "#E5E7EB",
         black: "#0f0f0f",
         gray: {
