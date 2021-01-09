@@ -37,9 +37,11 @@ export default function BookNote({
         </ul>
       </button>
       <Popup open={open} onClose={closeModal} className="book">
-        {notes ? (
-          <div onClick={closeModal} className="flex items-center p-8 h-screen">
-            <div className="text-xl relative">
+        <div onClick={closeModal} className="top-0 right-0 w-screen sm:max-w-screen-sm">
+        <button aria-label="Close" className="absolute top-6 right-8 text-3xl leading-none line">&times;</button>
+        <div onClick={closeModal} className="flex items-center h-screen p-8">
+          {notes ? (
+            <div className="text-xl relative w-full md:pr-16">
               <div className="text-center md:text-left mb-8">
                 <div className="comment mb-4 md:fixed md:top-6">Notes</div>
                 <h2 className="text-3xl leading-snug mb-1">{title}</h2>
@@ -50,12 +52,13 @@ export default function BookNote({
                 {dateLabel} <DateFormatter dateString={date} />
               </p>
             </div>
-          </div>
-        ) : (
-          <p className="comment text-xl">
-            There isn’t any notes for this book.
-          </p>
-        )}
+          ) : (
+            <div className="relative w-full">
+              <div className="text-center text-xl comment">
+                <p>There isn’t any notes for this book.</p>
+            </div></div>
+          )}{" "}
+        </div></div>
       </Popup>
     </>
   );
