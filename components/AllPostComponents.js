@@ -5,6 +5,7 @@ import FigCaption from "./FigCaption";
 import Figure from "./Figure";
 import Link from "./link";
 import TopicTwoColumns from "./TopicTwoColumns";
+import ProgressBar from "./ProgressBar";
 
 //import as many components you're using collectively in all your posts
 const AllPostComponents = {
@@ -15,6 +16,7 @@ const AllPostComponents = {
   Figure,
   Link,
   TopicTwoColumns,
+  ProgressBar,
   // Any other component you want
 };
 export default AllPostComponents;

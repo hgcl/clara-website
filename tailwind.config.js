@@ -446,6 +446,14 @@ module.exports = {
       //   'book-grid': 'repeat(auto-fill, minmax(150px, 1fr))',
       // },
       inset: {
+        "-10": "-2.5rem",
+        "-8": "-2rem",
+        "-6": "-1.5rem",
+        "-5": "-1.25rem",
+        "-4": "-1rem",
+        "-3": "-0.75rem",
+        "-2": "-0.5rem",
+        "-1": "-0.25rem",
         1: "0.25rem",
         2: "0.5rem",
         3: "0.75rem",
@@ -467,6 +475,7 @@ module.exports = {
         90: ".9",
       },
       spacing: {
+        "2px": "2px",
         28: "7rem",
       },
     },
