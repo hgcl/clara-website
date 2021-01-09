@@ -467,6 +467,7 @@ module.exports = {
         90: ".9",
       },
       spacing: {
+        "2px": "2px",
         28: "7rem",
       },
     },
