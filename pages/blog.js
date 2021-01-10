@@ -22,7 +22,7 @@ const generateRssItem = (post) => `
 const generateRss = (posts) => `
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Blog - Clara Le</title>
+      <title>Clara Le | Blog</title>
       <link>https://clarale.com/blog</link>
       <description>[...]</description>
       <language>en</language>
