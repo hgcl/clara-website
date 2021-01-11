@@ -10,6 +10,7 @@ export default function BookNote({
   author,
   rating,
   notes,
+  review,
   date,
   dateLabel,
 }) {
@@ -48,16 +49,16 @@ export default function BookNote({
             &times;
           </button>
           <div onClick={closeModal} className="flex items-center h-screen p-8">
-            {notes ? (
+            {review || notes ? (
               <div className="text-xl relative w-full md:pr-16">
                 <div className="text-center md:text-left mb-8">
                   <div className="comment tracking mb-4 md:fixed md:top-6">
-                    Notes
+                    {review ? "Review" : "Notes"}
                   </div>
                   <h2 className="text-3xl leading-snug mb-1">{title}</h2>
                   <p>by {author}</p>
                 </div>
-                <p className="mb-6">{notes}</p>
+                <p className="mb-6">{review ? review : notes}</p>
                 <p className="text-base text-gray-regular">
                   {dateLabel} <DateFormatter dateString={date} />
                 </p>
