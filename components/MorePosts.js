@@ -7,7 +7,7 @@ import Container from "./container";
 import PostPreview from "./post-preview";
 
 export default function MorePosts({ posts }) {
-  const tagStyle = "pt-1/2 pb-1 px-3 mr-2 all-small-caps border-1";
+  const tagStyle = "pt-1/2 pb-1 px-3 mr-2 all-small-caps border-1 rounded-sm";
   const [filter, setFilter] = useState("");
   return (
     <Container>
