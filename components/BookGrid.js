@@ -20,6 +20,7 @@ export default function BookGrid({ books, dateLabel }) {
             isbn,
             notes,
             review,
+            link,
           } = book;
 
           return (
@@ -33,6 +34,7 @@ export default function BookGrid({ books, dateLabel }) {
                 review={review}
                 dateLabel={dateLabel}
                 date={date}
+                link={link}
               />
             </article>
           );

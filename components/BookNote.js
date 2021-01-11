@@ -3,6 +3,7 @@ import Image from "next/image";
 import DateFormatter from "../components/date-formatter";
 import Popup from "reactjs-popup";
 import React, { useState } from "react";
+import Link from "../components/link";
 
 export default function BookNote({
   coverUrl,
@@ -13,6 +14,7 @@ export default function BookNote({
   review,
   date,
   dateLabel,
+  link,
 }) {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
@@ -58,7 +60,12 @@ export default function BookNote({
                   <h2 className="text-3xl leading-snug mb-1">{title}</h2>
                   <p>by {author}</p>
                 </div>
-                <p className="mb-6">{review ? review : notes}</p>
+                <p className="mb-8">{review ? review : notes}</p>
+                {link && (
+                  <div className="mb-4">
+                    <Link href={link}>Recommendation source&ensp;→</Link>
+                  </div>
+                )}
                 <p className="text-base text-gray-regular">
                   {dateLabel} <DateFormatter dateString={date} />
                 </p>
