@@ -1,6 +1,6 @@
-import Rating from "../components/Rating";
+import BookNote from "../components/BookNote";
 
-export default function BookGrid({ books }) {
+export default function BookGrid({ books, dateLabel }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
   const gridStyle = {
     "grid-template-columns": "repeat(auto-fill, minmax(150px, 1fr))",
@@ -11,30 +11,27 @@ export default function BookGrid({ books }) {
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .map((book) => {
           const {
-            // date,
+            date,
             title,
             author,
             rating,
             // publish_date,
             coverUrl,
             isbn,
-            // notes,
+            notes,
           } = book;
 
           return (
             <article key={isbn}>
-              <img src={coverUrl} className="object-cover h-64 shadow-2xl" />
-              <ul>
-                <h2 className="mt-4 capitalize text-xl tracking-tight leading-snug">
-                  {title}
-                </h2>
-                <p className="mt-1 text-gray-regular leading-snug">{author}</p>
-                {rating && (
-                  <p className="text-gray-regular">
-                    <Rating rating={rating} />
-                  </p>
-                )}
-              </ul>
+              <BookNote
+                coverUrl={coverUrl}
+                title={title}
+                author={author}
+                rating={rating}
+                notes={notes}
+                dateLabel={dateLabel}
+                date={date}
+              />
             </article>
           );
         })}

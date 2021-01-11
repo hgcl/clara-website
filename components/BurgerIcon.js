@@ -1,19 +1,16 @@
 import React from "react";
 
-const styleBar = "bg-white absolute h-1 left-12 w-10";
+const styleBar = "bg-white absolute h-1 w-10 left-1 top-1";
 
 const BurgerIcon = ({ open, ...props }) => (
-  <div
-    className={`${
-      open ? "burger-menu open" : "burger-menu"
-    } z-50 block fixed bg-transparent cursor-pointer w-3xl w-4xl h-4xl top-1 md:top-2 right-28 md:right-32`}
+  <button
+    className="z-50 bg-transparent fixed h-8 w-12 top-6 md:top-8 right-4 md:right-10"
     {...props}
   >
-    <div className="bg-transparent absolute h-6 w-10 top-6 left-12"></div>
-    <div className={`${styleBar} top-6`}></div>
-    <div className={`${styleBar} top-8`}></div>
-    <div className={`${styleBar} top-10`}></div>
-  </div>
+    <div className={`${styleBar}`}></div>
+    <div className={`${styleBar} top-3`}></div>
+    <div className={`${styleBar} top-5`}></div>
+  </button>
 );
 
 // TODO add menu animation https://codingislove.com/hamburger-navigation-bar/

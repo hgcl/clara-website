@@ -12,6 +12,8 @@
     "@tailwindcss/typography": "^0.3.1",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "fontsource-source-sans-pro": "^4.0.0",
     "fontsource-vesper-libre": "^4.0.0",
     "framer-motion": "^3.1.1",
@@ -26,7 +28,7 @@
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
-    "prettier": "2.2.1",
+    "prettier": "^2.2.1",
     "tailwindcss": "^1.4.0"
   },
   "license": "MIT"

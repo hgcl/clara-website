@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
           <link
             rel="alternate"
             type="application/rss+xml"
-            title="RSS feed for blog posts from clarale.com"
+            title="Clara Le | Blog"
             href="https://clarale.com/rss.xml"
           />
         </Head>

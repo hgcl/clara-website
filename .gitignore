@@ -2,6 +2,7 @@
 
 # custom
 .post-template
+.drafts
 
 # dependencies
 /node_modules

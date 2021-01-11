@@ -10,14 +10,30 @@ export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
   const latestPosts = allPosts.slice(0, 3);
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>Clara Le</title>
-        </Head>
-        <Container>
-          <Intro />
-          {/* {heroPost && (
+    <Layout>
+      <Head>
+        <link
+          rel="preload"
+          as="font"
+          href="/fonts/SourceSansPro-Regular.otf"
+          type="opentype"
+          crossorigin="anonymous"
+        ></link>
+        <title>Clara Le</title>
+        {/* Following says where I want to receive webmentions */}
+        <link
+          rel="webmention"
+          href="https://webmention.io/clarale.com/webmention"
+        />
+        <link rel="pingback" href="https://webmention.io/clarale.com/xmlrpc" />
+        {/* Authorization endpoint and set up microsub endpoint */}
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/591" />
+      </Head>
+      <Container>
+        <Intro />
+        {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               // coverImage={heroPost.coverImage}
@@ -27,39 +43,9 @@ export default function Index({ allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {allPosts.length > 0 && <MoreStories posts={latestPosts} />}
-        </Container>
-        <section className="h-card hidden">
-          {/* About me */}
-          <span className="p-name">Clara Le</span>
-          <span className="p-note">
-            Hey! I'm Clara, polymath and currently working as a designer.
-          </span>
-
-          {/* Profile picture */}
-          <img
-            className="u-photo"
-            src="/assets/blog/authors/clara_20180514_132853_small.jpg"
-          />
-
-          {/* Links */}
-          <a className="u-url u-uid" href="https://clarale.com"></a>
-          <a
-            className="u-url"
-            rel="me"
-            href="https://twitter.com/clara__le"
-          ></a>
-          <a className="u-url" rel="me" href="https://github.com/hgcl"></a>
-
-          {/* Categories */}
-          <span className="p-category">Digital Garden</span>
-          <span className="p-category">Design</span>
-          <span className="p-category">Exploring</span>
-          <span className="p-category">Cooking and DIY Projects</span>
-          <span className="p-category">Sci-fi Books</span>
-        </section>
-      </Layout>
-    </>
+        {allPosts.length > 0 && <MoreStories posts={latestPosts} />}
+      </Container>
+    </Layout>
   );
 }
 

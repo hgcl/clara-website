@@ -51,7 +51,7 @@ export default function Now({}) {
             by Koponen and Hildén. It is very rich in content, so I am slowly
             going through it from the beginning.
           </p>
-          <p className="comment">
+          <p className="comment tracking">
             Inspired by the{" "}
             <Link href="https://nownownow.com/about">Now page</Link> concept
           </p>

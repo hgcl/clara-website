@@ -21,7 +21,7 @@ export default function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-xs tracking-widest uppercase mb-2">
+      <div className="text-base tracking all-small-caps mb-2">
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-normal">{excerpt}</p>

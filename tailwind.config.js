@@ -25,6 +25,13 @@ module.exports = {
       1: "1 1 0%",
       2: "2 2 0%",
     },
+    fontFamily: {
+      smallcaps: [
+        "SourceSansProSmallCaps",
+        "Source\\ Sans\\ Pro",
+        ...defaultTheme.fontFamily.sans,
+      ],
+    },
     extend: {
       typography: {
         // Not possible to override p TopMargin without resetting all the sizes / spacings. I chose to override *everything* instead until tailwindcss typography supports different margins.
@@ -419,6 +426,7 @@ module.exports = {
       },
       colors: {
         accent: "#ef4f37",
+        accent2: "#a52722",
         white: "#E5E7EB",
         black: "#0f0f0f",
         gray: {
@@ -438,6 +446,14 @@ module.exports = {
       //   'book-grid': 'repeat(auto-fill, minmax(150px, 1fr))',
       // },
       inset: {
+        "-10": "-2.5rem",
+        "-8": "-2rem",
+        "-6": "-1.5rem",
+        "-5": "-1.25rem",
+        "-4": "-1rem",
+        "-3": "-0.75rem",
+        "-2": "-0.5rem",
+        "-1": "-0.25rem",
         1: "0.25rem",
         2: "0.5rem",
         3: "0.75rem",
@@ -455,7 +471,11 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      opacity: {
+        90: ".9",
+      },
       spacing: {
+        "2px": "2px",
         28: "7rem",
       },
     },
