@@ -9,7 +9,7 @@ export default function Header({ pageDescription }) {
           <a>{WEBSITE_NAME}</a>
         </Link>
       </h2>
-      <p className="comment mb-20 ml-1 tracking-wide">{pageDescription}</p>
+      <p className="comment tracking mb-20 ml-1">{pageDescription}</p>
     </>
   );
 }

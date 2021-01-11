@@ -37,28 +37,40 @@ export default function BookNote({
         </ul>
       </button>
       <Popup open={open} onClose={closeModal} className="book">
-        <div onClick={closeModal} className="top-0 right-0 w-screen sm:max-w-screen-sm">
-        <button aria-label="Close" className="absolute top-6 right-8 text-3xl leading-none line">&times;</button>
-        <div onClick={closeModal} className="flex items-center h-screen p-8">
-          {notes ? (
-            <div className="text-xl relative w-full md:pr-16">
-              <div className="text-center md:text-left mb-8">
-                <div className="comment mb-4 md:fixed md:top-6">Notes</div>
-                <h2 className="text-3xl leading-snug mb-1">{title}</h2>
-                <p>by {author}</p>
+        <div
+          onClick={closeModal}
+          className="top-0 right-0 w-screen sm:max-w-screen-sm"
+        >
+          <button
+            aria-label="Close"
+            className="absolute top-6 right-8 text-3xl leading-none line"
+          >
+            &times;
+          </button>
+          <div onClick={closeModal} className="flex items-center h-screen p-8">
+            {notes ? (
+              <div className="text-xl relative w-full md:pr-16">
+                <div className="text-center md:text-left mb-8">
+                  <div className="comment tracking mb-4 md:fixed md:top-6">
+                    Notes
+                  </div>
+                  <h2 className="text-3xl leading-snug mb-1">{title}</h2>
+                  <p>by {author}</p>
+                </div>
+                <p className="mb-6">{notes}</p>
+                <p className="text-base text-gray-regular">
+                  {dateLabel} <DateFormatter dateString={date} />
+                </p>
               </div>
-              <p className="mb-6">{notes}</p>
-              <p className="text-base text-gray-regular">
-                {dateLabel} <DateFormatter dateString={date} />
-              </p>
-            </div>
-          ) : (
-            <div className="relative w-full">
-              <div className="text-center text-xl comment">
-                <p>There isn’t any notes for this book.</p>
-            </div></div>
-          )}{" "}
-        </div></div>
+            ) : (
+              <div className="relative w-full">
+                <div className="text-center text-xl comment">
+                  <p>There isn’t any notes for this book.</p>
+                </div>
+              </div>
+            )}{" "}
+          </div>
+        </div>
       </Popup>
     </>
   );

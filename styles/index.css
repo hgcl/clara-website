@@ -3,38 +3,38 @@
 /* Write your own custom base styles here */
 
 @layer base {
-	@font-face {
-		font-family: "SourceSansProSmallCaps";
-		src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
-		font-weight: 400;
-		font-style: normal;
-		font-display: swap;
-		unicode-range: U+000-2AF; /* Download small caps ranges */
-	}
-	html {
-		@apply bg-gray-dark text-white;
-	}
-	h1,
-	h2,
-	h3 {
-		@apply font-serif capitalize;
-	}
-	ul {
-		@apply list-disc;
-	}
-	ol {
-		@apply list-decimal;
-	}
-	kbd {
-		@apply text-sm bg-black px-2 py-1 rounded;
-	}
-	a {
-		@apply transition duration-500;
-	}
-	a:hover,
-	a:focus {
-		@apply text-accent;
-	}
+  @font-face {
+    font-family: "SourceSansProSmallCaps";
+    src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-2AF; /* Download small caps ranges */
+  }
+  html {
+    @apply bg-gray-dark text-white;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif capitalize;
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  kbd {
+    @apply text-sm bg-black px-2 py-1 rounded;
+  }
+  a {
+    @apply transition duration-500;
+  }
+  a:hover,
+  a:focus {
+    @apply text-accent;
+  }
 }
 
 /* Start purging... */
@@ -43,15 +43,18 @@
 
 /* Write you own custom component styles here */
 @layer components {
-	.comment {
-		@apply text-gray-regular all-small-caps;
-	}
-	.book-overlay {
-		@apply bg-black bg-opacity-90 max-w-screen-sm;
-	}
-	.menu-overlay {
-		@apply bg-accent2 bg-opacity-90;
-	}
+  .comment {
+    @apply font-smallcaps text-gray-regular all-small-caps text-base;
+  }
+  .tracking {
+    @apply tracking-wide;
+  }
+  .book-overlay {
+    @apply bg-black bg-opacity-90 max-w-screen-sm;
+  }
+  .menu-overlay {
+    @apply bg-accent2 bg-opacity-90;
+  }
 }
 
 /* Start purging... */
@@ -60,9 +63,9 @@
 
 /* Your own custom utilities */
 @layer utilities {
-	.all-small-caps {
-		font-variant-caps: all-small-caps;
-		font-feature-settings: "smcp";
-		@apply font-smallcaps;
-	}
+  .all-small-caps {
+    font-variant-caps: all-small-caps;
+    font-feature-settings: "smcp";
+    @apply font-smallcaps;
+  }
 }
