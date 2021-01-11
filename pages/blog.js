@@ -64,6 +64,7 @@ export async function getStaticProps() {
     // 'author',
     // 'coverImage',
     "excerpt",
+    "categories",
   ]);
   const rss = generateRss(allPosts);
 
