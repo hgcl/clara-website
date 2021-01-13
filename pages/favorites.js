@@ -4,7 +4,7 @@ import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import { categories, favoritesData } from "../data/favoritesData.js";
-import { getFavorites } from "../lib/favorites.js";
+import { getFavorites } from "../lib/getFavorites.js";
 
 export default function Favorites() {
   const allFavorites = getFavorites(favoritesData);

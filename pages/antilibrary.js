@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
 import BookGrid from "../components/BookGrid";
-import antilibraryData from "../lib/antilibraryData.js";
+import antilibraryData from "../data/antilibraryData.js";
 
 export default function Antilibrary({ allBooks }) {
   return (
