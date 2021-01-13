@@ -4,7 +4,7 @@ import Header from "../components/header";
 import Container from "../components/container";
 import BookGrid from "../components/BookGrid";
 import Link from "../components/link";
-import booksData from "../lib/booksData.js";
+import booksData from "../data/booksData.js";
 
 export default function Books({ allBooks }) {
   return (
