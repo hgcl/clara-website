@@ -3,40 +3,66 @@ import Header from "../components/header";
 import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
-import favoritesData from "../lib/favoritesData.js";
+import { categories, favoritesData } from "../lib/favoritesData.js";
 
 export default function Favorites({ allFavorites }) {
-  // const star = ;
+  const digitalGarden = "Digital Garden(ing)";
+  const cooking = "cooking";
   return (
     <Layout title="Favorites">
       <Container>
         <Header pageDescription={"Directory of cool resources"} />
         <div className="hidden lg:block">
-          <div className="fixed max-w-sm overflow-y-auto border-2 border-red-500">
+          <div className="fixed max-w-sm top-80 bottom-0 overflow-y-auto text-lg text-gray-regular">
             <ul className="list-none">
+              <li>
+                <Link href="#cooking">{cooking}</Link>
+              </li>
+              <li>
+                <Link href="#digital-garden">{digitalGarden}</Link>
+              </li>
               <li>this is an example</li>
               <li>this is an example</li>
               <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>this is an example</li>
+              <li>LAST EXAMPLE HERE</li>
             </ul>
           </div>
         </div>
         <div
-          className={`${markdownStyles["markdown"]} relative prose prose-lg lg:prose-xl pl-32 mx-auto max-w-3xl border-2 border-teal-400 `}
+          className={`${markdownStyles["markdown"]} relative prose prose-lg lg:prose-xl lg:pl-32 mx-auto max-w-3xl`}
         >
-          <h2>Digital Garden(ing)</h2>
-
-          {allFavorites.map((favoriteItem) => {
-            const { link, title, description, category, best } = favoriteItem;
-            return (
-              <div className="p-0">
-                <Link href={link}>
-                  {title}
-                  {best && <span>&ensp;✶</span>}
-                </Link>
-                <p>{description}</p>
-              </div>
-            );
-          })}
+          {Object.entries(categories).map(([key, value]) => (
+            <>
+              <h2 id={key}>{value}</h2>
+              {allFavorites
+                .filter((favoriteItem) => favoriteItem.category.includes(value))
+                .map((favoriteItem) => {
+                  const { link, title, description, best } = favoriteItem;
+                  return (
+                    <div>
+                      <Link href={link}>
+                        {title}
+                        {best && <span>&ensp;✶</span>}
+                      </Link>
+                      <p>{description}</p>
+                    </div>
+                  );
+                })}
+            </>
+          ))}
         </div>
       </Container>
     </Layout>
