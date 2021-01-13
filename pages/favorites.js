@@ -3,11 +3,11 @@ import Header from "../components/header";
 import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
-import { categories, favoritesData } from "../lib/favoritesData.js";
+import { categories, favoritesData } from "../data/favoritesData.js";
+import { getFavorites } from "../lib/favorites.js";
 
-export default function Favorites({ allFavorites }) {
-  const digitalGarden = "Digital Garden(ing)";
-  const cooking = "cooking";
+export default function Favorites() {
+  const allFavorites = getFavorites(favoritesData);
   return (
     <Layout title="Favorites">
       <Container>
@@ -16,10 +16,14 @@ export default function Favorites({ allFavorites }) {
           <div className="fixed max-w-sm top-80 bottom-0 overflow-y-auto text-lg text-gray-regular">
             <ul className="list-none">
               <li>
-                <Link href="#cooking">{cooking}</Link>
+                <Link href={`#${categories.cooking.anchor}`}>
+                  {categories.cooking.title}
+                </Link>
               </li>
               <li>
-                <Link href="#digital-garden">{digitalGarden}</Link>
+                <Link href={`#${categories.digitalGarden.anchor}`}>
+                  {categories.digitalGarden.title}
+                </Link>
               </li>
               <li>this is an example</li>
               <li>this is an example</li>
@@ -44,15 +48,17 @@ export default function Favorites({ allFavorites }) {
         <div
           className={`${markdownStyles["markdown"]} relative prose prose-lg lg:prose-xl lg:pl-32 mx-auto max-w-3xl`}
         >
-          {Object.entries(categories).map(([key, value]) => (
-            <>
-              <h2 id={key}>{value}</h2>
+          {Object.values(categories).map(({ title, anchor }) => (
+            <section key={anchor}>
+              <h2 id={anchor}>{title}</h2>
               {allFavorites
-                .filter((favoriteItem) => favoriteItem.category.includes(value))
+                .filter((favoriteItem) =>
+                  favoriteItem.category.includes(anchor)
+                )
                 .map((favoriteItem) => {
                   const { link, title, description, best } = favoriteItem;
                   return (
-                    <div>
+                    <div key={link}>
                       <Link href={link}>
                         {title}
                         {best && <span>&ensp;✶</span>}
@@ -61,34 +67,10 @@ export default function Favorites({ allFavorites }) {
                     </div>
                   );
                 })}
-            </>
+            </section>
           ))}
         </div>
       </Container>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const allFavorites = await getFavorites(favoritesData);
-
-  return {
-    props: { allFavorites },
-  };
-}
-
-export async function getFavorites(favoritesJson) {
-  const favoritesList = favoritesJson.map((item) => {
-    const { link, title, description, category, best } = item;
-
-    return {
-      link,
-      title,
-      description,
-      category,
-      best,
-    };
-  });
-
-  return favoritesList;
 }
