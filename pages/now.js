@@ -14,7 +14,7 @@ export default function Now({}) {
         <div
           className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
         >
-          <DatePost dateString="2021-01-01 17:04:10" lastUpdated />
+          <DatePost dateString="2021-01-13 08:47:21" lastUpdated />
           <p>
             Winter in Berlin is not the most exciting period–especially if you
             are in semi-lockdown. I spend most of this indoor time reading,
@@ -44,7 +44,7 @@ export default function Now({}) {
           </TopicTwoColumns>
           <h2>Reading</h2>
           <p>
-            I am currently reading the{" "}
+            I am currently reading{" "}
             <Link href="https://datavizhandbook.info/">
               The Data Visualization Handbook
             </Link>{" "}
