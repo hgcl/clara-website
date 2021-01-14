@@ -4,6 +4,7 @@ import DateFormatter from "../components/date-formatter";
 import Popup from "reactjs-popup";
 import React, { useState } from "react";
 import Link from "../components/link";
+import { ARROW, STAR } from "../lib/constants";
 
 export default function BookNote({
   coverUrl,
@@ -21,6 +22,11 @@ export default function BookNote({
   return (
     <>
       <button onClick={() => setOpen((o) => !o)} className="text-left">
+        <div className="absolute">
+          <div className="relative w-full -top-4 -left-2 text-2xl z-40">
+            {(review || notes) && `${STAR}`}
+          </div>
+        </div>
         <Image
           src={coverUrl}
           className="object-cover shadow-2xl"
@@ -63,7 +69,7 @@ export default function BookNote({
                 <p className="mb-8">{review ? review : notes}</p>
                 {link && (
                   <div className="mb-4">
-                    <Link href={link}>Recommendation source&ensp;→</Link>
+                    <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
                   </div>
                 )}
                 <p className="text-base text-gray-regular">

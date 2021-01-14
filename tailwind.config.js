@@ -481,6 +481,7 @@ module.exports = {
       spacing: {
         "2px": "2px",
         28: "7rem",
+        36: "9rem",
       },
     },
   },
