@@ -467,6 +467,10 @@ module.exports = {
         24: "6rem",
         28: "7rem",
         32: "8rem",
+        40: "9rem",
+        48: "10rem",
+        56: "11rem",
+        64: "12rem",
       },
       lineHeight: {
         tight: 1.2,
