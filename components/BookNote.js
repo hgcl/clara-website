@@ -20,19 +20,12 @@ export default function BookNote({
   const closeModal = () => setOpen(false);
   return (
     <>
-      <div className="text-left">
-        {review || notes ? (
-          <button aria-label={title} onClick={() => setOpen((o) => !o)}>
-            <BookTile
-              coverUrl={coverUrl}
-              title={title}
-              author={author}
-              rating={rating}
-              notes={notes}
-              review={review}
-            />
-          </button>
-        ) : (
+      {review || notes ? (
+        <button
+          className="text-left"
+          aria-label={title}
+          onClick={() => setOpen((o) => !o)}
+        >
           <BookTile
             coverUrl={coverUrl}
             title={title}
@@ -41,8 +34,20 @@ export default function BookNote({
             notes={notes}
             review={review}
           />
-        )}
-      </div>
+        </button>
+      ) : (
+        <div className="text-left">
+          <BookTile
+            coverUrl={coverUrl}
+            title={title}
+            author={author}
+            rating={rating}
+            notes={notes}
+            review={review}
+          />
+        </div>
+      )}
+
       <Popup open={open} onClose={closeModal} className="book">
         <div
           onClick={closeModal}
