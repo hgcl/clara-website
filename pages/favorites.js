@@ -12,7 +12,7 @@ export default function Favorites() {
     <Layout title="Favorites">
       <Container>
         <Header pageDescription={"Directory of cool resources"} />
-        <div className="relative lg:fixed max-w-sm top-80 overflow-y-auto text-lg text-gray-regular">
+        <div className="relative lg:fixed max-w-sm lg:top-56 bottom-0 overflow-y-auto w-48 text-lg text-gray-regular">
           <ul className="list-none">
             {Object.values(categories).map(({ title, anchor }) => (
               <li key={title}>
