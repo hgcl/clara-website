@@ -5,6 +5,7 @@ import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import { categories, favoritesData } from "../data/favoritesData.js";
 import { getFavorites } from "../lib/getFavorites.js";
+import { STAR } from "../lib/constants";
 
 export default function Favorites() {
   const allFavorites = getFavorites(favoritesData);
@@ -37,7 +38,7 @@ export default function Favorites() {
                     <div key={link}>
                       <Link href={link}>
                         {title}
-                        {best && <span>&ensp;✶</span>}
+                        {best && <span>&ensp;{STAR}</span>}
                       </Link>
                       <p>{description}</p>
                     </div>

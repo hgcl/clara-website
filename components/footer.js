@@ -1,4 +1,5 @@
 import Link from "./link";
+import { STAR } from "../lib/constants";
 
 // icons
 import IconTwitter from "../public/icons/IconTwitter";
@@ -38,7 +39,7 @@ export default function Footer() {
         <p className="text-center">
           Want to know{" "}
           <Link href="/about-this-website">how this website is built</Link>? —
-          Oh a&ensp;<Link href="/favorites">✶</Link>
+          Oh a <Link href="/favorites">{STAR}</Link>
         </p>
       </div>
     </footer>
