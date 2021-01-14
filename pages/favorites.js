@@ -12,38 +12,14 @@ export default function Favorites() {
     <Layout title="Favorites">
       <Container>
         <Header pageDescription={"Directory of cool resources"} />
-        <div className="hidden lg:block">
-          <div className="fixed max-w-sm top-80 bottom-0 overflow-y-auto text-lg text-gray-regular">
-            <ul className="list-none">
-              <li>
-                <Link href={`#${categories.cooking.anchor}`}>
-                  {categories.cooking.title}
-                </Link>
+        <div className="relative lg:fixed max-w-sm top-80 overflow-y-auto text-lg text-gray-regular">
+          <ul className="list-none">
+            {Object.values(categories).map(({ title, anchor }) => (
+              <li key={title}>
+                <Link href={`#${anchor}`}>{title}</Link>
               </li>
-              <li>
-                <Link href={`#${categories.digitalGarden.anchor}`}>
-                  {categories.digitalGarden.title}
-                </Link>
-              </li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>this is an example</li>
-              <li>LAST EXAMPLE HERE</li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
         <div
           className={`${markdownStyles["markdown"]} relative prose prose-lg lg:prose-xl lg:pl-32 mx-auto max-w-3xl`}

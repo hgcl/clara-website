@@ -37,7 +37,8 @@ export default function Footer() {
         </div>
         <p className="text-center">
           Want to know{" "}
-          <Link href="/about-this-website">how this website is built</Link>?
+          <Link href="/about-this-website">how this website is built</Link>? —
+          Oh a&ensp;<Link href="/favorites">✶</Link>
         </p>
       </div>
     </footer>
