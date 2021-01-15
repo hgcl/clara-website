@@ -27,6 +27,10 @@ export const categories = {
     title: "Map",
     anchor: "map",
   },
+  newsletter: {
+    title: "Newsletter",
+    anchor: "newsletter",
+  },
   personalWebsite: {
     title: "Personal Website",
     anchor: "personal-website",
@@ -46,6 +50,10 @@ export const categories = {
   thinking: {
     title: "Thinking",
     anchor: "thinking",
+  },
+  travel: {
+    title: "Travel",
+    anchor: "travel",
   },
   typography: {
     title: "Typography",
@@ -83,9 +91,9 @@ export const favoritesData = [
   },
   {
     link: "https://www.youtube.com/c/CuisineAndChill/",
-    title: "Cuisine And Chill (Youtube)",
+    title: "Cuisine And Chill (in French)",
     description:
-      "My number one cooking channel on Youtube (in French)—I have watched all of his videos and ask for more",
+      "My number one cooking channel on Youtube—I have watched all of his videos and ask for more",
     category: [categories.cooking.anchor],
     best: true,
   },
@@ -95,6 +103,14 @@ export const favoritesData = [
     description:
       "Browser extension to enable dark mode on websites not supporting dark mode—this saved my eyes so many times",
     category: [categories.techieTool.anchor],
+    best: true,
+  },
+  {
+    link: "https://www.densediscovery.com/",
+    title: "Dense Discovery",
+    description:
+      "Kai’s “curation newsletter” about design, productivity and society—love the personal intros and Worthy Five sections",
+    category: [categories.newsletter.anchor],
     best: false,
   },
   {
@@ -111,6 +127,14 @@ export const favoritesData = [
     description:
       "Searching for an alternative to Google Search? The privacy-friendly DuckDuckGo shouldn't need an introduction anymore.",
     category: [categories.privacy.anchor],
+    best: false,
+  },
+  {
+    link: "https://www.eaudepoisson.com/",
+    title: "eau de poisson (in French)",
+    description:
+      "Best travel blog on the internet! Not biased at all, even though it’s mine and Robin’s. Also, don’t pay attention to the very low new post frequency. And the coffee obsession.",
+    category: [categories.travel.anchor],
     best: false,
   },
   {
@@ -164,6 +188,14 @@ export const favoritesData = [
     description:
       "Highlight and annotate articles online—super cool open-source project.",
     category: [categories.techieTool.anchor],
+    best: true,
+  },
+  {
+    link: "https://ironicsans.substack.com/",
+    title: "Ironic Sans",
+    description:
+      "This newsletter always surprises me with random—but thoroughly researched—trivia.",
+    category: [categories.newsletter.anchor],
     best: false,
   },
   {
@@ -176,7 +208,7 @@ export const favoritesData = [
   },
   {
     link: "https://www.youtube.com/user/Maangchi",
-    title: "Maangchi (Youtube)",
+    title: "Maangchi",
     description:
       "If you are into Korean food, you certainly know Maangchi—the Korean mama that you always wished you had.",
     category: [categories.cooking.anchor],
@@ -191,7 +223,7 @@ export const favoritesData = [
   },
   {
     link: "https://www.youtube.com/c/mynameisandong/",
-    title: "My Name Is Andong (Youtube)",
+    title: "My Name Is Andong",
     description:
       "One of my favorite cooking channels on Youtube—informative, funny and dynamic",
     category: [categories.cooking.anchor],
@@ -219,7 +251,7 @@ export const favoritesData = [
     description:
       "Open-source software enabling you to create your personal knowledge base with Markdown files",
     category: [categories.digitalGarden.anchor],
-    best: false,
+    best: true,
   },
   {
     link: "https://omglord.com/",
@@ -227,6 +259,14 @@ export const favoritesData = [
     description:
       "Designer Gabby Lord shares amazing resources on her website and through her newsletter.",
     category: [categories.personalWebsite.anchor],
+    best: false,
+  },
+  {
+    link: "https://practicaltypography.com/",
+    title: "Practical Typography",
+    description:
+      "It’s not really a website, it’s not really a book. One thing is certain: it is a treasure chest of typographic knowledge.",
+    category: [categories.typography.anchor],
     best: false,
   },
   {
