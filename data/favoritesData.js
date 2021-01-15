@@ -23,9 +23,21 @@ export const categories = {
     title: "Map",
     anchor: "map",
   },
+  map: {
+    title: "Map",
+    anchor: "map",
+  },
+  personalWebsite: {
+    title: "Personal Website",
+    anchor: "personal-website",
+  },
   privacy: {
     title: "Privacy",
     anchor: "privacy",
+  },
+  productivity: {
+    title: "Productivity",
+    anchor: "productivity",
   },
   techieTool: {
     title: "Techie Tool",
@@ -62,20 +74,20 @@ export const favoritesData = [
     best: false,
   },
   {
-    link: "https://www.youtube.com/c/CuisineAndChill/",
-    title: "Cuisine And Chill (Youtube)",
-    description:
-      "My number one cooking channel on Youtube (in French)—I have watched all of his videos and ask for more",
-    category: [categories.cooking.anchor],
-    best: true,
-  },
-  {
     link: "https://www.horsepaste.com/",
     title: "Codenames",
     description:
       "I love codenames and have the actual game at home. This online version works great for remote play.",
     category: [categories.game.anchor],
     best: false,
+  },
+  {
+    link: "https://www.youtube.com/c/CuisineAndChill/",
+    title: "Cuisine And Chill (Youtube)",
+    description:
+      "My number one cooking channel on Youtube (in French)—I have watched all of his videos and ask for more",
+    category: [categories.cooking.anchor],
+    best: true,
   },
   {
     link: "https://darkreader.org/",
@@ -139,10 +151,18 @@ export const favoritesData = [
     best: false,
   },
   {
+    link: "https://dev.w3.org/html5/html-author/charref",
+    title: "HTML Character Reference Chart",
+    description:
+      "Ever wondered how to write a character in HTML? Here is a full list of them that I just can’t stop looking at.",
+    category: [categories.techieTool.anchor],
+    best: false,
+  },
+  {
     link: "https://hypothes.is/",
     title: "Hypothesis",
     description:
-      "Online tool for highlighting, annotating and sharing insights—super cool open-source project",
+      "Highlight and annotate articles online—super cool open-source project.",
     category: [categories.techieTool.anchor],
     best: false,
   },
@@ -186,11 +206,27 @@ export const favoritesData = [
     best: false,
   },
   {
+    link: "https://www.notion.so/",
+    title: "Notion",
+    description:
+      "I completely adopted this online platform to organize my personal and professional life. I would love to find an open-source alternative, but there is nothing comparing to Notion yet.",
+    category: [categories.productivity.anchor],
+    best: false,
+  },
+  {
     link: "https://obsidian.md/",
     title: "Obsidian.md",
     description:
       "Open-source software enabling you to create your personal knowledge base with Markdown files",
     category: [categories.digitalGarden.anchor],
+    best: false,
+  },
+  {
+    link: "https://omglord.com/",
+    title: "OMGLORD",
+    description:
+      "Designer Gabby Lord shares amazing resources on her website and through her newsletter.",
+    category: [categories.personalWebsite.anchor],
     best: false,
   },
   {
