@@ -2,6 +2,7 @@ import Rating from "../components/Rating";
 import Image from "next/image";
 import { STAR } from "../lib/constants";
 
+// TODO Delete BookTile and implement as an arrow function in BookNote directly (see /blog)
 export default function BookTile({
   review,
   notes,
