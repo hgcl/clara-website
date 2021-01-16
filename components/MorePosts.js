@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // Code very similar to more-stories.js
 
-import Header from "./header";
 import Container from "./container";
 import PostPreview from "./post-preview";
 
@@ -23,11 +22,11 @@ export default function MorePosts({ posts }) {
           </button>
           <button
             className={`${
-              filter === "review"
+              filter === "weekly-review"
                 ? "border-accent"
                 : "border-gray-regular text-gray-regular"
             } ${tagStyle}`}
-            onClick={() => setFilter("review")}
+            onClick={() => setFilter("weekly-review")}
           >
             Reviews
           </button>
