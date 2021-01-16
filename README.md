@@ -14,3 +14,19 @@ Want to know what I used to build my website? [Have a look here.](https://claral
 - Pages: add portfolio ✅
 - Connect to digital garden
 - More advanced IndieWeb features: add [tokens](https://tokens.indieauth.com/), add Webmentions
+
+## Commits with emojis
+
+| Emoji | GFM shortcode | Use |
+| :--- | :--- | :--- |
+| :tada: | `:tada:` | initial commit |
+| :sparkles: | `:sparkles:` | when adding a new user-facing feature |
+| :lipstick: | `:lipstick:` | when improving UI |
+| :bug: | `:bug:` | when fixing a bug |
+| :recycle: | `:recycle:` | when refactoring code |
+| :wrench: | `:wrench:` | when updating config files |
+| :handshake: | `:handshake:` | when adding or removing dependencies |
+| :pencil: | `:pencil:` | when writing docs (e.g. README, code comments) |
+| :zap: | `:zap:` | when making very big changes |
+
+_Inspired by [Emoji Commit Messages](https://github.com/cooperka/emoji-commit-messages)_
