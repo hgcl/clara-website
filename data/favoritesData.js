@@ -74,6 +74,13 @@ export const favoritesData = [
     best: false,
   },
   {
+    link: "https://beautifulwebtype.com/",
+    title: "Beautiful Web Type",
+    description: "A curated collection of open-source typefaces and pairings",
+    category: [categories.typography.anchor],
+    best: false,
+  },
+  {
     link: "https://berlinfoodstories.com/",
     title: "Berlin Food Stories",
     description:
