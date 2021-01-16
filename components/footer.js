@@ -12,7 +12,7 @@ export default function Footer() {
   const iconHeight = "h-4";
   const iconFill = "fill-current text-gray-regular";
   return (
-    <footer className="bg-gray-dark h-40 mb-16">
+    <footer className="bg-gray-dark h-56 mb-16">
       <div className="flex flex-col items-center text-gray-regular h-full justify-end mb-16">
         <div className="flex flex-row items-center mb-8">
           <span className={iconStyle}>
