@@ -7,6 +7,7 @@ import IconEtsy from "../public/icons/IconEtsy";
 import IconRss from "../public/icons/IconRss";
 import IconGithub from "../public/icons/IconGithub";
 
+// TODO add fade in animation
 export default function Footer() {
   const iconStyle = "mx-2";
   const iconHeight = "h-4";
