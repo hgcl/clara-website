@@ -33,14 +33,10 @@ const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
           // animate={{ opacity: 1 }}
         >
           {/* Modal container / overlay */}
-          <div
-            {...props}
-            className="border-2 border-red-500 fixed w-screen h-screen"
-            onClick={onClose}
-          >
+          <div {...props} className="fixed w-screen h-screen" onClick={onClose}>
             {/* Modal pop-up */}
             <div
-              className="border-2 border-green-500 fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
+              className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
               onClick={onClose}
               style={
                 {

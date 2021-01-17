@@ -18,11 +18,8 @@ export default function Layout({ preview, children, title }) {
       <Meta title={title} />
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
-        <motion.nav className="border-2 border-orange-500 z-50 sticky top-8 right-0 w-16 ml-auto">
-          <MenuToggle
-            toggle={() => setOpen((o) => !o)}
-            className="border-2 border-yellow-500"
-          />
+        <motion.nav className="z-50 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
+          <MenuToggle toggle={() => setOpen((o) => !o)} />
           <Menu open={open} onClose={closeModal} />
         </motion.nav>
         <Hcard />
