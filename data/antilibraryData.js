@@ -20,7 +20,7 @@ export default [
     date: "2021-01-14 12:17:08",
     title: "1984",
     author: "Fido Nesti",
-    isbn: "XX",
+    isbn: "9782246825760",
     notes:
       "While browsing books on Open Library, I stumbled upon this graphic novel version of 1984 by Fido Nesti. This being a graphic novel, I pre-judge it by its cover and don’t think twice before adding it to my antilibrary.",
   },
