@@ -27,6 +27,7 @@ Want to know what I used to build my website? [Have a look here.](https://claral
 | :wrench: | `:wrench:` | when updating config files |
 | :handshake: | `:handshake:` | when adding or removing dependencies |
 | :pencil: | `:pencil:` | when writing docs (e.g. README, code comments) |
+| :construction: | `:construction:` | for work in progress that should not be merged |
 | :zap: | `:zap:` | when making very big changes |
 
 _Inspired by [Emoji Commit Messages](https://github.com/cooperka/emoji-commit-messages)_
