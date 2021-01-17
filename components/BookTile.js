@@ -14,7 +14,7 @@ export default function BookTile({
   return (
     <>
       <div className="absolute">
-        <div className="relative w-full -top-4 -left-2 text-2xl z-40">
+        <div className="relative w-full -top-4 -left-2 text-2xl z-10">
           {(review || notes) && `${STAR}`}
         </div>
       </div>

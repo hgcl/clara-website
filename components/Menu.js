@@ -1,44 +1,103 @@
-// Menu from this package https://react-popup.elazizi.com/
-
-import React from "react";
-import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
 import Link from "./link";
+import React from "react";
+import PropTypes from "prop-types";
+import { motion, AnimatePresence } from "framer-motion";
 
-const Menu = () => (
-  <Popup
-    className="menu"
-    modal
-    trigger={(open) => <BurgerIcon aria-label="Menu" open={open} />}
-  >
-    {(close) => (
-      <div
-        onClick={close}
-        className="menu top-0 left-0 w-screen h-screen text-center flex justify-center items-center"
-      >
-        <ul className="relative text-3xl list-none">
-          <li onClick={close}>
-            <Link href="/">Home</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/about">About</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/now">Now</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/blog">Writing</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/books">Reading</Link>
-          </li>
-          <li onClick={close}>
-            <Link href="/portfolio">Portfolio</Link>
-          </li>
-        </ul>
-      </div>
-    )}
-  </Popup>
-);
+/**
+ * A modal is an overlay that focuses the customer's attention on a single task or set of controls.
+ * It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it.
+ * Users must interact with the modal window before they can return to the parent application.
+ */
+const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
+  const keydownHandler = ({ key }) => {
+    switch (key) {
+      case "Escape":
+        onClose();
+        break;
+      default:
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", keydownHandler);
+    return () => document.removeEventListener("keydown", keydownHandler);
+  });
+
+  return (
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          key="modal"
+          exit={{ opacity: 0 }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+        >
+          {/* Modal container / overlay */}
+          <div {...props} className="fixed w-screen h-screen" onClick={onClose}>
+            {/* Modal pop-up */}
+            <div
+              className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
+              onClick={onClose}
+              style={
+                {
+                  // opacity: open ? 1.0 : 0,
+                  // animation: open
+                  //   ? "none"
+                  //   : `0% { top: 131px; }
+                  // 30% { top: 125px; } 0.4s`,
+                  // transition: "all ease 0.2s",
+                  // transitionDelay: "0.2s",
+                }
+              }
+            >
+              {!hideCloseButton && (
+                <div className="absolute top-4 right-8 text-4xl">
+                  <button onClick={onClose}>&times;</button>
+                </div>
+              )}
+              <ul className="relative text-3xl list-none">
+                <li onClick={onClose}>
+                  <Link href="/">Home</Link>
+                </li>
+                <li onClick={onClose}>
+                  <Link href="/about">About</Link>
+                </li>
+                <li onClick={onClose}>
+                  <Link href="/now">Now</Link>
+                </li>
+                <li onClick={onClose}>
+                  <Link href="/blog">Writing</Link>
+                </li>
+                <li onClick={onClose}>
+                  <Link href="/books">Reading</Link>
+                </li>
+                <li onClick={onClose}>
+                  <Link href="/portfolio">Portfolio</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};
+
+Menu.displayName = "Modal";
+
+// Menu.defaultProps = {
+//   container: document.body,
+// };
+
+Menu.propTypes = {
+  /** is modal open */
+  open: PropTypes.bool,
+  /** modal container by default document.body */
+  container: PropTypes.bool,
+  /** called on click close modal */
+  onClose: PropTypes.bool,
+  /** flag removes close button if enabled */
+  hideCloseButton: PropTypes.bool,
+};
 
 export default Menu;
