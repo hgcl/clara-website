@@ -51,7 +51,7 @@ const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
               }
             >
               {!hideCloseButton && (
-                <div className="absolute top-0 right-0 py-0 px-4 text-3xl">
+                <div className="absolute top-4 right-8 text-4xl">
                   <button onClick={onClose}>&times;</button>
                 </div>
               )}
