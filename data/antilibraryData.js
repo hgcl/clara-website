@@ -8,14 +8,31 @@
 
 export default [
   {
+    date: "2021-01-15 12:17:17",
+    title: "Classic Food of China",
+    author: "Yan-Kit So",
+    isbn: "9780333569078",
+    notes:
+      "I have been digitally browsing a lot of cookbooks recently. Expert on Chinese cooking Fuchsia Dunlop warmly recommends Classic Food of China by Yan-Kit So. What I like about this book is that it’s not only about food as it also gives insights about culture and history.",
+    link: "https://fivebooks.com/best-books/fuchsia-dunlop-on-chinese-food/",
+  },
+  {
+    date: "2021-01-14 12:17:08",
+    title: "1984",
+    author: "Fido Nesti",
+    isbn: "XX",
+    notes:
+      "While browsing books on Open Library, I stumbled upon this graphic novel version of 1984 by Fido Nesti. This being a graphic novel, I pre-judge it by its cover and don’t think twice before adding it to my antilibrary.",
+  },
+  {
     date: "2021-01-11 11:36:21",
     title: "The Art of Fermentation",
     author: "Sandor Ellix Katz",
     isbn: "9781452662022",
     notes:
       "In “The Preserve Journal Issue 4”, Kaszmarzyk says “I believe everyone goes through the same thing when they receive their first copy of The Art of Fermentation: you spend days with it. You bond and form a relationship like no other with it, because it's neither a recipe book nor a nonfiction novel, it is its own special world.”",
-  }, 
-  { 
+  },
+  {
     date: "2021-01-10 13:16:05",
     title: "Straw Dogs",
     author: "John Gray",
