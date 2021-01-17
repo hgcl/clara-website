@@ -8,8 +8,22 @@ import { motion, AnimatePresence } from "framer-motion";
  * It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it.
  * Users must interact with the modal window before they can return to the parent application.
  */
-const Menu = React.forwardRef(
-  ({ open, container, hideCloseButton, onClose, ...props }, ref) => (
+const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
+  const keydownHandler = ({ key }) => {
+    switch (key) {
+      case "Escape":
+        onClose();
+        break;
+      default:
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", keydownHandler);
+    return () => document.removeEventListener("keydown", keydownHandler);
+  });
+
+  return (
     <AnimatePresence>
       {open && (
         <motion.div
@@ -22,7 +36,6 @@ const Menu = React.forwardRef(
           <div
             {...props}
             className="border-2 border-red-500 fixed w-screen h-screen"
-            ref={ref}
             onClick={onClose}
           >
             {/* Modal pop-up */}
@@ -71,8 +84,8 @@ const Menu = React.forwardRef(
         </motion.div>
       )}
     </AnimatePresence>
-  )
-);
+  );
+};
 
 Menu.displayName = "Modal";
 
