@@ -22,7 +22,7 @@ Want to know what I used to build my website? [Have a look here.](https://claral
 | :tada: | `:tada:` | initial commit |
 | :sparkles: | `:sparkles:` | when adding a new user-facing feature |
 | :lipstick: | `:lipstick:` | when improving UI |
-| :pen: | `:pen:` | when adding a new blog post |
+| :pen: | `:pen:` | when adding a new blog post or data |
 | :bug: | `:bug:` | when fixing a bug |
 | :recycle: | `:recycle:` | when refactoring code |
 | :wrench: | `:wrench:` | when updating config files |
