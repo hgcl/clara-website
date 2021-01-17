@@ -28,6 +28,21 @@
 
 .markdown a {
   font-variant-caps: all-small-caps;
+  font-feature-settings: "smcp";
+  @apply font-smallcaps;
+}
+
+/* Lists */
+.markdown ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.markdown ol li {
+  counter-increment: my-awesome-counter;
+}
+.markdown ol li::marker {
+  content: counter(my-awesome-counter) ". ";
+  @apply font-serif;
 }
 
 /* Headings */
