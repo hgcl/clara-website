@@ -57,5 +57,5 @@
   @apply text-sm bg-black px-2 py-1 rounded;
 }
 .markdown pre {
-  @apply text-sm bg-black px-4 py-4 rounded;
+  @apply text-sm bg-black px-4 py-4 rounded whitespace-pre-wrap;
 }
