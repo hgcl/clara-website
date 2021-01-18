@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
  * It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it.
  * Users must interact with the modal window before they can return to the parent application.
  */
-const Menu = ({ open, container, hideCloseButton, onClose }) => {
+const Menu = ({ open, hideCloseButton, onClose }) => {
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
@@ -85,10 +85,6 @@ const Menu = ({ open, container, hideCloseButton, onClose }) => {
 };
 
 Menu.displayName = "Modal";
-
-// Menu.defaultProps = {
-//   container: document.body,
-// };
 
 Menu.propTypes = {
   /** is modal open */

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Dot({ width, fill, opacity }) {
+function Dot({ className, opacity }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 301.89 300.06"
-      className={`${width} ${fill}`}
+      className={className}
       focusable="false"
       aria-hidden="true"
     >
