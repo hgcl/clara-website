@@ -1,11 +1,11 @@
 import React from "react";
 
-function IconEtsy({ height, fill }) {
+function IconEtsy({ svgClassName }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 68.48 78.05"
-      className={`${height} ${fill}`}
+      className={svgClassName}
       focusable="false"
       aria-hidden="true"
     >

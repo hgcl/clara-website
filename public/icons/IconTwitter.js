@@ -1,11 +1,11 @@
 import React from "react";
 
-function IconTwitter({ height, fill }) {
+function IconTwitter({ svgClassName }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      className={`${height} ${fill}`}
+      className={svgClassName}
       focusable="false"
       aria-hidden="true"
     >

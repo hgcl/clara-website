@@ -1,10 +1,10 @@
 import React from "react";
 
-function IconGithub({ height, fill }) {
+function IconGithub({ svgClassName }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${height} ${fill}`}
+      className={svgClassName}
       viewBox="0 0 16 16"
       focusable="false"
       aria-hidden="true"

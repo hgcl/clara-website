@@ -1,11 +1,11 @@
 import React from "react";
 
-function IconRss({ height, fill }) {
+function IconRss({ svgClassName }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 640 640"
-      className={`${height} ${fill}`}
+      className={svgClassName}
       focusable="false"
       aria-hidden="true"
     >

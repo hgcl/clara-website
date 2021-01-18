@@ -10,37 +10,40 @@ import IconGithub from "../public/icons/IconGithub";
 // TODO add fade in animation
 export default function Footer() {
   const iconStyle = "mx-2";
-  const iconHeight = "h-4";
-  const iconFill = "fill-current text-gray-regular";
+  const svgStyle =
+    "h-4 fill-current text-gray-regular transition duration-500 hover:text-accent";
   return (
     <footer className="bg-gray-dark h-56 mb-16">
       <div className="flex flex-col items-center text-gray-regular h-full justify-end mb-16 mx-8">
         <div className="flex flex-row items-center mb-8 mx-4">
           <span className={iconStyle}>
             <Link href="https://twitter.com/clara__le" aria-label="Twitter">
-              <IconTwitter height={iconHeight} fill={iconFill} />
+              <IconTwitter svgClassName={svgStyle} />
             </Link>
           </span>
           <span className={iconStyle}>
             <Link href="https://lifeundercontrol.etsy.com" aria-label="Etsy">
-              <IconEtsy height={iconHeight} fill={iconFill} />
+              <IconEtsy svgClassName={svgStyle} />
             </Link>
           </span>
           <span className={iconStyle}>
             <Link href="https://github.com/hgcl/" aria-label="GitHub">
-              <IconGithub height={iconHeight} fill={iconFill} />
+              <IconGithub svgClassName={svgStyle} />
             </Link>
           </span>
           <span className={iconStyle}>
             <Link href="/rss.xml">
-              <IconRss height={iconHeight} fill={iconFill} aria-label="RSS" />
+              <IconRss svgClassName={svgStyle} aria-label="RSS" />
             </Link>
           </span>
         </div>
         <p className="text-center">
           Want to know{" "}
           <Link href="/about-this-website">how this website is built</Link>? —
-          Oh a <Link href="/favorites">{STAR}</Link>
+          Oh a{" "}
+          <Link href="/favorites" aria-label="favorites page">
+            {STAR}
+          </Link>
         </p>
       </div>
     </footer>
