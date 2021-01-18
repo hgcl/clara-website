@@ -22,7 +22,7 @@ export default function Layout({ preview, children, title }) {
           {!open && (
             <MenuToggle
               toggle={() => setOpen((o) => !o)}
-              className="absolute"
+              className="absolute transition duration-300 transform hover:-rotate-90"
             />
           )}
         </motion.nav>
