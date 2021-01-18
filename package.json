@@ -22,7 +22,6 @@
     "next-mdx-remote": "^2.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "reactjs-popup": "^2.0.4",
     "remark": "11.0.2",
     "remark-html": "10.0.0"
   },

@@ -1,4 +1,5 @@
 import Link from "./link";
+import { CLOSE } from "../lib/constants";
 import React from "react";
 import PropTypes from "prop-types";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
  * It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it.
  * Users must interact with the modal window before they can return to the parent application.
  */
-const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
+const Menu = ({ open, container, hideCloseButton, onClose }) => {
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
@@ -33,7 +34,7 @@ const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
           // animate={{ opacity: 1 }}
         >
           {/* Modal container / overlay */}
-          <div {...props} className="fixed w-screen h-screen" onClick={onClose}>
+          <div className="fixed w-screen h-screen" onClick={onClose}>
             {/* Modal pop-up */}
             <div
               className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
@@ -52,7 +53,7 @@ const Menu = ({ open, container, hideCloseButton, onClose, ...props }) => {
             >
               {!hideCloseButton && (
                 <div className="absolute top-4 right-8 text-4xl">
-                  <button onClick={onClose}>&times;</button>
+                  <button onClick={onClose}>{CLOSE}</button>
                 </div>
               )}
               <ul className="relative text-3xl list-none">
