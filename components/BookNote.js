@@ -23,7 +23,7 @@ export default function BookNote({
     <>
       {review || notes ? (
         <button
-          className="text-left"
+          className="text-left transition duration-300 transform hover:-translate-y-4"
           aria-label={title}
           onClick={() => setOpen((o) => !o)}
         >
