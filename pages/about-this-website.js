@@ -69,10 +69,10 @@ export default function AboutWebsite({}) {
               to enable the use of JSX and components in MDX files
             </li>
             <li>
-              <Link href="https://github.com/yjose/reactjs-popup">
-                reactjs-popup
+              <Link href="https://www.framer.com/api/motion">
+                Framer Motion
               </Link>{" "}
-              to create modals (e.g. my menu overlay)
+              to create a few animations and modals (e.g. my menu overlay)
             </li>
             <li>
               <Link href="https://github.com/date-fns/date-fns">dates-fns</Link>{" "}
