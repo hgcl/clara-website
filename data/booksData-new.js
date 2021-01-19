@@ -1,133 +1,6 @@
 
-
-  {
-    date: "2018-03-06",
-    title: "A Force for Good: The Dalai Lama's Vision for Our World",
-    author: "Daniel Goleman",
-    rating: "",
-    isbn: 553394894,
-    isbn: 9780553394894,
-    review: "",
-  },
-  {
-    date: "2016-02-28",
-    title: "Lord of the Flies",
-    author: "William Golding",
-    rating: 5,
-    isbn: 571056865,
-    isbn: 9780140283334,
-    review: "",
-  },
-  {
-    date: "2015-05-03",
-    title: "A Discovery of Witches (All Souls Trilogy, #1)",
-    author: "Deborah Harkness",
-    rating: 2,
-    isbn: 670022411,
-    isbn: 9780670022410,
-    review: "",
-  },
   
-  {
-    date: "2016-01-05",
-    title: "The Old Man and the Sea",
-    author: "Ernest Hemingway",
-    rating: "",
-    isbn: 684830493,
-    isbn: 9780684830490,
-    review: "",
-  },
-  {
-    date: "2014-05-17",
-    title: "Uglies (Uglies, #1)",
-    author: "Scott Westerfeld",
-    rating: "",
-    isbn: 689865384,
-    isbn: 9780689865381,
-    review: "",
-  },
-  {
-    date: "2014-05-17",
-    title: "Pretties (Uglies, #2)",
-    author: "Scott Westerfeld",
-    rating: 3,
-    isbn: 689865392,
-    isbn: 9780689865398,
-    review: "",
-  },
-  {
-    date: "2013-02-20",
-    title: "Memoirs of a Geisha",
-    author: "Arthur Golden",
-    rating: 5,
-    isbn: 739326228,
-    isbn: 9780739326220,
-    review: "",
-  },
-  {
-    date: "2014-03-19",
-    title: "The Thirteenth Tale",
-    author: "Diane Setterfield",
-    rating: 5,
-    isbn: 743298020,
-    isbn: 9780743298025,
-    review: "",
-  },
-  {
-    date: "2016-12-15",
-    title:
-      "Harry Potter and the Cursed Child: Parts One and Two (Harry Potter, #8)",
-    author: "John Tiffany",
-    rating: 4,
-    isbn: 751565350,
-    isbn: 9780751565355,
-    review: "",
-  },
-  {
-    date: "2019-03-03",
-    title: "Kingdom of the Blind (Chief Inspector Armand Gamache, #14)",
-    author: "Louise Penny",
-    rating: 5,
-    isbn: 751566594,
-    isbn: 9781250066206,
-    review: "",
-  },
-  {
-    date: "2018-11-01",
-    title: "The Cruelest Month (Chief Inspector Armand Gamache, #3)",
-    author: "Louise Penny",
-    rating: "",
-    isbn: 755328949,
-    isbn: 9780312352578,
-    review: "",
-  },
-  {
-    date: "2020-01-20",
-    title: "The Three-Body Problem (Remembrance of Earth’s Past #1)",
-    author: "Liu Cixin",
-    rating: 5,
-    isbn: 765377063,
-    isbn: 9780765377067,
-    review: "",
-  },
-  {
-    date: "2020-01-22",
-    title: "Death's End (Remembrance of Earth’s Past #3)",
-    author: "Liu Cixin",
-    rating: 5,
-    isbn: 765377101,
-    isbn: 9780765386632,
-    review: "",
-  },
-  {
-    date: "2016-02-26",
-    title: "Life of Pi",
-    author: "Yann Martel",
-    rating: 5,
-    isbn: 770430074,
-    isbn: 9780770430078,
-    review: "",
-  },
+  
   {
     date: "2014-01-28",
     title: "L'École des Femmes",
@@ -198,15 +71,7 @@
     isbn: "“0525478817”",
     review: "",
   },
-  {
-    date: "2013-02-03",
-    title: "Howl's Moving Castle (Howl's Moving Castle, #1)",
-    author: "Diana Wynne Jones",
-    rating: 4,
-    isbn: "006441034x",
-    isbn: 9780064410342,
-    review: "",
-  },
+  
   
   {
     date: "2015-01-01",
@@ -217,24 +82,7 @@
     isbn: 9780142414934,
     review: "",
   },
-  {
-    date: "2013-11-03",
-    title: "Breaking Dawn (Twilight, #4)",
-    author: "Stephenie Meyer",
-    rating: "",
-    isbn: "031606792x",
-    isbn: 9780316067928,
-    review: "",
-  },
-  {
-    date: "2017-07-06",
-    title: "The Short Second Life of Bree Tanner (Twilight, #3.5)",
-    author: "Stephenie Meyer",
-    rating: 2,
-    isbn: "031612558x",
-    isbn: 9780316125581,
-    review: "",
-  },
+  
   {
     date: "2017-06-30",
     title: "A Bride's Story, Vol. 3 (A Bride's Story, #3)",
@@ -244,24 +92,7 @@
     isbn: 9780316210348,
     review: "",
   },
-  {
-    date: "2015-08-19",
-    title: "Shutter Island",
-    author: "Dennis Lehane",
-    rating: 4,
-    isbn: "038073186x",
-    isbn: 9780380731862,
-    review: "",
-  },
-  {
-    date: "2020-02-02",
-    title: "The Starless Sea",
-    author: "Erin Morgenstern",
-    rating: 4,
-    isbn: "038554121x",
-    isbn: 9780735207875,
-    review: "",
-  },
+
   {
     date: "2015-05-01",
     title: "We Were Liars",
@@ -271,50 +102,8 @@
     isbn: 9780385741262,
     review: "",
   },
-  {
-    date: "2013-11-02",
-    title: "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
-    author: "J.K. Rowling",
-    rating: "",
-    isbn: "043965548x",
-    isbn: 9780439655484,
-    review: "",
-  },
-  {
-    date: "2020-01-20",
-    title: "Gods of Jade and Shadow",
-    author: "Silvia Moreno-Garcia",
-    rating: 3,
-    isbn: "052562077X",
-    review: "",
-  },
-  {
-    date: "2018-03-29",
-    title: "The Bone Collector (Lincoln Rhyme, #1)",
-    author: "Jeffery Deaver",
-    rating: 3,
-    isbn: "067086871X",
-    isbn: 9780451188458,
-    review: "",
-  },
-  {
-    date: "2019-01-01",
-    title: "Into the Wild",
-    author: "Jon Krakauer",
-    rating: 4,
-    isbn: "067942850X",
-    isbn: 9780385486804,
-    review: "",
-  },
-  {
-    date: "2016-08-27",
-    title: "Tender Is the Night",
-    author: "F. Scott Fitzgerald",
-    rating: 4,
-    isbn: "068480154x",
-    isbn: 9780684801544,
-    review: "",
-  },
+  
+
   {
     date: "2016-05-07",
     title: "Stories I Stole",
@@ -324,15 +113,7 @@
     isbn: 9780802140678,
     review: "",
   },
-  {
-    date: "2015-08-03",
-    title: "Screwdrivered (Cocktail, #3)",
-    author: "Alice Clayton",
-    rating: "",
-    isbn: "147676672x",
-    isbn: 9781476766720,
-    review: "",
-  },
+  
   {
     date: "2017-01-07",
     title: "Battle Royale",
@@ -342,15 +123,7 @@
     isbn: 9781569317785,
     review: "",
   },
-  {
-    date: "2012-12-21",
-    title: "Basara, Vol. 1",
-    author: "Yumi Tamura",
-    rating: 5,
-    isbn: "156931974x",
-    isbn: 9781569319741,
-    review: "",
-  },
+  
   {
     date: "2012-12-21",
     title: "Red River, Vol. 1 (Red River, #1)",
@@ -396,25 +169,8 @@
     isbn: 9781906838812,
     review: "",
   },
+
   
-  {
-    date: "2017-01-21",
-    title: "Le Serment des limbes",
-    author: "Jean-Christophe Grangé",
-    rating: "",
-    isbn: "222617673x",
-    isbn: 9782226176738,
-    review: "",
-  },
-  {
-    date: "2015-01-30",
-    title: "Hygiène de l'assassin",
-    author: "Amélie Nothomb",
-    rating: "",
-    isbn: "225311118x",
-    isbn: 9782253111184,
-    review: "",
-  },
   {
     date: "2016-12-31",
     title: "Yotsuba, tome 8 (Yotsuba&! #8)",
@@ -451,15 +207,7 @@
     isbn: 9782858158553,
     review: "",
   },
-  {
-    date: "2016-07-29",
-    title: "Bettý",
-    author: "Arnaldur Indriðason",
-    rating: 3,
-    isbn: "286424845x",
-    isbn: 9782864248453,
-    review: "Great twist",
-  },
+  
   {
     date: "2014-10-13",
     title: "Ru",
@@ -496,43 +244,9 @@
     review: "",
   },
   
-  {
-    date: "2019-04-30",
-    title: "Galatea",
-    author: "Madeline Miller",
-    rating: 4,
-    isbn: "B00DY4SJKM",
-    review: "",
-  },
-  {
-    date: "2017-02-22",
-    title: "The Egg",
-    author: "Andy Weir",
-    rating: 5,
-    review:
-      "Read it online years ago, not realizing it was by Andy Weir. The idea appealed to me so much, that I still remember it to this day.",
-  },
-  {
-    date: "2017-08-14",
-    title: "Les Deux vies de Baudouin (Mirages)",
-    author: "Fabien Toulmé",
-    rating: 5,
-    review: "",
-  },
-  {
-    date: "2016-01-05",
-    title: "Esclave à 11 ans: Témoignage",
-    author: "Fatima",
-    rating: 4,
-    review: "",
-  },
-  {
-    date: "2017-08-17",
-    title: "Wonder (Mirages)",
-    author: "François Bégaudeau",
-    rating: 3,
-    review: "",
-  },
+  
+  
+  
   
   
 ];
