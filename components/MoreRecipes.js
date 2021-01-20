@@ -40,7 +40,7 @@ export default function MoreRecipes({ posts }) {
               type="isRecipe"
               key={post.slug}
               title={post.title}
-              // coverImage={post.coverImage}
+              coverImage={post.coverImage}
               date={post.date}
               // author={post.author}
               slug={post.slug}

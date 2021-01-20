@@ -1,12 +1,12 @@
 // import Avatar from './avatar'
 import DateFormatter from "./date-formatter";
-// import CoverImage from './cover-image'
+import CoverImage from "./cover-image";
 import Link from "./link";
 
 export default function PostPreview({
   type,
   title,
-  // coverImage,
+  coverImage,
   date,
   excerpt,
   // author,
@@ -14,9 +14,9 @@ export default function PostPreview({
 }) {
   return (
     <div className="mb-12">
-      {/* <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div> */}
+      <div className="mb-5">
+        <CoverImage slug={slug} title={title} src={coverImage} type={type} />
+      </div>
       <h3 className="text-3xl mb-1 leading-snug">
         {type === "isRecipe" ? (
           <Link
