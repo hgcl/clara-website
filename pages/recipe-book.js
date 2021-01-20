@@ -10,7 +10,7 @@ export default function Recipe({ allPosts }) {
   return (
     <Layout title="Recipe">
       <Container>
-        <Header pageDescription={"Tea or coffee?"} />
+        <Header pageDescription={"Nom nom nom"} />
         {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -41,7 +41,6 @@ export async function getStaticProps() {
     ],
     isRecipe
   );
-
   return {
     props: { allPosts },
   };

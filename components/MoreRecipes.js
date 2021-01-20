@@ -37,6 +37,7 @@ export default function MoreRecipes({ posts }) {
           )
           .map((post) => (
             <PostPreview
+              type="isRecipe"
               key={post.slug}
               title={post.title}
               // coverImage={post.coverImage}

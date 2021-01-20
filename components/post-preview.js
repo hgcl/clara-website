@@ -4,6 +4,7 @@ import DateFormatter from "./date-formatter";
 import Link from "./link";
 
 export default function PostPreview({
+  type,
   title,
   // coverImage,
   date,
@@ -17,9 +18,19 @@ export default function PostPreview({
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div> */}
       <h3 className="text-3xl mb-1 leading-snug">
-        <Link as={`/blog/${slug}`} href="/blog/[slug]" variant="heading">
-          {title}
-        </Link>
+        {type === "isRecipe" ? (
+          <Link
+            as={`/recipe-book/${slug}`}
+            href="/recipe-book/[slug]"
+            variant="heading"
+          >
+            {title}
+          </Link>
+        ) : (
+          <Link as={`/blog/${slug}`} href="/blog/[slug]" variant="heading">
+            {title}
+          </Link>
+        )}
       </h3>
       <div className="text-base tracking all-small-caps mb-2">
         <DateFormatter dateString={date} />
