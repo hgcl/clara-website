@@ -8,6 +8,8 @@ import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
+import Link from "../../components/link";
+import { ARROW } from "../../lib/constants";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -40,7 +42,6 @@ export default function RecipePost({ source, post, preview }) {
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
               <Head>
                 <title>Clara Le</title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
               <PostHeader
                 title={post.title}
@@ -48,11 +49,17 @@ export default function RecipePost({ source, post, preview }) {
                 date={post.date}
                 author={post.author}
               />
-              {/* <PostBody content={post.content} /> */}
               <div
                 className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
               >
                 {contentmdx}
+                {post.url && (
+                  <p className="comment pt-8">
+                    <Link href={post.url}>
+                      Link to original recipe&ensp;{ARROW}
+                    </Link>
+                  </p>
+                )}
               </div>
             </article>
           </>
@@ -66,7 +73,16 @@ export async function getStaticProps({ params }) {
   const isRecipe = true;
   const post = getPostBySlug(
     params.slug,
-    ["title", "date", "slug", "author", "content", "ogImage", "coverImage"],
+    [
+      "title",
+      "date",
+      "slug",
+      "author",
+      "content",
+      "ogImage",
+      "coverImage",
+      "url",
+    ],
     isRecipe
   );
   const content = await markdownToHtml(post.content || "");

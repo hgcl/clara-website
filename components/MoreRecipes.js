@@ -8,7 +8,6 @@ export default function MoreRecipes({ posts }) {
   const gridStyle = {
     "grid-template-columns": "repeat(auto-fill, minmax(14rem, 1fr))",
   };
-  const tagStyle = "pt-1 pb-2 px-4 mr-4 all-small-caps border-1 rounded-sm";
   const [filter, setFilter] = useState("");
   return (
     <Container>
