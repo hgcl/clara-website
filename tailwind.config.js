@@ -482,6 +482,9 @@ module.exports = {
       opacity: {
         90: ".9",
       },
+      scale: {
+        101: "1.01",
+      },
       spacing: {
         "2px": "2px",
         28: "7rem",

@@ -2,6 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import CoverImage from "./cover-image";
 import NextLink from "next/link";
+import Link from "./link";
 import {
   RECIPE_FOLDER,
   DOT,
@@ -21,8 +22,8 @@ export default function PostPreview({
   duration,
 }) {
   return (
-    <div className="mb-4 relative">
-      <div>
+    <div className="flex flex-col text-center">
+      <div className="mb-4 relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
         <CoverImage
           slug={slug}
           title={title}
@@ -30,30 +31,30 @@ export default function PostPreview({
           type={type}
           className="object-cover w-full h-80 rounded"
         />
-      </div>
-      <NextLink
-        as={`/${RECIPE_FOLDER}/${slug}`}
-        href={`/${RECIPE_FOLDER}/${slug}`}
-      >
-        <a>
+        <NextLink
+          as={`/${RECIPE_FOLDER}/${slug}`}
+          href={`/${RECIPE_FOLDER}/${slug}`}
+        >
           <motion.div
             initial={{ opacity: "0" }}
-            x
             whileHover={{ opacity: "0.9" }}
-            className="z-10 bg-black absolute w-full h-full left-0 top-0 text-center flex flex-col justify-center p-4"
+            className="z-10 cursor-pointer bg-black absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
           >
-            <p className="text-base tracking all-small-caps mb-2">
-              {categories}
-            </p>
-            <h3 className="text-3xl leading-tight mb-1">{title}</h3>
-            <p className="text-base mb-2">{excerpt}</p>
-            <p className="text-base tracking all-small-caps mb-4">
-              {RECIPE_DIFFULTY_ARRAY[difficulty]} {DOT}{" "}
+            <p className="text-lg comment mb-8">
+              {categories} {DOT} {RECIPE_DIFFULTY_ARRAY[difficulty]} <br />
               {RECIPE_DURATION_ARRAY[duration]}
             </p>
+            <p className="text-xl">{excerpt}</p>
           </motion.div>
-        </a>
-      </NextLink>
+        </NextLink>
+      </div>
+      <Link
+        as={`/${RECIPE_FOLDER}/${slug}`}
+        href={`/${RECIPE_FOLDER}/${slug}`}
+        variant="heading"
+      >
+        <h3 className="flex-1 text-3xl leading-tight mt-2 mb-4">{title}</h3>
+      </Link>
     </div>
   );
 }
