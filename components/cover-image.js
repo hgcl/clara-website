@@ -1,4 +1,3 @@
-import cn from "classnames";
 import Link from "next/link";
 import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
 

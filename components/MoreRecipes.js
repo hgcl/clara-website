@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// Code very similar to more-stories.js
-
 import Container from "./container";
 import RecipePostPreview from "./RecipePostPreview";
 
@@ -14,27 +12,7 @@ export default function MoreRecipes({ posts }) {
   const [filter, setFilter] = useState("");
   return (
     <Container>
-      <div className="mb-16">
-        <button
-          className={`${
-            filter ? "border-gray-regular text-gray-regular" : "border-accent"
-          } ${tagStyle}`}
-          onClick={() => setFilter("")}
-        >
-          All Recipes
-        </button>
-        <button
-          className={`${
-            filter === "winter"
-              ? "border-accent"
-              : "border-gray-regular text-gray-regular"
-          } ${tagStyle}`}
-          onClick={() => setFilter("winter")}
-        >
-          Winter
-        </button>
-      </div>
-      <div className="grid gap-y-8 gap-x-4 md:gap-x-5" style={gridStyle}>
+      <div className="grid gap-y-6 gap-x-8" style={gridStyle}>
         {posts
           .filter((post) =>
             filter ? post.categories && post.categories.includes(filter) : post
@@ -49,6 +27,9 @@ export default function MoreRecipes({ posts }) {
               slug={post.slug}
               excerpt={post.excerpt}
               categories={post.categories}
+              tags={post.tags}
+              difficulty={post.difficulty}
+              duration={post.duration}
             />
           ))}
       </div>
