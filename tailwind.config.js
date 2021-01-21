@@ -475,13 +475,27 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      maxHeight: {
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+      },
+      minWidth: {
+        "1/4": "25%",
+        "1/2": "50%",
+      },
       opacity: {
         90: ".9",
+      },
+      scale: {
+        101: "1.01",
       },
       spacing: {
         "2px": "2px",
         28: "7rem",
         36: "9rem",
+        80: "20rem",
+        96: "24rem",
       },
     },
   },

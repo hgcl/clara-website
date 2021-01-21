@@ -1,11 +1,13 @@
 // import Avatar from './avatar'
 import DateFormatter from "./date-formatter";
-// import CoverImage from './cover-image'
+// import CoverImage from "./cover-image";
 import Link from "./link";
+import { BLOG_FOLDER } from "../lib/constants";
 
 export default function PostPreview({
+  type,
   title,
-  // coverImage,
+  coverImage,
   date,
   excerpt,
   // author,
@@ -14,10 +16,14 @@ export default function PostPreview({
   return (
     <div className="mb-12">
       {/* <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+        <CoverImage slug={slug} title={title} src={coverImage} type={type} />
       </div> */}
       <h3 className="text-3xl mb-1 leading-snug">
-        <Link as={`/blog/${slug}`} href="/blog/[slug]" variant="heading">
+        <Link
+          as={`/${BLOG_FOLDER}/${slug}`}
+          href={`/${BLOG_FOLDER}/${slug}`}
+          variant="heading"
+        >
           {title}
         </Link>
       </h3>
