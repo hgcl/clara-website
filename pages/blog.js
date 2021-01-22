@@ -3,7 +3,7 @@ import fs from "fs";
 
 // import Avatar from '../components/avatar'
 // import CoverImage from './cover-image'
-import { getAllPosts } from "../lib/api";
+import { getAllPosts } from "../lib/getAllPosts";
 import MorePosts from "../components/MorePosts";
 import Layout from "../components/layout";
 import Header from "../components/header";

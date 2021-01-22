@@ -1,5 +1,5 @@
 // import CoverImage from './cover-image'
-import { getAllPosts } from "../lib/api";
+import { getAllPosts } from "../lib/getAllPosts";
 import MoreRecipes from "../components/MoreRecipes";
 import Layout from "../components/layout";
 import Header from "../components/header";
