@@ -13,7 +13,6 @@ import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 // MDX related imports
-import markdownStyles from "../../components/markdown-styles.module.css";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import AllPostComponents from "../../components/AllPostComponents";
@@ -48,6 +47,8 @@ export default function Post({ source, post, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
               />
               <PostBody content={contentmdx} />
             </article>
@@ -60,13 +61,14 @@ export default function Post({ source, post, preview }) {
 
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
     "author",
     "content",
-    "ogImage",
     "coverImage",
+    "date",
+    "excerpt",
+    "ogImage",
+    "slug",
+    "title",
   ]);
   const content = await markdownToHtml(post.content || "");
   const source = post.content;

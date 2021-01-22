@@ -2,11 +2,26 @@
 import DatePost from "./DatePost";
 import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
+import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
 
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({
+  title,
+  coverImage,
+  date,
+  author,
+  excerpt,
+  slug,
+}) {
+  const folder = BLOG_FOLDER; // TODO add microformats to recipe posts as well
   return (
     <header>
       <PostTitle className="p-name">{title}</PostTitle>
+      <div className="hidden">
+        <p className="p-summary">{excerpt}</p>
+        <a className="u-url" href={`/${folder}/${slug}`}>
+          Post URL
+        </a>
+      </div>
       <div className="max-w-3xl mx-auto">
         {/* <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />
