@@ -15,7 +15,7 @@ export default function MoreRecipes({ posts }) {
       <div className="text-gray-regular mb-8 text-center md:text-right">
         <span className="text-xl">{WAFFLE}</span>&ensp;
         <span className="text-md">
-          Favorites are marked with a Waffle Prize
+          Favorites are marked with a waffle symbol
         </span>
       </div>
       <div className="grid gap-y-6 gap-x-8" style={gridStyle}>
