@@ -8,6 +8,7 @@ import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
 import PostTitle from "../../components/post-title";
+import PostBody from "../../components/post-body";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -48,12 +49,7 @@ export default function Post({ source, post, preview }) {
                 date={post.date}
                 author={post.author}
               />
-              {/* <PostBody content={post.content} /> */}
-              <div
-                className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-              >
-                {contentmdx}
-              </div>
+              <PostBody content={contentmdx} />
             </article>
           </>
         )}

@@ -9,7 +9,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
       <PostTitle>{title}</PostTitle>
       <div className="hidden">
         Published by{" "}
-        <a className="p-author h-card" href="https://clarale.com">
+        <a rel="author" href="https://clarale.com">
           Clara Le
         </a>
         {/* <div className="hidden md:block md:mb-12">
