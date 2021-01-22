@@ -8,6 +8,14 @@
 
 export default [
   {
+    date: "2021-01-22 07:50:54",
+    title: "Artificial Unintelligence",
+    author: "Meredith Broussard",
+    isbn: "9780262537018",
+    notes: "Recommended by David Dylan Thomas",
+    link: "https://www.densediscovery.com/issues/121/",
+  },
+  {
     date: "2021-01-15 12:17:17",
     title: "Classic Food of China",
     author: "Yan-Kit So",
