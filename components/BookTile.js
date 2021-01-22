@@ -1,4 +1,4 @@
-import Rating from "../components/Rating";
+import Rating from "./Rating";
 import Image from "next/image";
 import { STAR } from "../lib/constants";
 

@@ -1,4 +1,4 @@
-import BookNote from "../components/BookNote";
+import BookNote from "./BookNote";
 
 export default function BookGrid({ books, dateLabel }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
