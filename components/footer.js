@@ -1,5 +1,5 @@
 import Link from "./link";
-import { STAR } from "../lib/constants";
+import { STAR, WAFFLE } from "../lib/constants";
 
 // icons
 import IconTwitter from "../public/icons/IconTwitter";
@@ -45,7 +45,7 @@ export default function Footer() {
           </Link>
           &nbsp;
           <Link href="/recipe-book" aria-label="Recipe page">
-            ⨳
+            {WAFFLE}
           </Link>
         </p>
       </div>

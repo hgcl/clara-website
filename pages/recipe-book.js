@@ -20,15 +20,16 @@ export async function getStaticProps() {
   const isRecipe = true;
   const allPosts = getAllPosts(
     [
-      "title",
-      "date",
-      "slug",
-      "coverImage",
-      "excerpt",
       "categories",
-      "tags",
+      "coverImage",
+      "date",
       "difficulty",
       "duration",
+      "excerpt",
+      "favorite",
+      "slug",
+      "tags",
+      "title",
     ],
     isRecipe
   );

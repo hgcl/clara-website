@@ -8,6 +8,7 @@ import {
   DOT,
   RECIPE_DIFFULTY_ARRAY,
   RECIPE_DURATION_ARRAY,
+  WAFFLE,
 } from "../lib/constants";
 
 export default function PostPreview({
@@ -20,6 +21,7 @@ export default function PostPreview({
   categories,
   difficulty,
   duration,
+  favorite,
 }) {
   return (
     <div className="flex flex-col text-center">
@@ -31,6 +33,9 @@ export default function PostPreview({
           type={type}
           className="object-cover w-full h-72 rounded"
         />
+        <div className="absolute left-3 top-0 text-3xl">
+          {favorite && WAFFLE}
+        </div>
         <NextLink
           as={`/${RECIPE_FOLDER}/${slug}`}
           href={`/${RECIPE_FOLDER}/${slug}`}
