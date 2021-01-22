@@ -1,6 +1,7 @@
 // import Alert from "../components/alert";
 import Footer from "./footer";
 import Meta from "./meta";
+import Hentry from "./Hentry";
 import Hcard from "./Hcard";
 import Menu from "./Menu";
 import { MenuToggle } from "./MenuToggle";
@@ -26,8 +27,10 @@ export default function Layout({ preview, children, title }) {
             />
           )}
         </motion.nav>
-        <Hcard />
-        <main>{children}</main>
+        <Hentry>
+          <Hcard />
+          <main>{children}</main>
+        </Hentry>
       </div>
       <Footer />
     </>
