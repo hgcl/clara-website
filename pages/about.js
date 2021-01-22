@@ -80,6 +80,13 @@ export default function About({}) {
               I <em>love</em> cheese.
             </li>
           </ol>
+          <hr />
+          <p>
+            Oh, so you didn’t really care about all this stuff but just wanted
+            to know more{" "}
+            <Link href="/about-this-website">about this website</Link>? Okay
+            sure, no hard feelings. No really.
+          </p>
         </div>
       </Container>
     </Layout>

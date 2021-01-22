@@ -38,13 +38,23 @@ export default function Footer() {
           </span>
         </div>
         <p className="text-center">
-          Want to know{" "}
-          <Link href="/about-this-website">how this website is built</Link>? —{" "}
-          <Link href="/favorites" aria-label="favorites page">
+          Notice something wrong?{" "}
+          <Link href="https://github.com/hgcl/clara-website/issues">
+            Fill an issue!
+          </Link>{" "}
+          —{" "}
+          <Link
+            className="text-xl"
+            href="/favorites"
+            aria-label="favorites page"
+          >
             {STAR}
-          </Link>
-          &nbsp;
-          <Link href="/recipe-book" aria-label="Recipe page">
+          </Link>{" "}
+          <Link
+            className="text-xl"
+            href="/recipe-book"
+            aria-label="Recipe page"
+          >
             {WAFFLE}
           </Link>
         </p>
