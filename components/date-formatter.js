@@ -1,9 +1,9 @@
 import { parseISO, format } from "date-fns";
 
-export default function DateFormatter({ dateString }) {
+export default function DateFormatter({ dateString, dtPublished }) {
   const date = parseISO(dateString);
   return (
-    <time className="dt-published" dateTime={dateString}>
+    <time className={dtPublished && "dt-published"} dateTime={dateString}>
       {format(date, "LLLL	d, yyyy")}
     </time>
   );

@@ -5,14 +5,14 @@ import PostTitle from "./post-title";
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
-    <header className="h-entry">
-      <PostTitle>{title}</PostTitle>
+    <header>
+      <PostTitle className="p-name">{title}</PostTitle>
       <div className="max-w-3xl mx-auto">
         {/* <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />
         </div> */}
         <div className="mb-6 text-lg text-center md:text-left">
-          <DatePost dateString={date} />
+          <DatePost dateString={date} dtPublished />
           {coverImage && (
             <CoverImage
               title={title}
