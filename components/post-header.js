@@ -2,20 +2,13 @@
 import DatePost from "./DatePost";
 import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
+import Hcard from "./Hcard";
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <header className="h-entry">
       <PostTitle>{title}</PostTitle>
-      <div className="hidden">
-        Published by{" "}
-        <a rel="author" href="https://clarale.com">
-          Clara Le
-        </a>
-        {/* <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
-      </div> */}
-      </div>
+      <Hcard />
       <div className="max-w-3xl mx-auto">
         {/* <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />

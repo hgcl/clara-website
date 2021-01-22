@@ -1,6 +1,10 @@
 export default function Hcard() {
   return (
-    <section className="h-card hidden">
+    <div
+      rel="author"
+      className="p-author h-card hidden"
+      href="https://clarale.com"
+    >
       {/* About me */}
       <span className="p-name">Clara Le</span>
       <span className="p-note">Polymath, currently working as a designer.</span>
@@ -16,13 +20,6 @@ export default function Hcard() {
       <a className="u-url u-uid" href="https://clarale.com"></a>
       <a className="u-url" rel="me" href="https://twitter.com/clara__le"></a>
       <a className="u-url" rel="me" href="https://github.com/hgcl"></a>
-
-      {/* Categories */}
-      <span className="p-category">Digital Garden</span>
-      <span className="p-category">Design</span>
-      <span className="p-category">Exploring</span>
-      <span className="p-category">Cooking and DIY Projects</span>
-      <span className="p-category">Sci-fi Books</span>
-    </section>
+    </div>
   );
 }
