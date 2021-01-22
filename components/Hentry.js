@@ -4,6 +4,7 @@ export default function Hcard() {
       <div class="u-author h-card">
         <img
           src="/assets/clara_20180514_132853_small.jpg"
+          alt="Yep, that's my face."
           class="u-photo"
           width="40"
         />

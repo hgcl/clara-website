@@ -6,7 +6,11 @@ export default function Hcard() {
       <span className="p-note">Polymath, currently working as a designer.</span>
 
       {/* Profile picture */}
-      <img className="u-photo" src="/assets/clara_20180514_132853_small.jpg" />
+      <img
+        className="u-photo"
+        alt="Yep, that's my face."
+        src="/assets/clara_20180514_132853_small.jpg"
+      />
 
       {/* Links */}
       <a className="u-url u-uid" href="https://clarale.com"></a>
