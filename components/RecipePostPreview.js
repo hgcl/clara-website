@@ -29,7 +29,7 @@ export default function PostPreview({
           title={title}
           src={coverImage}
           type={type}
-          className="object-cover w-full h-80 rounded"
+          className="object-cover w-full h-72 rounded"
         />
         <NextLink
           as={`/${RECIPE_FOLDER}/${slug}`}

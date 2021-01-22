@@ -26,7 +26,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
             <CoverImage
               title={title}
               src={coverImage}
-              className="object-cover w-full h-screen mb-8 md:mb-16 sm:mx-0"
+              className="object-cover w-full max-h-192 mb-8 md:mb-16 sm:mx-0"
             />
           )}
         </div>
