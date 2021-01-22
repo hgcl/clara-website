@@ -45,7 +45,7 @@ export default function Footer() {
           </Link>
           &nbsp;
           <Link href="/recipe-book" aria-label="Recipe page">
-            ♣
+            ⨳
           </Link>
         </p>
       </div>
