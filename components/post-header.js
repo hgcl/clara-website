@@ -5,14 +5,15 @@ import PostTitle from "./post-title";
 import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
 
 export default function PostHeader({
-  title,
+  author,
   coverImage,
   date,
-  author,
   excerpt,
   slug,
+  title,
+  type,
 }) {
-  const folder = BLOG_FOLDER; // TODO add microformats to recipe posts as well
+  const folder = type === "isRecipe" ? RECIPE_FOLDER : BLOG_FOLDER;
   return (
     <header>
       <PostTitle className="p-name">{title}</PostTitle>

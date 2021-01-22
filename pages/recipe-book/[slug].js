@@ -2,7 +2,7 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
-// import PostBody from "../../components/post-body";
+import PostBody from "../../components/post-body";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
@@ -44,15 +44,15 @@ export default function RecipePost({ source, post, preview }) {
                 <title>Clara Le</title>
               </Head>
               <PostHeader
-                title={post.title}
+                author={post.author}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
+                excerpt={post.excerpt}
+                slug={post.slug}
+                title={post.title}
+                type="isRecipe"
               />
-              <div
-                className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-              >
-                {contentmdx}
+              <PostBody content={contentmdx}>
                 {post.url && (
                   <p className="comment pt-8">
                     <Link href={post.url}>
@@ -60,7 +60,7 @@ export default function RecipePost({ source, post, preview }) {
                     </Link>
                   </p>
                 )}
-              </div>
+              </PostBody>
             </article>
           </>
         )}
@@ -74,13 +74,14 @@ export async function getStaticProps({ params }) {
   const post = getPostBySlug(
     params.slug,
     [
-      "title",
-      "date",
-      "slug",
       "author",
       "content",
-      "ogImage",
       "coverImage",
+      "date",
+      "excerpt",
+      "ogImage",
+      "slug",
+      "title",
       "url",
     ],
     isRecipe
