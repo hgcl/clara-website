@@ -16,9 +16,9 @@ export default function PostHeader({
   const folder = type === "isRecipe" ? RECIPE_FOLDER : BLOG_FOLDER;
   return (
     <header>
-      <PostTitle className="p-name">{title}</PostTitle>
+      <PostTitle className="p-name fn">{title}</PostTitle>
       <div className="hidden">
-        <p className="p-summary">{excerpt}</p>
+        <p className="p-summary summary">{excerpt}</p>
         <a className="u-url" href={`/${folder}/${slug}`}>
           Post URL
         </a>

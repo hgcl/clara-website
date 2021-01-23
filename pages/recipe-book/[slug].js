@@ -37,7 +37,8 @@ export default function RecipePost({ source, post, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            {/* Added hRecipe microformats http://microformats.org/wiki/hrecipe */}
+            <article className="h-recipe mb-32">
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
               <PostHeader
                 author={post.author}
