@@ -2,8 +2,8 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
-// import PostBody from "../../components/post-body";
 import Header from "../../components/header";
+import Head from "../../components/Head";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
@@ -38,10 +38,7 @@ export default function Post({ source, post, preview }) {
           <>
             <article className="mb-32">
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
-              <Head>
-                <title>Clara Le</title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
-              </Head>
+              <Head />
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
