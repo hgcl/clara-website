@@ -4,24 +4,12 @@ import MoreStories from "../components/more-stories";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/getAllPosts";
-import Head from "next/head";
 
 export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
   const latestPosts = allPosts.slice(0, 3);
   return (
     <Layout>
-      <Head>
-        <link
-          rel="preload"
-          as="font"
-          href="/fonts/SourceSansPro-Regular.otf"
-          type="opentype"
-          crossorigin="anonymous"
-        ></link>
-        <title>Clara Le</title>
-        {/* Following says where I want to receive webmentions */}
-      </Head>
       <Container>
         <Intro />
         {/* {heroPost && (

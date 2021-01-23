@@ -3,13 +3,11 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import Header from "../../components/header";
-import Head from "../../components/Head";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
 import PostTitle from "../../components/post-title";
 import PostBody from "../../components/post-body";
-import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 // MDX related imports
@@ -38,7 +36,6 @@ export default function Post({ source, post, preview }) {
           <>
             <article className="mb-32">
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
-              <Head />
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}

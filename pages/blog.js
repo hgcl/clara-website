@@ -7,7 +7,6 @@ import { getAllPosts } from "../lib/getAllPosts";
 import MorePosts from "../components/MorePosts";
 import Layout from "../components/layout";
 import Header from "../components/header";
-import Head from "../components/Head";
 import Container from "../components/container";
 
 const generateRssItem = (post) => `
@@ -41,7 +40,6 @@ export default function Index({ allPosts }) {
     <Layout title="Blog">
       <Container>
         <Header pageDescription={"Tea or coffee?"} />
-        <Head />
         {/* {heroPost && (
             <HeroPost
               title={heroPost.title}

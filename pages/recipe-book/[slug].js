@@ -10,7 +10,6 @@ import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
 import PostTitle from "../../components/post-title";
 import Link from "../../components/link";
 import { ARROW } from "../../lib/constants";
-import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 // MDX related imports
@@ -40,9 +39,6 @@ export default function RecipePost({ source, post, preview }) {
           <>
             <article className="mb-32">
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
-              <Head>
-                <title>Clara Le</title>
-              </Head>
               <PostHeader
                 author={post.author}
                 coverImage={post.coverImage}
