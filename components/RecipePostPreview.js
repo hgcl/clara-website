@@ -24,7 +24,7 @@ export default function PostPreview({
   favorite,
 }) {
   return (
-    <div className="flex flex-col text-center">
+    <div className="h-entry flex flex-col text-center">
       <div className="mb-4 relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
         <CoverImage
           slug={slug}
@@ -49,7 +49,7 @@ export default function PostPreview({
               {categories} {DOT} {RECIPE_DIFFULTY_ARRAY[difficulty]} <br />
               {RECIPE_DURATION_ARRAY[duration]}
             </p>
-            <p className="text-xl">{excerpt}</p>
+            <p className="p-summary text-xl">{excerpt}</p>
           </motion.div>
         </NextLink>
       </div>
@@ -57,6 +57,7 @@ export default function PostPreview({
         as={`/${RECIPE_FOLDER}/${slug}`}
         href={`/${RECIPE_FOLDER}/${slug}`}
         variant="heading"
+        className="p-name"
       >
         <h3 className="flex-1 text-3xl leading-tight mt-2 mb-4">{title}</h3>
       </Link>

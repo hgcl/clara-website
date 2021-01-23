@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 // Alert at page top + footer
 
-export default function Layout({ preview, children, title }) {
+export default function Layout({ preview, children, title, noHentry }) {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
   return (
@@ -29,8 +29,9 @@ export default function Layout({ preview, children, title }) {
         </motion.nav>
         <Hentry>
           <Hcard />
-          <main>{children}</main>
+          {!noHentry && <main>{children}</main>}
         </Hentry>
+        {noHentry && <main>{children}</main>}
       </div>
       <Footer />
     </>

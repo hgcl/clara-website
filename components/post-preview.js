@@ -14,7 +14,7 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div className="mb-12">
+    <div className="h-entry mb-12">
       {/* <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} type={type} />
       </div> */}
@@ -23,6 +23,7 @@ export default function PostPreview({
           as={`/${BLOG_FOLDER}/${slug}`}
           href={`/${BLOG_FOLDER}/${slug}`}
           variant="heading"
+          className="p-name"
         >
           {title}
         </Link>
@@ -30,7 +31,7 @@ export default function PostPreview({
       <div className="text-base tracking all-small-caps mb-2">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-normal">{excerpt}</p>
+      <p className="p-summary text-lg leading-normal">{excerpt}</p>
       {/* <Avatar name={author.name} picture={author.picture} /> */}
     </div>
   );
