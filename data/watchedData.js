@@ -1,4 +1,5 @@
 [
+  // >#
   {
     date: "2020-06-07",
     year: 2019,
@@ -10,14 +11,14 @@
     date: "2020-06-07",
     year: 2016,
     name: "10 Cloverfield Lane",
-    rating: "",
+    rating: "3",
     review: "",
   },
   {
     date: "2020-06-07",
     year: 1957,
     name: "12 Angry Men",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -55,6 +56,7 @@
     rating: "",
     review: "",
   },
+  // >A
   {
     date: "2020-06-07",
     year: 1998,
@@ -66,16 +68,9 @@
     date: "2020-10-14",
     year: 2020,
     name: "A Friendly Tale...",
-    rating: 3.5,
+    rating: 3,
     review:
       "Pure comédie française, les acteurs se fondent complètement dans les rôles de leurs personnages stéréotypés.",
-  },
-  {
-    date: "2020-06-07",
-    year: 2003,
-    name: "A Tale of Two Sisters",
-    rating: "",
-    review: "",
   },
   {
     date: "2020-08-25",
@@ -102,7 +97,7 @@
     date: "2020-08-13",
     year: 1988,
     name: "Akira",
-    rating: "",
+    rating: "2",
     review: "",
   },
   {
@@ -117,7 +112,7 @@
     date: "2020-10-07",
     year: 2019,
     name: "Aladdin",
-    rating: "",
+    rating: "3",
     review: "",
   },
   {
@@ -138,7 +133,7 @@
     date: "2020-06-07",
     year: 2001,
     name: "Amélie",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -253,6 +248,7 @@
     rating: "",
     review: "",
   },
+  // >B
   {
     date: "2020-06-07",
     year: 1995,
@@ -264,7 +260,7 @@
     date: "2020-09-28",
     year: 2017,
     name: "Baby Driver",
-    rating: 3.5,
+    rating: 3,
     review:
       "Music-driven, original car chasing scenes. Would have preferred a more curated / coherent soundtrack.",
   },
@@ -353,6 +349,14 @@
     review: "",
   },
   {
+    date: "2021-01-23",
+    year: 1982,
+    name: "Blade Runner",
+    rating: "3",
+    review:
+      " I finally watched this classic that wonderfully depicts the year 2019: dark and polluted, people from all nationalities mixing, not one dominant language, strong Japanese video game feel. Human-like and life-like androids are a thing. People still have retro haircuts and clothes—of course. I loved the strong vibrations of the soundtrack. Tonight, we are watching the 2049 edition.",
+  },
+  {
     date: "2020-06-07",
     year: 2018,
     name: "Bohemian Rhapsody",
@@ -401,6 +405,7 @@
     rating: "",
     review: "",
   },
+  // >C
   {
     date: "2020-06-29",
     year: 2016,
@@ -468,7 +473,7 @@
     date: "2020-06-07",
     year: 2006,
     name: "Children of Men",
-    rating: "",
+    rating: "2",
     review: "",
   },
   {
@@ -496,14 +501,14 @@
     date: "2020-06-07",
     year: 2017,
     name: "Coco",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
     date: "2020-06-07",
     year: 2009,
     name: "Coraline",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -513,6 +518,15 @@
     rating: "",
     review: "",
   },
+  {
+    date: "2021-01-22",
+    year: 2018,
+    name: "Crazy Rich Asians",
+    rating: "3",
+    review:
+      "A light rom com that gives just what you are expecting from it. It is cheesy, overacted, but very entertaining.",
+  },
+  // >D
   {
     date: "2020-06-07",
     year: 1989,
@@ -524,7 +538,7 @@
     date: "2020-06-07",
     year: 2016,
     name: "Deadpool",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -559,7 +573,7 @@
     date: "2020-06-07",
     year: 2012,
     name: "Django Unchained",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -598,6 +612,7 @@
     rating: "",
     review: "",
   },
+  // >E
   {
     date: "2020-06-07",
     year: 2007,
@@ -623,16 +638,17 @@
     date: "2020-06-29",
     year: 2014,
     name: "Ex Machina",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
     date: "2020-06-29",
     year: 2019,
     name: "Extreme Job",
-    rating: "",
+    rating: "4",
     review: "",
   },
+  // >F
   {
     date: "2020-06-08",
     year: 2017,
@@ -644,14 +660,14 @@
     date: "2020-06-07",
     year: 1940,
     name: "Fantasia",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
     date: "2020-06-07",
     year: 2016,
     name: "Fantastic Beasts and Where to Find Them",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -679,7 +695,7 @@
     date: "2020-06-07",
     year: 1999,
     name: "Fight Club",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -693,7 +709,7 @@
     date: "2020-06-07",
     year: 2003,
     name: "Finding Nemo",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -724,6 +740,7 @@
     rating: "",
     review: "",
   },
+  // >G
   {
     date: "2020-06-07",
     year: 2018,
@@ -735,7 +752,7 @@
     date: "2020-06-07",
     year: 2017,
     name: "Get Out",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -770,7 +787,7 @@
     date: "2020-10-16",
     year: 2020,
     name: "Greenland",
-    rating: 2.5,
+    rating: 2,
     review:
       "Matched my expectations. Quite realistic in some ways, but tried to show too much and became cheesy. Mean people vs. Super duper nice people when faced with an end of the world event. Irritating kid. (And why is the wife not driving even when the husband is burnt?!)",
   },
@@ -788,6 +805,7 @@
     rating: "",
     review: "",
   },
+  // >H
   {
     date: "2020-06-08",
     year: 2016,
@@ -862,7 +880,7 @@
     date: "2020-06-07",
     year: 2013,
     name: "Her",
-    rating: "",
+    rating: "5",
     review: "",
   },
   {
@@ -876,7 +894,7 @@
     date: "2020-10-17",
     year: 2018,
     name: "Hereditary",
-    rating: 2.5,
+    rating: 2,
     review:
       "Themes very similar to Midsommar, but not working as seamlessly. Some creepy scenes but nothing remotely scary.",
   },
@@ -964,6 +982,7 @@
     rating: "",
     review: "",
   },
+  // >I
   {
     date: "2020-06-07",
     year: 2002,
@@ -982,7 +1001,7 @@
     date: "2020-12-20",
     year: 2008,
     name: "In Bruges",
-    rating: 3.5,
+    rating: 3,
     review: "Super funky characters, really liked the movie!",
   },
   {
@@ -1048,6 +1067,7 @@
     rating: "",
     review: "",
   },
+  // >J
   {
     date: "2020-06-07",
     year: 2019,
@@ -1066,7 +1086,7 @@
     date: "2020-06-08",
     year: 2017,
     name: "Jumanji: Welcome to the Jungle",
-    rating: 4.5,
+    rating: 4,
     review: "Funnier than expected",
   },
   {
@@ -1076,11 +1096,12 @@
     rating: "",
     review: "",
   },
+  // >K
   {
     date: "2020-06-07",
     year: 2003,
     name: "Kill Bill: Vol. 1",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1094,7 +1115,7 @@
     date: "2020-08-30",
     year: 1998,
     name: "Kirikou and the Sorceress",
-    rating: 4.5,
+    rating: 4,
     review: "Childhood feelings, cannot be objective with this one.",
   },
   {
@@ -1125,6 +1146,7 @@
     rating: "",
     review: "",
   },
+  // >L
   {
     date: "2020-06-07",
     year: 2016,
@@ -1164,7 +1186,7 @@
     date: "2020-06-07",
     year: 2012,
     name: "Life of Pi",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1178,7 +1200,7 @@
     date: "2020-06-07",
     year: 2019,
     name: "Little Women",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -1195,6 +1217,7 @@
     rating: "",
     review: "",
   },
+  // >M
   {
     date: "2020-06-07",
     year: 2005,
@@ -1277,7 +1300,7 @@
     date: "2020-06-07",
     year: 2000,
     name: "Memento",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1383,7 +1406,7 @@
     date: "2020-06-07",
     year: 2016,
     name: "My Life as a Zucchini",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1400,11 +1423,12 @@
     rating: "",
     review: "",
   },
+  // >N
   {
     date: "2020-06-07",
     year: 2013,
     name: "Now You See Me",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -1414,6 +1438,7 @@
     rating: "",
     review: "",
   },
+  // >O
   {
     date: "2020-06-07",
     year: 2018,
@@ -1425,7 +1450,7 @@
     date: "2020-06-07",
     year: 2001,
     name: "Ocean's Eleven",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -1446,7 +1471,7 @@
     date: "2020-06-07",
     year: 2003,
     name: "Oldboy",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -1463,6 +1488,7 @@
     rating: "",
     review: "",
   },
+  // >P
   {
     date: "2020-06-07",
     year: 2006,
@@ -1474,7 +1500,7 @@
     date: "2020-06-07",
     year: 2019,
     name: "Parasite",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1509,7 +1535,7 @@
     date: "2020-06-07",
     year: 2003,
     name: "Pirates of the Caribbean: The Curse of the Black Pearl",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1523,7 +1549,7 @@
     date: "2020-06-08",
     year: 2007,
     name: "Please Vote for Me",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1554,6 +1580,7 @@
     rating: "",
     review: "",
   },
+  // >Q
   {
     date: "2020-06-07",
     year: 2008,
@@ -1561,11 +1588,12 @@
     rating: "",
     review: "",
   },
+  // >R
   {
     date: "2020-06-07",
     year: 2018,
     name: "Ralph Breaks the Internet",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1631,6 +1659,7 @@
     rating: "",
     review: "",
   },
+  // >S
   {
     date: "2020-06-07",
     year: 2004,
@@ -1642,7 +1671,7 @@
     date: "2020-06-07",
     year: 1993,
     name: "Schindler's List",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -1663,14 +1692,14 @@
     date: "2020-08-26",
     year: 2012,
     name: "Searching for Sugar Man",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
     date: "2020-10-19",
     year: 2012,
     name: "Seven Psychopaths",
-    rating: 3.5,
+    rating: 3,
     review:
       "Completely crazy and over the top characters, dialogues are amazing. Loved how they mixed the screenplay and reality.",
   },
@@ -1678,7 +1707,7 @@
     date: "2020-06-07",
     year: 2009,
     name: "Sherlock Holmes",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1713,7 +1742,7 @@
     date: "2020-06-07",
     year: 2010,
     name: "Shutter Island",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1748,7 +1777,7 @@
     date: "2020-06-07",
     year: 2013,
     name: "Snowpiercer",
-    rating: "",
+    rating: 1,
     review: "",
   },
   {
@@ -1872,6 +1901,7 @@
     rating: "",
     review: "",
   },
+  // >T
   {
     date: "2020-06-07",
     year: 2010,
@@ -1890,7 +1920,7 @@
     date: "2020-08-27",
     year: 2020,
     name: "Tenet",
-    rating: 3.5,
+    rating: 3,
     review:
       'Plot that is much less straightforward than Nolan\'s previous films. He followed the palindrome idea to the end. Less for the audience and more for the sake of "cinema". Would need to watch it a second time to fully grasp it.',
   },
@@ -1898,7 +1928,7 @@
     date: "2020-06-07",
     year: 2011,
     name: "The Artist",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -1912,7 +1942,7 @@
     date: "2020-10-24",
     year: 2019,
     name: "The Beach Bum",
-    rating: "",
+    rating: 1,
     review: "",
   },
   {
@@ -2017,7 +2047,7 @@
     date: "2020-12-13",
     year: 1966,
     name: "The Good, the Bad and the Ugly",
-    rating: 3.5,
+    rating: 3,
     review:
       "It might not have helped that we watched the 3 hours version, but I was falling asleep by the end—it was very late. Amazing silences, staging and soundtrack otherwise.",
   },
@@ -2032,7 +2062,7 @@
     date: "2020-06-07",
     year: 1963,
     name: "The Great Escape",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -2053,7 +2083,7 @@
     date: "2020-06-07",
     year: 2016,
     name: "The Handmaiden",
-    rating: "",
+    rating: 4,
     review: "",
   },
   {
@@ -2081,7 +2111,7 @@
     date: "2020-12-13",
     year: 2006,
     name: "The Host",
-    rating: 2.5,
+    rating: 2,
     review:
       "I had high-ish expectations and was finally a bit underwhelmed. Too over the top and kitsch for my tastes. Overall entertaining movie.",
   },
@@ -2124,7 +2154,7 @@
     date: "2020-06-07",
     year: 2010,
     name: "The King's Speech",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -2173,7 +2203,7 @@
     date: "2020-06-07",
     year: 1999,
     name: "The Matrix",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -2201,7 +2231,7 @@
     date: "2020-10-19",
     year: 1961,
     name: "The Monkey King",
-    rating: "",
+    rating: 5,
     review: "My entire childhood",
   },
   {
@@ -2437,6 +2467,7 @@
     rating: "",
     review: "",
   },
+  // >U
   {
     date: "2020-12-29",
     year: 2000,
@@ -2448,7 +2479,7 @@
     date: "2020-08-03",
     year: 2020,
     name: "Undine",
-    rating: "",
+    rating: 2,
     review: "",
   },
   {
@@ -2458,14 +2489,16 @@
     rating: "",
     review: "",
   },
+  // >V
   {
     date: "2020-08-03",
     year: 2015,
     name: "Victoria",
-    rating: 3.5,
+    rating: 3,
     review:
       'Tensed film, irritating main character. The "amateur camera" style literally gave me headache.',
   },
+  // >W
   {
     date: "2020-06-07",
     year: 2008,
@@ -2484,7 +2517,7 @@
     date: "2020-06-07",
     year: 2014,
     name: "What We Do in the Shadows",
-    rating: "",
+    rating: 5,
     review: "",
   },
   {
@@ -2519,7 +2552,7 @@
     date: "2020-12-27",
     year: 2020,
     name: "Wonder Woman 1984",
-    rating: 2.5,
+    rating: 2,
     review:
       "Needed to close my eyes from time to time because it was just too cheesy to witness. Entertaining anyway.",
   },
@@ -2530,6 +2563,7 @@
     rating: "",
     review: "",
   },
+  // >X
   {
     date: "2020-08-16",
     year: 2000,
@@ -2579,6 +2613,7 @@
     rating: "",
     review: "",
   },
+  // >Y
   {
     date: "2020-06-07",
     year: 2019,
@@ -2600,6 +2635,7 @@
     rating: "",
     review: "",
   },
+  // >Z
   {
     date: "2020-06-07",
     year: 2016,
