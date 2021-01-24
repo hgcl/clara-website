@@ -30,6 +30,7 @@ export async function getStaticProps() {
       "slug",
       "tags",
       "title",
+      "toBeTested",
     ],
     isRecipe
   );

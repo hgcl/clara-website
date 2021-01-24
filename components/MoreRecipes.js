@@ -26,17 +26,18 @@ export default function MoreRecipes({ posts }) {
           .map((post) => (
             <RecipePostPreview
               type="isRecipe"
-              key={post.slug}
-              title={post.title}
+              categories={post.categories}
               coverImage={post.coverImage}
               date={post.date}
-              slug={post.slug}
-              excerpt={post.excerpt}
-              categories={post.categories}
-              tags={post.tags}
               difficulty={post.difficulty}
               duration={post.duration}
+              excerpt={post.excerpt}
               favorite={post.favorite}
+              key={post.slug}
+              slug={post.slug}
+              tags={post.tags}
+              title={post.title}
+              toBeTested={post.toBeTested}
             />
           ))}
       </div>
