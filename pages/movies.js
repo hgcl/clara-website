@@ -11,7 +11,17 @@ export default function Movies({ allMovies }) {
       <Container>
         <Header pageDescription={"Get the popcorn ready"} />
         <div>
-          {allMovies.title} {allMovies.release_date}
+          {allMovies
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((allMovies) => {
+              const { tmdb_id, title, release_date, poster_path } = allMovies;
+              return (
+                <article key={tmdb_id}>
+                  {title}
+                  {poster_path}
+                </article>
+              );
+            })}
         </div>
       </Container>
     </Layout>
