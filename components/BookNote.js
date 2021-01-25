@@ -106,12 +106,12 @@ const BookModal = ({
             </div>
             <div onClick={onClose} className="flex items-center h-screen p-8">
               <div className="text-xl relative w-full">
-                <div className="text-center md:text-left mb-8">
+                <div className="text-center md:text-left mb-6">
                   <p className="comment tracking mb-4 md:fixed md:top-6">
                     {review ? "Review" : "Notes"}
                   </p>
                   <h2 className="text-3xl leading-snug mb-1">{title}</h2>
-                  <p>by {author}</p>
+                  {author && <p>by {author}</p>}
                 </div>
                 <p className="mb-8">{review ? review : notes}</p>
                 {link && (

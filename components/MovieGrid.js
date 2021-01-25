@@ -10,15 +10,22 @@ export default function MovieGrid({ movies, dateLabel }) {
       {movies
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .map((movie) => {
-          const { coverUrl, date, rating, review, title, tmdb_id } = movie;
+          const {
+            coverUrl,
+            date,
+            notes,
+            rating,
+            review,
+            title,
+            tmdb_id,
+          } = movie;
           return (
             <article key={tmdb_id}>
               <BookNote
                 coverUrl={coverUrl}
                 title={title}
-                author="{author}"
                 rating={rating}
-                notes="{notes}"
+                notes={notes}
                 review={review}
                 dateLabel={dateLabel}
                 date={date}

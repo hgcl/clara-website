@@ -28,7 +28,9 @@ export default function BookTile({
         <h2 className="mt-4 capitalize text-xl tracking-tight leading-snug">
           {title}
         </h2>
-        <p className="mt-1 text-gray-regular leading-snug">{author}</p>
+        <p className="mt-1 text-gray-regular leading-snug">
+          {author && author}
+        </p>
         {rating && (
           <p className="text-gray-regular">
             <Rating rating={rating} />

@@ -11,16 +11,16 @@ export default [
     tmdb_id: 333371,
     date: "2020-06-07",
     title: "10 Cloverfield Lane",
-    rating: "3",
-    review: "",
+    rating: 3,
+    review: "More of a psychological thriller than an alien movie",
   },
-  // {
-  //   tmdb_id: 389,
-  //   date: "2020-06-07",
-  //   title: "12 Angry Men",
-  //   rating: "5",
-  //   review: "",
-  // },
+  {
+    tmdb_id: 389,
+    date: "2020-06-07",
+    title: "12 Angry Men",
+    rating: 5,
+    review: "Breath-taking",
+  },
   // {
   //   date: "2020-06-07",
   //   year: 2013,
@@ -65,8 +65,8 @@ export default [
   //   review: "",
   // },
   // {
+  //   tmdb_id: 598049,
   //   date: "2020-10-14",
-  //   year: 2020,
   //   title: "A Friendly Tale...",
   //   rating: 3,
   //   review:
@@ -101,8 +101,8 @@ export default [
   //   review: "",
   // },
   // {
+  //   tmdb_id: 420817,
   //   date: "2020-06-07",
-  //   year: 1992,
   //   title: "Aladdin",
   //   rating: 3,
   //   review:
