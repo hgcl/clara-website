@@ -1,4 +1,4 @@
-import BookNote from "./BookNote";
+import MediaModal from "./MediaModal";
 
 export default function BookGrid({ books, dateLabel }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -25,7 +25,7 @@ export default function BookGrid({ books, dateLabel }) {
 
           return (
             <article key={isbn}>
-              <BookNote
+              <MediaModal
                 coverUrl={coverUrl}
                 title={title}
                 author={author}

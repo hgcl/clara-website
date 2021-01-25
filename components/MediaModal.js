@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CLOSE } from "../lib/constants";
-import BookTile from "./BookTile";
+import MediaTile from "./MediaTile";
 import Link from "./link";
 import DateFormatter from "./date-formatter";
 
-export default function BookNote({
+export default function MediaModal({
   coverUrl,
   title,
   author,
@@ -27,7 +27,7 @@ export default function BookNote({
           aria-label={title}
           onClick={() => setOpen((o) => !o)}
         >
-          <BookTile
+          <MediaTile
             coverUrl={coverUrl}
             title={title}
             author={author}
@@ -38,7 +38,7 @@ export default function BookNote({
         </button>
       ) : (
         <div className="text-left">
-          <BookTile
+          <MediaTile
             coverUrl={coverUrl}
             title={title}
             author={author}
@@ -48,7 +48,7 @@ export default function BookNote({
           />
         </div>
       )}
-      <BookModal
+      <Modal
         open={open}
         onClose={closeModal}
         title={title}
@@ -62,7 +62,7 @@ export default function BookNote({
   );
 }
 
-const BookModal = ({
+const Modal = ({
   open,
   onClose,
   title,

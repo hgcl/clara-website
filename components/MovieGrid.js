@@ -1,4 +1,4 @@
-import BookNote from "./BookNote";
+import MediaModal from "./MediaModal";
 
 export default function MovieGrid({ movies, dateLabel }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -21,7 +21,7 @@ export default function MovieGrid({ movies, dateLabel }) {
           } = movie;
           return (
             <article key={tmdb_id}>
-              <BookNote
+              <MediaModal
                 coverUrl={coverUrl}
                 title={title}
                 rating={rating}
