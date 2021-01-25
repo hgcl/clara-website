@@ -40,7 +40,7 @@ export default function Footer() {
         <p className="text-center">
           Notice something wrong?{" "}
           <Link href="https://github.com/hgcl/clara-website/issues">
-            Fill an issue!
+            File an issue!
           </Link>{" "}
           —{" "}
           <Link
