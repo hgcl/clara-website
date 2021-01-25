@@ -97,25 +97,17 @@ export default [
     tmdb_id: 149,
     date: "2020-08-13",
     title: "Akira",
-    rating: "2",
+    rating: 2,
     review: "",
   },
   {
     tmdb_id: 420817,
-    date: "2020-06-07",
+    date: "2020-10-07",
     title: "Aladdin",
     rating: 3,
     review:
       "Will Smith is unexpectedly brilliant as the genie. Otherwise cheesy but good enough for me.",
   },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-07",
-  //   year: 2019,
-  //   title: "Aladdin",
-  //   rating: "3",
-  //   review: "",
-  // },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -137,7 +129,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2001,
   //   title: "Amélie",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -387,7 +379,7 @@ export default [
   // date: "2021-01-23",
   //   year: 1982,
   //   title: "Blade Runner",
-  //   rating: "3",
+  //   rating: 3,
   //   review:
   //     " I finally watched this classic that wonderfully depicts the year 2019: dark and polluted, people from all nationalities mixing, not one dominant language, strong Japanese video game feel. Human-like and life-like androids are a thing. People still have retro haircuts and clothes—of course. I loved the strong vibrations of the soundtrack. Tonight, we are watching the 2049 edition.",
   // },
@@ -525,7 +517,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2006,
   //   title: "Children of Men",
-  //   rating: "2",
+  //   rating: 2,
   //   review: "",
   // },
   // {
@@ -557,7 +549,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2017,
   //   title: "Coco",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -565,7 +557,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2009,
   //   title: "Coraline",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -581,7 +573,7 @@ export default [
   // date: "2021-01-22",
   //   year: 2018,
   //   title: "Crazy Rich Asians",
-  //   rating: "3",
+  //   rating: 3,
   //   review:
   //     "A light rom com that gives just what you are expecting from it. It is cheesy, overacted, but very entertaining.",
   // },
@@ -599,7 +591,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2016,
   //   title: "Deadpool",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -639,7 +631,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2012,
   //   title: "Django Unchained",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -713,7 +705,7 @@ export default [
   // date: "2020-06-29",
   //   year: 2014,
   //   title: "Ex Machina",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -721,7 +713,7 @@ export default [
   // date: "2020-06-29",
   //   year: 2019,
   //   title: "Extreme Job",
-  //   rating: "4",
+  //   rating: 4,
   //   review: "",
   // },
   // // >F
@@ -738,7 +730,7 @@ export default [
   // date: "2020-06-07",
   //   year: 1940,
   //   title: "Fantasia",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -746,7 +738,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2016,
   //   title: "Fantastic Beasts and Where to Find Them",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -778,7 +770,7 @@ export default [
   // date: "2020-06-07",
   //   year: 1999,
   //   title: "Fight Club",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -794,7 +786,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2003,
   //   title: "Finding Nemo",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -843,7 +835,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2017,
   //   title: "Get Out",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
@@ -989,7 +981,7 @@ export default [
   // date: "2020-06-07",
   //   year: 2013,
   //   title: "Her",
-  //   rating: "5",
+  //   rating: 5,
   //   review: "",
   // },
   // {
