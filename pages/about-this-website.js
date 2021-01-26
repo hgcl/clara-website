@@ -16,7 +16,7 @@ export default function AboutWebsite({}) {
           <DatePost dateString="2021-01-04 08:31:26" lastUpdated />
           <p className="comment">
             Disclaimer: I built this website as a super newbie to everything
-            mentioned below. I used a lot of copy-pasting, lack the right
+            mentioned below. I used a lot of copy-pasting lack the right
             terminology and best practices—so don't take my word for it.
           </p>
           <h2>The big picture</h2>
@@ -31,11 +31,21 @@ export default function AboutWebsite({}) {
           </p>
           <p>
             Feel free to send me any feedback / improvement ideas on Twitter{" "}
-            <Link href="https://twitter.com/clara__le">@clara__le</Link>
+            <Link href="https://twitter.com/clara__le">@clara__le</Link> or
+            directly{" "}
+            <Link href="https://github.com/hgcl/clara-website/issues">
+              File an issue
+            </Link>{" "}
+            on Github.
           </p>
 
           <h2>Building Blocks</h2>
           <ul>
+            <li>
+              <Link href="https://robinmetral.com">Robin</Link> might be the
+              most important part of the equation, as I am always pestering him
+              with questions—thank you!
+            </li>
             <li>
               <Link href="https://github.com/vercel/next.js/tree/canary/examples/blog-starter">
                 blog starter example
@@ -85,12 +95,25 @@ export default function AboutWebsite({}) {
               to easily set up self-hosted font bundles
             </li>
             <li>
+              The typefaces I use are <em>Vesper Libre</em> from the Mota Italic
+              foundry (check out its{" "}
+              <Link href="https://ilovetypography.com/2009/12/15/font-design-vesper-typeface-devanagari/">
+                creation process
+              </Link>
+              ) and <em>Source Sans Pro</em> designed by Paul D. Hunt for Adobe.
+            </li>
+            <li>
               <Link href="https://openlibrary.org/developers/api">
                 Open Library API
               </Link>{" "}
               to get book covers and information for the{" "}
               <Link href="/books">Books</Link> and{" "}
               <Link href="/antilibrary">Antilibrary</Link> pages
+            </li>
+            <li>
+              <Link href="https://www.themoviedb.org/">TMDb API</Link> to get
+              movie posters and information for the{" "}
+              <Link href="/movies">movies</Link> page
             </li>
           </ul>
           <p>
@@ -104,8 +127,8 @@ export default function AboutWebsite({}) {
           <h2>Tools & Extensions</h2>
           <p>
             This list will be useless for more seasoned coders, but might be
-            handy for someone just starting out—past me would have appreciated
-            it.
+            handy for someone just starting out—<em>past me</em> would have
+            appreciated it.
           </p>
           <ul>
             <li>
