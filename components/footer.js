@@ -7,14 +7,21 @@ import IconEtsy from "../public/icons/IconEtsy";
 import IconRss from "../public/icons/IconRss";
 import IconGithub from "../public/icons/IconGithub";
 
-// TODO add fade in animation
+// add fade in animation
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useViewportScroll,
+} from "framer-motion";
+
 export default function Footer() {
   const iconStyle = "mx-2";
   const svgStyle =
     "h-4 fill-current text-gray-regular transition duration-500 hover:text-accent";
   return (
-    <footer className="bg-gray-dark h-56 mb-16">
-      <div className="flex flex-col items-center text-gray-regular h-full justify-end mb-16 mx-8">
+    <footer className="z-0 h-64 sticky bottom-0">
+      <div className="bg-black flex flex-col items-center text-gray-regular h-full justify-end pb-24 px-8">
         <div className="flex flex-row items-center mb-8 mx-4">
           <span className={iconStyle}>
             <Link href="https://twitter.com/clara__le" aria-label="Twitter">

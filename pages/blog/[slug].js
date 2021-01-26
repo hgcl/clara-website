@@ -34,7 +34,7 @@ export default function Post({ source, post, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article>
               <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
               <PostHeader
                 title={post.title}
