@@ -1,6 +1,7 @@
 import Rating from "./Rating";
 import Image from "next/image";
 import { STAR } from "../lib/constants";
+import Logo from "../public/icons/Logo";
 
 export default function MediaTile({
   review,
@@ -13,8 +14,10 @@ export default function MediaTile({
   return (
     <>
       <div className="absolute">
-        <div className="relative w-full -top-4 -left-2 text-2xl z-10">
-          {(review || notes) && `${STAR}`}
+        <div className="z-10 relative w-full -top-1 -left-1 text-2xl transform rotate-45">
+          {(review || notes) && (
+            <Logo className="fill-current text-white w-3 opacity-60" />
+          )}
         </div>
       </div>
       <Image

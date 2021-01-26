@@ -27,29 +27,13 @@ const Menu = ({ open, hideCloseButton, onClose }) => {
   return (
     <AnimatePresence>
       {open && (
-        <motion.div
-          key="modal"
-          exit={{ opacity: 0 }}
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-        >
+        <motion.div key="modal" exit={{ opacity: 0 }}>
           {/* Modal container / overlay */}
           <div className="fixed w-screen h-screen" onClick={onClose}>
             {/* Modal pop-up */}
             <div
               className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
               onClick={onClose}
-              style={
-                {
-                  // opacity: open ? 1.0 : 0,
-                  // animation: open
-                  //   ? "none"
-                  //   : `0% { top: 131px; }
-                  // 30% { top: 125px; } 0.4s`,
-                  // transition: "all ease 0.2s",
-                  // transitionDelay: "0.2s",
-                }
-              }
             >
               {!hideCloseButton && (
                 <div className="absolute top-4 right-8 text-4xl">
