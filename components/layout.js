@@ -16,7 +16,7 @@ export default function Layout({ preview, children, title, noHentry }) {
   return (
     <>
       <Meta title={title} />
-      <div className="min-h-screen z-10 relative bg-gray-dark pb-16">
+      <div className="min-h-screen z-10 relative bg-gray-dark pb-16 md:pb-32">
         {/* <Alert preview={preview} /> */}
         <motion.nav className="z-30 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
           <Menu open={open} onClose={closeModal} />
