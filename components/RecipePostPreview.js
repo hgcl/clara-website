@@ -8,7 +8,7 @@ import {
   DOT,
   RECIPE_DIFFULTY_ARRAY,
   RECIPE_DURATION_ARRAY,
-  WAFFLE,
+  STAR,
 } from "../lib/constants";
 
 export default function PostPreview({
@@ -40,7 +40,7 @@ export default function PostPreview({
         />
         {/* Top upper left corner: */}
         <div className="absolute left-3 top-0 text-3xl">
-          {favorite && WAFFLE}
+          {favorite && STAR}
           <p className="text-lg all-small-caps pt-2">
             {toBeTested && "To Be Tested"}
           </p>
