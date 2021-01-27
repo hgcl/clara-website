@@ -2,7 +2,7 @@ import { getAllBooks } from "../lib/getAllBooks";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import BookGrid from "../components/BookGrid";
+import MediaGrid from "../components/MediaGrid";
 import Link from "../components/link";
 import booksData from "../data/booksData.js";
 
@@ -18,7 +18,7 @@ export default function Books({ allBooks }) {
             </>
           }
         />
-        <BookGrid books={allBooks} dateLabel="Read on" />
+        <MediaGrid type="isBook" items={allBooks} dateLabel="Read on" />
       </Container>
     </Layout>
   );

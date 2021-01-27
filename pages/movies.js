@@ -2,7 +2,7 @@ import { getAllMovies } from "../lib/getAllMovies";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import MovieGrid from "../components/MovieGrid";
+import MediaGrid from "../components/MediaGrid";
 import watchedData from "../data/watchedData.js";
 
 export default function Movies({ allMovies }) {
@@ -10,7 +10,7 @@ export default function Movies({ allMovies }) {
     <Layout title={"Movies"}>
       <Container>
         <Header pageDescription={"Get the popcorn ready"} />
-        <MovieGrid movies={allMovies} dateLabel="Watched on" />
+        <MediaGrid type="isMovie" items={allMovies} dateLabel="Watched on" />
       </Container>
     </Layout>
   );

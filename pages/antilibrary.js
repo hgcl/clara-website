@@ -2,7 +2,7 @@ import { getAllBooks } from "../lib/getAllBooks";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import BookGrid from "../components/BookGrid";
+import MediaGrid from "../components/MediaGrid";
 import antilibraryData from "../data/antilibraryData.js";
 
 export default function Antilibrary({ allBooks }) {
@@ -14,7 +14,7 @@ export default function Antilibrary({ allBooks }) {
             "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
-        <BookGrid books={allBooks} dateLabel="Added on" />
+        <MediaGrid type="isBook" items={allBooks} dateLabel="Added on" />
       </Container>
     </Layout>
   );
