@@ -53,6 +53,7 @@ export default function MediaGrid({ items, dateLabel, type }) {
               date,
               notes,
               rating,
+              release_date,
               review,
               title,
               tmdb_id,
@@ -66,7 +67,7 @@ export default function MediaGrid({ items, dateLabel, type }) {
                   notes={notes}
                   review={review}
                   dateLabel={dateLabel}
-                  date={date}
+                  date={date || release_date}
                   // link={link}
                 />
               </article>
