@@ -10,7 +10,7 @@ Want to know what I used to build my website? [Have a look here.](https://claral
 - Set up Tailwind Typography ✅
 - Set up [RSS feed](https://clarale.com/rss.xml) ✅
 - Pages: add [Books](https://clarale.com/books), [Antilibrary](https://clarale.com/antilibrary), [About This Website](https://clarale.com/about-this-website) pages ✅
-- Pages: add [Portfolio](https://clarale.com/portfolio), [Favorites](https://clarale.com/favorites), [Recipe Book](https://clarale.com/recipe-book) ✅
+- Pages: add [Portfolio](https://clarale.com/portfolio), [Favorites](https://clarale.com/favorites), [Recipe Book](https://clarale.com/recipe-book), [Movies]([Recipe Book](https://clarale.com/movies)) ✅
 - Connect to digital garden
 - More advanced IndieWeb features: add [tokens](https://tokens.indieauth.com/), add Webmentions
 
