@@ -1129,13 +1129,12 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  //   year: 1998,
-  //   title: "Kirikou and the Sorceress",
-  //   rating: 4,
-  //   review: "Childhood feelings, cannot be objective with this one.",
-  // },
+  {
+    tmdb_id: 21348,
+    title: "Kirikou and the Sorceress",
+    rating: 4,
+    review: "Childhood feelings, cannot be objective with this one.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1217,14 +1216,13 @@ export default [
   //   rating: 5,
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-01",
-  //   year: 2006,
-  //   title: "Little Miss Sunshine",
-  //   rating: 4,
-  //   review: "Heartwarming and feel good.",
-  // },
+  {
+    tmdb_id: 773,
+    date: "2020-10-01",
+    title: "Little Miss Sunshine",
+    rating: 4,
+    review: "Heartwarming and feel good.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1282,15 +1280,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2021-01-11",
-  //   year: 2018,
-  //   title: "Maniac",
-  //   rating: 5,
-  //   review:
-  //     "Crazy attention to detail, just love the retro-futuristic backdrop. Amazing acting.",
-  // },
+  {
+    tmdb_id: 73411,
+    date: "2021-01-11",
+    title: "Maniac",
+    rating: 5,
+    review:
+      "Crazy attention to detail, just love the retro-futuristic backdrop. Amazing acting.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1363,15 +1360,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-08-30",
-  //   year: 2019,
-  //   title: "Midsommar",
-  //   rating: 4,
-  //   review:
-  //     "Tensed and eerie vibe behind cheerful smiles. Completely believable, loved it.",
-  // },
+  {
+    tmdb_id: 530385,
+    date: "2020-08-30",
+    title: "Midsommar",
+    rating: 4,
+    review:
+      "Tensed and eerie vibe behind cheerful smiles. Completely believable, loved it.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1436,14 +1432,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 1998,
-  //   title: "Mulan",
-  //   rating: 3,
-  //   review: "A remake of the Disney animation film without the funny bits.",
-  // },
+  {
+    tmdb_id: 337401,
+    date: "2020-06-07",
+    title: "Mulan",
+    rating: 3,
+    review: "A remake of the Disney animation film without the funny bits.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-09-28",
@@ -1567,14 +1562,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2019,
-  //   title: "Parasite",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 496243,
+    date: "2019-12-31",
+    title: "Parasite",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1623,14 +1617,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-08",
-  //   year: 2007,
-  //   title: "Please Vote for Me",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 38052,
+    date: "2010-12-31",
+    title: "Please Vote for Me",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1673,14 +1666,13 @@ export default [
   //   review: "",
   // },
   // // >R
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2018,
-  //   title: "Ralph Breaks the Internet",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 404368,
+    date: "2020-06-07",
+    title: "Ralph Breaks the Internet",
+    rating: 5,
+    review: "I laughed so hard it hurt.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1786,31 +1778,27 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-08-26",
-  //   year: 2012,
-  //   title: "Searching for Sugar Man",
-  //   rating: 4,
-  //   review: "",
-  // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-19",
-  //   year: 2012,
-  //   title: "Seven Psychopaths",
-  //   rating: 3,
-  //   review:
-  //     "Completely crazy and over the top characters, dialogues are amazing. Loved how they mixed the screenplay and reality.",
-  // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2009,
-  //   title: "Sherlock Holmes",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 84334,
+    date: "2017-12-31",
+    title: "Searching for Sugar Man",
+    rating: 4,
+    review: "",
+  },
+  {
+    tmdb_id: 86838,
+    date: "2020-10-19",
+    title: "Seven Psychopaths",
+    rating: 3,
+    review:
+      "Completely crazy and over the top characters, dialogues are amazing. Loved how they mixed the screenplay and reality.",
+  },
+  {
+    tmdb_id: 10528,
+    title: "Sherlock Holmes",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1843,14 +1831,12 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2010,
-  //   title: "Shutter Island",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 11324,
+    title: "Shutter Island",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -1891,15 +1877,14 @@ export default [
   //   rating: 1,
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2021-01-03",
-  //   year: 2020,
-  //   title: "Soul",
-  //   rating: 5,
-  //   review:
-  //     "2020 was pretty sad in terms of movie releases, but Soul might have just saved the year. It is about passion, jazz, purpose and what it means to be alive.",
-  // },
+  {
+    tmdb_id: 508442,
+    date: "2021-01-03",
+    title: "Soul",
+    rating: 5,
+    review:
+      "2020 was pretty sad in terms of movie releases, but Soul might have just saved the year. It is about passion, jazz, purpose and what it means to be alive.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-08-03",
@@ -1924,15 +1909,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-22",
-  //   year: 2016,
-  //   title: "Split",
-  //   rating: 4,
-  //   review:
-  //     "Really nice tension building all throughout the movie, amazing acting.",
-  // },
+  {
+    tmdb_id: 381288,
+    date: "2020-12-22",
+    title: "Split",
+    rating: 4,
+    review:
+      "Really nice tension building all throughout the movie, amazing acting.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-08",
@@ -2046,23 +2030,21 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-08-27",
-  //   year: 2020,
-  //   title: "Tenet",
-  //   rating: 3,
-  //   review:
-  //     'Plot that is much less straightforward than Nolan\'s previous films. He followed the palindrome idea to the end. Less for the audience and more for the sake of "cinema". Would need to watch it a second time to fully grasp it.',
-  // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2011,
-  //   title: "The Artist",
-  //   rating: 5,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 577922,
+    date: "2020-08-27",
+    title: "Tenet",
+    rating: 3,
+    review:
+      'Plot that is much less straightforward than Nolan\'s previous films. He followed the palindrome idea to the end. Less for the audience and more for the sake of "cinema". Would need to watch it a second time to fully grasp it.',
+  },
+  {
+    tmdb_id: 74643,
+    date: "2011-12-31",
+    title: "The Artist",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2175,14 +2157,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-06",
-  //   year: 2019,
-  //   title: "The Gentlemen",
-  //   rating: 4,
-  //   review: "Guy Ritchie at his best. Amazing transitions between scenes.",
-  // },
+  {
+    tmdb_id: 522627,
+    date: "2020-10-06",
+    title: "The Gentlemen",
+    rating: 4,
+    review: "Guy Ritchie at his best. Amazing transitions between scenes.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2191,15 +2172,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-13",
-  //   year: 1966,
-  //   title: "The Good, the Bad and the Ugly",
-  //   rating: 3,
-  //   review:
-  //     "It might not have helped that we watched the 3 hours version, but I was falling asleep by the end—it was very late. Amazing silences, staging and soundtrack otherwise.",
-  // },
+  {
+    tmdb_id: 429,
+    date: "2020-12-13",
+    title: "The Good, the Bad and the Ugly",
+    rating: 3,
+    review:
+      "It might not have helped that we watched the 3 hours version, but I was falling asleep by the end—it was very late. Amazing silences, staging and soundtrack otherwise.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2264,15 +2244,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-13",
-  //   year: 2006,
-  //   title: "The Host",
-  //   rating: 2,
-  //   review:
-  //     "I had high-ish expectations and was finally a bit underwhelmed. Too over the top and kitsch for my tastes. Overall entertaining movie.",
-  // },
+  {
+    tmdb_id: 1255,
+    date: "2020-12-13",
+    title: "The Host",
+    rating: 2,
+    review:
+      "I had high-ish expectations and was finally a bit underwhelmed. Too over the top and kitsch for my tastes. Overall entertaining movie.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2513,23 +2492,21 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-09-15",
-  //   year: 1999,
-  //   title: "The Sixth Sense",
-  //   rating: 4,
-  //   review: "Predictable ending but liked it anyway.",
-  // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-09-23",
-  //   year: 2020,
-  //   title: "The Social Dilemma",
-  //   rating: 4,
-  //   review:
-  //     "A lot of good points and quotable punchlines. The array of interviewees could have been from more diverse backgrounds.",
-  // },
+  {
+    tmdb_id: 745,
+    date: "2020-09-15",
+    title: "The Sixth Sense",
+    rating: 4,
+    review: "Predictable ending but liked it anyway.",
+  },
+  {
+    tmdb_id: 656690,
+    date: "2020-09-23",
+    title: "The Social Dilemma",
+    rating: 4,
+    review:
+      "A lot of good points and quotable punchlines. The array of interviewees could have been from more diverse backgrounds.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2554,15 +2531,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-13",
-  //   year: 1987,
-  //   title: "The Untouchables",
-  //   rating: 4,
-  //   review:
-  //     "Astonishing photography. Very conservative in its depiction of women and morals, but was it represented like that on purpose? Hard to tell in retrospect.",
-  // },
+  {
+    tmdb_id: 117,
+    date: "2020-12-13",
+    title: "The Untouchables",
+    rating: 4,
+    review:
+      "Astonishing photography. Very conservative in its depiction of women and morals, but was it represented like that on purpose? Hard to tell in retrospect.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-08-30",
@@ -2701,15 +2677,14 @@ export default [
   //   review: "",
   // },
   // // >V
-  // {
-  //   tmdb_id: ,
-  // date: "2020-08-03",
-  //   year: 2015,
-  //   title: "Victoria",
-  //   rating: 3,
-  //   review:
-  //     'Tensed film, irritating main character. The "amateur camera" style literally gave me headache.',
-  // },
+  {
+    tmdb_id: 320007,
+    date: "2020-08-03",
+    title: "Victoria",
+    rating: 3,
+    review:
+      'Tensed film, irritating main character. The "amateur camera" style literally gave me headache.',
+  },
   // // >W
   // {
   //   tmdb_id: ,
@@ -2767,15 +2742,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-27",
-  //   year: 2020,
-  //   title: "Wonder Woman 1984",
-  //   rating: 2,
-  //   review:
-  //     "Needed to close my eyes from time to time because it was just too cheesy to witness. Entertaining anyway.",
-  // },
+  {
+    tmdb_id: 464052,
+    date: "2020-12-27",
+    title: "Wonder Woman 1984",
+    rating: 2,
+    review:
+      "Needed to close my eyes from time to time because it was just too cheesy to witness. Entertaining anyway.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
