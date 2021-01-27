@@ -1,4 +1,4 @@
-import MediaModal from "./MediaModal";
+import MediaTile from "./MediaTile";
 
 export default function MovieGrid({ movies, dateLabel }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -21,7 +21,7 @@ export default function MovieGrid({ movies, dateLabel }) {
           } = movie;
           return (
             <article key={tmdb_id}>
-              <MediaModal
+              <MediaTile
                 coverUrl={coverUrl}
                 title={title}
                 rating={rating}
