@@ -42,7 +42,11 @@ export default function MediaGrid({ items, dateLabel, type }) {
           })}
       {type === "isMovie" &&
         items
-          .sort((a, b) => new Date(b.date) - new Date(a.date))
+          .sort(
+            (a, b) =>
+              new Date(b.date || b.release_date) -
+              new Date(a.date || a.release_date)
+          )
           .map((movie) => {
             const {
               coverUrl,
