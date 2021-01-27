@@ -253,6 +253,13 @@ export default [
       "Music-driven, original car chasing scenes. Would have preferred a more curated / coherent soundtrack.",
   },
   {
+    tmdb_id: 66980,
+    date: "2020-12-31",
+    title: "Babylon Berlin",
+    rating: 3,
+    review: "",
+  },
+  {
     tmdb_id: 105,
     date: "2010-06-07",
     title: "Back to the Future",
@@ -342,15 +349,21 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2021-01-23",
-  //   year: 1982,
-  //   title: "Blade Runner",
-  //   rating: 3,
-  //   review:
-  //     "I finally watched this classic that wonderfully depicts the year 2019: dark and polluted, people from all nationalities mixing, not one dominant language, strong Japanese video game feel. Human-like and life-like androids are a thing. People still have retro haircuts and clothes—of course. I loved the strong vibrations of the soundtrack. Tonight, we are watching the 2049 edition.",
-  // },
+  {
+    tmdb_id: 78,
+    date: "2021-01-23",
+    title: "Blade Runner",
+    rating: 3,
+    review:
+      "I finally watched this classic that wonderfully depicts the year 2019: dark and polluted, people from all nationalities mixing, not one dominant language, strong Japanese video game feel. Human-like and life-like androids are a thing. People still have retro haircuts and clothes—of course. I loved the strong vibrations of the soundtrack. Tonight, we are watching the 2049 edition.",
+  },
+  {
+    tmdb_id: 335984,
+    date: "2021-01-24",
+    title: "Blade Runner 2049",
+    rating: "",
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   //   date: "2018-12-31",
@@ -445,7 +458,8 @@ export default [
   //   review: "",
   // },
   // {
-  //   tmdb_id: ,  //   year: 2006,
+  //   tmdb_id: ,
+  //   year: 2006,
   //   title: "Casino Royale",
   //   rating: "",
   //   review: "",
@@ -464,14 +478,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2018-06-07",
-  //   year: 2006,
-  //   title: "Children of Men",
-  //   rating: 2,
-  //   review: "",
-  // },
+  {
+    tmdb_id: 9693,
+    date: "2018-06-07",
+    title: "Children of Men",
+    rating: 2,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2006,
@@ -515,15 +528,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2021-01-22",
-  //   year: 2018,
-  //   title: "Crazy Rich Asians",
-  //   rating: 3,
-  //   review:
-  //     "A light rom com that gives just what you are expecting from it. It is cheesy, overacted, but very entertaining.",
-  // },
+  {
+    tmdb_id: 455207,
+    date: "2021-01-22",
+    title: "Crazy Rich Asians",
+    rating: 3,
+    review:
+      "A light rom com that gives just what you are expecting from it. It is cheesy, overacted, but very entertaining.",
+  },
   // // >D
   // {
   //   tmdb_id: ,
@@ -555,14 +567,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-07",
-  //   year: 2020,
-  //   title: "Devs",
-  //   rating: 4,
-  //   review: "Eerie vibe all along",
-  // },
+  {
+    tmdb_id: 81349,
+    date: "2020-06-07",
+    title: "Devs",
+    rating: 4,
+    review: "Eerie vibe all along",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2014,
@@ -584,15 +595,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-08-31",
-  //   year: 1986,
-  //   title: "Down by Law",
-  //   rating: 4,
-  //   review:
-  //     "Not so much about the prison and crimes, than the encounter of three very different men that become friends.",
-  // },
+  {
+    tmdb_id: 1554,
+    date: "2020-08-31",
+    title: "Down by Law",
+    rating: 4,
+    review:
+      "Not so much about the prison and crimes, than the encounter of three very different men that become friends.",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2011,
@@ -737,13 +747,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  //   year: 2018,
-  //   title: "Free Solo",
-  //   rating: 4,
-  //   review: "One of the only times I had cold sweat during a film.",
-  // },
+  {
+    tmdb_id: 515042,
+    date: "2018-12-31",
+    title: "Free Solo",
+    rating: 4,
+    review: "One of the only times I had cold sweat during a film.",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2013,
@@ -796,15 +806,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-16",
-  //   year: 2020,
-  //   title: "Greenland",
-  //   rating: 2,
-  //   review:
-  //     "Matched my expectations. Quite realistic in some ways, but tried to show too much and became cheesy. Mean people vs. Super duper nice people when faced with an end of the world event. Irritating kid. (And why is the wife not driving even when the husband is burnt?!)",
-  // },
+  {
+    tmdb_id: 524047,
+    date: "2020-10-16",
+    title: "Greenland",
+    rating: 2,
+    review:
+      "Matched my expectations. Quite realistic in some ways, but tried to show too much and became cheesy. Mean people vs. Super duper nice people when faced with an end of the world event. Irritating kid. (And why is the wife not driving even when the husband is burnt?!)",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2014,
@@ -905,15 +914,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-10-17",
-  //   year: 2018,
-  //   title: "Hereditary",
-  //   rating: 2,
-  //   review:
-  //     "Themes very similar to Midsommar, but not working as seamlessly. Some creepy scenes but nothing remotely scary.",
-  // },
+  {
+    tmdb_id: 493922,
+    date: "2020-10-17",
+    title: "Hereditary",
+    rating: 2,
+    review:
+      "Themes very similar to Midsommar, but not working as seamlessly. Some creepy scenes but nothing remotely scary.",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2016,
@@ -1013,14 +1021,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-12-20",
-  //   year: 2008,
-  //   title: "In Bruges",
-  //   rating: 3,
-  //   review: "Super funky characters, really liked the movie!",
-  // },
+  {
+    tmdb_id: 8321,
+    date: "2020-12-20",
+    title: "In Bruges",
+    rating: 3,
+    review: "Super funky characters, really liked the movie!",
+  },
   // {
   //   tmdb_id: ,
   //   year: 2010,
@@ -1099,13 +1106,12 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  //   year: 2017,
-  //   title: "Jumanji: Welcome to the Jungle",
-  //   rating: 4,
-  //   review: "Funnier than expected",
-  // },
+  {
+    tmdb_id: 353486,
+    title: "Jumanji: Welcome to the Jungle",
+    rating: 4,
+    review: "Much funnier and entertaining than expected",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2595,14 +2601,13 @@ export default [
   //   rating: "",
   //   review: "",
   // },
-  // {
-  //   tmdb_id: ,
-  // date: "2020-06-08",
-  //   year: 2017,
-  //   title: "Three Billboards Outside Ebbing, Missouri",
-  //   rating: "",
-  //   review: "",
-  // },
+  {
+    tmdb_id: 359940,
+    date: "2020-06-08",
+    title: "Three Billboards Outside Ebbing, Missouri",
+    rating: 5,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
