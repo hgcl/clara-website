@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CLOSE, STAR } from "../lib/constants";
+import { CLOSE, ARROW } from "../lib/constants";
 import Link from "./link";
 import DateFormatter from "./date-formatter";
 import Rating from "./Rating";
@@ -59,6 +59,8 @@ export default function MediaTile({
         review={review}
         date={date}
         dateLabel={dateLabel}
+        rating={rating}
+        link={link}
       />
     </>
   );
@@ -104,6 +106,7 @@ const OpenModal = ({
   author,
   notes,
   review,
+  rating,
   date,
   dateLabel,
   link,
@@ -127,7 +130,7 @@ const OpenModal = ({
         <motion.div
           key="modal"
           exit={{ opacity: 0 }}
-          className="z-40 absolute top-0 left-0 w-screen h-screen"
+          className="h-review z-40 absolute top-0 left-0 w-screen h-screen"
           onClick={onClose}
         >
           <div
@@ -145,17 +148,22 @@ const OpenModal = ({
                   <p className="comment tracking mb-4 md:fixed md:top-6">
                     {review ? "Review" : "Notes"}
                   </p>
-                  <h2 className="text-3xl leading-snug mb-1">{title}</h2>
+                  <h2 className="p-name text-3xl leading-snug mb-1">{title}</h2>
                   {author && <p>by {author}</p>}
                 </div>
-                <p className="mb-8">{review ? review : notes}</p>
+                <p className="e-content mb-8">{review ? review : notes}</p>
                 {link && (
-                  <div className="mb-4">
+                  <div className="mb-4 comment">
                     <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
                   </div>
                 )}
+                {rating && (
+                  <p className="text-gray-regular mb-4">
+                    <Rating rating={rating} pRating />
+                  </p>
+                )}
                 <p className="text-base text-gray-regular">
-                  {dateLabel} <DateFormatter dateString={date} />
+                  {dateLabel} <DateFormatter dateString={date} dtPublished />
                 </p>
               </div>
             </div>
