@@ -3,6 +3,10 @@ export const categories = {
     title: "Berlin",
     anchor: "berlin",
   },
+  blogroll: {
+    title: "Blogroll",
+    anchor: "blogroll",
+  },
   cooking: {
     title: "Cooking",
     anchor: "cooking",
@@ -30,10 +34,6 @@ export const categories = {
   newsletter: {
     title: "Newsletter",
     anchor: "newsletter",
-  },
-  personalWebsite: {
-    title: "Personal Website",
-    anchor: "personal-website",
   },
   privacy: {
     title: "Privacy",
@@ -66,6 +66,7 @@ export const categories = {
 };
 
 export const favoritesData = [
+  // >A
   {
     link: "https://notes.andymatuschak.org/About_these_notes",
     title: "Andy Matuschak",
@@ -73,6 +74,7 @@ export const favoritesData = [
     category: [categories.digitalGarden.anchor],
     best: false,
   },
+  // >B
   {
     link: "https://beautifulwebtype.com/",
     title: "Beautiful Web Type",
@@ -88,6 +90,7 @@ export const favoritesData = [
     category: [categories.berlin.anchor],
     best: false,
   },
+  // >C
   {
     link: "https://www.horsepaste.com/",
     title: "Codenames",
@@ -104,6 +107,7 @@ export const favoritesData = [
     category: [categories.cooking.anchor],
     best: true,
   },
+  // >D
   {
     link: "https://darkreader.org/",
     title: "Dark Reader",
@@ -136,6 +140,7 @@ export const favoritesData = [
     category: [categories.privacy.anchor],
     best: false,
   },
+  // >E
   {
     link: "https://www.eaudepoisson.com/",
     title: "eau de poisson (in French)",
@@ -144,6 +149,7 @@ export const favoritesData = [
     category: [categories.travel.anchor],
     best: false,
   },
+  // >F
   {
     link: "http://feltron.com/",
     title: "Feltron annual reports",
@@ -166,6 +172,7 @@ export const favoritesData = [
     category: [categories.typography.anchor],
     best: false,
   },
+  // >G
   {
     link: "https://garticphone.com/",
     title: "Gartic Phone",
@@ -174,6 +181,7 @@ export const favoritesData = [
     category: [categories.game.anchor],
     best: false,
   },
+  // >H
   {
     link: "http://www.hemingwayapp.com/",
     title: "Hemingway Editor",
@@ -197,6 +205,7 @@ export const favoritesData = [
     category: [categories.techieTool.anchor],
     best: true,
   },
+  // >I
   {
     link: "https://ironicsans.substack.com/",
     title: "Ironic Sans",
@@ -205,6 +214,9 @@ export const favoritesData = [
     category: [categories.newsletter.anchor],
     best: false,
   },
+  // >J
+  // >K
+  // >L
   {
     link: "https://languagetool.org/",
     title: "LanguageTool",
@@ -213,6 +225,7 @@ export const favoritesData = [
     category: [categories.writing.anchor, categories.techieTool.anchor],
     best: false,
   },
+  // >M
   {
     link: "https://www.youtube.com/user/Maangchi",
     title: "Maangchi",
@@ -236,6 +249,7 @@ export const favoritesData = [
     category: [categories.cooking.anchor],
     best: false,
   },
+  // >N
   {
     link: "https://nordvpn.com/",
     title: "Nord VPN",
@@ -252,6 +266,7 @@ export const favoritesData = [
     category: [categories.productivity.anchor],
     best: false,
   },
+  // >O
   {
     link: "https://obsidian.md/",
     title: "Obsidian.md",
@@ -265,9 +280,10 @@ export const favoritesData = [
     title: "OMGLORD",
     description:
       "Designer Gabby Lord shares amazing resources on her website and through her newsletter.",
-    category: [categories.personalWebsite.anchor],
+    category: [categories.blogroll.anchor],
     best: false,
   },
+  // >P
   {
     link: "https://practicaltypography.com/",
     title: "Practical Typography",
@@ -276,6 +292,18 @@ export const favoritesData = [
     category: [categories.typography.anchor],
     best: false,
   },
+  // >Q
+  // >R
+  // >S
+  {
+    link: "https://saltsearsavor.substack.com",
+    title: "Salt Sear Savor",
+    description:
+      "Luciano is passionate about cooking and understanding what happens behind a recipe instructions. Each new post is instructive and a pleasure to read!",
+    category: [categories.cooking.anchor, categories.newsletter.anchor],
+    best: false,
+  },
+  // >T
   {
     link: "https://github.com/tailwindlabs/tailwindcss-typography/",
     title: "Tailwind CSS Typography",
@@ -300,6 +328,9 @@ export const favoritesData = [
     category: [categories.map.anchor],
     best: false,
   },
+  // >U
+  // >V
+  // >W
   {
     link: "https://waitbutwhy.com/",
     title: "Wait But Why",
@@ -308,4 +339,7 @@ export const favoritesData = [
     category: [categories.thinking.anchor],
     best: true,
   },
+  // >X
+  // >Y
+  // >Z
 ];
