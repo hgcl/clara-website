@@ -39,7 +39,7 @@ export default function PostPreview({
           }}
         />
         {/* Top upper left corner: */}
-        <div className="absolute left-3 top-0 text-3xl">
+        <div className="z-20 absolute left-3 top-0 text-3xl">
           {favorite && STAR}
           <p className="text-lg all-small-caps pt-2">
             {toBeTested && "To Be Tested"}
