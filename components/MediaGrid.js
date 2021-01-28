@@ -6,37 +6,35 @@ export default function MediaGrid({ items, dateLabel, type }) {
     "grid-template-columns": "repeat(auto-fill, minmax(8rem, 1fr))",
   };
   return (
-    <section className="grid gap-y-8 gap-x-4 md:gap-x-5" style={gridStyle}>
+    <section className="grid gap-x-1 xs:gap-x-4 gap-y-8" style={gridStyle}>
       {type === "isBook" &&
         items
           .sort((a, b) => new Date(b.date) - new Date(a.date))
           .map((book) => {
             const {
-              date,
-              title,
               author,
-              rating,
-              // publish_date,
               coverUrl,
+              date,
               isbn,
-              notes,
-              review,
               link,
+              notes,
+              rating,
+              review,
+              title,
             } = book;
 
             return (
               <article key={isbn}>
                 <MediaTile
-                  coverUrl={coverUrl}
-                  title={title}
                   author={author}
-                  rating={rating}
-                  notes={notes}
-                  review={review}
-                  dateLabel={dateLabel}
+                  coverUrl={coverUrl}
                   date={date}
+                  dateLabel={dateLabel}
                   link={link}
-                  type={type}
+                  notes={notes}
+                  rating={rating}
+                  review={review}
+                  title={title}
                 />
               </article>
             );

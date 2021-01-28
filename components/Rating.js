@@ -1,7 +1,7 @@
 import { STAR, ARROW } from "../lib/constants";
 import { RatingIconFull, RatingIconEmpty } from "../public/icons/RatingIcon";
 
-const Rating = ({ rating, pRating }) => {
+const Rating = ({ rating, pRating, height }) => {
   const emptyRating = 5 - rating;
   return (
     <span className={`${pRating && "p-rating"} flex flex-row`} value={rating}>
@@ -9,14 +9,14 @@ const Rating = ({ rating, pRating }) => {
         <RatingIconFull
           key={`rating-full-${index}`}
           className="text-white"
-          height="15"
+          height={height || 14}
         />
       ))}
       {[...Array(emptyRating)].map((_, index) => (
         <RatingIconEmpty
           key={`rating-empty-${index}`}
           className="text-gray-regular"
-          height="15"
+          height={height || 14}
         />
       ))}
     </span>

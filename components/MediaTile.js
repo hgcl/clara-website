@@ -17,7 +17,6 @@ export default function MediaTile({
   date,
   dateLabel,
   link,
-  type,
 }) {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
@@ -26,30 +25,30 @@ export default function MediaTile({
     <>
       {review || notes ? (
         <button
-          className="text-left transition duration-300 transform hover:-translate-y-4"
+          className="text-left"
           aria-label={title}
           onClick={() => setOpen((o) => !o)}
         >
           <ClosedTile
-            coverUrl={coverUrl}
-            title={title}
             author={author}
-            rating={rating}
+            coverUrl={coverUrl}
+            date={date}
             notes={notes}
+            rating={rating}
             review={review}
-            type={type}
+            title={title}
           />
         </button>
       ) : (
         <div className="text-left">
           <ClosedTile
-            coverUrl={coverUrl}
-            title={title}
-            author={author}
-            rating={rating}
-            notes={notes}
+            date={date}
             review={review}
-            type={type}
+            author={author}
+            coverUrl={coverUrl}
+            notes={notes}
+            rating={rating}
+            title={title}
           />
         </div>
       )}
@@ -70,38 +69,43 @@ export default function MediaTile({
 }
 
 const ClosedTile = ({
-  review,
-  notes,
-  coverUrl,
-  title,
   author,
+  coverUrl,
+  date,
+  notes,
   rating,
-  type,
+  review,
+  title,
 }) => {
   return (
     <>
-      <Image
-        src={coverUrl}
-        className="object-cover shadow-2xl rounded"
-        height="312rem"
-        width="200rem"
-      />
+      <div className="relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
+        <Image
+          src={coverUrl}
+          className="object-cover shadow-2xl rounded"
+          height="312rem"
+          width="200rem"
+        />
+        <motion.div
+          initial={{ opacity: "0" }}
+          whileHover={{ opacity: "0.9" }}
+          className="z-10 bg-black rounded-sm absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
+        >
+          <h2 className="text-lg leading-snug mb-2">{title}</h2>
+          <p className="text-gray-regular leading-snug">{author && author}</p>
+        </motion.div>
+      </div>
       <div>
-        {/* {type === "isBook" && (
-          <p className="mt-1 text-gray-regular leading-snug">
-            {title}
-          </p>
-        )}
-        <p className="mt-1 text-gray-regular leading-snug">
-          {author && author}
-        </p> */}
-        <div className="flex flex-row items-center mt-2">
-          {rating && <Rating rating={rating} />}
-          <span>
-            {(review || notes) && (
-              <NoteIcon className="text-white w-3 opacity-60 ml-2" />
-            )}
-          </span>
+        <div className="mt-2 flex flex-row">
+          <div className="flex flex-row items-center">
+            {rating && <Rating rating={rating} />}
+            <span>
+              {(review || notes) && <NoteIcon className="text-white ml-2" />}
+            </span>
+          </div>
+          <div className="w-full text-xs text-gray-regular text-right">
+            <DateFormatter shortDate dateString={date} />
+          </div>
         </div>
       </div>
     </>
