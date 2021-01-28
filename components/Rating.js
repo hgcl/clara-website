@@ -1,4 +1,3 @@
-import { STAR, ARROW } from "../lib/constants";
 import { RatingIconFull, RatingIconEmpty } from "../public/icons/RatingIcon";
 
 const Rating = ({ rating, pRating, height }) => {
@@ -8,14 +7,14 @@ const Rating = ({ rating, pRating, height }) => {
       {[...Array(rating)].map((_, index) => (
         <RatingIconFull
           key={`rating-full-${index}`}
-          className="text-white"
+          className="fill-current text-white"
           height={height || 14}
         />
       ))}
       {[...Array(emptyRating)].map((_, index) => (
         <RatingIconEmpty
           key={`rating-empty-${index}`}
-          className="text-gray-regular"
+          className="stroke-current text-gray-regular stroke-6"
           height={height || 14}
         />
       ))}

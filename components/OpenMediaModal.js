@@ -1,3 +1,5 @@
+import Rating from "./Rating";
+import DateFormatter from "./date-formatter";
 import { motion, AnimatePresence } from "framer-motion";
 import { CLOSE, ARROW } from "../lib/constants";
 import Link from "./link";
