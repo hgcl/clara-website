@@ -35,7 +35,7 @@ const OpenMediaModal = ({
         <motion.div
           key="modal"
           exit={{ opacity: 0 }}
-          className="h-review z-40 absolute top-0 left-0 w-screen h-screen"
+          className="h-review z-40 absolute -top-8 left-0 w-screen h-full"
           onClick={onClose}
         >
           <div
