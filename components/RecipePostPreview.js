@@ -53,7 +53,7 @@ export default function PostPreview({
           <motion.div
             initial={{ opacity: "0" }}
             whileHover={{ opacity: "0.9" }}
-            className="z-10 cursor-pointer bg-black absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
+            className="z-10 cursor-pointer bg-black rounded-sm absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
           >
             <p className="text-lg comment mb-8">
               {categories}{" "}
