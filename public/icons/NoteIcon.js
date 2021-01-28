@@ -1,11 +1,12 @@
 import React from "react";
 
-function NoteIcon({ className }) {
+function NoteIcon({ className, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 463.59 463.59"
       className={`${className} fill-current`}
+      height={height || "12"}
       focusable="false"
       aria-hidden="true"
     >
