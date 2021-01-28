@@ -165,15 +165,15 @@ const OpenModal = ({
                   {author && <p>by {author}</p>}
                 </div>
                 <p className="e-content mb-8">{review ? review : notes}</p>
-                {link && (
-                  <div className="mb-4 comment">
-                    <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
-                  </div>
-                )}
                 {rating && (
                   <p className="text-gray-regular mb-4">
-                    <Rating rating={rating} pRating />
+                    <Rating rating={rating} pRating height="16" />
                   </p>
+                )}
+                {link && (
+                  <div className="mb-2 comment">
+                    <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
+                  </div>
                 )}
                 <p className="text-base text-gray-regular">
                   {dateLabel} <DateFormatter dateString={date} dtPublished />
