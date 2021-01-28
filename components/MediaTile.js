@@ -5,7 +5,7 @@ import Link from "./link";
 import DateFormatter from "./date-formatter";
 import Rating from "./Rating";
 import Image from "next/image";
-import Logo from "../public/icons/Logo";
+import NoteIcon from "../public/icons/NoteIcon";
 
 export default function MediaTile({
   coverUrl,
@@ -17,6 +17,7 @@ export default function MediaTile({
   date,
   dateLabel,
   link,
+  type,
 }) {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
@@ -36,6 +37,7 @@ export default function MediaTile({
             rating={rating}
             notes={notes}
             review={review}
+            type={type}
           />
         </button>
       ) : (
@@ -47,6 +49,7 @@ export default function MediaTile({
             rating={rating}
             notes={notes}
             review={review}
+            type={type}
           />
         </div>
       )}
@@ -66,35 +69,41 @@ export default function MediaTile({
   );
 }
 
-const ClosedTile = ({ review, notes, coverUrl, title, author, rating }) => {
+const ClosedTile = ({
+  review,
+  notes,
+  coverUrl,
+  title,
+  author,
+  rating,
+  type,
+}) => {
   return (
     <>
-      <div className="absolute">
-        <div className="z-10 relative w-full -top-1 -left-1 text-2xl transform rotate-45">
-          {(review || notes) && (
-            <Logo className="fill-current text-white w-3 opacity-60" />
-          )}
-        </div>
-      </div>
       <Image
         src={coverUrl}
-        className="object-cover shadow-2xl"
+        className="object-cover shadow-2xl rounded"
         height="312rem"
         width="200rem"
       />
-      <ul>
-        <h2 className="mt-4 capitalize text-xl tracking-tight leading-snug">
-          {title}
-        </h2>
-        <p className="mt-1 text-gray-regular leading-snug">
-          {author && author}
-        </p>
-        {rating && (
-          <p className="text-gray-regular">
-            <Rating rating={rating} />
+      <div>
+        {/* {type === "isBook" && (
+          <p className="mt-1 text-gray-regular leading-snug">
+            {title}
           </p>
         )}
-      </ul>
+        <p className="mt-1 text-gray-regular leading-snug">
+          {author && author}
+        </p> */}
+        <div className="flex flex-row items-center mt-2">
+          {rating && <Rating rating={rating} />}
+          <span>
+            {(review || notes) && (
+              <NoteIcon className="text-white w-3 opacity-60 ml-2" />
+            )}
+          </span>
+        </div>
+      </div>
     </>
   );
 };

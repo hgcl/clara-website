@@ -36,6 +36,7 @@ export default function MediaGrid({ items, dateLabel, type }) {
                   dateLabel={dateLabel}
                   date={date}
                   link={link}
+                  type={type}
                 />
               </article>
             );
@@ -61,14 +62,15 @@ export default function MediaGrid({ items, dateLabel, type }) {
             return (
               <article key={tmdb_id}>
                 <MediaTile
-                  coverUrl={coverUrl}
-                  title={title}
-                  rating={rating}
-                  notes={notes}
-                  review={review}
-                  dateLabel={dateLabel}
-                  date={date || release_date}
                   // link={link}
+                  coverUrl={coverUrl}
+                  date={date || release_date}
+                  dateLabel={dateLabel}
+                  notes={notes}
+                  rating={rating}
+                  review={review}
+                  title={title}
+                  type={type}
                 />
               </article>
             );
