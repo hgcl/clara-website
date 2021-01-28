@@ -481,6 +481,9 @@ module.exports = {
         "3/4": "75%",
         192: "48rem",
       },
+      maxHeight: {
+        "1/4": "25%",
+      },
       minWidth: {
         "1/4": "25%",
         "1/2": "50%",
@@ -490,6 +493,9 @@ module.exports = {
       },
       scale: {
         101: "1.01",
+      },
+      screens: {
+        xs: "361px",
       },
       spacing: {
         "2px": "2px",
