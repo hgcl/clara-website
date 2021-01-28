@@ -1118,13 +1118,13 @@ export default [
     rating: 4,
     isbn: "9782940516513",
   },
-  {
-    date: "2019-02-30",
-    title: "Evil",
-    author: "Julia Shaw",
-    rating: 3,
-    isbn: "9781419729492",
-  },
+  // {
+  //   date: "2019-02-30", // date problem???
+  //   title: "Evil",
+  //   author: "Julia Shaw",
+  //   rating: 3,
+  //   isbn: "9781419729492",
+  // },
   // {
   //   date: "2017-08-25",
   //   title: "La Différence invisible",
