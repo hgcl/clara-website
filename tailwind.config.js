@@ -500,6 +500,9 @@ module.exports = {
         96: "24rem",
         128: "32rem",
       },
+      strokeWidth: {
+        6: "6",
+      },
     },
   },
   plugins: [tailwindTypography],
