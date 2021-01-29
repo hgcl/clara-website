@@ -49,7 +49,7 @@ export default function OpenDropdown({
           exit={{ opacity: 0 }}
           onMouseLeave={closeDropdown}
         >
-          <div className="absolute flex flex-col top-0 left-0 rounded-t w-20 h-full bg-black bg-opacity-90 -mt-8 pt-10">
+          <div className="absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-8 pt-10">
             {itemsMapped()}
           </div>
         </motion.div>

@@ -6,7 +6,9 @@ export default function DropdownButton({
   filter,
   itemsArray,
   marginRight,
+  prefix,
   setHook,
+  suffix,
   title,
 }) {
   const [open, setOpen] = useState(false);
@@ -16,13 +18,17 @@ export default function DropdownButton({
     <div className={marginRight}>
       <label>
         <button
-          className="relative z-20 flex flex-row items-center w-18 mx-2 mt-1"
+          className="relative z-20 flex flex-row items-center w-20 mx-2 mt-1"
           aria-label={title}
           onClick={() => setOpen((o) => !o)}
           onMouseEnter={() => setOpen((o) => !o)}
         >
-          <span className="pr-2">{filter === 0 ? title : filter}</span>
-          <span className="w-full">
+          <span className="pr-2 text-left">
+            {filter === 0
+              ? title
+              : (prefix || null) + filter + (suffix || null)}
+          </span>
+          <span>
             <ArrowIcon className="transform rotate-90" />
           </span>
         </button>

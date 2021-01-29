@@ -20,9 +20,11 @@ export default function MediaGrid({ items, dateLabel, type }) {
   const [ratingFilter, setRating] = useState(0);
   const ratingDropdown = [
     { name: "All", value: 0 },
-    { name: "5", value: 5 },
-    { name: "4", value: 4 },
-    { name: "3", value: 3 },
+    { name: "5 stars", value: 5 },
+    { name: "4 stars", value: 4 },
+    { name: "3 stars", value: 3 },
+    { name: "2 stars", value: 2 },
+    { name: "1 stars", value: 1 },
   ];
 
   return (
@@ -33,13 +35,14 @@ export default function MediaGrid({ items, dateLabel, type }) {
           filter={yearFilter}
           setHook={setYear}
           itemsArray={yearDropdown}
-          marginRight="mr-6"
+          marginRight="mr-2"
         />
         <DropdownButton
           title="Rating"
           filter={ratingFilter}
           setHook={setRating}
           itemsArray={ratingDropdown}
+          suffix=" stars"
         />
       </div>
       <section
