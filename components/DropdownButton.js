@@ -10,6 +10,7 @@ export default function DropdownButton({
   setHook,
   suffix,
   title,
+  hideDefaultName,
 }) {
   const [open, setOpen] = useState(false);
   const closeDropdown = () => setOpen(false);
@@ -24,7 +25,11 @@ export default function DropdownButton({
           onMouseEnter={() => setOpen((o) => !o)}
         >
           <span className="pr-2 text-left">
-            {filter === 0
+            {hideDefaultName
+              ? filter === 0
+                ? title
+                : prefix || null
+              : filter === 0
               ? title
               : (prefix || null) + filter + (suffix || null)}
           </span>
