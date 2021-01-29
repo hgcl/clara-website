@@ -22,8 +22,8 @@ export function RatingIconEmpty({ className, height, ...props }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 65 65"
       height={height}
-      fill-opacity="0"
-      stroke-opacity="0.3"
+      fillOpacity="0"
+      strokeOpacity="0.3"
       className={`${className}`}
       focusable="false"
       aria-hidden="true"

@@ -6,7 +6,7 @@ import RecipePostPreview from "./RecipePostPreview";
 export default function MoreRecipes({ posts }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
   const gridStyle = {
-    "grid-template-columns": "repeat(auto-fill, minmax(14rem, 1fr))",
+    gridTemplateColumns: "repeat(auto-fill, minmax(14rem, 1fr))",
   };
   const [filter, setFilter] = useState("");
   return (
