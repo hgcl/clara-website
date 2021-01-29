@@ -1,6 +1,3 @@
-import MediaTile from "./MediaTile";
-import { getYear } from "date-fns";
-
 export default function MediaGrid({ children }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
   const gridStyle = {
