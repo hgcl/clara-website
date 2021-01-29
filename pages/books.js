@@ -1,12 +1,20 @@
 import { getAllBooks } from "../lib/getAllBooks";
+import booksData from "../data/booksData.js";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
 import MediaGrid from "../components/MediaGrid";
 import Link from "../components/link";
-import booksData from "../data/booksData.js";
+import { getYear } from "date-fns";
+import { useState } from "react";
+import DropdownButton from "../components/DropdownButton";
+import MediaTile from "../components/MediaTile";
+import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
 
 export default function Books({ allBooks }) {
+  const [yearFilter, setYear] = useState(0);
+  const [ratingFilter, setRating] = useState(0);
+
   return (
     <Layout title={"Books"}>
       <Container>
@@ -18,7 +26,63 @@ export default function Books({ allBooks }) {
             </>
           }
         />
-        <MediaGrid type="isBook" items={allBooks} dateLabel="Read on" />
+        <div className="flex flex-row">
+          <DropdownButton
+            title="Year"
+            filter={yearFilter}
+            setHook={setYear}
+            itemsArray={yearDropdown}
+            marginRight="mr-2"
+          />
+          <DropdownButton
+            title="Rating"
+            filter={ratingFilter}
+            setHook={setRating}
+            itemsArray={ratingDropdown}
+            suffix=" stars"
+          />
+        </div>
+        <MediaGrid>
+          {allBooks
+            // Year filter
+            .filter((book) =>
+              yearFilter ? getYear(new Date(book.date)) === yearFilter : book
+            )
+            // Rating filter
+            .filter((book) =>
+              ratingFilter ? book.rating === ratingFilter : book
+            )
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((book) => {
+              const {
+                author,
+                coverUrl,
+                date,
+                isbn,
+                link,
+                notes,
+                rating,
+                review,
+                title,
+              } = book;
+
+              return (
+                <article key={isbn}>
+                  <MediaTile
+                    author={author}
+                    coverUrl={coverUrl}
+                    date={date}
+                    dateLabel="Read on"
+                    link={link}
+                    notes={notes}
+                    rating={rating}
+                    review={review}
+                    title={title}
+                  />
+                </article>
+              );
+            })}
+        </MediaGrid>
       </Container>
     </Layout>
   );
