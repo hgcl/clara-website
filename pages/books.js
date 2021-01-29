@@ -8,12 +8,15 @@ import Link from "../components/link";
 import { getYear } from "date-fns";
 import { useState } from "react";
 import DropdownButton from "../components/DropdownButton";
+import Checkbox from "../components/Checkbox";
 import MediaTile from "../components/MediaTile";
 import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
 
 export default function Books({ allBooks }) {
   const [yearFilter, setYear] = useState(0);
   const [ratingFilter, setRating] = useState(0);
+  const [reviewFilter, setReview] = useState(false);
+  const toggleReviewFilter = () => setReview((value) => !value);
 
   return (
     <Layout title={"Books"}>
@@ -41,6 +44,13 @@ export default function Books({ allBooks }) {
             itemsArray={ratingDropdown}
             suffix=" stars"
           />
+          {/* TODO replace checkbox by toggle */}
+          <Checkbox
+            className="mt-1 ml-4"
+            value={reviewFilter}
+            onChange={toggleReviewFilter}
+            label="Reviews only"
+          />
         </div>
         <MediaGrid>
           {allBooks
@@ -51,6 +61,13 @@ export default function Books({ allBooks }) {
             // Rating filter
             .filter((book) =>
               ratingFilter ? book.rating === ratingFilter : book
+            )
+            // Review filter
+            .filter(
+              (book) =>
+                reviewFilter
+                  ? book.review.length > 2 && book.review // 1. filter exists + has a review => show reviews only
+                  : book // 2. not true: show all books
             )
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((book) => {
