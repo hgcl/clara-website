@@ -42,7 +42,6 @@ export default function Books({ allBooks }) {
             filter={ratingFilter}
             setHook={setRating}
             itemsArray={ratingDropdown}
-            suffix=" stars"
           />
           {/* TODO replace checkbox by toggle */}
           <Checkbox

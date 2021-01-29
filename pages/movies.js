@@ -34,7 +34,6 @@ export default function Movies({ allMovies }) {
             filter={ratingFilter}
             setHook={setRating}
             itemsArray={ratingDropdown}
-            suffix=" stars"
           />
           {/* TODO replace checkbox by toggle */}
           <Checkbox

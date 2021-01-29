@@ -11,6 +11,8 @@ export default function DropdownButton({
   suffix,
   title,
   hideDefaultName,
+  widthButton,
+  widthModal,
 }) {
   const [open, setOpen] = useState(false);
   const closeDropdown = () => setOpen(false);
@@ -19,19 +21,27 @@ export default function DropdownButton({
     <div className={marginRight}>
       <label>
         <button
-          className="relative z-20 flex flex-row items-center w-20 mx-2 mt-1"
+          className={`${
+            widthButton || "w-20"
+          } relative z-20 flex flex-row items-center mx-2 mt-1`}
           aria-label={title}
           onClick={() => setOpen((o) => !o)}
           onMouseEnter={() => setOpen((o) => !o)}
         >
           <span className="pr-2 text-left">
-            {hideDefaultName
-              ? filter === 0
-                ? title
-                : prefix || null
-              : filter === 0
+            {filter === 0
               ? title
-              : (prefix || null) + filter + (suffix || null)}
+              : filter === itemsArray[1].value
+              ? itemsArray[1].name
+              : filter === itemsArray[2].value
+              ? itemsArray[2].name
+              : filter === itemsArray[3].value
+              ? itemsArray[3].name
+              : filter === itemsArray[4].value
+              ? itemsArray[4].name
+              : filter === itemsArray[5].value
+              ? itemsArray[5].name
+              : itemsArray[6].name}
           </span>
           <span>
             <ArrowIcon className="transform rotate-90" />
@@ -43,6 +53,7 @@ export default function DropdownButton({
         closeDropdown={closeDropdown}
         setHook={setHook}
         itemsArray={itemsArray}
+        widthModal={widthModal}
       />
     </div>
   );

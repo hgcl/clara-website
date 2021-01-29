@@ -5,6 +5,7 @@ export default function OpenDropdown({
   closeDropdown,
   setHook,
   itemsArray,
+  widthModal,
 }) {
   const itemsMapped = () => (
     <>
@@ -49,7 +50,11 @@ export default function OpenDropdown({
           exit={{ opacity: 0 }}
           onMouseLeave={closeDropdown}
         >
-          <div className="absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-8 pt-10">
+          <div
+            className={`${
+              widthModal || "w-24"
+            } absolute flex flex-col top-0 left-0 rounded-t h-full bg-black bg-opacity-90 -mt-8 pt-10`}
+          >
             {itemsMapped()}
             <div className="w-full h-full bg-black bg-opacity-90 rounded-b pb-1"></div>
           </div>
