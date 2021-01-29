@@ -1,3 +1,3 @@
 export default function Hentry({ children }) {
-  return <div class="h-entry">{children}</div>;
+  return <div className="h-entry">{children}</div>;
 }
