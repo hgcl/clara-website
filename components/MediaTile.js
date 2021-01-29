@@ -76,6 +76,7 @@ const ClosedTile = ({
   review,
   title,
 }) => {
+  const [tooltipOpen, setOpenTooltip] = useState(false); // Tooltip modal hook
   return (
     <>
       <div className="relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
@@ -98,7 +99,17 @@ const ClosedTile = ({
         <div className="mt-2 flex flex-row">
           <div className="flex flex-row items-center">
             {rating && <Rating rating={rating} />}
-            <span>
+            <span
+              onMouseEnter={() => setOpenTooltip(true)}
+              onMouseLeave={() => setOpenTooltip(false)}
+            >
+              {tooltipOpen && (
+                <motion.div exit={{ opacity: 0 }} className="relative">
+                  <span className="absolute -top-7 -left-3 bg-black bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-regular text-xs opacity-90">
+                    {review ? "Review" : "Note"}
+                  </span>
+                </motion.div>
+              )}
               {(review || notes) && <NoteIcon className="text-white ml-2" />}
             </span>
           </div>
