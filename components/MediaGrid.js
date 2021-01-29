@@ -10,10 +10,21 @@ export default function MediaGrid({ items, dateLabel, type }) {
   };
   // Mediafilters
   const [yearFilter, setYear] = useState(0);
+  const yearDropdown = [
+    { name: "All", value: 0 },
+    { name: "2021", value: 2021 },
+    { name: "2020", value: 2020 },
+    { name: "2019", value: 2019 },
+    { name: "2018", value: 2018 },
+  ];
 
   return (
     <>
-      <DropdownButton yearFilter={yearFilter} setYear={setYear} />
+      <DropdownButton
+        yearFilter={yearFilter}
+        setYear={setYear}
+        itemsArray={yearDropdown}
+      />
       <section
         className="grid gap-x-1 xs:gap-x-4 gap-y-8 mt-6"
         style={gridStyle}
@@ -21,9 +32,7 @@ export default function MediaGrid({ items, dateLabel, type }) {
         {type === "isBook" &&
           items
             .filter((book) =>
-              yearFilter
-                ? getYear(new Date(book.date)) === parseInt(yearFilter)
-                : book
+              yearFilter ? getYear(new Date(book.date)) === yearFilter : book
             )
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((book) => {
@@ -58,9 +67,7 @@ export default function MediaGrid({ items, dateLabel, type }) {
         {type === "isMovie" &&
           items
             .filter((movie) =>
-              yearFilter
-                ? getYear(new Date(movie.date)) === parseInt(yearFilter)
-                : movie
+              yearFilter ? getYear(new Date(movie.date)) === yearFilter : movie
             )
             .sort(
               (a, b) =>

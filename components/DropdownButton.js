@@ -2,7 +2,7 @@ import { useState } from "react";
 import ArrowIcon from "../public/icons/ArrowIcon";
 import OpenDropdown from "./OpenDropdown";
 
-export default function DropdownButton({ yearFilter, setYear }) {
+export default function DropdownButton({ yearFilter, setYear, itemsArray }) {
   const [open, setOpen] = useState(false);
   const closeDropdown = () => setOpen(false);
 
@@ -25,6 +25,7 @@ export default function DropdownButton({ yearFilter, setYear }) {
         open={open}
         closeDropdown={closeDropdown}
         setYear={setYear}
+        itemsArray={itemsArray}
       />
     </>
   );

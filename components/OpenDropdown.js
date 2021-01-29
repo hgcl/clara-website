@@ -1,8 +1,32 @@
 import { motion } from "framer-motion";
 
-export default function OpenDropdown({ open, closeDropdown, setYear }) {
+export default function OpenDropdown({
+  open,
+  closeDropdown,
+  setYear,
+  itemsArray,
+}) {
+  const itemsMapped = () => (
+    <>
+      {itemsArray.map((item) => (
+        <button
+          role="option"
+          key={item.name}
+          className={`${dropdownOption} last:rounded-b pb-2`}
+          onClick={() => {
+            setYear(item.value);
+            closeDropdown;
+          }}
+        >
+          {item.name}
+        </button>
+      ))}
+    </>
+  );
+
   const dropdownOption =
     "w-full h-12 bg-black bg-opacity-90 px-2 text-left hover:bg-opacity-100 hover:text-accent focus:bg-opacity-100 focus:text-accent";
+
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
@@ -25,7 +49,8 @@ export default function OpenDropdown({ open, closeDropdown, setYear }) {
           onMouseLeave={() => closeDropdown}
         >
           <div className="z-10 absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-8 pt-10">
-            <button
+            {itemsMapped()}
+            {/* <button
               role="option"
               id="year_all"
               className={`${dropdownOption} active`}
@@ -35,19 +60,7 @@ export default function OpenDropdown({ open, closeDropdown, setYear }) {
                 closeDropdown;
               }}
             >
-              All
-            </button>
-            <button
-              role="option"
-              id="year_2021"
-              className={`${dropdownOption}`}
-              aria-selected="false"
-              onClick={() => {
-                setYear(2021);
-                closeDropdown;
-              }}
-            >
-              2021
+              First
             </button>
             <button
               role="option"
@@ -59,8 +72,8 @@ export default function OpenDropdown({ open, closeDropdown, setYear }) {
                 closeDropdown;
               }}
             >
-              2020
-            </button>
+              Last
+            </button> */}
           </div>
         </motion.div>
       )}
