@@ -7,12 +7,15 @@ import MediaGrid from "../components/MediaGrid";
 import { getYear } from "date-fns";
 import { useState } from "react";
 import DropdownButton from "../components/DropdownButton";
+import Checkbox from "../components/Checkbox";
 import MediaTile from "../components/MediaTile";
 import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
 
 export default function Movies({ allMovies }) {
   const [yearFilter, setYear] = useState(0);
   const [ratingFilter, setRating] = useState(0);
+  const [reviewFilter, setReview] = useState(false);
+  const toggleReviewFilter = () => setReview((value) => !value);
 
   return (
     <Layout title={"Movies"}>
@@ -33,6 +36,13 @@ export default function Movies({ allMovies }) {
             itemsArray={ratingDropdown}
             suffix=" stars"
           />
+          {/* TODO replace checkbox by toggle */}
+          <Checkbox
+            className="mt-1 ml-4"
+            value={reviewFilter}
+            onChange={toggleReviewFilter}
+            label="Reviews only"
+          />
         </div>
         <MediaGrid>
           {allMovies
@@ -43,6 +53,13 @@ export default function Movies({ allMovies }) {
             // Rating filter
             .filter((movie) =>
               ratingFilter ? movie.rating === ratingFilter : movie
+            )
+            // Review filter
+            .filter(
+              (movie) =>
+                reviewFilter
+                  ? movie.review.length > 2 && movie.review // 1. filter exists + has a review => show reviews only
+                  : movie // 2. not true: show all movies
             )
             .sort(
               (a, b) =>
