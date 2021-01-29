@@ -25,6 +25,7 @@ export default [
     author: "Alain Damasio",
     rating: 5,
     isbn: "2070464237",
+    review: "",
   },
   {
     date: "2018-01-01",
@@ -48,6 +49,7 @@ export default [
     author: "Alex Michaelides",
     rating: 3,
     isbn: "125030170X",
+    review: "",
   },
   {
     date: "2018-01-01",
@@ -55,6 +57,7 @@ export default [
     author: "Alexander Gunn",
     rating: 4,
     isbn: "9781633233430",
+    review: "",
   },
   {
     date: "2018-03-21", // last addition todo
@@ -62,6 +65,7 @@ export default [
     author: "Alexander Weinstein",
     rating: 4,
     isbn: "9781250098993",
+    review: "",
   },
   // {
   //   date: "2015-08-03",
@@ -77,6 +81,7 @@ export default [
     author: "Amal El-Mohtar",
     rating: 5,
     isbn: "1534430997",
+    review: "",
   },
   // {
   //   date: "2015-01-30",
@@ -92,6 +97,7 @@ export default [
     author: "Amélie Nothomb",
     rating: 3,
     isbn: "9782226318091",
+    review: "",
   },
   {
     date: "2015-01-30",
@@ -131,6 +137,7 @@ export default [
     author: "Anna Gavalda",
     rating: 5,
     isbn: "2842630858",
+    review: "",
   },
   {
     date: "2018-10-20",
@@ -138,6 +145,7 @@ export default [
     author: "Anna Gavalda",
     rating: 4,
     isbn: "9782290340783",
+    review: "",
   },
   {
     date: "2018-10-20",
@@ -145,6 +153,7 @@ export default [
     author: "Anna Gavalda",
     rating: 5,
     isbn: "9782298030990",
+    review: "",
   },
   {
     date: "2012-12-21",
@@ -313,6 +322,7 @@ export default [
     author: "Blake Crouch",
     rating: 3,
     isbn: "9781984826015",
+    review: "",
   },
   {
     date: "2016-12-22",
@@ -361,6 +371,7 @@ export default [
     author: "Cal Newport",
     rating: 3,
     isbn: "9780241453575",
+    review: "",
   },
   {
     date: "2017-02-01",
@@ -384,6 +395,7 @@ export default [
     author: "Caz Frear",
     rating: 3,
     isbn: "9780062823274",
+    review: "",
   },
   {
     date: "2020-01-23",
@@ -391,6 +403,7 @@ export default [
     author: "Cixin Liu",
     rating: 3,
     isbn: "1784978493",
+    review: "",
   },
   {
     date: "2020-01-22",
@@ -398,6 +411,7 @@ export default [
     author: "Cixin Liu",
     rating: 5,
     isbn: "0765386631",
+    review: "",
   },
   {
     date: "2020-01-21",
@@ -405,6 +419,7 @@ export default [
     author: "Cixin Liu",
     rating: 4,
     isbn: "9781784971618",
+    review: "",
   },
   {
     date: "2020-01-20",
@@ -412,6 +427,7 @@ export default [
     author: "Cixin Liu",
     rating: 5,
     isbn: "9780765377067",
+    review: "",
   },
   {
     date: "2010-01-01",
@@ -419,6 +435,7 @@ export default [
     author: "Charles-Ferdinand Ramuz",
     rating: 5,
     isbn: "288387011X",
+    review: "",
   },
   {
     date: "2015-06-11",
@@ -434,6 +451,7 @@ export default [
     author: "Chimamanda Ngozi Adichie",
     rating: 5,
     isbn: "0007200285",
+    review: "",
   },
   {
     date: "2019-01-28",
@@ -441,6 +459,7 @@ export default [
     author: "Chimamanda Ngozi Adichie",
     rating: 5,
     isbn: "9781101911761",
+    review: "",
   },
   // {
   //   date: "2017-08-11",
@@ -643,6 +662,7 @@ export default [
     author: "Erin Morgenstern",
     rating: 4,
     isbn: "9780735207875",
+    review: "",
   },
   {
     date: "2013-11-22",
@@ -784,6 +804,7 @@ export default [
     title: "Dark Places",
     author: "Gillian Flynn",
     isbn: "9780307459923",
+    review: "",
   },
   {
     date: "2013-05-02",
@@ -977,6 +998,7 @@ export default [
     author: "Jan-Philipp Sendker",
     rating: 3,
     isbn: "1590519620",
+    review: "",
   },
   {
     date: "2020-01-23",
@@ -991,6 +1013,7 @@ export default [
     title: "Le Serment des limbes ",
     author: "Jean-Christophe Grangé",
     isbn: "9782226176738",
+    review: "",
   },
   // {
   //   date: "2014-05-17",
@@ -1006,6 +1029,7 @@ export default [
     author: "Jeffery Deaver",
     rating: 3,
     isbn: "067086871X",
+    review: "",
   },
   {
     date: "2017-04-01",
@@ -1094,6 +1118,7 @@ export default [
     author: "Jon Krakauer",
     rating: 4,
     isbn: "067942850X",
+    review: "",
   },
   {
     date: "2015-08-22",
@@ -1117,6 +1142,7 @@ export default [
     author: "Joseph Incardona",
     rating: 4,
     isbn: "9782940516513",
+    review: "",
   },
   // {
   //   date: "2019-02-30", // date problem???
@@ -1229,6 +1255,7 @@ export default [
     author: "Katherine Arden",
     rating: 3,
     isbn: "178503104X",
+    review: "",
   },
   // {
   //   date: "2015-11-04",
@@ -1439,6 +1466,7 @@ export default [
     author: "Louise Penny",
     rating: 5,
     isbn: "0751566594",
+    review: "",
   },
   {
     date: "2018-11-03",
@@ -1446,6 +1474,7 @@ export default [
     author: "Louise Penny",
     rating: 4,
     isbn: "9781432852351",
+    review: "",
   },
   {
     date: "2019-02-01",
@@ -1453,66 +1482,77 @@ export default [
     author: "Louise Penny",
     rating: 5,
     isbn: "9781432840082",
+    review: "",
   },
   {
     date: "2019-01-03",
     title: "The Long Way Home",
     author: "Louise Penny",
     isbn: "1250022053",
+    review: "",
   },
   {
     date: "2019-01-02",
     title: "How the Light Gets In",
     author: "Louise Penny",
     isbn: "9781250047274",
+    review: "",
   },
   {
     date: "2019-01-01",
     title: "The Beautiful Mystery",
     author: "Louise Penny",
     isbn: "9780312655464",
+    review: "",
   },
   {
     date: "2019-01-04",
     title: "The Nature of the Beast",
     author: "Louise Penny",
     isbn: "1250022088",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "A Rule Against Murder",
     author: "Louise Penny",
     isbn: "9780312614164",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "A Trick of the Light",
     author: "Louise Penny",
     isbn: "9780751544138",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "The brutal telling",
     author: "Louise Penny",
     isbn: "9781410423047",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "A fatal grace",
     author: "Louise Penny",
     isbn: "9780312352561",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "Bury Your Dead",
     author: "Louise Penny",
     isbn: "9780751547504",
+    review: "",
   },
   {
     date: "2018-11-01",
     title: "The Cruelest Month",
     author: "Louise Penny",
     isbn: "9780312352578",
+    review: "",
   },
   {
     date: "2018-01-21",
@@ -1528,6 +1568,7 @@ export default [
     author: "Madeline Miller",
     rating: 4,
     isbn: "B00DY4SJKM",
+    review: "",
   },
   {
     date: "2019-04-29",
@@ -1535,6 +1576,7 @@ export default [
     author: "Madeline Miller",
     rating: 5,
     isbn: "0062060619",
+    review: "",
   },
   {
     date: "2019-04-28",
@@ -1542,6 +1584,7 @@ export default [
     author: "Madeline Miller",
     rating: 5,
     isbn: "0316556335",
+    review: "",
   },
   {
     date: "2017-06-16",
@@ -1565,6 +1608,7 @@ export default [
     author: "Marc-Antoine Mathieu",
     rating: 5,
     isbn: "2906187798",
+    review: "",
   },
   // {
   //   date: "2017-01-05",
@@ -1596,6 +1640,7 @@ export default [
     author: "Margaret Atwood",
     rating: 4,
     isbn: "0525562621",
+    review: "",
   },
   {
     date: "2013-11-03",
@@ -1683,6 +1728,7 @@ export default [
     author: "Martha Wells",
     rating: 4,
     isbn: "9781250229854",
+    review: "",
   },
   {
     date: "2020-12-24",
@@ -1690,6 +1736,7 @@ export default [
     author: "Martha Wells",
     rating: 4,
     isbn: "9781250191854",
+    review: "",
   },
   {
     date: "2020-11-04",
@@ -1706,6 +1753,7 @@ export default [
     author: "Martha Wells",
     rating: 4,
     isbn: "9781250186928",
+    review: "",
   },
   {
     date: "2020-12-21",
@@ -1795,6 +1843,7 @@ export default [
     author: "Muriel Barbery",
     rating: 5,
     isbn: "2070780937",
+    review: "",
   },
   ///// >N  /////
   {
@@ -1819,6 +1868,7 @@ export default [
     author: "Neal Stephenson",
     rating: 4,
     isbn: "0062190377",
+    review: "",
   },
   {
     date: "2014-03-21",
@@ -1850,6 +1900,7 @@ export default [
     author: "N.K. Jemisin",
     rating: 4,
     isbn: "0316229245",
+    review: "",
   },
   {
     date: "2020-02-20",
@@ -1857,6 +1908,7 @@ export default [
     author: "N.K. Jemisin",
     rating: 5,
     isbn: "0356508366",
+    review: "",
   },
   {
     date: "2020-02-19",
@@ -1864,6 +1916,7 @@ export default [
     author: "N.K. Jemisin",
     rating: 4,
     isbn: "0356508196",
+    review: "",
   },
   ///// >O  /////
   {
@@ -1881,6 +1934,7 @@ export default [
     author: "Patrick Kingsley",
     rating: 4,
     isbn: "1476755485",
+    review: "",
   },
   {
     date: "2012-12-21",
@@ -2093,6 +2147,7 @@ export default [
     author: "Rattawut Lapcharoensap",
     rating: 3,
     isbn: "9780802142344",
+    review: "",
   },
   {
     date: "2017-01-07",
@@ -2149,6 +2204,7 @@ export default [
     author: "Sean Ferrell",
     rating: 4,
     isbn: "9781616951252",
+    review: "",
   },
   {
     date: "2020-01-23",
@@ -2156,6 +2212,7 @@ export default [
     author: "Seanan McGuire",
     rating: 3,
     isbn: "1250195527",
+    review: "",
   },
   {
     date: "2016-01-17",
@@ -2195,6 +2252,7 @@ export default [
     author: "Silvia Moreno-Garcia",
     rating: 3,
     isbn: "052562077X",
+    review: "",
   },
   {
     date: "2012-12-21",
@@ -2383,6 +2441,7 @@ export default [
     author: "Tim Parks",
     rating: 4,
     isbn: "0099481383",
+    review: "",
   },
   ///// >U  /////
   ///// >V  /////
@@ -2441,6 +2500,7 @@ export default [
     author: "William Golding",
     rating: 5,
     isbn: "0571056865",
+    review: "",
   },
   {
     date: "2013-11-09",
