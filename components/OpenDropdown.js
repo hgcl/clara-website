@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function OpenDropdown({
   open,
   closeDropdown,
-  setYear,
+  setHook,
   itemsArray,
 }) {
   const itemsMapped = () => (
@@ -14,7 +14,7 @@ export default function OpenDropdown({
           key={item.name}
           className={`${dropdownOption} last:rounded-b pb-2`}
           onClick={() => {
-            setYear(item.value);
+            setHook(item.value);
             closeDropdown;
           }}
         >
@@ -40,40 +40,17 @@ export default function OpenDropdown({
     document.addEventListener("keydown", keydownHandler);
     return () => document.removeEventListener("keydown", keydownHandler);
   });
+
   return (
     <>
       {open && (
         <motion.div
-          className="relative"
+          className="relative z-10"
           exit={{ opacity: 0 }}
-          onMouseLeave={() => closeDropdown}
+          onMouseLeave={closeDropdown}
         >
-          <div className="z-10 absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-8 pt-10">
+          <div className="absolute flex flex-col top-0 left-0 rounded-t w-20 h-full bg-black bg-opacity-90 -mt-8 pt-10">
             {itemsMapped()}
-            {/* <button
-              role="option"
-              id="year_all"
-              className={`${dropdownOption} active`}
-              aria-selected="true"
-              onClick={() => {
-                setYear(0);
-                closeDropdown;
-              }}
-            >
-              First
-            </button>
-            <button
-              role="option"
-              id="year_2020"
-              className={`${dropdownOption} rounded-b pb-2`}
-              aria-selected="false"
-              onClick={() => {
-                setYear(2020);
-                closeDropdown;
-              }}
-            >
-              Last
-            </button> */}
           </div>
         </motion.div>
       )}
