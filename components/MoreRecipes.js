@@ -3,18 +3,95 @@ import React, { useState } from "react";
 import Container from "./container";
 import RecipePostPreview from "./RecipePostPreview";
 
+import DropdownButton from "../components/DropdownButton";
+
 export default function MoreRecipes({ posts }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
   const gridStyle = {
     gridTemplateColumns: "repeat(auto-fill, minmax(14rem, 1fr))",
   };
-  const [filter, setFilter] = useState("");
+  // filters
+  const [dietFilter, setDiet] = useState(0);
+  const dietDropdown = [
+    { name: "All", value: 0 },
+    { name: "Vegetarian", value: "vegetarian" },
+    { name: "Vegan", value: "vegan" },
+  ];
+  const [seasonFilter, setSeason] = useState(0);
+  const seasonDropdown = [
+    { name: "All", value: 0 },
+    { name: "Winter", value: "winter" },
+    { name: "Spring", value: "spring" },
+    { name: "Summer", value: "summer" },
+    { name: "Autumn", value: "autumn" },
+  ];
+  const [durationFilter, setDuration] = useState(0);
+  const durationDropdown = [
+    { name: "All", value: 0 },
+    { name: "< 45min", value: 1 },
+    { name: "45–60min", value: 2 },
+    { name: "> 60min", value: 3 },
+  ];
+  const [difficultyFilter, setDifficulty] = useState(0);
+  const difficultyDropdown = [
+    { name: "All", value: 0 },
+    { name: "Easy", value: 1 },
+    { name: "Medium", value: 2 },
+    { name: "Hard", value: 3 },
+  ];
   return (
     <Container>
-      <div className="grid gap-y-6 gap-x-8" style={gridStyle}>
+      <div className="flex flex-row">
+        <DropdownButton
+          title="Diet"
+          filter={dietFilter}
+          setHook={setDiet}
+          itemsArray={dietDropdown}
+          marginRight="mr-2"
+          widthButton="w-24"
+          widthModal="w-28"
+        />
+        <DropdownButton
+          title="Season"
+          filter={seasonFilter}
+          setHook={setSeason}
+          itemsArray={seasonDropdown}
+          marginRight="mr-2"
+        />
+        <DropdownButton
+          title="Difficulty"
+          filter={difficultyFilter}
+          setHook={setDifficulty}
+          itemsArray={difficultyDropdown}
+          marginRight="mr-2"
+        />
+        <DropdownButton
+          title="Duration"
+          filter={durationFilter}
+          setHook={setDuration}
+          itemsArray={durationDropdown}
+          marginRight="mr-4"
+          widthButton="w-24"
+          widthModal="w-28"
+        />
+      </div>
+      <div className="grid gap-y-6 gap-x-8 mt-6" style={gridStyle}>
         {posts
+          // Diet filter
           .filter((post) =>
-            filter ? post.categories && post.categories.includes(filter) : post
+            dietFilter ? post.categories.includes(dietFilter) : post
+          )
+          // Season filter
+          .filter((post) =>
+            seasonFilter ? post.tags.includes(seasonFilter) : post
+          )
+          // Duration filter
+          .filter((post) =>
+            durationFilter ? post.duration == durationFilter : post
+          )
+          // Difficulty filter
+          .filter((post) =>
+            difficultyFilter ? post.difficulty == difficultyFilter : post
           )
           .map((post) => (
             <RecipePostPreview
