@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Dropdown({ open, closeDropdown, setYear }) {
+export default function OpenDropdown({ open, closeDropdown, setYear }) {
   const dropdownOption =
     "w-full h-12 bg-black bg-opacity-90 px-2 text-left hover:bg-opacity-100 hover:text-accent focus:bg-opacity-100 focus:text-accent";
   const keydownHandler = ({ key }) => {

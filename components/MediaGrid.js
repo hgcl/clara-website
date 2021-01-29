@@ -1,8 +1,7 @@
 import { useState } from "react";
 import MediaTile from "./MediaTile";
 import { getYear } from "date-fns";
-import ArrowIcon from "../public/icons/ArrowIcon";
-import Dropdown from "./Dropdown";
+import DropdownButton from "./DropdownButton";
 
 export default function MediaGrid({ items, dateLabel, type }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -11,25 +10,10 @@ export default function MediaGrid({ items, dateLabel, type }) {
   };
   // Mediafilters
   const [yearFilter, setYear] = useState(0);
-  const [open, setOpen] = useState(false);
-  const closeDropdown = () => setOpen(false);
 
   return (
     <>
-      <label className="relative z-20">
-        <button
-          className="z-20 flex flex-row items-center w-20 mx-2 mt-1"
-          aria-label="Select Year"
-          onClick={() => setOpen((o) => !o)}
-          onMouseEnter={() => setOpen((o) => !o)}
-        >
-          <span className="pr-3">{yearFilter === 0 ? "Year" : yearFilter}</span>
-          <span className="w-full">
-            <ArrowIcon className="transform rotate-90" />
-          </span>
-        </button>
-      </label>
-      <Dropdown open={open} closeDropdown={closeDropdown} setYear={setYear} />
+      <DropdownButton yearFilter={yearFilter} setYear={setYear} />
       <section
         className="grid gap-x-1 xs:gap-x-4 gap-y-8 mt-6"
         style={gridStyle}
