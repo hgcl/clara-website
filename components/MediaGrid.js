@@ -1,8 +1,8 @@
 import { useState } from "react";
 import MediaTile from "./MediaTile";
 import { getYear } from "date-fns";
-import { motion } from "framer-motion";
 import ArrowIcon from "../public/icons/ArrowIcon";
+import Dropdown from "./Dropdown";
 
 export default function MediaGrid({ items, dateLabel, type }) {
   // Unable to customize tailwindcss grid style with auto-fill. Adding it here instead:
@@ -14,28 +14,11 @@ export default function MediaGrid({ items, dateLabel, type }) {
   const [open, setOpen] = useState(false);
   const closeDropdown = () => setOpen(false);
 
-  const dropdownOption =
-    "w-full h-12 bg-black bg-opacity-90 px-2 text-left hover:bg-opacity-100 hover:text-accent focus:bg-opacity-100 focus:text-accent";
-  const keydownHandler = ({ key }) => {
-    switch (key) {
-      case "Escape":
-        closeDropdown();
-        break;
-      default:
-    }
-  };
-
-  React.useEffect(() => {
-    document.addEventListener("keydown", keydownHandler);
-    return () => document.removeEventListener("keydown", keydownHandler);
-  });
-
   return (
     <>
-      {/* https://codepen.io/LukyVj/pen/meJqor */}
       <label className="relative z-20">
         <button
-          className="z-20 flex flex-row items-center w-20 mb-3 mx-2 mt-1"
+          className="z-20 flex flex-row items-center w-20 mx-2 mt-1"
           aria-label="Select Year"
           onClick={() => setOpen((o) => !o)}
           onMouseEnter={() => setOpen((o) => !o)}
@@ -46,54 +29,11 @@ export default function MediaGrid({ items, dateLabel, type }) {
           </span>
         </button>
       </label>
-      {open && (
-        <motion.div
-          className="relative"
-          exit={{ opacity: 0 }}
-          onMouseLeave={() => closeDropdown()}
-        >
-          <div className="z-10 absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-10 pt-8">
-            <button
-              role="option"
-              id="year_all"
-              className={`${dropdownOption} active`}
-              aria-selected="true"
-              onClick={() => {
-                setYear(0);
-                closeDropdown();
-              }}
-            >
-              All
-            </button>
-            <button
-              role="option"
-              id="year_2021"
-              className={`${dropdownOption}`}
-              aria-selected="false"
-              onClick={() => {
-                setYear(2021);
-                closeDropdown();
-              }}
-            >
-              2021
-            </button>
-            <button
-              role="option"
-              id="year_2020"
-              className={`${dropdownOption} rounded-b pb-2`}
-              aria-selected="false"
-              onClick={() => {
-                setYear(2020);
-                closeDropdown();
-              }}
-            >
-              2020
-            </button>
-          </div>
-        </motion.div>
-      )}
-
-      <section className="grid gap-x-1 xs:gap-x-4 gap-y-8" style={gridStyle}>
+      <Dropdown open={open} closeDropdown={closeDropdown} setYear={setYear} />
+      <section
+        className="grid gap-x-1 xs:gap-x-4 gap-y-8 mt-6"
+        style={gridStyle}
+      >
         {type === "isBook" &&
           items
             .filter((book) =>
