@@ -18,8 +18,6 @@ module.exports = {
   variants: {
     extend: {
       textColor: ["active"],
-      padding: ["last"],
-      borderRadius: ["last"],
     },
   },
   theme: {

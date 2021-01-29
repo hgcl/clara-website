@@ -12,7 +12,7 @@ export default function OpenDropdown({
         <button
           role="option"
           key={item.name}
-          className={`${dropdownOption} last:rounded-b pb-2`}
+          className={`${dropdownOption} pb-2`}
           onClick={() => {
             setHook(item.value);
             closeDropdown;
@@ -51,6 +51,7 @@ export default function OpenDropdown({
         >
           <div className="absolute flex flex-col top-0 left-0 rounded-t w-24 h-full bg-black bg-opacity-90 -mt-8 pt-10">
             {itemsMapped()}
+            <div className="w-full h-full bg-black bg-opacity-90 rounded-b pb-1"></div>
           </div>
         </motion.div>
       )}
