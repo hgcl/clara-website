@@ -44,7 +44,7 @@ export default function DropdownButton({
               : itemsArray[6].name}
           </span>
           <span>
-            <ArrowIcon className="transform rotate-90" />
+            <ArrowIcon />
           </span>
         </button>
       </label>
