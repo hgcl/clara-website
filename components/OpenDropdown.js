@@ -30,7 +30,7 @@ export default function OpenDropdown({
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
-        closeDropdown;
+        closeDropdown();
         break;
       default:
     }
