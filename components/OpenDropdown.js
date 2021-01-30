@@ -47,32 +47,38 @@ export default function OpenDropdown({
   return (
     <>
       {open && (
-        <motion.div
-          className="relative z-10"
-          exit={{ opacity: 0 }}
-          onMouseLeave={() => setOpen(false)}
-        >
+        <>
           <div
-            className={`${
-              widthModal || "w-24"
-            } ${commonStyle} absolute flex flex-col top-1 left-0 rounded-t h-full -mt-8 pt-2`}
+            className="z-10 absolute -top-8 left-0 h-full w-screen"
+            onClick={() => setOpen(!open)}
+          />
+          <motion.div
+            className="relative z-20"
+            exit={{ opacity: 0 }}
+            onMouseLeave={() => setOpen(false)}
           >
-            <button
-              role="button"
-              className={`${dropdownRow} ${commonStyle} pb-2 all-small-caps flex flex-row items-center`}
-              onClick={() => setOpen(!open)}
-            >
-              <span className="pr-2">{title}</span>
-              <span>
-                <ArrowIcon />
-              </span>
-            </button>
-            {itemsMapped()}
             <div
-              className={`${commonStyle} w-full h-full rounded-b pb-2`}
-            ></div>
-          </div>
-        </motion.div>
+              className={`${
+                widthModal || "w-24"
+              } ${commonStyle} absolute flex flex-col top-1 left-0 rounded-t h-full -mt-8 pt-2`}
+            >
+              <button
+                role="button"
+                className={`${dropdownRow} ${commonStyle} pb-2 all-small-caps flex flex-row items-center`}
+                onClick={() => setOpen(!open)}
+              >
+                <span className="pr-2">{title}</span>
+                <span>
+                  <ArrowIcon />
+                </span>
+              </button>
+              {itemsMapped()}
+              <div
+                className={`${commonStyle} w-full h-full rounded-b pb-2`}
+              ></div>
+            </div>
+          </motion.div>
+        </>
       )}
     </>
   );
