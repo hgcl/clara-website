@@ -7,7 +7,7 @@ export default function Checkbox({ value, onChange, label, className }) {
         value={value}
         onChange={onChange}
       />
-      <span className="ml-2">{label}</span>
+      <span className="ml-2 all-small-caps">{label}</span>
     </label>
   );
 }
