@@ -21,7 +21,7 @@ export default function Movies({ allMovies }) {
     <Layout title={"Movies"}>
       <Container>
         <Header pageDescription={"Get the popcorn ready"} />
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           <DropdownButton
             title="Year"
             filter={yearFilter}

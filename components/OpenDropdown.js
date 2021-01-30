@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ArrowIcon from "../public/icons/ArrowIcon";
 
 export default function OpenDropdown({
   open,
@@ -6,17 +7,22 @@ export default function OpenDropdown({
   setHook,
   itemsArray,
   widthModal,
+  title,
+  setOpen,
 }) {
+  const commonStyle = "bg-white text-gray-dark";
+  const dropdownRow = "w-full h-12 text-left px-2 pb-2 -my-2px";
+
   const itemsMapped = () => (
     <>
       {itemsArray.map((item) => (
         <button
           role="option"
           key={item.name}
-          className={`${dropdownOption} pb-2`}
+          className={`${dropdownRow} ${commonStyle} pt-2 hover:text-accent focus:text-accent text-gray-dark`}
           onClick={() => {
             setHook(item.value);
-            closeDropdown;
+            setOpen(!open);
           }}
         >
           {item.name}
@@ -25,13 +31,10 @@ export default function OpenDropdown({
     </>
   );
 
-  const dropdownOption =
-    "w-full h-12 bg-black bg-opacity-90 px-2 text-left hover:bg-opacity-100 hover:text-accent focus:bg-opacity-100 focus:text-accent";
-
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
-        closeDropdown();
+        setOpen(false);
         break;
       default:
     }
@@ -48,15 +51,27 @@ export default function OpenDropdown({
         <motion.div
           className="relative z-10"
           exit={{ opacity: 0 }}
-          onMouseLeave={closeDropdown}
+          onMouseLeave={() => setOpen(false)}
         >
           <div
             className={`${
               widthModal || "w-24"
-            } absolute flex flex-col top-0 left-0 rounded-t h-full bg-black bg-opacity-90 -mt-8 pt-10`}
+            } ${commonStyle} absolute flex flex-col top-1 left-0 rounded-t h-full -mt-8 pt-2`}
           >
+            <button
+              role="button"
+              className={`${dropdownRow} ${commonStyle} pb-2 all-small-caps flex flex-row items-center`}
+              onClick={() => setOpen(!open)}
+            >
+              <span className="pr-2">{title}</span>
+              <span>
+                <ArrowIcon />
+              </span>
+            </button>
             {itemsMapped()}
-            <div className="w-full h-full bg-black bg-opacity-90 rounded-b pb-1"></div>
+            <div
+              className={`${commonStyle} w-full h-full rounded-b pb-2`}
+            ></div>
           </div>
         </motion.div>
       )}

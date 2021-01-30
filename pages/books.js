@@ -29,7 +29,7 @@ export default function Books({ allBooks }) {
             </>
           }
         />
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           <DropdownButton
             title="Year"
             filter={yearFilter}

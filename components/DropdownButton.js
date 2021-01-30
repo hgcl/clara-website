@@ -15,7 +15,6 @@ export default function DropdownButton({
   widthModal,
 }) {
   const [open, setOpen] = useState(false);
-  const closeDropdown = () => setOpen(false);
 
   return (
     <div className={marginRight}>
@@ -23,10 +22,10 @@ export default function DropdownButton({
         <button
           className={`${
             widthButton || "w-20"
-          } relative z-20 flex flex-row items-center mx-2 mt-1`}
+          } relative flex flex-row items-center mx-2 mt-1 all-small-caps`}
           aria-label={title}
-          onClick={() => setOpen((o) => !o)}
-          onMouseEnter={() => setOpen((o) => !o)}
+          onClick={() => setOpen(!open)}
+          onMouseEnter={() => setOpen(!open)}
         >
           <span className="pr-2 text-left">
             {filter === 0
@@ -49,8 +48,9 @@ export default function DropdownButton({
         </button>
       </label>
       <OpenDropdown
+        title={title}
         open={open}
-        closeDropdown={closeDropdown}
+        setOpen={setOpen}
         setHook={setHook}
         itemsArray={itemsArray}
         widthModal={widthModal}

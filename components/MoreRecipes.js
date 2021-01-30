@@ -41,7 +41,7 @@ export default function MoreRecipes({ posts }) {
   ];
   return (
     <Container>
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-wrap">
         <DropdownButton
           title="Diet"
           filter={dietFilter}
@@ -64,6 +64,8 @@ export default function MoreRecipes({ posts }) {
           setHook={setDifficulty}
           itemsArray={difficultyDropdown}
           marginRight="mr-2"
+          widthButton="w-24"
+          widthModal="w-28"
         />
         <DropdownButton
           title="Duration"

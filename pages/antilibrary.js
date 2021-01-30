@@ -25,7 +25,7 @@ export default function Antilibrary({ allBooks }) {
             "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           <DropdownButton
             title="Year"
             filter={yearFilter}
