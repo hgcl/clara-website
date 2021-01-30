@@ -3,7 +3,6 @@ import ArrowIcon from "../public/icons/ArrowIcon";
 
 export default function OpenDropdown({
   open,
-  closeDropdown,
   setHook,
   itemsArray,
   widthModal,
@@ -19,7 +18,7 @@ export default function OpenDropdown({
         <button
           role="option"
           key={item.name}
-          className={`${dropdownRow} ${commonStyle} pt-2 hover:text-accent focus:text-accent text-gray-dark`}
+          className={`${dropdownRow} ${commonStyle} pt-2 hover:text-accent focus:text-accent active:text-accent text-gray-dark`}
           onClick={() => {
             setHook(item.value);
             setOpen(!open);

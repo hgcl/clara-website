@@ -12,17 +12,16 @@ import { motion } from "framer-motion";
 
 export default function Layout({ preview, children, title, noHentry }) {
   const [open, setOpen] = useState(false);
-  const closeModal = () => setOpen(false);
   return (
     <>
       <Meta title={title} />
       <div className="min-h-screen z-10 relative bg-gray-dark pb-16 md:pb-32">
         {/* <Alert preview={preview} /> */}
         <motion.nav className="z-40 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
-          <Menu open={open} onClose={closeModal} />
+          <Menu open={open} setOpen={setOpen} />
           {!open && (
             <MenuToggle
-              toggle={() => setOpen((o) => !o)}
+              toggle={() => setOpen(!open)}
               className="absolute transition duration-300 transform hover:-rotate-90 opacity-75 hover:opacity-100"
             />
           )}

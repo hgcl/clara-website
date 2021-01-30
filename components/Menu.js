@@ -9,11 +9,11 @@ import { motion, AnimatePresence } from "framer-motion";
  * It creates a mode that disables the main window but keeps it visible with the modal window as a child window in front of it.
  * Users must interact with the modal window before they can return to the parent application.
  */
-const Menu = ({ open, hideCloseButton, onClose }) => {
+const Menu = ({ open, hideCloseButton, setOpen }) => {
   const keydownHandler = ({ key }) => {
     switch (key) {
       case "Escape":
-        onClose();
+        setOpen(false);
         break;
       default:
     }
@@ -29,34 +29,37 @@ const Menu = ({ open, hideCloseButton, onClose }) => {
       {open && (
         <motion.div key="modal" exit={{ opacity: 0 }}>
           {/* Modal container / overlay */}
-          <div className="fixed w-screen h-screen" onClick={onClose}>
+          <div
+            className="fixed w-screen h-screen"
+            onClick={() => setOpen(false)}
+          >
             {/* Modal pop-up */}
             <div
               className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
-              onClick={onClose}
+              onClick={() => setOpen(false)}
             >
               {!hideCloseButton && (
                 <div className="absolute top-4 right-8 text-4xl">
-                  <button onClick={onClose}>{CLOSE}</button>
+                  <button onClick={() => setOpen(false)}>{CLOSE}</button>
                 </div>
               )}
               <ul className="relative text-3xl list-none">
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/">Home</Link>
                 </li>
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/about">About</Link>
                 </li>
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/now">Now</Link>
                 </li>
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/blog">Writing</Link>
                 </li>
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/books">Reading</Link>
                 </li>
-                <li onClick={onClose}>
+                <li onClick={() => setOpen(false)}>
                   <Link href="/portfolio">Portfolio</Link>
                 </li>
               </ul>
