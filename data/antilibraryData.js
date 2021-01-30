@@ -8,6 +8,15 @@
 
 export default [
   {
+    date: "2021-01-30 16:11:37",
+    title:
+      "Defining Decade: Why Your Twenties Matter And How To Make The Most Of Them Now",
+    author: "Meg Jay",
+    isbn: "9780446561754",
+    notes: "Recommended by Mirha Masala",
+    link: "https://www.mirhamasala.com/favorite-things-2020/",
+  },
+  {
     date: "2021-01-22 07:50:54",
     title: "Artificial Unintelligence",
     author: "Meredith Broussard",
