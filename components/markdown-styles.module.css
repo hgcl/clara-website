@@ -7,7 +7,7 @@
 }
 .markdown cite {
   /* Used for creative works: book names, movies, etc. */
-  @apply italic;
+  @apply italic capitalize;
 }
 
 .markdown a cite,
