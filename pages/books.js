@@ -54,12 +54,15 @@ export default function Books({ allBooks }) {
         <div className="flex flex-row flex-wrap">
           {dropdownList("hidden xs:block")}
           <div className="flex flex-row justify-start w-full xs:w-auto">
-            <button onClick={() => setSettings(!openSettings)}>
-              <SettingsIcon className="xs:hidden" />
+            <button
+              onClick={() => setSettings(!openSettings)}
+              className="xs:hidden w-full"
+            >
+              <SettingsIcon />
             </button>
             {/* TODO replace checkbox by toggle */}
             <Checkbox
-              className="mt-1 ml-2"
+              className="mt-1 whitespace-no-wrap"
               value={reviewFilter}
               onChange={toggleReviewFilter}
               label="Reviews only"
@@ -69,10 +72,10 @@ export default function Books({ allBooks }) {
           {openSettings && (
             <div className="xs:hidden my-4">
               <div
-                className="z-10 absolute -top-8 left-0 h-full w-screen"
+                className="z-10 absolute -top-8 left-0 h-full w-full"
                 onClick={() => setSettings(!openSettings)}
               />
-              <div className="z-10 relative w-screen">{dropdownList("")}</div>
+              <div className="z-10 relative w-full">{dropdownList("")}</div>
             </div>
           )}
         </div>
