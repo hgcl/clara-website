@@ -60,7 +60,7 @@ export default function OpenDropdown({
             <div
               className={`${
                 widthModal || "w-24"
-              } ${commonStyle} absolute flex flex-col top-1 left-0 rounded-t h-full -mt-8 pt-2`}
+              } ${commonStyle} absolute flex flex-col top-1 left-0 rounded-t h-full -mt-10 pt-2`}
             >
               <button
                 role="button"

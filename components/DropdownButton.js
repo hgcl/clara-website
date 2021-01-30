@@ -3,26 +3,23 @@ import ArrowIcon from "../public/icons/ArrowIcon";
 import OpenDropdown from "./OpenDropdown";
 
 export default function DropdownButton({
+  className,
   filter,
   itemsArray,
-  marginRight,
-  prefix,
   setHook,
-  suffix,
   title,
-  hideDefaultName,
   widthButton,
   widthModal,
 }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={marginRight}>
+    <div className={`${className} {marginRight}`}>
       <label>
         <button
           className={`${
-            widthButton || "w-20"
-          } relative flex flex-row items-center mx-2 mt-1 all-small-caps`}
+            widthButton || "w-auto"
+          } relative flex flex-row items-center ml-2 mr-6 mt-1 mb-2 all-small-caps`}
           aria-label={title}
           onClick={() => setOpen(!open)}
           onMouseEnter={() => setOpen(!open)}

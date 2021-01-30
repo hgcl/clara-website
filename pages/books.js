@@ -11,12 +11,34 @@ import DropdownButton from "../components/DropdownButton";
 import Checkbox from "../components/Checkbox";
 import MediaTile from "../components/MediaTile";
 import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
+import SettingsIcon from "../public/icons/SettingsIcon";
 
 export default function Books({ allBooks }) {
+  const [openSettings, setSettings] = useState(false);
   const [yearFilter, setYear] = useState(0);
   const [ratingFilter, setRating] = useState(0);
   const [reviewFilter, setReview] = useState(false);
   const toggleReviewFilter = () => setReview((value) => !value);
+
+  const dropdownList = (className) => (
+    <>
+      <DropdownButton
+        className={className}
+        title="Year"
+        filter={yearFilter}
+        setHook={setYear}
+        itemsArray={yearDropdown}
+        marginRight="mr-2"
+      />
+      <DropdownButton
+        className={className}
+        title="Rating"
+        filter={ratingFilter}
+        setHook={setRating}
+        itemsArray={ratingDropdown}
+      />
+    </>
+  );
 
   return (
     <Layout title={"Books"}>
@@ -29,27 +51,30 @@ export default function Books({ allBooks }) {
             </>
           }
         />
-        <div className="flex flex-col sm:flex-row flex-wrap">
-          <DropdownButton
-            title="Year"
-            filter={yearFilter}
-            setHook={setYear}
-            itemsArray={yearDropdown}
-            marginRight="mr-2"
-          />
-          <DropdownButton
-            title="Rating"
-            filter={ratingFilter}
-            setHook={setRating}
-            itemsArray={ratingDropdown}
-          />
-          {/* TODO replace checkbox by toggle */}
-          <Checkbox
-            className="mt-1 ml-4"
-            value={reviewFilter}
-            onChange={toggleReviewFilter}
-            label="Reviews only"
-          />
+        <div className="flex flex-row flex-wrap">
+          {dropdownList("hidden xs:block")}
+          <div className="flex flex-row justify-start w-full xs:w-auto">
+            <button onClick={() => setSettings(!openSettings)}>
+              <SettingsIcon className="xs:hidden" />
+            </button>
+            {/* TODO replace checkbox by toggle */}
+            <Checkbox
+              className="mt-1 ml-2"
+              value={reviewFilter}
+              onChange={toggleReviewFilter}
+              label="Reviews only"
+            />
+          </div>
+          {/* Open generic settings dropdown: */}
+          {openSettings && (
+            <div className="xs:hidden my-4">
+              <div
+                className="z-10 absolute -top-8 left-0 h-full w-screen"
+                onClick={() => setSettings(!openSettings)}
+              />
+              <div className="z-10 relative w-screen">{dropdownList("")}</div>
+            </div>
+          )}
         </div>
         <MediaGrid>
           {allBooks
