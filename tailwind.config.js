@@ -33,6 +33,96 @@ module.exports = {
       ],
     },
     extend: {
+      borderWidth: {
+        1: "1px",
+      },
+      colors: {
+        accent: "#ef4f37",
+        accent2: "#a52722",
+        white: "#E5E7EB",
+        black: "#0f0f0f",
+        gray: {
+          regular: "#96989e",
+          dark: "#171717",
+        },
+      },
+      fontFamily: {
+        serif: ["Vesper\\ Libre", ...defaultTheme.fontFamily.serif],
+        sans: ["Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        "7xl": "4.5rem",
+        "8xl": "6.25rem",
+      },
+      // gridTemplateColumns: {
+      //   'book-grid': 'repeat(auto-fill, minmax(150px, 1fr))',
+      // },
+      inset: {
+        "-10": "-2.5rem",
+        "-8": "-2rem",
+        "-7": "-1.75rem",
+        "-6": "-1.5rem",
+        "-5": "-1.25rem",
+        "-4": "-1rem",
+        "-3": "-0.75rem",
+        "-2": "-0.5rem",
+        "-1": "-0.25rem",
+        1: "0.25rem",
+        2: "0.5rem",
+        3: "0.75rem",
+        4: "1rem",
+        5: "1.25rem",
+        6: "1.5rem",
+        7: "1.75rem",
+        8: "2rem",
+        10: "2.5rem",
+        12: "3rem",
+        20: "5rem",
+        24: "6rem",
+        28: "7rem",
+        32: "8rem",
+        40: "9rem",
+        48: "10rem",
+        56: "11rem",
+        64: "12rem",
+      },
+      lineHeight: {
+        tight: 1.2,
+      },
+      maxHeight: {
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+        192: "48rem",
+      },
+      maxHeight: {
+        "1/4": "25%",
+      },
+      minWidth: {
+        "1/4": "25%",
+        "1/2": "50%",
+      },
+      opacity: {
+        90: ".9",
+      },
+      scale: {
+        101: "1.01",
+      },
+      screens: {
+        xs: "361px",
+      },
+      spacing: {
+        "2px": "2px",
+        28: "7rem",
+        36: "9rem",
+        72: "18rem",
+        80: "20rem",
+        96: "24rem",
+        128: "32rem",
+      },
+      strokeWidth: {
+        6: "6",
+      },
       typography: {
         // Not possible to override p TopMargin without resetting all the sizes / spacings. I chose to override *everything* instead until tailwindcss typography supports different margins.
         DEFAULT: {
@@ -74,7 +164,7 @@ module.exports = {
                 lineHeight: round(40 / 30),
               },
               h3: {
-                fontSize: em(24, 18),
+                // fontSize: em(24, 18),
                 marginTop: em(40, 24),
                 marginBottom: em(16, 24),
                 lineHeight: round(36 / 24),
@@ -420,96 +510,6 @@ module.exports = {
             },
           ],
         },
-      },
-      borderWidth: {
-        1: "1px",
-      },
-      colors: {
-        accent: "#ef4f37",
-        accent2: "#a52722",
-        white: "#E5E7EB",
-        black: "#0f0f0f",
-        gray: {
-          regular: "#96989e",
-          dark: "#171717",
-        },
-      },
-      fontFamily: {
-        serif: ["Vesper\\ Libre", ...defaultTheme.fontFamily.serif],
-        sans: ["Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans],
-      },
-      fontSize: {
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
-      },
-      // gridTemplateColumns: {
-      //   'book-grid': 'repeat(auto-fill, minmax(150px, 1fr))',
-      // },
-      inset: {
-        "-10": "-2.5rem",
-        "-8": "-2rem",
-        "-7": "-1.75rem",
-        "-6": "-1.5rem",
-        "-5": "-1.25rem",
-        "-4": "-1rem",
-        "-3": "-0.75rem",
-        "-2": "-0.5rem",
-        "-1": "-0.25rem",
-        1: "0.25rem",
-        2: "0.5rem",
-        3: "0.75rem",
-        4: "1rem",
-        5: "1.25rem",
-        6: "1.5rem",
-        7: "1.75rem",
-        8: "2rem",
-        10: "2.5rem",
-        12: "3rem",
-        20: "5rem",
-        24: "6rem",
-        28: "7rem",
-        32: "8rem",
-        40: "9rem",
-        48: "10rem",
-        56: "11rem",
-        64: "12rem",
-      },
-      lineHeight: {
-        tight: 1.2,
-      },
-      maxHeight: {
-        "1/4": "25%",
-        "1/2": "50%",
-        "3/4": "75%",
-        192: "48rem",
-      },
-      maxHeight: {
-        "1/4": "25%",
-      },
-      minWidth: {
-        "1/4": "25%",
-        "1/2": "50%",
-      },
-      opacity: {
-        90: ".9",
-      },
-      scale: {
-        101: "1.01",
-      },
-      screens: {
-        xs: "361px",
-      },
-      spacing: {
-        "2px": "2px",
-        28: "7rem",
-        36: "9rem",
-        72: "18rem",
-        80: "20rem",
-        96: "24rem",
-        128: "32rem",
-      },
-      strokeWidth: {
-        6: "6",
       },
     },
   },
