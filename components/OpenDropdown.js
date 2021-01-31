@@ -49,7 +49,7 @@ export default function OpenDropdown({
       {open && (
         <>
           <div
-            className="z-10 absolute -top-8 left-0 h-full w-screen"
+            className="z-10 absolute -top-8 left-0 h-full w-full"
             onClick={() => setOpen(!open)}
           />
           <motion.div

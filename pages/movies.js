@@ -47,10 +47,11 @@ export default function Movies({ allMovies }) {
           <div className="flex flex-row justify-start w-full xs:w-auto">
             <button
               onClick={() => setSettings(!openSettings)}
-              className="xs:hidden w-full"
+              className="xs:hidden"
             >
               <SettingsIcon />
             </button>
+            <div className="xs:hidden w-full" />
             {/* TODO replace checkbox by toggle */}
             <Checkbox
               className="mt-1 whitespace-no-wrap"
