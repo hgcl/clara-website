@@ -6,10 +6,7 @@ export default function MediaGrid({ children }) {
 
   return (
     <>
-      <section
-        className="grid gap-x-1 xs:gap-x-4 gap-y-8 mt-6"
-        style={gridStyle}
-      >
+      <section className="grid gap-x-4 gap-y-8 mt-6" style={gridStyle}>
         {children}
       </section>
     </>
