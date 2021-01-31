@@ -1,3 +1,4 @@
+import BigStat from "./BigStat";
 import Column from "./Column";
 import Comment from "./Comment";
 import FeaturedArtistImage from "./FeaturedArtistImage";
@@ -10,6 +11,7 @@ import TopicTwoColumns from "./TopicTwoColumns";
 
 //import as many components you're using collectively in all your posts
 const AllPostComponents = {
+  BigStat,
   Column,
   Comment,
   FeaturedArtistImage,
