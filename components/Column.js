@@ -1,5 +1,11 @@
-export default function Column({ children, double }) {
+export default function Column({ children, double, lastColumn, className }) {
   return (
-    <div className={`${double ? "flex-2" : "flex-1"} md:mr-5`}>{children}</div>
+    <div
+      className={`${className} ${double ? "flex-2" : "flex-1"} ${
+        !lastColumn && "md:mr-8"
+      }`}
+    >
+      {children}
+    </div>
   );
 }

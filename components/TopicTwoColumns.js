@@ -18,7 +18,9 @@ export default function TopicTwoColumns({ topic, href, children }) {
   return (
     <Flex>
       <Column>{renderFirstColumn()}</Column>
-      <Column double>{children}</Column>
+      <Column double lastColumn>
+        {children}
+      </Column>
     </Flex>
   );
 }
