@@ -6,10 +6,11 @@ import Container from "./container";
 import PostPreview from "./post-preview";
 
 export default function MorePosts({ posts }) {
+  const reviewArray = ["monthly-review", "weekly-review"];
   const tagStyle = "pt-1 pb-2 px-4 mr-4 all-small-caps border-1 rounded-sm";
   const inactiveTag = "border-gray-regular text-gray-regular";
   const activeTag = "border-accent";
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState([]);
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
@@ -22,16 +23,22 @@ export default function MorePosts({ posts }) {
           </button>
           <button
             className={`${
-              filter === "weekly-review" ? activeTag : inactiveTag
+              reviewArray.some((item) => filter.indexOf(item) >= 0)
+                ? activeTag
+                : inactiveTag
             } ${tagStyle}`}
-            onClick={() => setFilter("weekly-review")}
+            onClick={() => setFilter(reviewArray)}
           >
             Reviews
           </button>
         </section>
         {posts
           .filter((post) =>
-            filter ? post.categories && post.categories.includes(filter) : post
+            filter
+              ? post.categories &&
+                // https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript
+                filter.some((item) => post.categories.indexOf(item) >= 0)
+              : post
           )
           .map((post) => (
             <PostPreview
