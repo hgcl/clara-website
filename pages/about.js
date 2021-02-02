@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
+import WaffleIcon from "../public/icons/WaffleIcon";
 
 export default function About({}) {
   return (
@@ -80,7 +81,7 @@ export default function About({}) {
               I <em>love</em> cheese.
             </li>
           </ol>
-          <hr />
+          <WaffleIcon className="mx-auto my-16" />
           <p>
             Oh, so you didn’t really care about all this stuff but just wanted
             to know more{" "}
