@@ -351,8 +351,9 @@ export default [
     tmdb_id: 335984,
     date: "2021-01-24",
     title: "Blade Runner 2049",
-    rating: "",
-    review: "",
+    rating: 4,
+    review:
+      "This second volume was able to reproduce the same vibe as the first movie. Love how they kept many of the same actors in the same roles. Incredible sountrack again.",
   },
   {
     tmdb_id: 424694,
