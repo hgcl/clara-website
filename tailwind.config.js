@@ -29,6 +29,7 @@ module.exports = {
       smallcaps: [
         "SourceSansProSmallCaps",
         "Source\\ Sans\\ Pro",
+        "Roboto",
         ...defaultTheme.fontFamily.sans,
       ],
     },
@@ -48,7 +49,11 @@ module.exports = {
       },
       fontFamily: {
         serif: ["Vesper\\ Libre", ...defaultTheme.fontFamily.serif],
-        sans: ["Source\\ Sans\\ Pro", ...defaultTheme.fontFamily.sans],
+        sans: [
+          "Source\\ Sans\\ Pro",
+          "Roboto",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       fontSize: {
         "7xl": "4.5rem",
