@@ -1,4 +1,4 @@
-// import Alert from "../components/alert";
+import Alert from "../components/alert";
 import Footer from "./footer";
 import Meta from "./meta";
 import Hentry from "./Hentry";
@@ -8,15 +8,13 @@ import { MenuToggle } from "./MenuToggle";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-// Alert at page top + footer
-
-export default function Layout({ preview, children, title, noHentry }) {
+export default function Layout({ children, title, noHentry, showAlert }) {
   const [open, setOpen] = useState(false);
   return (
     <>
       <Meta title={title} />
       <div className="min-h-screen z-10 relative bg-gray-dark pb-16 md:pb-32">
-        {/* <Alert preview={preview} /> */}
+        <Alert showAlert={showAlert} />
         <motion.nav className="z-40 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
           <Menu open={open} setOpen={setOpen} />
           {!open && (
