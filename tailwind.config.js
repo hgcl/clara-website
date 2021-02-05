@@ -108,6 +108,7 @@ module.exports = {
         "1/2": "50%",
       },
       opacity: {
+        30: ".3",
         90: ".9",
       },
       scale: {
