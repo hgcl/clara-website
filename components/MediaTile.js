@@ -82,7 +82,7 @@ const ClosedTile = ({
       <div className="relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
         <Image
           src={coverUrl}
-          className="object-cover shadow-2xl rounded"
+          className="object-cover shadow-2xl rounded bg-black"
           height="312rem"
           width="200rem"
         />
