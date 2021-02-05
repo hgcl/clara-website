@@ -9,8 +9,7 @@
 export default [
   {
     date: "2021-01-30 16:11:37",
-    title:
-      "Defining Decade: Why Your Twenties Matter And How To Make The Most Of Them Now",
+    title: "The Defining Decade",
     author: "Meg Jay",
     isbn: "9780446561754",
     notes: "Recommended by Mirha Masala",
@@ -57,14 +56,6 @@ export default [
     notes:
       "Straw Dogs by the English philosopher John Gray challenged Norbauer's view on “pretty much everything”. The book is a critique of philosophical humanism.",
     link: "https://www.densediscovery.com/issues/119/",
-  },
-  {
-    date: "2021-01-02 18:22:10",
-    title: "Children of Time",
-    author: "Adrian Tchaikovsky",
-    isbn: "9780316452502",
-    notes:
-      "Space odyssey kind of book, civilization building among the stars. It reminded me of Seveneves. Found in the sci-fi section of Dussman",
   },
   {
     date: "2021-01-02 18:19:18",
