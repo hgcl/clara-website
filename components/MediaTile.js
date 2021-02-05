@@ -86,6 +86,7 @@ const ClosedTile = ({
     <>
       <div className="relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
         <Image
+          alt={title}
           src={coverUrl}
           className={`${unfinishedBooks} object-cover shadow-2xl rounded bg-black`}
           height="312rem"
