@@ -1,4 +1,4 @@
-import { getAllBooks } from "../lib/getAllBooks";
+// import { getAllBooks } from "../lib/getAllBooks";
 import booksData from "../data/booksData.js";
 import Layout from "../components/layout";
 import Header from "../components/header";
@@ -81,7 +81,7 @@ export default function Books({ allBooks }) {
           )}
         </div>
         <MediaGrid>
-          {allBooks
+          {booksData
             // Year filter
             .filter((book) =>
               yearFilter ? getYear(new Date(book.date)) === yearFilter : book
@@ -101,7 +101,7 @@ export default function Books({ allBooks }) {
             .map((book) => {
               const {
                 author,
-                coverUrl,
+                coverUrl = `https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`,
                 date,
                 isbn,
                 link,
@@ -133,10 +133,11 @@ export default function Books({ allBooks }) {
   );
 }
 
-export async function getStaticProps() {
-  const allBooks = await getAllBooks(booksData);
+// VERSION 1: using Open Library API
+// export async function getStaticProps() {
+//   const allBooks = await getAllBooks(booksData);
 
-  return {
-    props: { allBooks },
-  };
-}
+//   return {
+//     props: { allBooks },
+//   };
+// }
