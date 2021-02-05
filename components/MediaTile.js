@@ -7,15 +7,16 @@ import NoteIcon from "../public/icons/NoteIcon";
 import OpenMediaModal from "./OpenMediaModal";
 
 export default function MediaTile({
-  coverUrl,
-  title,
   author,
-  rating,
-  notes,
-  review,
+  coverUrl,
   date,
   dateLabel,
   link,
+  notes,
+  rating,
+  review,
+  status,
+  title,
 }) {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
@@ -35,6 +36,7 @@ export default function MediaTile({
             notes={notes}
             rating={rating}
             review={review}
+            status={status}
             title={title}
           />
         </button>
@@ -47,6 +49,7 @@ export default function MediaTile({
             coverUrl={coverUrl}
             notes={notes}
             rating={rating}
+            status={status}
             title={title}
           />
         </div>
@@ -74,15 +77,17 @@ const ClosedTile = ({
   notes,
   rating,
   review,
+  status,
   title,
 }) => {
   const [tooltipOpen, setOpenTooltip] = useState(false); // Tooltip modal hook
+  const unfinishedBooks = status === "unfinished" && "opacity-30";
   return (
     <>
       <div className="relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
         <Image
           src={coverUrl}
-          className="object-cover shadow-2xl rounded bg-black"
+          className={`${unfinishedBooks} object-cover shadow-2xl rounded bg-black`}
           height="312rem"
           width="200rem"
         />

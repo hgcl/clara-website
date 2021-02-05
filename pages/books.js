@@ -14,6 +14,8 @@ import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
 import SettingsIcon from "../public/icons/SettingsIcon";
 
 export default function Books({ allBooks }) {
+  const [statusFilter, setStatus] = useState(false);
+  const toggleStatusFilter = () => setStatus((value) => !value);
   const [openSettings, setSettings] = useState(false);
   const [yearFilter, setYear] = useState(0);
   const [ratingFilter, setRating] = useState(0);
@@ -63,10 +65,16 @@ export default function Books({ allBooks }) {
             <div className="xs:hidden w-full" />
             {/* TODO replace checkbox by toggle */}
             <Checkbox
-              className="mt-1 whitespace-no-wrap"
+              className="mt-1 mr-4 whitespace-no-wrap"
               value={reviewFilter}
               onChange={toggleReviewFilter}
               label="Reviews only"
+            />
+            <Checkbox
+              className="mt-1 whitespace-no-wrap"
+              value={statusFilter}
+              onChange={toggleStatusFilter}
+              label="Unfinished"
             />
           </div>
           {/* Open generic settings dropdown: */}
@@ -82,6 +90,10 @@ export default function Books({ allBooks }) {
         </div>
         <MediaGrid>
           {booksData
+            // Status filter
+            .filter((book) =>
+              statusFilter ? book : book.status !== "unfinished"
+            )
             // Year filter
             .filter((book) =>
               yearFilter ? getYear(new Date(book.date)) === yearFilter : book
@@ -108,6 +120,7 @@ export default function Books({ allBooks }) {
                 notes,
                 rating,
                 review,
+                status,
                 title,
               } = book;
 
@@ -122,6 +135,7 @@ export default function Books({ allBooks }) {
                     notes={notes}
                     rating={rating}
                     review={review}
+                    status={status}
                     title={title}
                   />
                 </article>
