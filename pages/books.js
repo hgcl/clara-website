@@ -130,7 +130,9 @@ export default function Books({ allBooks }) {
                     author={author}
                     coverUrl={coverUrl}
                     date={date}
-                    dateLabel="Read on"
+                    dateLabel={
+                      status === "unfinished" ? "Stopped on" : "Read on"
+                    }
                     link={link}
                     notes={notes}
                     rating={rating}
