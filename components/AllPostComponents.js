@@ -5,6 +5,7 @@ import FeaturedArtistImage from "./FeaturedArtistImage";
 import Flex from "./Flex";
 import FigCaption from "./FigCaption";
 import Figure from "./Figure";
+import Ingredient from "./Ingredient";
 import Link from "./link";
 import ProgressBar from "./ProgressBar";
 import TopicTwoColumns from "./TopicTwoColumns";
@@ -18,6 +19,7 @@ const AllPostComponents = {
   Flex,
   FigCaption,
   Figure,
+  Ingredient,
   Link,
   ProgressBar,
   TopicTwoColumns,
