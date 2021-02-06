@@ -11,8 +11,10 @@ import "../styles/index.css";
 import { MDXProvider } from "@mdx-js/react";
 import WaffleIcon from "../public/icons/WaffleIcon";
 
+// Editing MDX shortcodes: https://css-tricks.com/working-with-mdx-custom-elements-and-shortcodes/
 const mdComponents = {
   hr: () => <WaffleIcon className="mx-auto my-16" />,
+  strong: (props) => <span className="all-small-caps" {...props} />,
 };
 
 export default function MyApp({ Component, pageProps }) {
