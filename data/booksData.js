@@ -315,6 +315,15 @@ export default [
   },
   ///// >B  /////
   {
+    date: "2021-02-06 11:20:15",
+    title: "Girl, Woman, Other",
+    author: "Bernadine Evaristo",
+    rating: 5,
+    isbn: "9780802157706",
+    review:
+      "Beautifully written in a stream of consciousness style—there are no sentences, reading like breathing. We jump into the lives of girls, women—others—in England. From one mind to the next, we get to know and understand them through each other's perceptions, discovering how it’s never as simple as it seems. It starts with a play and comes around full circle.",
+  },
+  {
     date: "2020-01-28",
     title: "Recursion",
     author: "Blake Crouch",
