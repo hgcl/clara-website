@@ -309,6 +309,12 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 587,
+    title: "Big Fish",
+    rating: "",
+    review: "",
+  },
+  {
     tmdb_id: 177572,
     date: "2018-06-07",
     title: "Big Hero 6",
@@ -557,6 +563,12 @@ export default [
     tmdb_id: 284052,
     title: "Doctor Strange",
     rating: "",
+    review: "",
+  },
+  {
+    tmdb_id: 925,
+    title: "Do the right thing",
+    rating: 5,
     review: "",
   },
   {
@@ -1063,6 +1075,12 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 254,
+    title: "King Kong",
+    rating: "",
+    review: "",
+  },
+  {
     tmdb_id: 21348,
     title: "Kirikou and the Sorceress",
     rating: 4,
@@ -1115,6 +1133,12 @@ export default [
   {
     tmdb_id: 11774,
     title: "Lemony Snicket's A Series of Unfortunate Events",
+    rating: "",
+    review: "",
+  },
+  {
+    tmdb_id: 5528,
+    title: "Les Choristes",
     rating: "",
     review: "",
   },
@@ -1228,6 +1252,12 @@ export default [
     tmdb_id: 77,
     title: "Memento",
     rating: 5,
+    review: "",
+  },
+  {
+    tmdb_id: 1904,
+    title: "Memoirs of a Geisha",
+    rating: "",
     review: "",
   },
   {
@@ -2256,6 +2286,12 @@ export default [
   //   rating: "",
   //   review: "",
   // },
+  {
+    tmdb_id: 84892,
+    title: "The Perks of Being a Wallflower",
+    rating: "",
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",

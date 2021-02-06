@@ -321,7 +321,7 @@ export default [
     rating: 5,
     isbn: "9780802157706",
     review:
-      "Beautifully written in a stream of consciousness style—there are no sentences, reading like breathing. We jump into the lives of girls, women—others—in England. From one mind to the next, we get to know and understand them through each other's perceptions, discovering how it’s never as simple as it seems. It starts with a play and comes around full circle.",
+      "Reading like breathing: we jump into the lives of 12 girls, women—others—in England. From one mind to the next, we get to know and understand them through each other's perceptions, discovering how it is never as simple as it seems. Strong recurring themes are feminism, politics, sexuality and otherness. The characters are “othered” by society for their skin color, sexuality, gender—sometimes even othering one another. Over decades, lives cross, align and split, but finally come around full circle right at the beginning.",
   },
   {
     date: "2020-01-28",
