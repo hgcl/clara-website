@@ -1,13 +1,13 @@
 import { RatingIconFull, RatingIconEmpty } from "../public/icons/RatingIcon";
 
-const Rating = ({ rating, pRating, height }) => {
+const Rating = ({ rating, pRating, height, color }) => {
   const emptyRating = 5 - rating;
   return (
     <span className={`${pRating && "p-rating"} flex flex-row`} value={rating}>
       {[...Array(rating)].map((_, index) => (
         <RatingIconFull
           key={`rating-full-${index}`}
-          className="fill-current text-white"
+          className={`fill-current ${color || "text-white"}`}
           height={height || 14}
         />
       ))}
