@@ -9,14 +9,14 @@ export default function ProgressBar({ title, progress, widthClass, color }) {
       <div
         className={`entire-empty-bar ${fullWidth} h-3 rounded mb-12`}
         style={{
-          "background-image": `${fullFill}`,
+          backgroundImage: `${fullFill}`,
         }}
       >
         <div
           className="completed-full-part relative h-full rounded -top-20"
           style={{
             width: `${progressWidth}`,
-            "background-image": `${progressFill}`,
+            backgroundImage: `${progressFill}`,
           }}
         >
           <div className="percentage-number absolute -right-8 -top-10 w-16 font-serif text-center">{`${progress}%`}</div>
