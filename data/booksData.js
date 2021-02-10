@@ -2405,6 +2405,15 @@ export default [
     review: "",
   },
   {
+    date: "2021-02-10 08:28:53",
+    title: "Mexican Gothic",
+    author: "Silvia Moreno-Garcia",
+    rating: 3,
+    isbn: "9780525620785",
+    review:
+      "This is the kind of book I’m a bit ashamed to read, that I enjoy without loving them—just like watching a stupid but entertaining movie. It felt like a young adult horror novel. It gives you thrills but is not downright scary. I still finished it in one sitting.",
+  },
+  {
     date: "2012-12-21",
     title: "Twilight (Twilight, #1)",
     author: "Stephenie Meyer",
