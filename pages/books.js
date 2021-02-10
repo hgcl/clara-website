@@ -1,4 +1,3 @@
-// import { getAllBooks } from "../lib/getAllBooks";
 import booksData from "../data/booksData.js";
 import Layout from "../components/layout";
 import Header from "../components/header";
@@ -148,12 +147,3 @@ export default function Books({ allBooks }) {
     </Layout>
   );
 }
-
-// VERSION 1: using Open Library API
-// export async function getStaticProps() {
-//   const allBooks = await getAllBooks(booksData);
-
-//   return {
-//     props: { allBooks },
-//   };
-// }
