@@ -11,6 +11,11 @@ export default function Footer() {
           <h2 className="comment pb-4">Social</h2>
           <ul className={`${ulStyle} list-none`}>
             <li>
+              <NextLink href="https://hgcl.github.io/gatsby-garden/">
+                <a>Digital Garden</a>
+              </NextLink>
+            </li>
+            <li>
               <NextLink href="https://twitter.com/clara__le">
                 <a>Twitter</a>
               </NextLink>
