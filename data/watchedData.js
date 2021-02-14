@@ -267,6 +267,14 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 446159,
+    date: "2021-02-07",
+    title: "Bacurau",
+    rating: 4,
+    review:
+      "Bacurau was... unexpected. I watched it as some Brazilian friends recommended it to me, without knowing anything about its plot. It starts a few years from now in a tiny isolated village in rural Brazil. It is a direct reference to quilombos—historical places of resistance where slaves ran away from their masters during Portuguese colonial times. Midway through the movie, we suddenly realize we are in a dystopian future, mixing genres from action to sci-fi. Very original, slow and tense, a critic of its times.",
+  },
+  {
     tmdb_id: 3170,
     date: "2000-06-07",
     title: "Bambi",
