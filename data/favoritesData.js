@@ -198,6 +198,14 @@ export const favoritesData = [
     best: false,
   },
   {
+    link: "https://100r.co/",
+    title: "Hundred Rabbits",
+    description:
+      "When I think about inspiring people, I think about Rekka and Devine, the creators of Hundred Rabbits. They live off the grid on a sailboat, have a plant-based cooking blog, create open-source projects... Do I need to go on?",
+    category: [categories.travel.anchor, categories.blogroll.anchor],
+    best: false,
+  },
+  {
     link: "https://hypothes.is/",
     title: "Hypothesis",
     description:
