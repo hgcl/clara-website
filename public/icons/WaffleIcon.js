@@ -1,4 +1,3 @@
-// TO REPLACE WITH OWN ICON
 import React from "react";
 
 function WaffleIcon({ className, height }) {
