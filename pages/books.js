@@ -73,7 +73,7 @@ export default function Books({ allBooks }) {
               className="mt-1 whitespace-no-wrap"
               value={statusFilter}
               onChange={toggleStatusFilter}
-              label="Unfinished"
+              label="Show unfinished"
             />
           </div>
           {/* Open generic settings dropdown: */}

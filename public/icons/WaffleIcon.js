@@ -1,23 +1,18 @@
+// TO REPLACE WITH OWN ICON
 import React from "react";
 
 function WaffleIcon({ className, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 479.3 479.3"
-      strokeWidth="45"
-      className={`${className} stroke-current`}
+      viewBox="0 0 20 20"
+      className={`${className} fill-current`}
       focusable="false"
       aria-hidden="true"
-      width={height || 24}
-      height={height || 24}
+      width={height || 20}
+      height={height || 20}
     >
-      <g>
-        <line class="st0" x1="19.7" y1="109.6" x2="369.7" y2="459.6" />
-        <line class="st0" x1="109.7" y1="19.6" x2="459.7" y2="369.6" />
-        <line class="st0" x1="459.6" y1="109.6" x2="109.6" y2="459.6" />
-        <line class="st0" x1="369.6" y1="19.6" x2="19.6" y2="369.6" />
-      </g>
+      <path d="M15.41,10l4.3-4.29a1,1,0,1,0-1.42-1.42L14,8.59,11.41,6l4.3-4.29A1,1,0,1,0,14.29.29L10,4.59,5.71.29A1,1,0,0,0,4.29,1.71L8.59,6,6,8.59,1.71,4.29A1,1,0,0,0,.29,5.71L4.59,10,.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L6,11.41,8.59,14l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L10,15.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,14,14,11.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42ZM10,12.59,7.41,10,10,7.41,12.59,10Z" />
     </svg>
   );
 }
