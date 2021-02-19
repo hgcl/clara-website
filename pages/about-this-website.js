@@ -168,22 +168,6 @@ export default function AboutWebsite({}) {
               <span className="comment">(VS Code extension)</span>
             </li>
           </ul>
-          <h2>Credits</h2>
-          <p>
-            SVG files:{" "}
-            <Link href="https://www.svgrepo.com/svg/99290/arrow-down-sign-to-navigate">
-              Arrow
-            </Link>
-            ,{" "}
-            <Link href="https://www.svgrepo.com/svg/23815/left-text-alignment-interface-option">
-              Left Align
-            </Link>
-            ,{" "}
-            <Link href="https://www.svgrepo.com/svg/97447/settings">
-              Settings
-            </Link>
-            , <Link href="https://www.svgrepo.com/svg/17906/star">Star</Link>
-          </p>
         </div>
       </Container>
     </Layout>
