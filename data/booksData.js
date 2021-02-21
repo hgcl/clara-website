@@ -616,6 +616,15 @@ export default [
     review: "",
   },
   {
+    date: "2021-02-13",
+    title: "The New Wilderness",
+    author: "Diane Cook",
+    rating: 4,
+    isbn: "9780062333131",
+    review:
+      "In a dystopian future, a mother does everything and anything to save her sick young daughter. This is a book about survival in the wild—but also much more. It dives deep in the relationship between a mother and her child. Raw, wild, an ode to nature.",
+  },
+  {
     date: "2014-03-19",
     title: "The Thirteenth Tale",
     author: "Diane Setterfield",
@@ -2313,6 +2322,15 @@ export default [
     rating: 3,
     isbn: 9781906838812,
     review: "",
+  },
+  {
+    date: "2021-02-21",
+    title: "Sourdough",
+    author: "Robin Sloan",
+    rating: 4,
+    isbn: "9780374716431",
+    review:
+      "Robin Sloan has a way of mixing genres, very modern and slightly fantastical at the same time. The ending left me a bit meh but still really liked the overall book and plot. My favorite Robin Sloan’s so far.",
   },
 
   ///// >S  /////
