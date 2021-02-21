@@ -470,6 +470,14 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 87108,
+    date: "2021-02-14",
+    title: "Chernobyl",
+    rating: 4,
+    review:
+      "Very informative and emotional rendering of the Chernobyl accident. Fast-paced, you almost watch it like a thriller. That might also be the problem, as there are many inaccuracies to make it more entertaining and watchable. Feels like the villains are too stereotyped, very black and white, biased western view of the Soviet Union?",
+  },
+  {
     tmdb_id: 9693,
     date: "2018-06-07",
     title: "Children of Men",
@@ -1020,6 +1028,14 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 14756,
+    date: "2021-02-20",
+    title: "Ip Man",
+    rating: 3,
+    review:
+      "My first impression was that it was really good, exceding my expectations.However, I realized afterwards that the movie is full accuracies—sometimes feeling like big flat lies. It is nevertheless fast-paced and entertaining. The fight scenes are amazing—and I don’t usually care about them.",
+  },
+  {
     tmdb_id: 1726,
     title: "Iron Man",
     rating: "",
@@ -1434,6 +1450,14 @@ export default [
     title: "One Hundred and One Dalmatians",
     rating: "",
     review: "",
+  },
+  {
+    tmdb_id: 508439,
+    date: "2021-02-14",
+    title: "Onward",
+    rating: 5,
+    review:
+      "Many gems passed right under our noses in 2020, Onward is one of them. It is set in a fantasy world where magic has been forgotten, where unicorns are synonym to rats and elves use electricity. Due to some circumstances, an unassured young elf goes on an epic treasure hunt with his brother. It is a journey of self discovery, bonding and coming of age.",
   },
   // // >P
   {
@@ -2603,6 +2627,14 @@ export default [
     review:
       "Needed to close my eyes from time to time because it was just too cheesy to witness. Entertaining anyway.",
   },
+  // {
+  //   tmdb_id: ???,
+  //   date: "2021-02-15",
+  //   title: "World of Tomorrow",
+  //   rating: 5,
+  //   review:
+  //     "Amazing creation process: the director records his 4-year old niece rambling and creates a beautiful and meaningful short movie around it.",
+  // },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
