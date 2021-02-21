@@ -725,7 +725,7 @@ export default [
     date: "2020-02-25",
     title: "The Starless Sea",
     author: "Erin Morgenstern",
-    rating: 4,
+    rating: 3,
     isbn: "9780735207875",
     review: "",
   },
@@ -1173,7 +1173,7 @@ export default [
     title: "The Fault in Our Stars",
     author: "John Green",
     rating: 4,
-    isbn: "“0525478817”",
+    isbn: "0525478817",
     review: "",
   },
   {
@@ -1383,7 +1383,7 @@ export default [
   },
   {
     date: "2012-12-21",
-    title: "Yotsuba&!, Vol. 1 (Yotsuba&! #1)",
+    title: "Yotsuba&!, Vol. 1",
     author: "Kiyohiko Azuma",
     rating: 5,
     isbn: 9781413903171,
@@ -1391,7 +1391,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 2 (Yotsuba&! #2)",
+    title: "Yotsuba&!, Vol. 2",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9781413903188,
@@ -1399,7 +1399,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 03 (Yotsuba&! #3)",
+    title: "Yotsuba&!, Vol. 3",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9781413903294,
@@ -1407,7 +1407,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 4 (Yotsuba&! #4)",
+    title: "Yotsuba&!, Vol. 4",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9781413903454,
@@ -1415,7 +1415,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 5 (Yotsuba&! #5)",
+    title: "Yotsuba&!, Vol. 5",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9781413903492,
@@ -1423,7 +1423,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 6 (Yotsuba&! #6)",
+    title: "Yotsuba&!, Vol. 6",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9781413903669,
@@ -1431,7 +1431,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 7 (Yotsuba&! #7)",
+    title: "Yotsuba&!, Vol. 7",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9782351423448,
@@ -1439,7 +1439,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba, tome 8 (Yotsuba&! #8)",
+    title: "Yotsuba&!, tome 8",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9782351423950,
@@ -1447,7 +1447,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 9 (Yotsuba&! #9)",
+    title: "Yotsuba&!, Vol. 9",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9780316126793,
@@ -1455,7 +1455,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "Yotsuba&!, Vol. 10 (Yotsuba&! #10)",
+    title: "Yotsuba&!, Vol. 10",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9789792790054,
@@ -1463,7 +1463,7 @@ export default [
   },
   {
     date: "2016-12-31",
-    title: "¡Yotsuba! Vol. 11 (Yotsuba&! #11)",
+    title: "Yotsuba&! Vol. 11",
     author: "Kiyohiko Azuma",
     rating: "",
     isbn: 9788467908824,
@@ -1471,7 +1471,7 @@ export default [
   },
   {
     date: "2017-06-01",
-    title: "The Ancient Magus' Bride, Vol. 1 (The Ancient Magus' Bride, #1)",
+    title: "The Ancient Magus' Bride, Vol. 1",
     author: "Kore Yamazaki",
     rating: 3,
     isbn: 9781626921870,
@@ -1479,7 +1479,7 @@ export default [
   },
   {
     date: "2017-06-01",
-    title: "The Ancient Magus' Bride, Vol. 2 (The Ancient Magus' Bride, #2)",
+    title: "The Ancient Magus' Bride, Vol. 2",
     author: "Kore Yamazaki",
     rating: "",
     isbn: "162692192x",
@@ -1488,8 +1488,7 @@ export default [
   },
   {
     date: "2017-07-01",
-    title:
-      "魔法使いの嫁 3 [Mahou Tsukai No Yome 3] (The Ancient Magus' Bride, #3)",
+    title: "The Ancient Magus' Bride, Vol. 3",
     author: "Kore Yamazaki",
     rating: "",
     isbn: 9784800004222,
@@ -1497,7 +1496,7 @@ export default [
   },
   {
     date: "2017-06-01",
-    title: "The Ancient Magus' Bride, Vol. 4 (The Ancient Magus' Bride, #4)",
+    title: "The Ancient Magus' Bride, Vol. 4",
     author: "Kore Yamazaki",
     rating: "",
     isbn: 9781626922556,
@@ -1505,7 +1504,7 @@ export default [
   },
   {
     date: "2017-06-01",
-    title: "The Ancient Magus' Bride, Vol. 5 (The Ancient Magus' Bride, #5)",
+    title: "The Ancient Magus' Bride, Vol. 5",
     author: "Kore Yamazaki",
     rating: "",
     isbn: 9781626922846,
@@ -1522,7 +1521,7 @@ export default [
   },
   {
     date: "2017-08-27",
-    title: "From Far Away, Vol. 01",
+    title: "From Far Away, Vol. 1",
     author: "Kyoko Hikawa",
     rating: "",
     isbn: 9781591165996,
@@ -1531,7 +1530,7 @@ export default [
   ///// >L  /////
   {
     date: "2017-01-07",
-    title: "Mega-Krav-Maga, Tome 1 (MKM #1)",
+    title: "Mega-Krav-Maga, Tome 1",
     author: "Lewis Trondheim",
     rating: 3,
     isbn: 9782756018546,
@@ -1571,7 +1570,7 @@ export default [
   },
   {
     date: "2018-01-28",
-    title: "Son (The Giver Quartet, #4)",
+    title: "Son (The Giver, #4)",
     author: "Lois Lowry",
     rating: "",
     isbn: 9780547887203,
@@ -1721,7 +1720,7 @@ export default [
   },
   {
     date: "2014-07-03",
-    title: "Blink: The Power of Thinking Without Thinking",
+    title: "Blink",
     author: "Malcolm Gladwell",
     rating: 5,
     isbn: 9780316010665,
@@ -1770,10 +1769,10 @@ export default [
   },
   {
     date: "2017-06-20",
-    title: "The Handmaid's Tale (The Handmaid's Tale, #1)",
+    title: "The Handmaid's Tale",
     author: "Margaret Atwood",
     rating: 4,
-    isbn: "“038549081X”",
+    isbn: "9780385490818",
     review: "",
   },
   {
@@ -2121,7 +2120,7 @@ export default [
   },
   {
     date: "2017-02-06",
-    title: "Culottées #1 (Culottées, #1)",
+    title: "Culottées #1",
     author: "Pénélope Bagieu",
     rating: 4,
     isbn: 9782070601387,
@@ -2129,8 +2128,7 @@ export default [
   },
   {
     date: "2017-08-10",
-    title:
-      "Culottées #2: Des femmes qui ne font que ce qu'elles veulent (Culottées, #2)",
+    title: "Culottées #2",
     author: "Pénélope Bagieu",
     rating: 5,
     isbn: 9782075079846,
@@ -2316,6 +2314,15 @@ export default [
     review: "",
   },
   {
+    date: "2021-02-19",
+    title: "The Witches",
+    author: "Roald Dahl",
+    rating: 2,
+    isbn: 9780140340204,
+    review:
+      "Robin and I wanted to have a few “read aloud” sessions. We settled on The Witches, as kids books usually worked great for us. It is honestly a good book to read to kids. The only problem is that Robin and I read it to each other as adults—not the target group indeed. Some parts were just too cringe for us.",
+  },
+  {
     date: "2017-08-18",
     title: "The Motherless Oven",
     author: "Rob Davis",
@@ -2473,8 +2480,7 @@ export default [
   },
   {
     date: "2012-12-21",
-    title:
-      "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
+    title: "Freakonomics",
     author: "Steven D. Levitt",
     rating: 5,
     isbn: 9780061234002,
@@ -2482,8 +2488,7 @@ export default [
   },
   {
     date: "2012-12-21",
-    title:
-      "SuperFreakonomics: Global Cooling, Patriotic Prostitutes And Why Suicide Bombers Should Buy Life Insurance",
+    title: "SuperFreakonomics",
     author: "Steven D. Levitt",
     rating: 5,
     isbn: 9780060889579,
@@ -2517,7 +2522,7 @@ export default [
     date: "2021-01-03 12:39:39",
     title: "Piranesi",
     author: "Susanna Clarke",
-    rating: 4,
+    rating: 3,
     isbn: "9781635575637",
     review:
       "Eerie, dreamy, with a mythological quality to it. I closed the book with a feeling of darkness mixed with wonder.",
@@ -2558,7 +2563,7 @@ export default [
   ///// >T  /////
   {
     date: "2017-03-26",
-    title: "Vagabond, Volume 1",
+    title: "Vagabond, Vol. 1",
     author: "Takehiko Inoue",
     rating: 4,
     isbn: 9781591160342,
@@ -2566,7 +2571,7 @@ export default [
   },
   {
     date: "2017-03-25",
-    title: "Vagabond, Volume 2",
+    title: "Vagabond, Vol. 2",
     author: "Takehiko Inoue",
     rating: "",
     isbn: 9781591160359,
@@ -2574,7 +2579,7 @@ export default [
   },
   {
     date: "2017-03-25",
-    title: "Vagabond, Tomo 3",
+    title: "Vagabond, Vol. 3",
     author: "Takehiko Inoue",
     rating: "",
     isbn: 9789875620117,
@@ -2582,7 +2587,7 @@ export default [
   },
   {
     date: "2017-03-25",
-    title: "Vagabond, Volume 4",
+    title: "Vagabond, Vol. 4",
     author: "Takehiko Inoue",
     rating: "",
     isbn: 9781569318546,
@@ -2590,7 +2595,7 @@ export default [
   },
   {
     date: "2017-03-28",
-    title: "Vagabond, Tomo 5",
+    title: "Vagabond, Vol. 5",
     author: "Takehiko Inoue",
     rating: "",
     isbn: 9789875620483,
