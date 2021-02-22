@@ -1457,7 +1457,7 @@ export default [
     title: "Onward",
     rating: 5,
     review:
-      "Many gems passed right under our noses in 2020, Onward is one of them. It is set in a fantasy world where magic has been forgotten, where unicorns are synonym to rats and elves use electricity. Due to some circumstances, an unassured young elf goes on an epic treasure hunt with his brother. It is a journey of self discovery, bonding and coming of age.",
+      "Many gems passed right under our noses in 2020, Onward is one of them. It is set in a fantasy world where magic has been forgotten, where unicorns are another kind of rats and elves use electricity. Due to some circumstances, an unassured young elf goes on an epic treasure hunt with his brother. It is a journey of self discovery, bonding and coming of age.",
   },
   // // >P
   {
