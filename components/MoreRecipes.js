@@ -136,7 +136,6 @@ export default function MoreRecipes({ posts }) {
               slug={post.slug}
               tags={post.tags}
               title={post.title}
-              toBeTested={post.toBeTested}
             />
           ))}
       </div>

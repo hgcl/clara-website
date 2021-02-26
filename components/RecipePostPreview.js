@@ -21,10 +21,8 @@ export default function PostPreview({
   favorite,
   slug,
   title,
-  toBeTested,
   type,
 }) {
-  const opacityTile = toBeTested ? "0.2" : "1";
   return (
     <div className="h-entry flex flex-col text-center">
       <div className="mb-4 relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
@@ -34,16 +32,10 @@ export default function PostPreview({
           src={coverImage}
           type={type}
           className="object-cover w-full h-72 rounded"
-          style={{
-            opacity: `${opacityTile}`,
-          }}
         />
         {/* Top upper left corner: */}
         <div className="z-20 absolute left-3 top-0 text-3xl">
           {favorite && STAR}
-          <p className="text-lg all-small-caps pt-2">
-            {toBeTested && "To Be Tested"}
-          </p>
         </div>
         {/* Overlay when hover: */}
         <NextLink
