@@ -19,17 +19,29 @@ export default function Research({}) {
             <h2>Food</h2>
             <p>Things I’d like to cook, bake, sear, steam and more.</p>
             <ul>
-              <li>Dan Dan Noodles</li>
+              <li>Bánh Bao</li>
+              <li>Dan Dan noodles</li>
               <li>
                 <Link href="https://saltsearsavor.substack.com/p/-its-getting-hot-in-here-so-take">
                   Garlic confit
                 </Link>{" "}
                 <span className="comment">(via Salt Sear Savor)</span>
               </li>
+              <li>Knödel</li>
               <li>Mozzarella</li>
               <li>Ramen</li>
+              <li>Ravioli</li>
               <li>Spätzle</li>
               <li>Yogurt</li>
+            </ul>
+          </section>
+
+          <section className={sectionStyle}>
+            <h2>DIY</h2>
+            <p>Non-edible stuff I’d like to learn to make.</p>
+            <ul>
+              <li>Laundry detergent</li>
+              <li>Shampoo bar</li>
             </ul>
           </section>
         </div>
