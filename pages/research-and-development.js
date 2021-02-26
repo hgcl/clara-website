@@ -4,7 +4,6 @@ import Container from "../components/container";
 import markdownStyles from "../components/markdown-styles.module.css";
 import DatePost from "../components/DatePost";
 import Link from "../components/link";
-import DateFormatter from "../components/date-formatter";
 
 export default function Research({}) {
   const sectionStyle = "mb-32";
@@ -20,6 +19,7 @@ export default function Research({}) {
             <h2>Food</h2>
             <p>Things I’d like to cook, bake, sear, steam and more.</p>
             <ul>
+              <li>Dan Dan Noodles</li>
               <li>
                 <Link href="https://saltsearsavor.substack.com/p/-its-getting-hot-in-here-so-take">
                   Garlic confit
@@ -28,6 +28,8 @@ export default function Research({}) {
               </li>
               <li>Mozzarella</li>
               <li>Ramen</li>
+              <li>Spätzle</li>
+              <li>Yogurt</li>
             </ul>
           </section>
         </div>
