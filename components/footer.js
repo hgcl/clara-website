@@ -98,6 +98,12 @@ export default function Footer() {
               <NextLink href="/recipe-book">
                 <a>Recipe&nbsp;Book</a>
               </NextLink>
+              {pageSeparator}
+            </li>
+            <li className={liStyle}>
+              <NextLink href="/research-and-development">
+                <a>R&D</a>
+              </NextLink>
             </li>
           </ul>
         </div>
