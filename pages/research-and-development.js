@@ -29,6 +29,12 @@ export default function Research({}) {
               </li>
               <li>Knödel</li>
               <li>Mozzarella</li>
+              <li>
+                <Link href="https://www.chinasichuanfood.com/how-to-make-tofu-at-home/">
+                  Tofu
+                </Link>{" "}
+                <span className="comment">(via China Sichuan Food)</span>
+              </li>
               <li>Ramen</li>
               <li>Ravioli</li>
               <li>Spätzle</li>
