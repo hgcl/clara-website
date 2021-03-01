@@ -405,6 +405,15 @@ export default [
     review: "",
   },
   {
+    date: "2021-02-23",
+    title: "Power of Ritual",
+    author: "Caspter ter Kuile",
+    rating: 5,
+    isbn: 9780062881816,
+    review:
+      "This is the kind of book that might very much change my life. Well... not overnight, as it calls for actions for these changes to take place. ter Kuile encourages us to bring back some meaning into our lives. Without any religious talk, he dives into multiple different rituals and traditions that have been embraced around the world for centuries. Your contemporary self might discover that at the heart of these practices there is something to learn—a way of connecting with yourself, others or nature.",
+  },
+  {
     date: "2018-12-12",
     title: "Sweet Little Lies",
     author: "Caz Frear",
@@ -524,6 +533,15 @@ export default [
     rating: 3,
     isbn: 9782352045106,
     review: "",
+  },
+  {
+    date: "2021-02-28",
+    title: "The Lion, the Witch and the Wardrobe",
+    author: "C. S. Lewis",
+    rating: 4,
+    isbn: 9780590405959,
+    review:
+      "Every evening of this last week, Robin and I had a ritual of reading out loud a few chapters from this classic book of English literature. I obviously loved listening to Robin impersonating the different characters. But what surprised me most is how much I actually enjoyed reading it out loud myself. C. S. Lewis is by all means a great writer.",
   },
   {
     date: "2017-01-11",
@@ -2320,7 +2338,7 @@ export default [
     rating: 2,
     isbn: 9780140340204,
     review:
-      "Robin and I wanted to have a few “read aloud” sessions. We settled on The Witches, as kids books usually worked great for us. It is honestly a good book to read to kids. The only problem is that Robin and I read it to each other as adults—not the target group indeed. Some parts were just too cringe for us.",
+      "Robin and I wanted to have a few “reading out loud” sessions. We settled on The Witches, as kids books usually worked great for us. It is honestly a good book to read to kids. The only problem is that Robin and I read it to each other as adults—not the target group indeed. Some parts were just too cringe for us.",
   },
   {
     date: "2017-08-18",
