@@ -5,9 +5,17 @@
       <link>https://clarale.com/blog</link>
       <description>[...]</description>
       <language>en</language>
-      <lastBuildDate>Mon, 01 Mar 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 14 Mar 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://clarale.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://clarale.com/blog/18-on-my-mind</guid>
+    <title>#18 On My Mind</title>
+    <link>https://clarale.com/blog/18-on-my-mind</link>
+    <description>Weekly Review #18: flat search, flat search, flat search</description>
+    <pubDate>Sun, 14 Mar 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>https://clarale.com/blog/17-we-decided-to-move</guid>
     <title>#17 We decided to move</title>
