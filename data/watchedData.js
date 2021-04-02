@@ -1359,6 +1359,7 @@ export default [
   },
   {
     tmdb_id: 54884,
+    date: "2021-03-20"
     title: "Mon frère se marie",
     rating: 4,
     review: "Probably gave it a biased rating as it was just heart-warming to recognize acquaintances and my hometown.",
