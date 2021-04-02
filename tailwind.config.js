@@ -233,10 +233,10 @@ module.exports = {
                 marginBottom: em(24, 18),
                 paddingLeft: em(36, 18), // new
               },
-              li: {
-                marginTop: em(12, 18),
-                marginBottom: em(12, 18),
-              },
+              // li: {
+              //   marginTop: em(12, 18),
+              //   marginBottom: em(12, 18),
+              // },
               "ol > li": {
                 paddingLeft: em(30, 18),
               },
@@ -423,10 +423,10 @@ module.exports = {
                 marginBottom: em(24, 20),
                 paddingLeft: em(40, 20), // new
               },
-              li: {
-                marginTop: em(12, 20),
-                marginBottom: em(12, 20),
-              },
+              // li: {
+              //   marginTop: em(12, 20),
+              //   marginBottom: em(12, 20),
+              // },
               "ol > li": {
                 paddingLeft: em(36, 20),
               },
