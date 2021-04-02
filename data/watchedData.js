@@ -530,6 +530,14 @@ export default [
     review:
       "A light rom com that gives just what you are expecting from it. It is cheesy, overacted, but very entertaining.",
   },
+  {
+    tmdb_id: 419835,
+    date: "2021-03-01",
+    title: "Crooked House",
+    rating: 3,
+    review:
+      "",
+  },
   // // >D
   {
     tmdb_id: 207,
@@ -621,6 +629,14 @@ export default [
     title: "Eagle vs Shark",
     rating: "",
     review: "",
+  },
+  {
+    tmdb_id: 556678,
+    date: "2021-03-25",
+    title: "Emma.",
+    rating: 5,
+    review:
+      "Who thought that a Jane Austen movie could be funny? Brilliantly directed, great soundtrack and amazing use of rhythms.",
   },
   {
     tmdb_id: 80274,
@@ -1311,6 +1327,13 @@ export default [
       "Tensed and eerie vibe behind cheerful smiles. Completely believable, loved it.",
   },
   {
+    tmdb_id: 615643,
+    date: "2021-03-24",
+    title: "Minari",
+    rating: 4,
+    review: "",
+  },
+  {
     tmdb_id: 1493,
     title: "Miss Congeniality",
     rating: "",
@@ -1333,6 +1356,12 @@ export default [
     title: "Modern Times",
     rating: "",
     review: "",
+  },
+  {
+    tmdb_id: 54884,
+    title: "Mon frère se marie",
+    rating: 4,
+    review: "Probably gave it a biased rating as it was just heart-warming to recognize acquaintances and my hometown.",
   },
   {
     tmdb_id: 585,
@@ -1465,6 +1494,13 @@ export default [
     title: "Pan's Labyrinth",
     rating: "",
     review: "",
+  },
+  {
+    tmdb_id: 77174,
+    date: "2019-03-23",
+    title: "ParaNorman",
+    rating: 4,
+    review: "A brilliant mix of horror and comedy in stop-motion.",
   },
   {
     tmdb_id: 496243,
@@ -1761,6 +1797,14 @@ export default [
   //   rating: 1,
   //   review: "",
   // },
+  {
+    tmdb_id: 110416,
+    date: "2021-03-30",
+    title: "Song of the sea",
+    rating: 4,
+    review:
+      "",
+  },
   {
     tmdb_id: 508442,
     date: "2021-01-03",
@@ -2356,6 +2400,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
+  {
+    tmdb_id: 26963,
+    date: "2021-03-31",
+    year: 2017,
+    title: "The Secret of Kells",
+    rating: 3,
+    review: "",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
@@ -2611,6 +2663,14 @@ export default [
   //   rating: "",
   //   review: "",
   // },
+  {
+    tmdb_id: 441130,
+    date: "2021-03-29",
+    title: "Wolfwalkers",
+    rating: 5,
+    review:
+      "Beautiful handdrawn animation movie. Rough and poetic. This is the kind of tales you should show to little girls.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
