@@ -5,9 +5,25 @@
       <link>https://clarale.com/blog</link>
       <description>[...]</description>
       <language>en</language>
-      <lastBuildDate>Sun, 14 Mar 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 02 Apr 2021 08:50:16 GMT</lastBuildDate>
       <atom:link href="https://clarale.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://clarale.com/blog/21-03</guid>
+    <title>03/21</title>
+    <link>https://clarale.com/blog/21-03</link>
+    <description>Monthly Review: The Missing Banksy and animation movies</description>
+    <pubDate>Fri, 02 Apr 2021 08:50:16 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>https://clarale.com/blog/ditching-weekly-reviews</guid>
+    <title>Ditching weekly reviews</title>
+    <link>https://clarale.com/blog/ditching-weekly-reviews</link>
+    <description>Completely restructuring my reviews formats</description>
+    <pubDate>Thu, 01 Apr 2021 08:31:40 GMT</pubDate>
+  </item>
+
   <item>
     <guid>https://clarale.com/blog/18-on-my-mind</guid>
     <title>#18 On My Mind</title>
