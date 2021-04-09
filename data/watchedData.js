@@ -535,8 +535,7 @@ export default [
     date: "2021-03-01",
     title: "Crooked House",
     rating: 3,
-    review:
-      "",
+    review: "",
   },
   // // >D
   {
@@ -1362,7 +1361,8 @@ export default [
     date: "2021-03-20",
     title: "Mon frère se marie",
     rating: 4,
-    review: "Probably gave it a biased rating as it was just heart-warming to recognize acquaintances and my hometown.",
+    review:
+      "Probably gave it a biased rating as it was just heart-warming to recognize acquaintances and my hometown.",
   },
   {
     tmdb_id: 585,
@@ -1803,8 +1803,7 @@ export default [
     date: "2021-03-30",
     title: "Song of the sea",
     rating: 4,
-    review:
-      "",
+    review: "",
   },
   {
     tmdb_id: 508442,
@@ -2226,6 +2225,14 @@ export default [
     title: "The King's Speech",
     rating: 5,
     review: "",
+  },
+  {
+    tmdb_id: 82856,
+    date: "2021-04-06",
+    title: "The Mandalorian",
+    rating: 3,
+    review:
+      "Completed seasons 1 and 2. Western vibe, cute Grogu, amazing soundtrack.",
   },
   // {
   //   tmdb_id: ,
