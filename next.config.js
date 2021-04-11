@@ -8,9 +8,6 @@ module.exports = {
   images: {
     domains: ["covers.openlibrary.org", "image.tmdb.org"],
   },
-};
-
-module.exports = {
   async rewrites() {
     return [
       {
