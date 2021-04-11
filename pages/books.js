@@ -12,14 +12,15 @@ import MediaTile from "../components/MediaTile";
 import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
 import SettingsIcon from "../public/icons/SettingsIcon";
 
-export default function Books({ allBooks }) {
+export default function Books() {
   const [statusFilter, setStatus] = useState(false);
   const toggleStatusFilter = () => setStatus((value) => !value);
   const [openSettings, setSettings] = useState(false);
   const [yearFilter, setYear] = useState(0);
   const [ratingFilter, setRating] = useState(0);
-  const [reviewFilter, setReview] = useState(false);
-  const toggleReviewFilter = () => setReview((value) => !value);
+  // TODO Fix following filter
+  // const [reviewFilter, setReview] = useState(false);
+  // const toggleReviewFilter = () => setReview((value) => !value);
 
   const dropdownList = (className) => (
     <>
@@ -63,12 +64,12 @@ export default function Books({ allBooks }) {
             </button>
             <div className="xs:hidden w-full" />
             {/* TODO replace checkbox by toggle */}
-            <Checkbox
+            {/* <Checkbox
               className="mt-1 mr-4 whitespace-no-wrap"
               value={reviewFilter}
               onChange={toggleReviewFilter}
               label="Reviews only"
-            />
+            /> */}
             <Checkbox
               className="mt-1 whitespace-no-wrap"
               value={statusFilter}
@@ -101,13 +102,14 @@ export default function Books({ allBooks }) {
             .filter((book) =>
               ratingFilter ? book.rating === ratingFilter : book
             )
-            // Review filter
-            .filter(
-              (book) =>
-                reviewFilter
-                  ? book.review.length > 2 && book.review // 1. filter exists + has a review => show reviews only
-                  : book // 2. not true: show all books
-            )
+            // TODO Fix following filter
+            // // Review filter
+            // .filter(
+            //   (book) =>
+            //     reviewFilter
+            //       ? book.review.length > 2 && book.review // 1. filter exists + has a review => show reviews only
+            //       : book // 2. not true: show all books
+            // )
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((book) => {
               const {
