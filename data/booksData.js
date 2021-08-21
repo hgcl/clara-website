@@ -2355,7 +2355,7 @@ export default [
     rating: 4,
     isbn: "9780374716431",
     review:
-      "Robin Sloan has a way of mixing genres, very modern and slightly fantastical at the same time. The ending left me a bit meh but still really liked the overall book and plot. My favorite Robin Sloan’s so far.",
+      "Robin Sloan has a way of mixing genres, very modern and slightly fantastical at the same time. The ending left me a bit meh but still really liked the overall book and plot. My favorite Robin Sloan's so far.",
   },
 
   ///// >S  /////
@@ -2454,7 +2454,7 @@ export default [
     rating: 3,
     isbn: "9780525620785",
     review:
-      "This is the kind of book I’m a bit ashamed to read, that I enjoy without loving them—just like watching a stupid but entertaining movie. It felt like a young adult horror novel. It gives you thrills but is not downright scary. I still finished it in one sitting.",
+      "This is the kind of book I'm a bit ashamed to read, that I enjoy without loving them—just like watching a stupid but entertaining movie. It felt like a young adult horror novel. It gives you thrills but is not downright scary. I still finished it in one sitting.",
   },
   {
     date: "2012-12-21",

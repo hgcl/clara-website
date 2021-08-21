@@ -83,7 +83,7 @@ export default function About({}) {
           </ol>
           <WaffleIcon className="mx-auto my-16" />
           <p>
-            Oh, so you didn’t really care about all this stuff but just wanted
+            Oh, so you didn't really care about all this stuff but just wanted
             to know more{" "}
             <Link href="/about-this-website">about this website</Link>? Okay
             sure, no hard feelings. No really.

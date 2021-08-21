@@ -3,7 +3,7 @@
   @apply border-l-4 border-white pl-6 my-8 italic;
 }
 .markdown q {
-  quotes: "“" "”" "‘" "’" "“" "”" "‘" "’" "“" "”";
+  quotes: "“" "”" "‘" "'" "“" "”" "‘" "'" "“" "”";
 }
 .markdown cite {
   /* Used for creative works: book names, movies, etc. */

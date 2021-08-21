@@ -120,7 +120,7 @@ export const favoritesData = [
     link: "https://www.densediscovery.com/",
     title: "Dense Discovery",
     description:
-      "Kai’s “curation newsletter” about design, productivity and society—love the personal intros and Worthy Five sections",
+      "Kai's “curation newsletter” about design, productivity and society—love the personal intros and Worthy Five sections",
     category: [categories.newsletter.anchor],
     best: false,
   },
@@ -145,7 +145,7 @@ export const favoritesData = [
     link: "https://www.eaudepoisson.com/",
     title: "eau de poisson (in French)",
     description:
-      "Best travel blog on the internet! Not biased at all, even though it’s mine and Robin’s. Also, don’t pay attention to the very low new post frequency. And the coffee obsession.",
+      "Best travel blog on the internet! Not biased at all, even though it's mine and Robin's. Also, don't pay attention to the very low new post frequency. And the coffee obsession.",
     category: [categories.travel.anchor],
     best: false,
   },
@@ -193,7 +193,7 @@ export const favoritesData = [
     link: "https://dev.w3.org/html5/html-author/charref",
     title: "HTML Character Reference Chart",
     description:
-      "Ever wondered how to write a character in HTML? Here is a full list of them that I just can’t stop looking at.",
+      "Ever wondered how to write a character in HTML? Here is a full list of them that I just can't stop looking at.",
     category: [categories.techieTool.anchor],
     best: false,
   },
@@ -229,7 +229,7 @@ export const favoritesData = [
     link: "https://languagetool.org/",
     title: "LanguageTool",
     description:
-      "A multilingual browser extension (and more) for grammar, style and spell checking—and it’s open source",
+      "A multilingual browser extension (and more) for grammar, style and spell checking—and it's open source",
     category: [categories.writing.anchor, categories.techieTool.anchor],
     best: false,
   },
@@ -245,7 +245,7 @@ export const favoritesData = [
   {
     link: "https://maggieappleton.com/garden/",
     title: "Maggie Appleton",
-    description: "Maggie Appleton’s illustration-based digital garden",
+    description: "Maggie Appleton's illustration-based digital garden",
     category: [categories.digitalGarden.anchor],
     best: false,
   },
@@ -296,7 +296,7 @@ export const favoritesData = [
     link: "https://practicaltypography.com/",
     title: "Practical Typography",
     description:
-      "It’s not really a website, it’s not really a book. One thing is certain: it is a treasure chest of typographic knowledge.",
+      "It's not really a website, it's not really a book. One thing is certain: it is a treasure chest of typographic knowledge.",
     category: [categories.typography.anchor],
     best: false,
   },
@@ -343,7 +343,7 @@ export const favoritesData = [
     link: "https://waitbutwhy.com/",
     title: "Wait But Why",
     description:
-      "Tim Urban is one of the best thinkers on the internet. He brings complex and fascinating topics within everyone’s reach through long form blog posts—sometimes more like entire books.",
+      "Tim Urban is one of the best thinkers on the internet. He brings complex and fascinating topics within everyone's reach through long form blog posts—sometimes more like entire books.",
     category: [categories.thinking.anchor],
     best: true,
   },

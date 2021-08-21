@@ -37,7 +37,7 @@ export default [
     author: "Yan-Kit So",
     isbn: "9780333569078",
     notes:
-      "I have been digitally browsing a lot of cookbooks recently. Expert on Chinese cooking Fuchsia Dunlop warmly recommends Classic Food of China by Yan-Kit So. What I like about this book is that it’s not only about food as it also gives insights about culture and history.",
+      "I have been digitally browsing a lot of cookbooks recently. Expert on Chinese cooking Fuchsia Dunlop warmly recommends Classic Food of China by Yan-Kit So. What I like about this book is that it's not only about food as it also gives insights about culture and history.",
     link: "https://fivebooks.com/best-books/fuchsia-dunlop-on-chinese-food/",
   },
   {
@@ -46,7 +46,7 @@ export default [
     author: "Fido Nesti",
     isbn: "9782246825760",
     notes:
-      "While browsing books on Open Library, I stumbled upon this graphic novel version of 1984 by Fido Nesti. This being a graphic novel, I pre-judge it by its cover and don’t think twice before adding it to my antilibrary.",
+      "While browsing books on Open Library, I stumbled upon this graphic novel version of 1984 by Fido Nesti. This being a graphic novel, I pre-judge it by its cover and don't think twice before adding it to my antilibrary.",
   },
   {
     date: "2021-01-11 11:36:21",

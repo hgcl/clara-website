@@ -229,7 +229,7 @@ export default [
     title: "Avatar: The Last Airbender",
     rating: 4,
     review:
-      "Overall, amazing world building and great character development throughout the series—which is quite impressive as there are many of them. I really got attached to the characters and story—I will miss Iroh! At times, the cheesiness / cringiness level was almost too much. But I guess that’s not too surprising as the show mostly targets kids.",
+      "Overall, amazing world building and great character development throughout the series—which is quite impressive as there are many of them. I really got attached to the characters and story—I will miss Iroh! At times, the cheesiness / cringiness level was almost too much. But I guess that's not too surprising as the show mostly targets kids.",
   },
   {
     tmdb_id: 299534,
@@ -1056,7 +1056,7 @@ export default [
     title: "Ip Man",
     rating: 3,
     review:
-      "My first impression was that it was really good, exceding my expectations.However, I realized afterwards that the movie is full accuracies—sometimes feeling like big flat lies. It is nevertheless fast-paced and entertaining. The fight scenes are amazing—and I don’t usually care about them.",
+      "My first impression was that it was really good, exceding my expectations.However, I realized afterwards that the movie is full accuracies—sometimes feeling like big flat lies. It is nevertheless fast-paced and entertaining. The fight scenes are amazing—and I don't usually care about them.",
   },
   {
     tmdb_id: 1726,
@@ -1346,7 +1346,7 @@ export default [
     title: "Miss Americana",
     rating: 3,
     review:
-      "Before watching this documentary, it is fair to say that I knew pretty much nothing about Taylor Swift. I didn’t like the political part that much, as it was a bit too tribal and moralizing in my opinion. But this documentary definitely sparked some great discussions.",
+      "Before watching this documentary, it is fair to say that I knew pretty much nothing about Taylor Swift. I didn't like the political part that much, as it was a bit too tribal and moralizing in my opinion. But this documentary definitely sparked some great discussions.",
   },
   {
     tmdb_id: 1493,
@@ -1404,7 +1404,7 @@ export default [
     title: "mother!",
     rating: 4,
     review:
-      "Starts as a realistic and normal wife-husband story, until it’s not anymore. Very original take on the bible.",
+      "Starts as a realistic and normal wife-husband story, until it's not anymore. Very original take on the bible.",
   },
   {
     tmdb_id: 787,
@@ -2656,7 +2656,7 @@ export default [
     title: "WandaVision",
     rating: 4,
     review:
-      "This TV series is surprisingly good. It is an excellent rendition of different TV eras. It gave more substance to Wanda and Vision’s characters—that we didn’t know much until then.",
+      "This TV series is surprisingly good. It is an excellent rendition of different TV eras. It gave more substance to Wanda and Vision's characters—that we didn't know much until then.",
   },
   // {
   //   tmdb_id: ,
