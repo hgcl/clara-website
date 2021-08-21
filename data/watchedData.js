@@ -224,6 +224,14 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 246,
+    date: "2021-04-28",
+    title: "Avatar: The Last Airbender",
+    rating: 4,
+    review:
+      "Overall, amazing world building and great character development throughout the series—which is quite impressive as there are many of them. I really got attached to the characters and story—I will miss Iroh! At times, the cheesiness / cringiness level was almost too much. But I guess that’s not too surprising as the show mostly targets kids.",
+  },
+  {
     tmdb_id: 299534,
     date: "2019-12-31",
     title: "Avengers: Endgame",
@@ -1333,6 +1341,14 @@ export default [
     review: "",
   },
   {
+    tmdb_id: 653567,
+    date: "2021-04-10",
+    title: "Miss Americana",
+    rating: 3,
+    review:
+      "Before watching this documentary, it is fair to say that I knew pretty much nothing about Taylor Swift. I didn’t like the political part that much, as it was a bit too tribal and moralizing in my opinion. But this documentary definitely sparked some great discussions.",
+  },
+  {
     tmdb_id: 1493,
     title: "Miss Congeniality",
     rating: "",
@@ -1381,6 +1397,14 @@ export default [
     title: "Moonrise Kingdom",
     rating: "",
     review: "",
+  },
+  {
+    tmdb_id: 381283,
+    date: "2021-05-01",
+    title: "mother!",
+    rating: 4,
+    review:
+      "Starts as a realistic and normal wife-husband story, until it’s not anymore. Very original take on the bible.",
   },
   {
     tmdb_id: 787,
@@ -2625,6 +2649,15 @@ export default [
       'Tensed film, irritating main character. The "amateur camera" style literally gave me headache.',
   },
   // // >W
+  {
+    tmdb_id: 85271,
+    date: "2021-04-02",
+    year: 2021,
+    title: "WandaVision",
+    rating: 4,
+    review:
+      "This TV series is surprisingly good. It is an excellent rendition of different TV eras. It gave more substance to Wanda and Vision’s characters—that we didn’t know much until then.",
+  },
   // {
   //   tmdb_id: ,
   // date: "2020-06-07",
