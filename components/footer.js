@@ -5,7 +5,10 @@ export default function Footer() {
   const liStyle = "pl-2 sm:inline-block";
   const pageSeparator = <span className="hidden sm:inline">&nbsp;—</span>;
   return (
-    <footer className="z-0 h-96 sm:h-72 sticky right-0 bottom-0 bg-black text-gray-regular text-right">
+    <footer
+      className="h-96 sm:h-72 
+    right-0 bottom-0 bg-black text-gray-regular text-right"
+    >
       <div className="flex flex-row flex-wrap max-w-5xl my-auto ml-auto px-8 pt-8">
         <div className="flex-1 pb-8">
           <h2 className="comment pb-4">Social</h2>
