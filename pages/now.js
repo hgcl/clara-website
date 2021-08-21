@@ -14,12 +14,21 @@ export default function Now({}) {
         <div
           className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
         >
-          <DatePost dateString="2021-01-13 08:47:21" lastUpdated />
+          <DatePost dateString="2021-08-21 13:57:21" lastUpdated />
           <p>
-            Winter in Berlin is not the most exciting period–especially if you
-            are in semi-lockdown. I spend most of this indoor time reading,
-            learning new things, <Link href="/recipe-book">baking bread</Link>{" "}
-            and making half-baked resolutions.
+            Now in Berlin for more than two years with my partner{" "}
+            <Link href="https://robinmetral.com">Robin</Link>.
+          </p>
+          <p>
+            Summer here is great: I am bouldering a lot, drinking orange wine on
+            sunny terraces, trying not to kill the kids screaming in the
+            backyard (not mine—neither the kids nor the backyard),{" "}
+            <Link href="/recipe-book">baking bread</Link> and making half-baked
+            resolutions.
+          </p>
+          <p>
+            But I spend most of my free time typing and clicking away on my
+            laptop, working full-time as a graphic designer.
           </p>
         </div>
       </Container>
