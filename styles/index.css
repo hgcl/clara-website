@@ -65,7 +65,6 @@
 @layer utilities {
   .all-small-caps {
     font-variant-caps: all-small-caps;
-    font-feature-settings: "smcp";
     @apply font-smallcaps;
   }
 }
