@@ -1,6 +1,6 @@
 /* Citations */
 .markdown blockquote {
-  @apply border-l-4 border-white pl-6 my-8 italic;
+  @apply border-l-4 border-gray-900 dark:border-gray-50 pl-6 my-8 italic;
 }
 .markdown q {
   quotes: "“" "”" "‘" "'" "“" "”" "‘" "'" "“" "”";
@@ -17,19 +17,9 @@
 
 .markdown a {
   font-variant-caps: all-small-caps;
-  @apply font-smallcaps;
 }
 
-/* Lists */
-.markdown ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-}
-.markdown ol li {
-  counter-increment: my-awesome-counter;
-}
-.markdown ol li::marker {
-  content: counter(my-awesome-counter) ". ";
+.markdown ol li::before {
   @apply font-serif;
 }
 
@@ -37,13 +27,13 @@
 .markdown h1,
 .markdown h2,
 .markdown h3 {
-  @apply capitalize tracking-tighter;
+  @apply tracking-tighter;
 }
 
 /* Code */
 .markdown code {
-  @apply text-sm bg-black px-2 py-1 rounded;
+  @apply text-sm bg-gray-300 dark:bg-gray-800 px-2 py-1 rounded;
 }
 .markdown pre {
-  @apply text-sm bg-black px-4 py-4 rounded whitespace-pre-wrap;
+  @apply text-sm bg-gray-300 dark:bg-gray-800 px-4 py-4 rounded whitespace-pre-wrap;
 }

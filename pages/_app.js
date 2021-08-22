@@ -8,6 +8,7 @@ import "fontsource-source-sans-pro/700.css";
 import "fontsource-source-sans-pro/700-italic.css";
 
 import splitbee from "@splitbee/web";
+import "tailwindcss/tailwind.css";
 import "../styles/index.css";
 import { MDXProvider } from "@mdx-js/react";
 import WaffleIcon from "../public/icons/WaffleIcon";

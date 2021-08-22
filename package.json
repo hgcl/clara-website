@@ -10,7 +10,8 @@
   "dependencies": {
     "@next/mdx": "^10.0.4",
     "@splitbee/web": "^0.2.4",
-    "@tailwindcss/typography": "^0.3.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "browserslist": "^4.16.8",
     "classnames": "2.2.6",
     "d3": "^6.5.0",
     "date-fns": "2.10.0",
@@ -28,9 +29,11 @@
     "remark-html": "10.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.6",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "^1.4.0"
+    "tailwindcss": "^2.2.7"
   },
   "license": "MIT"
 }
