@@ -4,83 +4,27 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
 import MediaGrid from "../components/MediaGrid";
-import { getYear } from "date-fns";
 import { useState } from "react";
-import DropdownButton from "../components/DropdownButton";
 import Checkbox from "../components/Checkbox";
 import MediaTile from "../components/MediaTile";
-import { yearDropdown, ratingDropdown } from "../lib/mediaFilters";
-import SettingsIcon from "../public/icons/SettingsIcon";
 
 export default function Movies({ allMovies }) {
-  const [openSettings, setSettings] = useState(false);
-  const [yearFilter, setYear] = useState(0);
-  const [ratingFilter, setRating] = useState(0);
   const [reviewFilter, setReview] = useState(false);
   const toggleReviewFilter = () => setReview((value) => !value);
-
-  const dropdownList = (className) => (
-    <>
-      <DropdownButton
-        className={className}
-        title="Year"
-        filter={yearFilter}
-        setHook={setYear}
-        itemsArray={yearDropdown}
-      />
-      <DropdownButton
-        className={className}
-        title="Rating"
-        filter={ratingFilter}
-        setHook={setRating}
-        itemsArray={ratingDropdown}
-      />
-    </>
-  );
 
   return (
     <Layout title={"Movies"}>
       <Container>
         <Header pageDescription={"Get the popcorn ready"} />
-        <div className="flex flex-row flex-wrap">
-          {dropdownList("hidden xs:block")}
-          <div className="flex flex-row justify-start w-full xs:w-auto">
-            <button
-              onClick={() => setSettings(!openSettings)}
-              className="xs:hidden"
-            >
-              <SettingsIcon />
-            </button>
-            <div className="xs:hidden w-full" />
-            {/* TODO replace checkbox by toggle */}
-            <Checkbox
-              className="mt-1 whitespace-no-wrap"
-              value={reviewFilter}
-              onChange={toggleReviewFilter}
-              label="Reviews only"
-            />
-          </div>
-          {/* Open generic settings dropdown: */}
-          {openSettings && (
-            <div className="xs:hidden my-4">
-              <div
-                className="z-10 absolute -top-8 left-0 h-full w-full"
-                onClick={() => setSettings(!openSettings)}
-              />
-              <div className="z-10 relative w-full">{dropdownList("")}</div>
-            </div>
-          )}
-        </div>
+        {/* TODO replace checkbox by toggle */}
+        <Checkbox
+          className="mt-1 whitespace-no-wrap"
+          value={reviewFilter}
+          onChange={toggleReviewFilter}
+          label="Reviews only"
+        />
         <MediaGrid>
           {allMovies
-            // Year filter
-            .filter((movie) =>
-              yearFilter ? getYear(new Date(movie.date)) === yearFilter : movie
-            )
-            // Rating filter
-            .filter((movie) =>
-              ratingFilter ? movie.rating === ratingFilter : movie
-            )
             // Review filter
             .filter(
               (movie) =>
