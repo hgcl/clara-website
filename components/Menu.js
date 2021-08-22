@@ -35,7 +35,7 @@ const Menu = ({ open, hideCloseButton, setOpen }) => {
           >
             {/* Modal pop-up */}
             <div
-              className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-accent2 bg-opacity-90 text-center justify-center items-center"
+              className="fixed top-0 left-0 flex flex-col h-screen w-screen m-auto bg-red-700 text-gray-50 bg-opacity-90 text-center justify-center items-center"
               onClick={() => setOpen(false)}
             >
               {!hideCloseButton && (

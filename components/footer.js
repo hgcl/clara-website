@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       className="h-96 sm:h-72 
-    right-0 bottom-0 bg-black text-gray-regular text-right"
+    right-0 bottom-0 bg-gray-100 dark:bg-black text-right"
     >
       <div className="flex flex-row flex-wrap max-w-5xl my-auto ml-auto px-8 pt-8">
         <div className="flex-1 pb-8">

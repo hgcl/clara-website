@@ -1,6 +1,6 @@
 @tailwind base;
-
-/* Write your own custom base styles here */
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   @font-face {
@@ -12,56 +12,41 @@
     unicode-range: U+000-2AF; /* Download small caps ranges */
   }
   html {
-    @apply bg-gray-dark text-white;
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50;
   }
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     @apply font-serif capitalize;
-  }
-  ul {
-    @apply list-disc;
-  }
-  ol {
-    @apply list-decimal;
-  }
-  kbd {
-    @apply text-sm bg-black px-2 py-1 rounded;
   }
   a {
     @apply transition duration-500;
   }
   a:hover,
   a:focus {
-    @apply text-accent;
+    @apply text-red-500;
+  }
+  kbd {
+    @apply text-xs text-gray-50 bg-gray-500 dark:bg-gray-700 px-2 py-1 rounded;
+  }
+  .book-overlay {
+    @apply bg-gray-900 bg-opacity-90 max-w-screen-sm;
   }
 }
 
-/* Start purging... */
-@tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
 @layer components {
   .comment {
-    @apply font-smallcaps text-gray-regular all-small-caps text-base;
+    @apply all-small-caps text-base;
   }
   .tracking {
     @apply tracking-wide;
   }
   .book-overlay {
-    @apply bg-black bg-opacity-90 max-w-screen-sm;
-  }
-  .menu-overlay {
-    @apply bg-accent2 bg-opacity-90;
+    @apply bg-gray-900 dark:text-gray-50 bg-opacity-90 max-w-screen-sm;
   }
 }
 
-/* Start purging... */
-@tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */
 @layer utilities {
   .all-small-caps {
     font-variant-caps: all-small-caps;

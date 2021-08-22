@@ -34,7 +34,7 @@ export default function PostPreview({
           className="object-cover w-full h-72 rounded"
         />
         {/* Top upper left corner: */}
-        <div className="z-20 absolute left-3 top-0 text-3xl">
+        <div className="z-20 absolute left-3 top-2 text-3xl text-gray-50">
           {favorite && STAR}
         </div>
         {/* Overlay when hover: */}
@@ -45,7 +45,7 @@ export default function PostPreview({
           <motion.div
             initial={{ opacity: "0" }}
             whileHover={{ opacity: "0.9" }}
-            className="z-10 cursor-pointer bg-black rounded-sm absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
+            className="z-10 cursor-pointer bg-gray-900 text-gray-50 rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
           >
             <p className="text-lg comment mb-8">
               {categories}{" "}

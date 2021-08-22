@@ -39,7 +39,7 @@ const OpenMediaModal = ({
           onClick={onClose}
         >
           <div
-            className="overflow-y-auto fixed top-0 left-0 h-screen w-screen md:max-w-2xl m-auto bg-black bg-opacity-90"
+            className="overflow-y-auto fixed top-0 left-0 h-screen w-screen md:max-w-2xl m-auto bg-gray-100 dark:bg-black dark:bg-opacity-90"
             onClick={onClose}
           >
             <div className="sticky ml-auto w-12">

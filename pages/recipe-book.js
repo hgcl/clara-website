@@ -7,7 +7,7 @@ import Container from "../components/container";
 
 export default function Recipe({ allPosts }) {
   return (
-    <Layout title="Recipe">
+    <Layout title="Recipes">
       <Container>
         <Header pageDescription={"Nom nom nom"} />
         {allPosts.length > 0 && <MoreRecipes posts={allPosts} />}
