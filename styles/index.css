@@ -30,6 +30,9 @@
   kbd {
     @apply text-xs text-gray-50 bg-gray-500 dark:bg-gray-700 px-2 py-1 rounded;
   }
+  .book-overlay {
+    @apply bg-gray-900 bg-opacity-90 max-w-screen-sm;
+  }
 }
 
 @layer components {

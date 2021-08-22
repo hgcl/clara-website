@@ -88,17 +88,17 @@ const ClosedTile = ({
         <Image
           alt={title}
           src={coverUrl}
-          className={`${unfinishedBooks} object-cover shadow-2xl rounded bg-black`}
+          className={`${unfinishedBooks} object-cover shadow-2xl rounded`}
           height="312rem"
           width="200rem"
         />
         <motion.div
           initial={{ opacity: "0" }}
           whileHover={{ opacity: "0.9" }}
-          className="z-10 bg-black rounded-sm absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
+          className="z-10 bg-gray-900 text-gray-50 rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
         >
           <h2 className="text-lg leading-snug mb-2">{title}</h2>
-          <p className="text-gray-regular leading-snug">{author && author}</p>
+          <p className="leading-snug">{author && author}</p>
         </motion.div>
       </div>
       <div>
@@ -111,15 +111,15 @@ const ClosedTile = ({
             >
               {tooltipOpen && (
                 <motion.div exit={{ opacity: 0 }} className="relative">
-                  <span className="absolute -top-7 -left-3 bg-black bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-regular text-xs opacity-90">
+                  <span className="absolute -top-7 -left-3 bg-gray-900 bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-50 text-xs opacity-90">
                     {review ? "Review" : "Note"}
                   </span>
                 </motion.div>
               )}
-              {(review || notes) && <NoteIcon className="text-white ml-2" />}
+              {(review || notes) && <NoteIcon className="ml-2" />}
             </span>
           </div>
-          <div className="w-full text-xs text-gray-regular text-right">
+          <div className="w-full text-xs text-right">
             <DateFormatter shortDate dateString={date} />
           </div>
         </div>

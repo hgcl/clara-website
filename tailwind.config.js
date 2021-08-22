@@ -17,13 +17,17 @@ module.exports = {
       ],
     },
     colors: {
-      gray: colors.warmGray,
+      gray: colors.trueGray,
       red: colors.red,
+      black: "#131315",
     },
     extend: {
       fontSize: {
         "7xl": "4.5rem",
         "8xl": "6.25rem",
+      },
+      screens: {
+        xs: "361px",
       },
       typography: (theme) => ({
         DEFAULT: {
