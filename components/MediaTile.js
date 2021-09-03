@@ -95,7 +95,7 @@ const ClosedTile = ({
         <motion.div
           initial={{ opacity: "0" }}
           whileHover={{ opacity: "0.9" }}
-          className="z-10 bg-gray-900 text-gray-50 rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
+          className="z-10 bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
         >
           <h2 className="text-lg leading-snug mb-2">{title}</h2>
           <p className="leading-snug">{author && author}</p>
@@ -111,7 +111,7 @@ const ClosedTile = ({
             >
               {tooltipOpen && (
                 <motion.div exit={{ opacity: 0 }} className="relative">
-                  <span className="absolute -top-7 -left-3 bg-gray-900 bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-50 text-xs opacity-90">
+                  <span className="absolute -top-7 -left-3 bg-gray-darkest bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-lightest text-xs opacity-90">
                     {review ? "Review" : "Note"}
                   </span>
                 </motion.div>

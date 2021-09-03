@@ -13,7 +13,7 @@ export default function Layout({ children, title, noHentry, showAlert }) {
   return (
     <>
       <Meta title={title} />
-      <div className="min-h-screen z-10 relative bg-gray-dark pb-16 md:pb-32">
+      <div className="min-h-screen z-10 relative pb-16 md:pb-32">
         <Alert showAlert={showAlert} />
         <motion.nav className="z-40 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
           <Menu open={open} setOpen={setOpen} />

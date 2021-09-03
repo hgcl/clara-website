@@ -12,7 +12,7 @@
     unicode-range: U+000-2AF; /* Download small caps ranges */
   }
   html {
-    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50;
+    @apply bg-gray-lightest dark:bg-gray-dark text-gray-darkest dark:text-gray-lightest;
   }
   h1,
   h2,
@@ -25,13 +25,13 @@
   }
   a:hover,
   a:focus {
-    @apply text-red-500;
+    @apply text-accent;
   }
   kbd {
-    @apply text-xs text-gray-50 bg-gray-500 dark:bg-gray-700 px-2 py-1 rounded;
+    @apply text-xs text-gray-lightest bg-gray dark:bg-gray-darkest px-2 py-1 rounded;
   }
   .book-overlay {
-    @apply bg-gray-900 bg-opacity-90 max-w-screen-sm;
+    @apply bg-gray-darkest bg-opacity-90 max-w-screen-sm;
   }
 }
 
@@ -43,7 +43,7 @@
     @apply tracking-wide;
   }
   .book-overlay {
-    @apply bg-gray-900 dark:text-gray-50 bg-opacity-90 max-w-screen-sm;
+    @apply bg-gray-darkest dark:text-gray-lightest bg-opacity-90 max-w-screen-sm;
   }
 }
 

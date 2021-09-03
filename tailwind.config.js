@@ -1,6 +1,5 @@
 // tailwind.config.js
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -17,9 +16,17 @@ module.exports = {
       ],
     },
     colors: {
-      gray: colors.trueGray,
-      red: colors.red,
-      black: "#131315",
+      accent: {
+        dark: "#ab3535",
+        DEFAULT: "#CA3B3B",
+      },
+      gray: {
+        darkest: "#131315",
+        dark: "#1c1c1f",
+        DEFAULT: "#54545d",
+        light: "#E3E3E3",
+        lightest: "#f5f5f6",
+      },
     },
     extend: {
       fontSize: {
