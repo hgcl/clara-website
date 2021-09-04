@@ -1,6 +1,6 @@
 /* Citations */
 .markdown blockquote {
-  @apply border-l-4 border-gray-darkest dark:border-gray-lightest pl-6 my-8 italic text-current;
+  @apply border-l-4 border-gray-darkest dark:border-gray-lightest pl-6 my-8 italic;
 }
 .markdown q {
   quotes: "“" "”" "‘" "'" "“" "”" "‘" "'" "“" "”";
