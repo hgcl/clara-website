@@ -6,7 +6,6 @@ import Hcard from "./Hcard";
 import Menu from "./Menu";
 import { MenuToggle } from "./MenuToggle";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 export default function Layout({ children, title, noHentry, showAlert }) {
   const [open, setOpen] = useState(false);
@@ -15,15 +14,14 @@ export default function Layout({ children, title, noHentry, showAlert }) {
       <Meta title={title} />
       <div className="min-h-screen z-10 relative pb-16 md:pb-32">
         <Alert showAlert={showAlert} />
-        <motion.nav className="z-40 sticky ml-auto right-0 top-8 md:top-12 w-16 md:w-24">
-          <Menu open={open} setOpen={setOpen} />
-          {!open && (
-            <MenuToggle
-              toggle={() => setOpen(!open)}
-              className="absolute transition duration-300 transform hover:-rotate-90 opacity-75 hover:opacity-100"
-            />
-          )}
-        </motion.nav>
+        <Menu open={open} setOpen={setOpen} />
+        {!open && (
+          <MenuToggle
+            toggle={() => setOpen(!open)}
+            className="w-screen"
+            // className="absolute right-0 transition duration-300 transform hover:-rotate-90 opacity-75 hover:opacity-100"
+          />
+        )}
         <Hentry>
           <Hcard />
           {!noHentry && <main>{children}</main>}
