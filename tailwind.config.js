@@ -29,6 +29,10 @@ module.exports = {
         lightest: "#f5f5f6",
       },
     },
+    flex: {
+      1: "1 1 0%",
+      2: "2 2 0%",
+    },
     extend: {
       fontSize: {
         "7xl": "4.5rem",
