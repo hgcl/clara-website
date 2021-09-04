@@ -16,6 +16,7 @@ module.exports = {
       ],
     },
     colors: {
+      current: "currentColor",
       accent: {
         dark: "#ab3535",
         DEFAULT: "#CA3B3B",
