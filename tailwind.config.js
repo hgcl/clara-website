@@ -2,6 +2,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  important: true /* enable !important tag to overwrite the Tailwind CSS Typography default */,
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
@@ -56,6 +57,9 @@ module.exports = {
             "ul > li::before": {
               backgroundColor: "currentColor",
             },
+            blockquote: null,
+            "blockquote p:first-of-type::before": null,
+            "blockquote p:last-of-type::after": null,
           },
         },
       }),
