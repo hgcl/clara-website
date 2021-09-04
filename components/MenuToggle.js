@@ -29,7 +29,7 @@ export const MenuToggle = ({ toggle, className }) => {
     <button
       aria-label="Menu"
       onClick={toggle}
-      className={`fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90 sm:opacity-80 hover:opacity-100`}
+      className={`z-40 fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90 sm:opacity-80 hover:opacity-100`}
     >
       <Logo className="fill-current text-accent w-8 md:w-12" />
     </button>
