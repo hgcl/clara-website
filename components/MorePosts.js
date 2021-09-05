@@ -6,15 +6,17 @@ import Container from "./container";
 import PostPreview from "./post-preview";
 
 export default function MorePosts({ posts }) {
-  const reviewArray = ["monthly-review", "weekly-review"];
-  const tagStyle = "pt-1 pb-2 px-4 mr-4 all-small-caps border-1 rounded-sm";
-  const inactiveTag = "border-gray-regular text-gray-regular";
-  const activeTag = "border-accent";
-  const [filter, setFilter] = useState("");
+  ////// Filtering constants
+  // const reviewArray = ["monthly-review", "weekly-review"];
+  // const tagStyle = "pt-1 pb-2 px-4 mr-4 all-small-caps border-1 rounded-sm";
+  // const inactiveTag = "border-gray-regular text-gray-regular";
+  // const activeTag = "border-accent";
+  // const [filter, setFilter] = useState("");
   return (
     <Container>
       <div className="max-w-2xl mx-auto">
-        <section className="mb-16">
+        {/* Filtering buttons */}
+        {/* <section className="mb-16">
           <button
             className={`${filter ? inactiveTag : activeTag} ${tagStyle}`}
             onClick={() => setFilter("")}
@@ -31,15 +33,15 @@ export default function MorePosts({ posts }) {
           >
             Reviews
           </button>
-        </section>
+        </section> */}
         {posts
-          .filter((post) =>
-            filter
-              ? post.categories &&
-                // https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript
-                filter.some((item) => post.categories.indexOf(item) >= 0)
-              : post
-          )
+          // .filter((post) =>
+          //   filter
+          //     ? post.categories &&
+          //       // https://stackoverflow.com/questions/16312528/check-if-an-array-contains-any-element-of-another-array-in-javascript
+          //       filter.some((item) => post.categories.indexOf(item) >= 0)
+          //     : post
+          // )
           .map((post) => (
             <PostPreview
               key={post.slug}
