@@ -11,8 +11,8 @@ export default function Link({
   const isExternal = href.startsWith("http");
   const linkStyles =
     variant === "heading"
-      ? `${className} capitalize`
-      : `${className} all-small-caps`;
+      ? `${className} capitalize focus:text-accent hover:text-accent`
+      : `${className} all-small-caps focus:text-accent hover:text-accent`;
   if (isExternal) {
     return (
       <a

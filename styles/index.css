@@ -27,11 +27,7 @@
     @apply mt-0 !important; /* !important tag to overwrite the Tailwind CSS Typography default */
   }
   a {
-    @apply transition duration-500;
-  }
-  a:hover,
-  a:focus {
-    @apply text-accent;
+    @apply transition duration-300;
   }
   kbd {
     @apply text-xs text-gray-lightest bg-gray dark:bg-gray-darkest px-2 py-1 rounded;

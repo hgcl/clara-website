@@ -40,7 +40,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex-2 pl-16 sm:pl-24 max-w-screen-sm">
+        {/* <div className="flex-2 pl-16 sm:pl-24 max-w-screen-sm">
           <h2 className="comment pb-4">Sitemap</h2>
           <ul className={`${ulStyle} list-none`}>
             <li className={liStyle}>
@@ -103,7 +103,7 @@ export default function Footer() {
               </NextLink>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
