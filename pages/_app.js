@@ -22,6 +22,12 @@ splitbee.init({
 const mdComponents = {
   hr: () => <WaffleIcon className="mx-auto my-16" />,
   strong: (props) => <span className="all-small-caps" {...props} />,
+  a: (props) => (
+    <a
+      {...props}
+      className="all-small-caps focus:text-accent hover:text-accent"
+    />
+  ),
 };
 
 export default function MyApp({ Component, pageProps }) {
