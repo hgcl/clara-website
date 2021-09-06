@@ -9,7 +9,7 @@ export default function Index({ allPosts }) {
   // const heroPost = allPosts[0]
   // const latestPosts = allPosts.slice(0, 3);
   return (
-    <Layout noHentry>
+    <Layout noHentry noBottomMargin>
       <Container>
         <Intro />
         {/* {heroPost && (

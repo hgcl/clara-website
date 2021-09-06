@@ -7,20 +7,23 @@ import Menu from "./Menu";
 import { MenuToggle } from "./MenuToggle";
 import React, { useState } from "react";
 
-export default function Layout({ children, title, noHentry, showAlert }) {
+export default function Layout({
+  children,
+  title,
+  noHentry,
+  showAlert,
+  noBottomMargin,
+}) {
+  const bottomMargin = noBottomMargin ? "" : "mb-16 md:mb-32";
   const [open, setOpen] = useState(false);
   return (
     <>
       <Meta title={title} />
-      <div className="min-h-screen z-10 relative pb-16 md:pb-32">
+      <div className={`min-h-screen z-10 relative ${bottomMargin}`}>
         <Alert showAlert={showAlert} />
         <Menu open={open} setOpen={setOpen} />
         {!open && (
-          <MenuToggle
-            toggle={() => setOpen(!open)}
-            className="w-screen"
-            // className="absolute right-0 transition duration-300 transform hover:-rotate-90 opacity-75 hover:opacity-100"
-          />
+          <MenuToggle toggle={() => setOpen(!open)} className="w-screen" />
         )}
         <Hentry>
           <Hcard />
