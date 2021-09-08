@@ -1,5 +1,4 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 import CoverImage from "./cover-image";
 import NextLink from "next/link";
 import Link from "./link";
@@ -42,11 +41,7 @@ export default function PostPreview({
           as={`/${RECIPE_FOLDER}/${slug}`}
           href={`/${RECIPE_FOLDER}/${slug}`}
         >
-          <motion.div
-            initial={{ opacity: "0" }}
-            whileHover={{ opacity: "0.9" }}
-            className="z-10 cursor-pointer bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8"
-          >
+          <div className="z-10 cursor-pointer bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8 transition-opacity opacity-0 hover:opacity-90">
             <p className="text-lg comment mb-8">
               {categories}{" "}
               {difficulty && `${DOT} ${RECIPE_DIFFULTY_ARRAY[difficulty]}`}{" "}
@@ -54,7 +49,7 @@ export default function PostPreview({
               {RECIPE_DURATION_ARRAY[duration]}
             </p>
             <p className="p-summary text-xl">{excerpt}</p>
-          </motion.div>
+          </div>
         </NextLink>
       </div>
       <Link

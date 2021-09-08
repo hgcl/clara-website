@@ -91,7 +91,7 @@ const ClosedTile = ({
           height="312rem"
           width="200rem"
         />
-        <div className="z-10 bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center transition-opacity opacity-0 hover:opacity-90">
+        <div className="z-10 cursor-pointer bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center transition-opacity opacity-0 hover:opacity-90">
           <h2 className="text-lg leading-snug mb-2">{title}</h2>
           <p className="leading-snug">{author && author}</p>
         </div>
