@@ -39,7 +39,7 @@ export const MenuToggle = ({ toggle, setHook }) => {
       ) : (
         <button
           aria-label="Menu"
-          className={`z-50 cursor-pointer fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90 sm:opacity-80`}
+          className={`z-50 cursor-pointer fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90`}
           onClick={toggle}
         >
           <Logo className="fill-current  duration-300 text-accent hover:text-accent-light w-8 md:w-12" />
