@@ -1,8 +1,9 @@
-import Logo from "../public/icons/Logo";
 import React, { useState, useEffect } from "react";
 import { debounce } from "../lib/helpers";
+import Logo from "../public/icons/Logo";
+import { CLOSE } from "../lib/constants";
 
-export const MenuToggle = ({ toggle, className }) => {
+export const MenuToggle = ({ toggle, setHook }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const position = visible ? "top-0" : "-top-20";
@@ -26,12 +27,26 @@ export const MenuToggle = ({ toggle, className }) => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <button
-      aria-label="Menu"
-      onClick={toggle}
-      className={`z-40 fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90 sm:opacity-80 hover:opacity-100`}
-    >
-      <Logo className="fill-current text-accent w-8 md:w-12" />
-    </button>
+    <>
+      {setHook ? (
+        <button
+          aria-label="Close menu"
+          className="z-50 absolute top-5 right-9 text-4xl hover:text-gray-darkest transition duration-300"
+          onClick={toggle}
+        >
+          {CLOSE}
+        </button>
+      ) : (
+        <button
+          aria-label="Menu"
+          className={`z-50 cursor-pointer fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90 sm:opacity-80 hover:opacity-100`}
+          onClick={toggle}
+        >
+          <Logo className="fill-current text-accent w-8 md:w-12" />
+        </button>
+      )}
+    </>
   );
 };
+
+export default MenuToggle;
