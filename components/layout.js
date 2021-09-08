@@ -3,8 +3,7 @@ import Alert from "../components/alert";
 import Meta from "./meta";
 import Hentry from "./Hentry";
 import Hcard from "./Hcard";
-import Menu from "./Menu";
-import { MenuToggle } from "./MenuToggle";
+import Navbar from "./Navbar";
 import React, { useState } from "react";
 
 export default function Layout({
@@ -21,10 +20,7 @@ export default function Layout({
       <Meta title={title} />
       <div className={`min-h-screen z-10 relative ${bottomMargin}`}>
         <Alert showAlert={showAlert} />
-        <Menu open={open} setOpen={setOpen} />
-        {!open && (
-          <MenuToggle toggle={() => setOpen(!open)} className="w-screen" />
-        )}
+        <Navbar />
         <Hentry>
           <Hcard />
           {!noHentry && <main>{children}</main>}
