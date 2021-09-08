@@ -31,7 +31,7 @@ export const MenuToggle = ({ toggle, setHook }) => {
       {setHook ? (
         <button
           aria-label="Close menu"
-          className="z-50 absolute top-5 right-9 text-4xl hover:text-gray-darkest transition duration-300"
+          className="z-50 fixed top-5 right-9 text-4xl text-gray-lightest hover:text-gray-darkest transition duration-300"
           onClick={toggle}
         >
           {CLOSE}

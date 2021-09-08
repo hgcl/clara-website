@@ -19,7 +19,7 @@ const Navbar = () => {
       {navbarOpen && (
         <div
           onClick={() => setNavbarOpen(false)}
-          className="flex flex-col items-center justify-center fixed top-0 left-0 h-screen w-screen bg-accent-dark text-center sm:text-left"
+          className="flex flex-col items-center justify-center fixed top-0 left-0 h-screen w-screen bg-accent-dark text-center sm:text-left text-gray-lightest"
         >
           <div className="sm:flex">
             <ul className={ulStyle}>
