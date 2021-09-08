@@ -20,7 +20,8 @@ module.exports = {
       current: "currentColor",
       accent: {
         dark: "#ab3535",
-        DEFAULT: "#CA3B3B",
+        DEFAULT: "#e83737",
+        light: "#fc4444",
       },
       gray: {
         darkest: "#131315",
