@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import DateFormatter from "./date-formatter";
 import Rating from "./Rating";
 import Image from "next/image";
@@ -92,14 +91,10 @@ const ClosedTile = ({
           height="312rem"
           width="200rem"
         />
-        <motion.div
-          initial={{ opacity: "0" }}
-          whileHover={{ opacity: "0.9" }}
-          className="z-10 bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center"
-        >
+        <div className="z-10 bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-4 py-4 text-center transition-opacity opacity-0 hover:opacity-90">
           <h2 className="text-lg leading-snug mb-2">{title}</h2>
           <p className="leading-snug">{author && author}</p>
-        </motion.div>
+        </div>
       </div>
       <div>
         <div className="mt-2 flex flex-row">
@@ -110,11 +105,11 @@ const ClosedTile = ({
               onMouseLeave={() => setOpenTooltip(false)}
             >
               {tooltipOpen && (
-                <motion.div exit={{ opacity: 0 }} className="relative">
-                  <span className="absolute -top-7 -left-3 bg-gray-darkest bg-opacity-90 pt-0 pb-2px px-2 rounded all-small-caps text-gray-lightest text-xs opacity-90">
+                <div className="relative">
+                  <span className="absolute -top-5 -left-3 bg-gray-darkest bg-opacity-90 pb-px px-2 rounded all-small-caps text-gray-lightest text-xs opacity-90">
                     {review ? "Review" : "Note"}
                   </span>
-                </motion.div>
+                </div>
               )}
               {(review || notes) && <NoteIcon className="ml-2" />}
             </span>
