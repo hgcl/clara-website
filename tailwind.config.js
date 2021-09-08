@@ -54,9 +54,11 @@ module.exports = {
             h4: { color: null },
             "ol > li::before": {
               color: "inherit",
+              paddingTop: "3px",
             },
             "ul > li::before": {
               backgroundColor: "currentColor",
+              marginTop: "1px",
             },
             blockquote: null,
             "blockquote p:first-of-type::before": null,
