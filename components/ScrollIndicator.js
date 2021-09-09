@@ -1,46 +1,35 @@
-import * as React from "react";
-import {
-  motion,
-  useSpring,
-  useTransform,
-  useViewportScroll,
-} from "framer-motion";
+import { useEffect, useState } from "react";
 
-export default function ScrollIndicator(props) {
-  const [isComplete, setIsComplete] = React.useState(false);
-  const { scrollYProgress } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
-  const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
+export default function ScrollIndicator() {
+  const [scrollTop, setScrollTop] = useState(0);
 
-  React.useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [
-    yRange,
-  ]);
+  const onScroll = () => {
+    // This will calculate how many pixels the page is vertically
+    const winScroll = document.documentElement.scrollTop;
+    // This is responsible for subtracticing the total height of the page - where the users page is scrolled to
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    // This will calculate the final total of the percentage of how much the user has scrolled.
+    const scrolled = (winScroll / height) * 100;
+
+    setScrollTop(scrolled);
+  };
+
+  useEffect(() => {
+    // Fires when the document view has been scrolled
+    window.addEventListener("scroll", onScroll);
+
+    //
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <svg viewBox="0 0 60 60" {...props}>
-      <motion.path
-        fill="none"
-        strokeWidth="3"
-        stroke="currentColor"
-        strokeDasharray="0 1"
-        d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-        style={{
-          pathLength,
-          rotate: 90,
-          translateX: 5,
-          translateY: 5,
-          scaleX: -1, // Reverse direction of line animation
-        }}
-      />
-      <motion.path
-        fill="none"
-        strokeWidth="3"
-        stroke="currentColor"
-        d="M14,26 L 22,33 L 35,16"
-        initial={false}
-        strokeDasharray="0 1"
-        animate={{ pathLength: isComplete ? 1 : 0 }}
-      />
-    </svg>
+    // Wrapper
+    <div className="sticky top-0 left-0 h-1 w-screen">
+      {/* Updated progress bar */}
+      <div className="h-full bg-accent" style={{ width: `${scrollTop}%` }} />
+    </div>
   );
 }
