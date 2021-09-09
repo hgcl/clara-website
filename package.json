@@ -8,6 +8,7 @@
     "format": "prettier --write . --ignore-path ./.gitignore"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
     "@silvenon/remark-smartypants": "^1.0.0",
     "@splitbee/web": "^0.2.4",
