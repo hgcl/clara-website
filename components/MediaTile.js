@@ -3,7 +3,7 @@ import DateFormatter from "./date-formatter";
 import Rating from "./Rating";
 import Image from "next/image";
 import NoteIcon from "../public/icons/NoteIcon";
-import OpenMediaModal from "./OpenMediaModal";
+import MediaModalOpen from "./MediaModalOpen";
 
 export default function MediaTile({
   author,
@@ -17,18 +17,18 @@ export default function MediaTile({
   status,
   title,
 }) {
-  const [open, setOpen] = useState(false);
-  const closeModal = () => setOpen(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       {review || notes ? (
+        // A review or note exists => can be opened
         <button
           className="text-left"
           aria-label={title}
-          onClick={() => setOpen((o) => !o)}
+          onClick={() => setModalOpen((o) => !o)}
         >
-          <ClosedTile
+          <MediaModalClosed
             author={author}
             coverUrl={coverUrl}
             date={date}
@@ -41,7 +41,7 @@ export default function MediaTile({
         </button>
       ) : (
         <div className="text-left">
-          <ClosedTile
+          <MediaModalClosed
             date={date}
             review={review}
             author={author}
@@ -53,9 +53,9 @@ export default function MediaTile({
           />
         </div>
       )}
-      <OpenMediaModal
-        open={open}
-        onClose={closeModal}
+      <MediaModalOpen
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
         title={title}
         author={author}
         notes={notes}
@@ -69,7 +69,7 @@ export default function MediaTile({
   );
 }
 
-const ClosedTile = ({
+const MediaModalClosed = ({
   author,
   coverUrl,
   date,
@@ -79,7 +79,7 @@ const ClosedTile = ({
   status,
   title,
 }) => {
-  const [tooltipOpen, setOpenTooltip] = useState(false); // Tooltip modal hook
+  const [tooltipOpen, setTooltipOpen] = useState(false); // Tooltip modal hook
   const unfinishedBooks = status === "unfinished" && "opacity-30";
   return (
     <>
@@ -101,8 +101,8 @@ const ClosedTile = ({
           <div className="flex flex-row items-center">
             {rating && <Rating rating={rating} />}
             <span
-              onMouseEnter={() => setOpenTooltip(true)}
-              onMouseLeave={() => setOpenTooltip(false)}
+              onMouseEnter={() => setTooltipOpen(true)}
+              onMouseLeave={() => setTooltipOpen(false)}
             >
               {tooltipOpen && (
                 <div className="relative">
