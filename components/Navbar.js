@@ -8,6 +8,20 @@ const Navbar = () => {
     setNavbarOpen(!navbarOpen);
   };
 
+  const keydownHandler = ({ key }) => {
+    switch (key) {
+      case "Escape":
+        setNavbarOpen(false);
+        break;
+      default:
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", keydownHandler);
+    return () => document.removeEventListener("keydown", keydownHandler);
+  });
+
   const ulStyle =
     "flex-1 font-serif text-xl sm:text-2xl max-w-2xl mx-auto px-8";
   const liStyle = "py-1 sm:py-0";
