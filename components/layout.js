@@ -4,7 +4,6 @@ import Meta from "./meta";
 import Hentry from "./Hentry";
 import Hcard from "./Hcard";
 import Navbar from "./Navbar";
-import React, { useState } from "react";
 
 export default function Layout({
   children,
@@ -14,7 +13,6 @@ export default function Layout({
   noBottomMargin,
 }) {
   const bottomMargin = noBottomMargin ? "" : "mb-16 md:mb-32";
-  const [open, setOpen] = useState(false);
   return (
     <>
       <Meta title={title} />
