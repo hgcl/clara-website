@@ -62,7 +62,7 @@ export default function AboutWebsite({}) {
               <Link href="https://tailwindcss.com/">Tailwind CSS</Link> for
               general styling and{" "}
               <Link href="https://github.com/tailwindlabs/tailwindcss-typography">
-                Tailwind Typography
+                Tailwind CSS Typography
               </Link>{" "}
               to generate responsive text styling
             </li>
@@ -77,12 +77,6 @@ export default function AboutWebsite({}) {
                 next-mdx-remote
               </Link>{" "}
               to enable the use of JSX and components in MDX files
-            </li>
-            <li>
-              <Link href="https://www.framer.com/api/motion">
-                Framer Motion
-              </Link>{" "}
-              to create a few animations and modals (e.g. my menu overlay)
             </li>
             <li>
               <Link href="https://github.com/date-fns/date-fns">dates-fns</Link>{" "}

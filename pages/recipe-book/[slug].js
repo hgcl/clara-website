@@ -11,15 +11,12 @@ import PostTitle from "../../components/post-title";
 import Link from "../../components/link";
 import { ARROW } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
+import ScrollIndicator from "../../components/ScrollIndicator";
 
 // MDX related imports
-import markdownStyles from "../../components/markdown-styles.module.css";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import AllPostComponents from "../../components/AllPostComponents";
-
-// framer-motion imports, https://www.framer.com/api/motion/examples/
-import ScrollIndicator from "../../components/ScrollIndicator";
 
 const components = AllPostComponents;
 
@@ -31,6 +28,7 @@ export default function RecipePost({ source, post, preview }) {
   }
   return (
     <Layout preview={preview}>
+      <ScrollIndicator />
       <Container>
         <Header />
         {router.isFallback ? (
@@ -39,7 +37,6 @@ export default function RecipePost({ source, post, preview }) {
           <>
             {/* Added hRecipe microformats http://microformats.org/wiki/hrecipe */}
             <article className="h-recipe mb-32">
-              <ScrollIndicator className="fixed hidden md:block bottom-6 left-5 w-8 h-8 text-accent" />
               <PostHeader
                 author={post.author}
                 coverImage={post.coverImage}
