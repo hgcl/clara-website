@@ -1,6 +1,8 @@
 // MVP imports
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
+import { serialize } from "next-mdx-remote/serialize";
+import smartypants from "@silvenon/remark-smartypants";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
 import Header from "../../components/header";
@@ -10,18 +12,9 @@ import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
 import PostTitle from "../../components/post-title";
 import Link from "../../components/link";
 import { ARROW } from "../../lib/constants";
-import markdownToHtml from "../../lib/markdownToHtml";
 import ScrollIndicator from "../../components/ScrollIndicator";
 
-// MDX related imports
-import renderToString from "next-mdx-remote/render-to-string";
-import hydrate from "next-mdx-remote/hydrate";
-import AllPostComponents from "../../components/AllPostComponents";
-
-const components = AllPostComponents;
-
 export default function RecipePost({ source, post, preview }) {
-  const contentmdx = hydrate(source, { components });
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -46,7 +39,7 @@ export default function RecipePost({ source, post, preview }) {
                 title={post.title}
                 type="isRecipe"
               />
-              <PostBody content={contentmdx}>
+              <PostBody source={source}>
                 {post.url && (
                   <p className="comment pt-8">
                     <Link href={post.url}>
@@ -80,16 +73,19 @@ export async function getStaticProps({ params }) {
     ],
     isRecipe
   );
-  const content = await markdownToHtml(post.content || "");
   const source = post.content;
-  const mdxSource = await renderToString(source, { components });
+  const mdxSource = await serialize(source, {
+    mdxOptions: {
+      remarkPlugins: [smartypants],
+      rehypePlugins: [],
+    },
+  });
 
   return {
     props: {
       source: mdxSource,
       post: {
         ...post,
-        content,
       },
     },
   };

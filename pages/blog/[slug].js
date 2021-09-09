@@ -1,6 +1,8 @@
 // MVP imports
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
+import smartypants from "@silvenon/remark-smartypants";
+import { serialize } from "next-mdx-remote/serialize";
 import Container from "../../components/container";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
@@ -8,18 +10,9 @@ import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/getAllPosts";
 import PostTitle from "../../components/post-title";
 import PostBody from "../../components/post-body";
-import markdownToHtml from "../../lib/markdownToHtml";
 import ScrollIndicator from "../../components/ScrollIndicator";
 
-// MDX related imports
-import renderToString from "next-mdx-remote/render-to-string";
-import hydrate from "next-mdx-remote/hydrate";
-import AllPostComponents from "../../components/AllPostComponents";
-
-const components = AllPostComponents;
-
 export default function Post({ source, post, preview }) {
-  const contentmdx = hydrate(source, { components });
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -42,7 +35,7 @@ export default function Post({ source, post, preview }) {
                 slug={post.slug}
                 excerpt={post.excerpt}
               />
-              <PostBody content={contentmdx} />
+              <PostBody source={source} />
             </article>
           </>
         )}
@@ -62,17 +55,18 @@ export async function getStaticProps({ params }) {
     "slug",
     "title",
   ]);
-  const content = await markdownToHtml(post.content || "");
   const source = post.content;
-  const mdxSource = await renderToString(source, { components });
+  const mdxSource = await serialize(source, {
+    mdxOptions: {
+      remarkPlugins: [smartypants],
+      rehypePlugins: [],
+    },
+  });
 
   return {
     props: {
       source: mdxSource,
-      post: {
-        ...post,
-        content,
-      },
+      post,
     },
   };
 }

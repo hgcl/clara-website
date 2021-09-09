@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@next/mdx": "^10.0.4",
+    "@silvenon/remark-smartypants": "^1.0.0",
     "@splitbee/web": "^0.2.4",
     "@tailwindcss/typography": "^0.4.1",
     "browserslist": "^4.16.8",
@@ -21,7 +22,7 @@
     "fontsource-vesper-libre": "^4.0.0",
     "gray-matter": "4.0.2",
     "next": "latest",
-    "next-mdx-remote": "^2.0.1",
+    "next-mdx-remote": "^3.0.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "remark": "11.0.2",

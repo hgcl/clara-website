@@ -1,4 +1,11 @@
-const withMDX = require("@next/mdx")({ extension: /\.mdx?$/ });
+const smartypants = require("@silvenon/remark-smartypants");
+const withMDX = require("@next/mdx")({
+  options: {
+    remarkPlugins: [smartypants],
+    rehypePlugins: [],
+  },
+  extension: /\.mdx?$/,
+});
 
 module.exports = withMDX({
   pageExtensions: ["js", "jsx", "mdx"],
