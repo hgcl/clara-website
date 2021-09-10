@@ -8,14 +8,6 @@
 
 export default [
   {
-    date: "2021-02-12 07:42:27",
-    title: "The Power of Ritual",
-    author: "Casper Ter Kuile",
-    isbn: "9780062881816",
-    notes: "via Culture Study",
-    link: "https://annehelen.substack.com/p/the-great-unbundling",
-  },
-  {
     date: "2021-01-30 16:11:37",
     title: "The Defining Decade",
     author: "Meg Jay",

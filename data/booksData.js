@@ -110,8 +110,22 @@ export default [
     title: "The Witches of New York",
     author: "Ami McKay",
     rating: 4,
-    isbn: 9780676979596,
+    isbn: "9780676979596",
     review: "",
+  },
+  {
+    date: "2021-08-10",
+    title: "Artemis",
+    author: "Andy Weir",
+    rating: 3,
+    isbn: "0091956943",
+  },
+  {
+    date: "2021-08-08",
+    title: "Project Hail Mary",
+    author: "Andy Weir",
+    rating: 4,
+    isbn: "9781713630296",
   },
   {
     date: "2017-02-22",
@@ -539,9 +553,16 @@ export default [
     title: "The Lion, the Witch and the Wardrobe",
     author: "C. S. Lewis",
     rating: 4,
-    isbn: 9780590405959,
+    isbn: "9780590405959",
     review:
       "Every evening of this last week, Robin and I had a ritual of reading out loud a few chapters from this classic book of English literature. I obviously loved listening to Robin impersonating the different characters. But what surprised me most is how much I actually enjoyed reading it out loud myself. C. S. Lewis is by all means a great writer.",
+  },
+  {
+    date: "2021-03-04",
+    title: "Prince Caspian",
+    author: "C. S. Lewis",
+    rating: 3,
+    isbn: "9780027585506",
   },
   {
     date: "2017-01-11",
@@ -1944,7 +1965,7 @@ export default [
     title: "SUBARU vol. 01",
     author: "Masahito Soda",
     rating: 5,
-    isbn: 9789792763775,
+    isbn: "9789792763775",
     review: "",
   },
   {
@@ -1952,8 +1973,15 @@ export default [
     title: "N'embrassez pas qui vous voulez",
     author: "Marzena Sowa",
     rating: 3,
-    isbn: 9782800150925,
+    isbn: "9782800150925",
     review: "",
+  },
+  {
+    date: "2021-04-10",
+    title: "Serpentine",
+    author: "Mélanie Fazi",
+    rating: 4,
+    isbn: "9782070398928",
   },
   {
     date: "2019-01-01",
@@ -1968,32 +1996,28 @@ export default [
     title: "La Princesse et le Pêcheur",
     author: "Minh Tran Huy",
     rating: 4,
-    isbn: 9782742784837,
-    review: "",
+    isbn: "9782742784837",
   },
   {
     date: "2017-08-05",
     title: "The Reluctant Fundamentalist",
     author: "Mohsin Hamid",
     rating: 5,
-    isbn: 9780151013043,
-    review: "",
+    isbn: "9780151013043",
   },
   {
     date: "2014-01-28",
     title: "L'Avare",
     author: "Molière",
-    rating: "",
-    isbn: 9782091878232,
-    review: "",
+    rating: 3,
+    isbn: "9782091878232",
   },
   {
     date: "2015-06-16",
     title: "Les Femmes Savantes",
     author: "Molière",
     rating: 3,
-    isbn: 9782038716641,
-    review: "",
+    isbn: "9782038716641",
   },
   {
     date: "2014-01-28",
@@ -2018,7 +2042,7 @@ export default [
     title: "Palace Walk (The Cairo Trilogy, #1)",
     author: "Naguib Mahfouz",
     rating: 4,
-    isbn: 9780385264662,
+    isbn: "9780385264662",
     review: "",
   },
   {
@@ -2026,7 +2050,7 @@ export default [
     title: "Enfance",
     author: "Nathalie Sarraute",
     rating: 5,
-    isbn: 9782070393589,
+    isbn: "9782070393589",
     review: "",
   },
   {
@@ -2042,7 +2066,7 @@ export default [
     title: "The Ocean at the End of the Lane",
     author: "Neil Gaiman",
     rating: 4,
-    isbn: 9780062255655,
+    isbn: "9780062255655",
     review: "",
   },
   {
@@ -2050,7 +2074,7 @@ export default [
     title: "Neverwhere (London Below, #1)",
     author: "Neil Gaiman",
     rating: 3,
-    isbn: 9780060557812,
+    isbn: "9780060557812",
     review: "",
   },
   {
@@ -2058,7 +2082,7 @@ export default [
     title: "Gnomon",
     author: "Nick Harkaway",
     rating: 3,
-    isbn: 9780525432937,
+    isbn: "9780525432937",
     review: "",
   },
   {
@@ -2091,8 +2115,16 @@ export default [
     title: "Pourquoi j'ai tué Pierre",
     author: "Olivier Ka",
     rating: 4,
-    isbn: 9782756003801,
+    isbn: "9782756003801",
     review: "",
+  },
+  {
+    date: "2021-09-05",
+    title: "Parable of the sower",
+    author: "Octavia E. Butler",
+    rating: 4,
+    isbn: "0941423999",
+    review: "Listened to the audiobook during my trip to Ardèche. The book depicts the rise of a new religion in a crumbling society.",
   },
   ///// >P  /////
   {
@@ -2108,7 +2140,7 @@ export default [
     title: "Rue des Boutiques obscures",
     author: "Patrick Modiano",
     rating: 4,
-    isbn: 9782070373581,
+    isbn: "9782070373581",
     review: "",
   },
   {
@@ -2116,7 +2148,7 @@ export default [
     title: "The Girl on the Train",
     author: "Paula Hawkins",
     rating: 2,
-    isbn: 9781594633669,
+    isbn: "9781594633669",
     review: "",
   },
   {
@@ -2644,6 +2676,13 @@ export default [
     review: "",
   },
   ///// >U  /////
+  {
+    date: "2021-08-01",
+    title: "The left hand of darkness",
+    author: "Ursula K. Le Guin",
+    rating: 4,
+    isbn: "9780441478125",
+  },
   ///// >V  /////
   {
     date: "2014-01-16",
