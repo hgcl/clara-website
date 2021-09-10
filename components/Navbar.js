@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import NextLink from "next/link";
 import { MenuToggle } from "./MenuToggle";
 
@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("keydown", keydownHandler);
     return () => document.removeEventListener("keydown", keydownHandler);
   });
