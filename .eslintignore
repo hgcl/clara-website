@@ -1,0 +1,7 @@
+package-lock.json
+yarn.lock
+dist/
+node_modules/
+
+# Ignore all files
+*

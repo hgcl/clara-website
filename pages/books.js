@@ -18,7 +18,7 @@ export default function Books() {
         <Header
           pageDescription={
             <>
-              Here's what I've been reading. Also check out my{" "}
+              Here&apos;s what I&apos;ve been reading. Also check out my{" "}
               <Link href="/antilibrary">antilibrary</Link>.
             </>
           }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Code very similar to more-stories.js
 

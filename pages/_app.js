@@ -20,6 +20,7 @@ splitbee.init({
 
 // Editing MDX shortcodes: https://css-tricks.com/working-with-mdx-custom-elements-and-shortcodes/
 const mdComponents = {
+  // eslint-disable-next-line react/display-name
   hr: () => <WaffleIcon className="mx-auto my-16" />,
   strong: (props) => <span className="all-small-caps" {...props} />,
   a: (props) => (

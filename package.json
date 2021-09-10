@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write . --ignore-path ./.gitignore"
+    "lint": "next lint",
+    "format": "prettier --write . --ignore-path ./.gitignore",
+    "cache": "cache clean"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -17,8 +19,6 @@
     "classnames": "2.2.6",
     "d3": "^6.5.0",
     "date-fns": "2.10.0",
-    "eslint": "^7.17.0",
-    "eslint-plugin-prettier": "^3.3.1",
     "fontsource-source-sans-pro": "^4.0.0",
     "fontsource-vesper-libre": "^4.0.0",
     "gray-matter": "4.0.2",
@@ -31,9 +31,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.2",
+    "eslint": "^7.17.0",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "postcss": "^8.3.6",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.1",
+    "prettier": "^2.4.0",
     "tailwindcss": "^2.2.7"
   },
   "license": "MIT"

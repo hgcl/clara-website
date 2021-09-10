@@ -6,7 +6,7 @@ import Link from "../components/link";
 // import TopicTwoColumns from "../components/TopicTwoColumns";
 import DatePost from "../components/DatePost";
 
-export default function Now({}) {
+export default function Now() {
   return (
     <Layout title="Now">
       <Container>

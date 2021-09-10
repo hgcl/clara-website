@@ -13,7 +13,7 @@ import {
 export default function PostPreview({
   categories,
   coverImage,
-  date,
+  // date,
   difficulty,
   duration,
   excerpt,

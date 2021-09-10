@@ -4,7 +4,7 @@ import Container from "../../components/container";
 
 // Updated on Feb 19, 2021
 
-export default function TinyWorld1({}) {
+export default function TinyWorld1() {
   return (
     <Layout title="Tiny World #1">
       <Container>

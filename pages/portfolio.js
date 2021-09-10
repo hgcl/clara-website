@@ -8,7 +8,7 @@ import Flex from "../components/Flex";
 import Column from "../components/Column";
 import Image from "next/image";
 
-export default function Portfolio({}) {
+export default function Portfolio() {
   const imageMargins = "lg:-mx-40";
   const imageWidth = "700rem";
   const imageHeight = "450rem";

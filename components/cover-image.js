@@ -13,7 +13,7 @@ export default function CoverImage({
   const image = (
     <img
       src={src}
-      alt={`Cover Image for ${title}`}
+      alt={`Cover for ${title}`}
       className={className}
       {...props}
     />

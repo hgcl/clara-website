@@ -5,7 +5,7 @@ import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import DatePost from "../components/DatePost";
 
-export default function AboutWebsite({}) {
+export default function AboutWebsite() {
   return (
     <Layout title="About this website">
       <Container>
@@ -17,7 +17,7 @@ export default function AboutWebsite({}) {
           <p className="comment">
             Disclaimer: I built this website as a super newbie to everything
             mentioned below. I used a lot of copy-pasting lack the right
-            terminology and best practices—so don't take my word for it.
+            terminology and best practices—so don&apos;t take my word for it.
           </p>
           <h2>The big picture</h2>
           <p>

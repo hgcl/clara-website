@@ -5,11 +5,11 @@ import Header from "../components/header";
 import Container from "../components/container";
 import MediaGrid from "../components/MediaGrid";
 // import { getYear } from "date-fns";
-import { useState } from "react";
+// import { useState } from "react";
 // import DropdownButton from "../components/DropdownButton";
 import MediaTile from "../components/MediaTile";
 
-export default function Antilibrary({ allBooks }) {
+export default function Antilibrary() {
   // Year media dropdown:
   // const [yearFilter, setYear] = useState(0);
   // const yearDropdown = [
