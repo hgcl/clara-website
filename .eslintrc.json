@@ -1,3 +1,14 @@
 {
-  "extends": ["plugin:prettier/recommended"]
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended",
+        "next",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+    ]
 }
