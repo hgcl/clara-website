@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Rating from "./Rating";
 import DateFormatter from "./date-formatter";
 import { CLOSE, ARROW } from "../lib/constants";
@@ -24,7 +25,7 @@ const MediaModalOpen = ({
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("keydown", keydownHandler);
     return () => document.removeEventListener("keydown", keydownHandler);
   });

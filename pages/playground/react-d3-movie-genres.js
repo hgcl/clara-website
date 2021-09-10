@@ -171,7 +171,7 @@ const originalData = {
 //   // 1. Fetch movies from TMDB based on imdb_id
 //   const listId = "7073406";
 //   const response = await fetch(
-//     `https://api.themoviedb.org/3/list/${listId}?api_key=${process.env.API_KEY}`
+//     `https://api.themoviedb.org/3/list/${listId}?api_key=${process.env.TMDB_API_KEY}`
 //   );
 //   const moviesMetadata = await response.json();
 
@@ -206,7 +206,7 @@ const originalData = {
 
 //   // Get genre list from TMDB
 //   const responseGenre = await fetch(
-//     `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.API_KEY}`
+//     `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.TMDB_API_KEY}`
 //   );
 //   const genreMetadata = await responseGenre.json();
 
