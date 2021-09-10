@@ -5,9 +5,9 @@ import Link from "./link";
 import { BLOG_FOLDER } from "../lib/constants";
 
 export default function PostPreview({
-  type,
+  // type,
   title,
-  coverImage,
+  // coverImage,
   date,
   excerpt,
   // author,

@@ -5,7 +5,7 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 // import { getAllPosts } from "../lib/getAllPosts";
 
-export default function Index({ allPosts }) {
+export default function Index() {
   // const heroPost = allPosts[0]
   // const latestPosts = allPosts.slice(0, 3);
   return (

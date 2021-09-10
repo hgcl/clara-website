@@ -1,13 +1,13 @@
 import Layout from "../../components/layout";
 import Header from "../../components/header";
 import Container from "../../components/container";
-import watchedData from "../../data/watchedData.js";
+// import watchedData from "../../data/watchedData.js";
 
 // d3 related:
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-export default function ReactD3MovieGenres({ movieData }) {
+export default function ReactD3MovieGenres() {
   const canvas = () => {
     const ref = useRef();
 

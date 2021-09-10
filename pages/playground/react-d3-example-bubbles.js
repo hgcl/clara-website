@@ -1,15 +1,15 @@
 import Layout from "../../components/layout";
 import Header from "../../components/header";
 import Container from "../../components/container";
-import { getAllMovies } from "../../lib/getAllMovies";
-import watchedData from "../../data/watchedData.js";
-import { getYear } from "date-fns";
+// import { getAllMovies } from "../../lib/getAllMovies";
+// import watchedData from "../../data/watchedData.js";
+// import { getYear } from "date-fns";
 
 // d3 related:
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-export default function ReactD3Books({ allMovies }) {
+export default function ReactD3Books() {
   const canvas = () => {
     const ref = useRef();
 

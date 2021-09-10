@@ -5,7 +5,7 @@ import PostTitle from "./post-title";
 import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
 
 export default function PostHeader({
-  author,
+  // author,
   coverImage,
   date,
   excerpt,

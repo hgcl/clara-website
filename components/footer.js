@@ -2,8 +2,6 @@ import NextLink from "next/link";
 
 export default function Footer() {
   const ulStyle = "font-serif text-lg sm:text-2xl";
-  const liStyle = "pl-2 sm:inline-block";
-  const pageSeparator = <span className="hidden sm:inline">&nbsp;—</span>;
   return (
     <footer
       className="h-96 sm:h-72 

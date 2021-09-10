@@ -5,7 +5,7 @@ import Container from "../../components/container";
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-export default function ReactD3Bars({}) {
+export default function ReactD3Bars() {
   const canvas = () => {
     const ref = useRef();
 
