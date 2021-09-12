@@ -1,11 +1,9 @@
-// import Avatar from './avatar';
 import DatePost from "./DatePost";
 import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
 import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
 
 export default function PostHeader({
-  // author,
   coverImage,
   date,
   excerpt,
@@ -24,9 +22,6 @@ export default function PostHeader({
         </a>
       </div>
       <div className="max-w-3xl mx-auto">
-        {/* <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
-        </div> */}
         <div className="mb-6 text-lg text-center md:text-left">
           <DatePost dateString={date} dtPublished />
           {coverImage && (

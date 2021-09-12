@@ -1,8 +1,4 @@
-// Set up RSS feed based on https://dev.to/emilioschepis/adding-a-statically-generated-rss-feed-to-a-next-js-9-3-blog-58id
 import fs from "fs";
-
-// import Avatar from '../components/avatar'
-// import CoverImage from './cover-image'
 import { getAllPosts } from "../lib/getAllPosts";
 import MorePosts from "../components/MorePosts";
 import Layout from "../components/layout";
@@ -34,22 +30,11 @@ const generateRss = (posts) => `
 `;
 
 export default function Index({ allPosts }) {
-  // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   return (
     <Layout title="Blog">
       <Container>
         <Header pageDescription={"Tea or coffee?"} />
-        {/* {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              // coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              // author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )} */}
         {allPosts.length > 0 && <MorePosts posts={allPosts} />}
       </Container>
     </Layout>
@@ -61,8 +46,6 @@ export async function getStaticProps() {
     "title",
     "date",
     "slug",
-    // 'author',
-    // 'coverImage',
     "excerpt",
     "categories",
   ]);
