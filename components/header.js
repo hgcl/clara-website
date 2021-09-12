@@ -1,4 +1,4 @@
-import Link from "./link";
+import Link from "next/link";
 import { WEBSITE_NAME } from "../lib/constants";
 
 export default function Header({ pageDescription }) {
