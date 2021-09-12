@@ -1,5 +1,4 @@
 import Alert from "../components/alert";
-// import Footer from "./footer";
 import Meta from "./meta";
 import Hentry from "./Hentry";
 import Hcard from "./Hcard";
@@ -25,7 +24,6 @@ export default function Layout({
         </Hentry>
         {noHentry && <main>{children}</main>}
       </div>
-      {/* <Footer /> */}
     </>
   );
 }
