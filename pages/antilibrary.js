@@ -1,22 +1,11 @@
-// import { getAllBooks } from "../lib/getAllBooks";
-import antilibraryData from "../data/antilibraryData.js";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
 import MediaGrid from "../components/MediaGrid";
-// import { getYear } from "date-fns";
-// import { useState } from "react";
-// import DropdownButton from "../components/DropdownButton";
 import MediaTile from "../components/MediaTile";
 
-export default function Antilibrary() {
-  // Year media dropdown:
-  // const [yearFilter, setYear] = useState(0);
-  // const yearDropdown = [
-  //   { name: "All", value: 0 },
-  //   { name: "2021", value: 2021 },
-  //   { name: "2020", value: 2020 },
-  // ];
+export default function Antilibrary({ toReadList }) {
+  console.log(toReadList);
   return (
     <Layout title={"Antilibrary"}>
       <Container>
@@ -25,46 +14,25 @@ export default function Antilibrary() {
             "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
-        <div className="flex flex-col sm:flex-row flex-wrap">
-          {/* <DropdownButton
-            title="Year"
-            filter={yearFilter}
-            setHook={setYear}
-            itemsArray={yearDropdown}
-            marginRight="mr-2"
-          /> */}
-        </div>
+        <div className="flex flex-col sm:flex-row flex-wrap" />
         <MediaGrid>
-          {antilibraryData
-            // Year filter
-            // .filter((book) =>
-            //   yearFilter ? getYear(new Date(book.date)) === yearFilter : book
-            // )
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .map((book) => {
+          {toReadList
+            // .sort((a, b) => new Date(b.logged_date) - new Date(a.logged_date))
+            .map((data) => {
               const {
-                author,
-                coverUrl = `https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`,
-                date,
-                isbn,
-                link,
-                notes,
-                rating,
-                review,
-                title,
-              } = book;
-
+                key = data.work.key,
+                coverUrl = `https://covers.openlibrary.org/b/olid/${data.work.cover_edition_key}-M.jpg`,
+                date = "2021-01-01", // TODO parse and format date
+                author = data.work.author_names[0],
+                title = data.work.title,
+              } = data;
               return (
-                <article key={isbn}>
+                <article key={key}>
                   <MediaTile
                     author={author}
                     coverUrl={coverUrl}
                     date={date}
                     dateLabel="Added on"
-                    link={link}
-                    notes={notes}
-                    rating={rating}
-                    review={review}
                     title={title}
                   />
                 </article>
@@ -76,11 +44,50 @@ export default function Antilibrary() {
   );
 }
 
-// VERSION 1: Using Open Library API
-// export async function getStaticProps() {
-//   const allBooks = await getAllBooks(antilibraryData);
+export async function getStaticProps() {
+  const res = await fetch(
+    "https://openlibrary.org/people/hgcl/books/want-to-read.json"
+  );
+  const booksRawData = await res.json();
+  const toReadList = booksRawData.reading_log_entries;
 
-//   return {
-//     props: { allBooks },
-//   };
-// }
+  return {
+    props: {
+      toReadList: toReadList,
+    },
+  };
+}
+
+// Example of toReadList JSON
+// [
+//   {
+//     work: {
+//       title: 'Parable of the Talents',
+//       key: '/works/OL35618W',
+//       author_keys: [Array],
+//       author_names: [Array],
+//       first_publish_year: 1998,
+//       lending_edition_s: null,
+//       edition_key: [Array],
+//       cover_id: null,
+//       cover_edition_key: 'OL374094M'
+//     },
+//     logged_edition: '/books/OL374094M',
+//     logged_date: '2021/09/10, 22:09:16'
+//   },
+//   {
+//     work: {
+//       title: 'The Road',
+//       key: '/works/OL40873W',
+//       author_keys: [Array],
+//       author_names: [Array],
+//       first_publish_year: 2004,
+//       lending_edition_s: null,
+//       edition_key: [Array],
+//       cover_id: null,
+//       cover_edition_key: 'OL15610563M'
+//     },
+//     logged_edition: '/books/OL15610563M',
+//     logged_date: '2021/09/10, 21:59:39'
+//   }
+// ]
