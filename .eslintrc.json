@@ -10,5 +10,8 @@
         "next",
         "next/core-web-vitals",
         "plugin:prettier/recommended"
-    ]
+    ],
+    "rules": {
+        "react/prettier/prettier": "off"
+      }
 }
