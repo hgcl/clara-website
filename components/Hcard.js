@@ -17,9 +17,15 @@ export default function Hcard() {
       />
 
       {/* Links */}
-      <a className="u-url u-uid" href="https://clarale.com"></a>
-      <a className="u-url" rel="me" href="https://twitter.com/clara__le"></a>
-      <a className="u-url" rel="me" href="https://github.com/hgcl"></a>
+      <a className="u-url u-uid" href="https://clarale.com">
+        Personal website
+      </a>
+      <a className="u-url" rel="me" href="https://twitter.com/clara__le">
+        Twitter
+      </a>
+      <a className="u-url" rel="me" href="https://github.com/hgcl">
+        GitHub
+      </a>
     </div>
   );
 }

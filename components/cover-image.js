@@ -22,7 +22,7 @@ export default function CoverImage({
     <>
       {slug ? (
         <Link as={`/${folder}/${slug}`} href={`/${folder}/${slug}`}>
-          <a aria-label={title}>{image}</a>
+          {image}
         </Link>
       ) : (
         image

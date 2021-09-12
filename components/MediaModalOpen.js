@@ -33,6 +33,7 @@ const MediaModalOpen = ({
     open && (
       <div
         onClick={onClose}
+        role="button"
         className="h-review z-40 absolute -top-8 left-0 w-screen h-full"
       >
         <div
@@ -48,7 +49,11 @@ const MediaModalOpen = ({
               {CLOSE}
             </button>
           </div>
-          <div onClick={onClose} className="flex items-center h-screen p-8">
+          <div
+            role="button"
+            onClick={onClose}
+            className="flex items-center h-screen p-8"
+          >
             <div className="text-xl relative w-full">
               <div className="text-center md:text-left mb-6">
                 <p className="comment tracking mb-4 md:fixed md:top-6">
