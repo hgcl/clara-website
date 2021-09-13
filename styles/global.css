@@ -1,0 +1,50 @@
+/* Colors */
+/* 
+--gray-darkest: #131315;
+--gray-dark: #1c1c1f;
+--gray: #54545d;
+--gray-light: #E3E3E3;
+--gray-lightest: #f5f5f6;
+--accent-dark: #ab3535;
+--accent: #e83737;
+--accent-light: #fc4444; 
+*/
+
+:root {
+  --bg-color: #f5f5f6;
+  --text-color: #131315;
+  --accent-color: #e83737;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1c1c1f;
+    --text-color: #f5f5f6;
+    --accent-color: #e83737;
+  }
+}
+
+@font-face {
+  font-family: "SourceSansProSmallCaps";
+  src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-2AF; /* Download small caps ranges */
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Source\\ Sans\\ Pro", "Roboto";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Vesper\\ Libre";
+  font-weight: 400;
+  text-transform: capitalize;
+}
