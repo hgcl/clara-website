@@ -1,0 +1,39 @@
+/* Citations */
+.markdown blockquote {
+  @apply border-l-4 border-gray-darkest dark:border-gray-lightest pl-6 my-8 italic;
+}
+.markdown q {
+  quotes: "“" "”" "‘" "'" "“" "”" "‘" "'" "“" "”";
+}
+.markdown cite {
+  /* Used for creative works: book names, movies, etc. */
+  @apply italic capitalize;
+}
+
+.markdown a cite,
+.markdown cite a {
+  @apply not-italic;
+}
+
+.markdown a {
+  font-variant-caps: all-small-caps;
+}
+
+.markdown ol li::before {
+  @apply font-serif;
+}
+
+/* Headings */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  @apply tracking-tighter;
+}
+
+/* Code */
+.markdown code {
+  @apply text-sm bg-gray-light dark:bg-gray-dark px-2 py-1 rounded;
+}
+.markdown pre {
+  @apply text-sm bg-gray-light dark:bg-gray-dark px-4 py-4 rounded whitespace-pre-wrap;
+}
