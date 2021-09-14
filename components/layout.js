@@ -17,7 +17,7 @@ export default function Layout({
       <Meta title={title} />
       <div className={`min-h-screen z-10 relative ${bottomMargin}`}>
         <Alert showAlert={showAlert} />
-        <Navbar />
+        {/* <Navbar /> */}
         <Hentry>
           <Hcard />
           {!noHentry && <main>{children}</main>}

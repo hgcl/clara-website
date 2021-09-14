@@ -1,3 +1,16 @@
 export default function Container({ children }) {
-  return <div className="container max-w-full mx-auto px-8">{children}</div>;
+  const styles = (
+    <style jsx>{`
+      .container {
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+    `}</style>
+  );
+  return (
+    <div className="container">
+      {styles}
+      {children}
+    </div>
+  );
 }
