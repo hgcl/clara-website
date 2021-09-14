@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
+import articleStyles from "../components/articleStyles";
 import DatePost from "../components/DatePost";
 import Link from "../components/link";
 import Flex from "../components/Flex";
@@ -19,9 +19,8 @@ export default function Portfolio() {
     <Layout title="Portfolio">
       <Container>
         <Header pageDescription={"Portfolio"} />
-        <div
-          className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-        >
+        <div className="article-container">
+          {articleStyles}
           <DatePost dateString="2021-01-04 15:08:20" lastUpdated />
           <section className={sectionStyle}>
             <h2>Life Under Control: My Planner Shop</h2>

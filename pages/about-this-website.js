@@ -1,18 +1,17 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import DatePost from "../components/DatePost";
+import articleStyles from "../components/articleStyles";
 
 export default function AboutWebsite() {
   return (
     <Layout title="About this website">
       <Container>
         <Header pageDescription={"About this website"} />
-        <div
-          className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-        >
+        <div className="article-container">
+          {articleStyles}
           <DatePost dateString="2021-01-04 08:31:26" lastUpdated />
           <p className="comment">
             Disclaimer: I built this website as a super newbie to everything
@@ -38,7 +37,6 @@ export default function AboutWebsite() {
             </Link>{" "}
             on Github.
           </p>
-
           <h2>Building Blocks</h2>
           <ul>
             <li>

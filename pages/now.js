@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
+import articleStyles from "../components/articleStyles";
 import Link from "../components/link";
 // import TopicTwoColumns from "../components/TopicTwoColumns";
 import DatePost from "../components/DatePost";
@@ -11,9 +11,8 @@ export default function Now() {
     <Layout title="Now">
       <Container>
         <Header pageDescription={"What I'm currently doing"} />
-        <div
-          className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-        >
+        <div className="article-container">
+          {articleStyles}
           <DatePost dateString="2021-08-21 13:57:21" lastUpdated />
           <p>
             Now in Berlin for more than two years with my partner{" "}

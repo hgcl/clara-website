@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
+import articleStyles from "../components/articleStyles";
 import Link from "../components/link";
 import { categories, favoritesData } from "../data/favoritesData.js";
 import { getFavorites } from "../lib/getFavorites.js";
@@ -22,9 +22,8 @@ export default function Favorites() {
             ))}
           </ul>
         </div>
-        <div
-          className={`${markdownStyles["markdown"]} relative prose prose-lg lg:prose-xl lg:pl-32 mx-auto max-w-3xl`}
-        >
+        <div className={`article-container relative lg:pl-32`}>
+          {articleStyles}
           {Object.values(categories).map(({ title, anchor }) => (
             <section key={anchor}>
               <h2 id={anchor}>{title}</h2>

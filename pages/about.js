@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
+import articleStyles from "../components/articleStyles";
 import Link from "../components/link";
 import WaffleIcon from "../public/icons/WaffleIcon";
 
@@ -10,9 +10,8 @@ export default function About() {
     <Layout title="About">
       <Container>
         <Header pageDescription={"You asked to know more about me, so ..."} />
-        <div
-          className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-        >
+        <div className="article-container">
+          {articleStyles}
           <h2>2 words</h2>
           <p>ebullient polymath</p>
           <h2>20 seconds</h2>
