@@ -8,27 +8,42 @@ export default function Link({
   variant,
   ...props
 }) {
+  const headingLinkStyles = (
+    <style jsx>{`
+      a {
+        text-transform: capitalize;
+      }
+      a:hover,
+      a:focus {
+        color: var(--color-accent-default);
+      }
+    `}</style>
+  );
+  const otherLinkStyles = (
+    <style jsx>{`
+      a {
+        font-family: "SourceSansProSmallCaps";
+        font-variant-caps: all-small-caps;
+      }
+      a:hover,
+      a:focus {
+        color: var(--color-accent-default);
+      }
+    `}</style>
+  );
   const isExternal = href.startsWith("http");
-  const linkStyles =
-    variant === "heading"
-      ? `${className} capitalize focus:text-accent hover:text-accent`
-      : `${className} all-small-caps focus:text-accent hover:text-accent`;
   if (isExternal) {
     return (
-      <a
-        className={linkStyles}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        {...props}
-      >
+      <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+        {headingLinkStyles}
         {children}
       </a>
     );
   }
   return (
     <NextLink href={href} as={as}>
-      <a className={linkStyles} {...props}>
+      <a {...props}>
+        {otherLinkStyles}
         {children}
       </a>
     </NextLink>

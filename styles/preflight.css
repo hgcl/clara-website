@@ -56,11 +56,17 @@ object {
 ::after {
   border-width: 0;
   border-style: solid;
-  border-color: theme('borderColor.default', currentColor);
+  border-color: theme("borderColor.default", currentColor);
 }
 
 /* To ensure that we provide accessible styles out of the box, we made sure that buttons have a default outline. You can of course override this by applying focus:ring or similar utilities to your buttons. */
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Custom */
+a {
+  text-decoration: none;
+  color: inherit;
 }
