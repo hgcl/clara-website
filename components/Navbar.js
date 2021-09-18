@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import NextLink from "next/link";
+import Link from "./link";
 import { MenuToggle } from "./MenuToggle";
 
 const Navbar = () => {
@@ -27,74 +27,115 @@ const Navbar = () => {
   const liStyle = "py-1 sm:py-0";
   const linkStyle = "hover:text-gray-darkest focus:text-gray-darkest";
 
+  const navbarStyles = (
+    <style jsx>{`
+      nav {
+        z-index: 40;
+        position: relative;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-accent-subdued);
+        color: var(--color-text-reversed);
+        text-align: center;
+      }
+      .navbar > div > ul {
+        margin: 0 1.5rem 0 1.5rem;
+      }
+      .navbar > div > ul > li {
+        font-size: var(--font-size-h4);
+        list-style-type: none;
+        line-height: 1.3;
+        margin: 0;
+      }
+      .navbar > div > ul > li > a:hover {
+        color: #131315;
+      }
+      @media screen and (min-width: 640px) {
+        .navbar div {
+          display: flex;
+          text-align: left;
+        }
+      }
+    `}</style>
+  );
   return (
-    <nav className="z-40 relative">
+    <nav>
+      {navbarStyles}
       <MenuToggle toggle={handleToggle} setHook={navbarOpen} />
       {navbarOpen && (
         <div
           onClick={() => setNavbarOpen(false)}
-          className="flex flex-col items-center justify-center fixed top-0 left-0 h-screen w-screen bg-accent-dark text-center sm:text-left text-gray-lightest"
+          className="navbar text-gray-lightest"
         >
-          <div className="sm:flex">
-            <ul className={ulStyle}>
-              <li className={liStyle}>
-                <NextLink href="/">
-                  <a className={linkStyle}>Home</a>
-                </NextLink>
+          <div>
+            <ul>
+              <li>
+                <Link variant="heading" href="/">
+                  Home
+                </Link>
               </li>
             </ul>
-            <ul className={ulStyle}>
-              <li className={liStyle}>
-                <NextLink href="/about">
-                  <a className={linkStyle}>About</a>
-                </NextLink>
+            <ul>
+              <li>
+                <Link variant="heading" href="/about">
+                  About
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/about-this-website">
-                  <a className={linkStyle}>About&nbsp;this&nbsp;website</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/about-this-website">
+                  About&nbsp;this&nbsp;website
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/antilibrary">
-                  <a className={linkStyle}>Antilibrary</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/antilibrary">
+                  Antilibrary
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/blog">
-                  <a className={linkStyle}>Blog</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/blog">
+                  Blog
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/books">
-                  <a className={linkStyle}>Books</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/books">
+                  Books
+                </Link>
               </li>
             </ul>
-            <ul className={ulStyle}>
-              <li className={liStyle}>
-                <NextLink href="/favorites">
-                  <a className={linkStyle}>Favorites</a>
-                </NextLink>
+            <ul>
+              <li>
+                <Link variant="heading" href="/favorites">
+                  Favorites
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/movies">
-                  <a className={linkStyle}>Movies</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/movies">
+                  Movies
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/now">
-                  <a className={linkStyle}>Now</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/now">
+                  Now
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/portfolio">
-                  <a className={linkStyle}>Portfolio</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/portfolio">
+                  Portfolio
+                </Link>
               </li>
-              <li className={liStyle}>
-                <NextLink href="/recipe-book">
-                  <a className={linkStyle}>Recipe&nbsp;Book</a>
-                </NextLink>
+              <li>
+                <Link variant="heading" href="/recipe-book">
+                  Recipe&nbsp;Book
+                </Link>
               </li>
             </ul>
           </div>

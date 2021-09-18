@@ -1,9 +1,17 @@
-export default function Flex({ children, earlyBreakpoint, className }) {
+export default function Flex({
+  children,
+  flexGap,
+  earlyBreakpoint,
+  className,
+}) {
   const styles = (
     <style jsx>{`
       .flex {
         display: flex;
         flex-direction: column;
+      }
+      .flex-gap {
+        gap: 0.5rem;
       }
       @media screen and (min-width: 768px) {
         .flex {
@@ -13,11 +21,7 @@ export default function Flex({ children, earlyBreakpoint, className }) {
     `}</style>
   );
   return (
-    <div
-      className={`flex flex-col ${
-        earlyBreakpoint ? "lg:flex-row" : "md:flex-row"
-      } ${className}`}
-    >
+    <div className={`flex ${flexGap && "flex-gap"} ${className}`}>
       {styles}
       {children}
     </div>

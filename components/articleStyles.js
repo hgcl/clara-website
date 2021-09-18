@@ -1,14 +1,46 @@
 export const articleStyles = (
   <style jsx>{`
     .article-container {
-      max-width: 48rem;
+      max-width: var(--container-width);
       margin: 0 auto;
     }
     .article-container h2 {
-      margin: 3rem 0 1.5rem 0;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
     }
     .article-container p {
-      margin: 0 0 1.5rem 0;
+      margin-bottom: 1.5rem;
+    }
+    .parenthesis {
+      font-family: "Source Sans Pro";
+      font-style: italic;
+    }
+    ul,
+    ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      list-style-position: outside;
+      padding-left: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    ul > li {
+      list-style-type: disc;
+    }
+    ol > li {
+      list-style-type: decimal;
+    }
+    ol > li::marker {
+      font-family: var(--font-family-heading);
+    }
+    kbd {
+      font-family: var(--font-family-code);
+      font-size: 0.6rem;
+      background-color: var(--color-bg-contrast);
+      color: var(--color-text-reversed);
+      padding: 0.2rem 0.3rem;
+      border-radius: 0.25rem;
     }
   `}</style>
 );

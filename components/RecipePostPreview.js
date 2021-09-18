@@ -1,6 +1,5 @@
 import * as React from "react";
 import CoverImage from "./cover-image";
-import NextLink from "next/link";
 import Link from "./link";
 import {
   RECIPE_FOLDER,
@@ -37,7 +36,7 @@ export default function PostPreview({
           {favorite && STAR}
         </div>
         {/* Overlay when hover: */}
-        <NextLink
+        <Link
           as={`/${RECIPE_FOLDER}/${slug}`}
           href={`/${RECIPE_FOLDER}/${slug}`}
         >
@@ -50,7 +49,7 @@ export default function PostPreview({
             </p>
             <p className="p-summary text-xl">{excerpt}</p>
           </div>
-        </NextLink>
+        </Link>
       </div>
       <Link
         as={`/${RECIPE_FOLDER}/${slug}`}

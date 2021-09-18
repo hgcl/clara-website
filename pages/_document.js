@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {styles}
           <link
             rel="alternate"
             type="application/rss+xml"

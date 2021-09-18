@@ -1,4 +1,4 @@
-import Alert from "../components/alert";
+import Alert from "./alert";
 import Meta from "./meta";
 import Hentry from "./Hentry";
 import Hcard from "./Hcard";
@@ -11,13 +11,23 @@ export default function Layout({
   showAlert,
   noBottomMargin,
 }) {
-  const bottomMargin = noBottomMargin ? "" : "mb-16 md:mb-32";
+  const styles = (
+    <style jsx>{`
+      .page-bottom {
+        margin-bottom: calc(var(--margin-bottom-default) * 1.5);
+      }
+      .no-bottom-margin {
+        margin-bottom: 0;
+      }
+    `}</style>
+  );
   return (
     <>
       <Meta title={title} />
-      <div className={`min-h-screen z-10 relative ${bottomMargin}`}>
+      <div className={`page-bottom ${noBottomMargin && "no-bottom-margin"}`}>
+        {styles}
         <Alert showAlert={showAlert} />
-        {/* <Navbar /> */}
+        <Navbar />
         <Hentry>
           <Hcard />
           {!noHentry && <main>{children}</main>}

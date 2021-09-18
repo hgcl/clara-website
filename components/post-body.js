@@ -1,12 +1,12 @@
 import { MDXRemote } from "next-mdx-remote";
 import AllPostComponents from "./AllPostComponents";
-import articleStyles from "../components/articleStyles";
+import articleStyles from "./articleStyles";
 
 export default function PostBody({ source, children }) {
   const styles = (
     <style jsx>{`
       .e-content {
-        max-width: 48rem;
+        max-width: var(--container-width);
         margin: 0 auto;
       }
     `}</style>

@@ -15,7 +15,7 @@ export default function PostHeader({
   return (
     <header>
       <PostTitle className="p-name fn">{title}</PostTitle>
-      <div className="hidden">
+      <div className="post-info">
         <p className="p-summary summary">{excerpt}</p>
         <a className="u-url" href={`/${folder}/${slug}`}>
           Post URL
