@@ -23,6 +23,7 @@ export default function MediaTile({
       button {
         width: 100%;
         background-color: transparent;
+        cursor: pointer;
       }
     `}</style>
   );
