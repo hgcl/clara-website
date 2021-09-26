@@ -3,7 +3,8 @@ export default function Container({ children }) {
     <style jsx>{`
       .container {
         margin: 0 auto;
-        padding: 0 2rem;
+        padding-left: var(--padding-sides-default);
+        padding-right: var(--padding-sides-default);
       }
     `}</style>
   );

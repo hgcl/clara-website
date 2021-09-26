@@ -56,8 +56,18 @@ const Navbar = () => {
         line-height: 1.3;
         margin: 0;
       }
-      .navbar > div > ul > li > a:hover {
-        color: #131315;
+      .navbar > div > ul > li > a:hover,
+      .navbar > div > ul > li > a:focus {
+        color: var(--color-text-default);
+      }
+      @media (prefers-color-scheme: dark) {
+        .navbar {
+          color: var(--color-text-default);
+        }
+        .navbar > div > ul > li > a:hover,
+        .navbar > div > ul > li > a:focus {
+          color: var(--color-text-reversed);
+        }
       }
       @media screen and (min-width: 640px) {
         .navbar div {

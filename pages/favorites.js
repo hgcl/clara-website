@@ -9,20 +9,38 @@ import { STAR } from "../lib/constants";
 
 export default function Favorites() {
   const allFavorites = getFavorites(favoritesData);
+  const styles = (
+    <style jsx>{`
+      .directory {
+        max-width: 36rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+      .directory > li {
+        display: inline;
+        padding: 0 1rem 0 0;
+      }
+      .article-container > section > div > p {
+        margin-top: 0.5rem;
+      }
+    `}</style>
+  );
   return (
     <Layout title="Favorites">
       <Container>
         <Header pageDescription={"Directory of cool resources"} />
-        <div className="relative lg:fixed max-w-sm lg:top-56 bottom-0 overflow-y-auto w-48 text-lg text-gray-regular">
-          <ul className="list-none">
-            {Object.values(categories).map(({ title, anchor }) => (
-              <li key={title}>
-                <Link href={`#${anchor}`}>{title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={`article-container relative lg:pl-32`}>
+        {styles}
+        <ul className="directory">
+          {Object.values(categories).map(({ title, anchor }) => (
+            <li key={title}>
+              <Link href={`#${anchor}`}>{title}</Link>
+            </li>
+          ))}
+        </ul>
+        <div className={`article-container`}>
           {articleStyles}
           {Object.values(categories).map(({ title, anchor }) => (
             <section key={anchor}>

@@ -119,7 +119,7 @@ export default function AboutWebsite() {
               <Link href="https://code.visualstudio.com/">
                 Visual Studio Code
               </Link>{" "}
-              (a.k.a. VS Code) is apparently <em>the</em> code editor
+              is apparently <em>the</em> code editor
             </li>
             <li>
               <Link href="https://github.com/hgcl/clara-website">GitHub</Link>{" "}

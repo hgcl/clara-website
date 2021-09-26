@@ -1,9 +1,4 @@
-export default function Flex({
-  children,
-  flexGap,
-  earlyBreakpoint,
-  className,
-}) {
+export default function Flex({ children, noFlexGap, className }) {
   const styles = (
     <style jsx>{`
       .flex {
@@ -11,7 +6,7 @@ export default function Flex({
         flex-direction: column;
       }
       .flex-gap {
-        gap: 0.5rem;
+        gap: 1rem;
       }
       @media screen and (min-width: 768px) {
         .flex {
@@ -21,7 +16,7 @@ export default function Flex({
     `}</style>
   );
   return (
-    <div className={`flex ${flexGap && "flex-gap"} ${className}`}>
+    <div className={`flex ${!noFlexGap && "flex-gap"} ${className}`}>
       {styles}
       {children}
     </div>

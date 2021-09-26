@@ -21,33 +21,77 @@ export default function PostPreview({
   title,
   type,
 }) {
+  const styles = (
+    <style jsx>{`
+      .tile h3 {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .tile > div {
+        position: relative;
+      }
+      .tile .star {
+        z-index: 10;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+      }
+      /* Appears on hover */
+      .tile-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .tile-hover:hover {
+        opacity: 1;
+        background-color: var(--color-bg-transparent);
+        border-radius: 0.2rem;
+      }
+      .tile-hover > * {
+        color: var(--color-text-reversed);
+        font-size: var(--font-size-p);
+        line-height: var(--line-height-p);
+        text-align: center;
+        padding: 0.5rem;
+      }
+      .tile-hover > .p-summary {
+        font-family: var(--font-family-body);
+        font-variant-caps: normal;
+      }
+
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        .tile-hover > * {
+          color: var(--color-text-default);
+        }
+      }
+    `}</style>
+  );
   return (
-    <div className="h-entry flex flex-col text-center">
-      <div className="mb-4 relative transition duration-200 transform hover:scale-101 hover:shadow-xl hover:-translate-y-1">
-        <CoverImage
-          slug={slug}
-          title={title}
-          src={coverImage}
-          type={type}
-          className="object-cover w-full h-72 rounded"
-        />
-        {/* Top upper left corner: */}
-        <div className="z-20 absolute left-3 top-2 text-3xl text-gray-lightest">
-          {favorite && STAR}
-        </div>
-        {/* Overlay when hover: */}
+    <div className="h-entry tile">
+      {styles}
+      <div>
+        <CoverImage slug={slug} title={title} src={coverImage} type={type} />
+        <div className="star">{favorite && STAR}</div>
         <Link
           as={`/${RECIPE_FOLDER}/${slug}`}
           href={`/${RECIPE_FOLDER}/${slug}`}
         >
-          <div className="z-10 cursor-pointer bg-gray-darkest text-gray-lightest rounded absolute w-full h-full left-0 top-0 flex flex-col justify-center px-8 pb-8 transition-opacity opacity-0 hover:opacity-90">
-            <p className="text-lg comment mb-8">
+          <div className="tile-hover">
+            <p>
               {categories}{" "}
               {difficulty && `${DOT} ${RECIPE_DIFFULTY_ARRAY[difficulty]}`}{" "}
               <br />
               {RECIPE_DURATION_ARRAY[duration]}
             </p>
-            <p className="p-summary text-xl">{excerpt}</p>
+            <p className="p-summary">{excerpt}</p>
           </div>
         </Link>
       </div>
@@ -57,7 +101,7 @@ export default function PostPreview({
         variant="heading"
         className="p-name"
       >
-        <h3 className="flex-1 text-3xl leading-tight mt-2 mb-4">{title}</h3>
+        <h3>{title}</h3>
       </Link>
     </div>
   );

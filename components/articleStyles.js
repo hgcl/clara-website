@@ -4,9 +4,15 @@ export const articleStyles = (
       max-width: var(--container-width);
       margin: 0 auto;
     }
+    .article-container h3 {
+      /* same as h2 margin-bottom */
+      margin-top: 2rem;
+      /* smaller than p margin-bottom */
+      margin-bottom: 1rem;
+    }
     .article-container h2 {
       margin-top: 3rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .article-container p {
       margin-bottom: 1.5rem;
@@ -40,6 +46,7 @@ export const articleStyles = (
       background-color: var(--color-bg-contrast);
       color: var(--color-text-reversed);
       padding: 0.2rem 0.3rem;
+      margin: 0 0.1rem;
       border-radius: 0.25rem;
     }
   `}</style>

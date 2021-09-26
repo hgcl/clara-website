@@ -19,15 +19,22 @@ export default function TopicTwoColumns({
     ) : (
       <div className="all-small-caps">{topic}</div>
     );
-
+  const styles = (
+    <style jsx>{`
+      .rating {
+        margin-top: 1rem;
+      }
+    `}</style>
+  );
   return (
     <Flex>
       <Column>
         {renderFirstColumn()}
         {type && <div className="comment">{type}</div>}
+        {styles}
         {rating && (
-          <div className="text-gray-regular pt-2">
-            <Rating rating={rating} color="text-accent" />
+          <div className="rating">
+            <Rating rating={rating} />
           </div>
         )}
       </Column>

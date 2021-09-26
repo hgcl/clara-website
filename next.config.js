@@ -13,7 +13,7 @@ module.exports = withMDX({
 
 module.exports = {
   images: {
-    domains: ["covers.openlibrary.org", "image.tmdb.org"],
+    domains: ["covers.openlibrary.org", "image.tmdb.org", "cdn.dribbble.com"],
   },
   async rewrites() {
     return [

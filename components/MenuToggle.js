@@ -34,14 +34,27 @@ export const MenuToggle = ({ toggle, setHook }) => {
         position: fixed;
         top: 2rem;
         right: 2rem;
+        width: 3rem;
         font-size: 1.5rem;
-        line-height: 0;
+        line-height: 0.5;
         color: var(--color-text-reversed);
         background-color: transparent;
       }
-      .menu:hover {
-        color: var(--color-text);
+      @media (prefers-color-scheme: dark) {
+        .menu {
+          color: var(--color-text-default);
+        }
+      }
+      .menu:hover,
+      .menu:focus {
+        color: var(--color-text-default);
         transition-duration: 300ms;
+      }
+      @media (prefers-color-scheme: dark) {
+        .menu:hover,
+        .menu:focus {
+          color: var(--color-text-reversed);
+        }
       }
     `}</style>
   );
@@ -53,9 +66,9 @@ export const MenuToggle = ({ toggle, setHook }) => {
         position: fixed;
         top: 1.25rem;
         right: 2.25rem;
+        width: 3rem;
         background-color: transparent;
         color: var(--color-accent-default);
-        width: 2rem;
         transform: rotate(0);
         transition-duration: 300ms;
       }
@@ -65,11 +78,6 @@ export const MenuToggle = ({ toggle, setHook }) => {
       }
       .hidden-menu-toggle {
         top: -3rem;
-      }
-      @media screen and (min-width: 768px) {
-        .menu {
-          width: 3rem;
-        }
       }
     `}</style>
   );

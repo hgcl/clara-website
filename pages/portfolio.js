@@ -18,6 +18,9 @@ export default function Portfolio() {
         margin-left: -10rem;
         margin-right: -10rem;
       }
+      .flex img {
+        border-radius: 0.25rem;
+      }
     `}</style>
   );
   const sectionStyles = (
@@ -49,7 +52,7 @@ export default function Portfolio() {
               had +90k visits, +1,700 orders and a rating of 5/5 stars on
               average.
             </p>
-            <Flex flexGap>
+            <Flex>
               {imageRowStyles}
               <Image
                 alt="Homepage of Life Under Control on Etsy"
@@ -79,7 +82,7 @@ export default function Portfolio() {
               neighborhood through the urban art lens. A 50-page street art
               walking guide was born of it.
             </p>
-            <Flex flexGap>
+            <Flex>
               <Image
                 alt="The Berlin Walls: Street Art Walks in Berlin"
                 src="/assets/portfolio/berlinwalls.jpg"
@@ -114,7 +117,7 @@ export default function Portfolio() {
               its benefits, before diving more into the features. Bonus: the
               animated illustrations also bring additional dynamism and clarity.
             </p>
-            <Flex flexGap>
+            <Flex>
               <Image
                 alt="Homepage of Handmade SEO"
                 src="/assets/portfolio/lp-seo1.jpg"
@@ -140,7 +143,7 @@ export default function Portfolio() {
               illustrations made with Blender, Illustrator and Photoshop
               respectively.
             </p>
-            <Flex flexGap>
+            <Flex>
               <Image
                 alt="Realistic donut created with Blender"
                 src="/assets/portfolio/illustration-3ddonut.jpg"

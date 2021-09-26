@@ -24,7 +24,6 @@ export default function Books() {
           }
         />
         <Checkbox
-          className="whitespace-no-wrap"
           value={statusFilter}
           onChange={toggleStatusFilter}
           label="Show unfinished"
