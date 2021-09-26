@@ -59,6 +59,10 @@ object {
   border-color: theme("borderColor.default", currentColor);
 }
 
+button {
+  border: none;
+}
+
 /* To ensure that we provide accessible styles out of the box, we made sure that buttons have a default outline. You can of course override this by applying focus:ring or similar utilities to your buttons. */
 button:focus {
   outline: 1px dotted;
