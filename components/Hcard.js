@@ -1,10 +1,15 @@
 export default function Hcard() {
+  const styles = (
+    <style jsx>{`
+      .h-card {
+        display: none;
+      }
+    `}</style>
+  );
   return (
-    <div
-      rel="author"
-      className="p-author h-card hidden"
-      href="https://clarale.com"
-    >
+    <div rel="author" className="p-author h-card" href="https://clarale.com">
+      {styles}
+
       {/* About me */}
       <span className="p-name">Clara Le</span>
       <span className="p-note">Polymath, currently working as a designer.</span>

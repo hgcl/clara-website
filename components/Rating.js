@@ -2,8 +2,16 @@ import { RatingIconFull, RatingIconEmpty } from "../public/icons/RatingIcon";
 
 const Rating = ({ rating, pRating, width, color }) => {
   const emptyRating = 5 - rating;
+  const styles = (
+    <style jsx>{`
+      span {
+        display: flex;
+      }
+    `}</style>
+  );
   return (
-    <span className={`${pRating && "p-rating"} flex flex-row`} value={rating}>
+    <span className={`rating ${pRating && "p-rating"}`} value={rating}>
+      {styles}
       {[...Array(rating)].map((_, index) => (
         <RatingIconFull
           key={`rating-full-${index}`}

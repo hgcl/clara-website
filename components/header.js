@@ -1,13 +1,26 @@
-import Link from "next/link";
+import Link from "./link";
 import { WEBSITE_NAME } from "../lib/constants";
 
 export default function Header({ pageDescription }) {
+  const styles = (
+    <style jsx>{`
+      .website-name {
+        margin-top: var(--margin-bottom-small);
+      }
+      .page-description {
+        margin-bottom: var(--margin-bottom-default);
+      }
+    `}</style>
+  );
   return (
     <>
-      <h2 className="text-2xl md:text-4xl tracking-tight md:tracking-tighter leading-tight pt-2 md:pt-4 mt-8">
-        <Link href="/">{WEBSITE_NAME}</Link>
+      <h2 className="website-name">
+        {styles}
+        <Link variant="heading" href="/">
+          {WEBSITE_NAME}
+        </Link>
       </h2>
-      <p className="comment tracking mb-20 ml-1">{pageDescription}</p>
+      <p className="page-description comment">{pageDescription}</p>
     </>
   );
 }

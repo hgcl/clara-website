@@ -1,13 +1,19 @@
 import { MDXRemote } from "next-mdx-remote";
 import AllPostComponents from "./AllPostComponents";
-
-import markdownStyles from "./markdown-styles.module.css";
+import articleStyles from "./articleStyles";
 
 export default function PostBody({ source, children }) {
+  const styles = (
+    <style jsx>{`
+      .e-content {
+        max-width: var(--container-width);
+        margin: 0 auto;
+      }
+    `}</style>
+  );
   return (
-    <div
-      className={`e-content ${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-    >
+    <div className="article-container">
+      {articleStyles}
       <MDXRemote {...source} components={AllPostComponents} />
       {children}
     </div>

@@ -29,7 +29,7 @@ export default function RecipePost({ source, post, preview }) {
         ) : (
           <>
             {/* Added hRecipe microformats http://microformats.org/wiki/hrecipe */}
-            <article className="h-recipe mb-32">
+            <article className="h-recipe">
               <PostHeader
                 author={post.author}
                 coverImage={post.coverImage}
@@ -41,7 +41,7 @@ export default function RecipePost({ source, post, preview }) {
               />
               <PostBody source={source}>
                 {post.url && (
-                  <p className="comment pt-8">
+                  <p>
                     <Link href={post.url}>
                       Link to original recipe&ensp;{ARROW}
                     </Link>

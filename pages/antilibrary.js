@@ -14,7 +14,6 @@ export default function Antilibrary({ toReadList }) {
             "My secret antilibrary—a.k.a. books I plan to read or wish I had read"
           }
         />
-        <div className="flex flex-col sm:flex-row flex-wrap" />
         <MediaGrid>
           {toReadList
             // .sort((a, b) => new Date(b.logged_date) - new Date(a.logged_date))

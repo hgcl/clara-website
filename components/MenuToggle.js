@@ -6,7 +6,7 @@ import { CLOSE } from "../lib/constants";
 export const MenuToggle = ({ toggle, setHook }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const position = visible ? "top-0" : "-top-20";
+  const position = !visible && "hidden-menu-toggle";
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
@@ -26,23 +26,83 @@ export const MenuToggle = ({ toggle, setHook }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
+  const menuIsOpen = (
+    <style jsx>{`
+      .menu {
+        z-index: 50;
+        cursor: pointer;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        font-size: 1.5rem;
+        line-height: 0.5;
+        color: var(--color-text-reversed);
+        background-color: transparent;
+      }
+      @media (prefers-color-scheme: dark) {
+        .menu {
+          color: var(--color-text-default);
+        }
+      }
+      .menu:hover,
+      .menu:focus {
+        color: var(--color-text-default);
+        transition-duration: 300ms;
+      }
+      @media (prefers-color-scheme: dark) {
+        .menu:hover,
+        .menu:focus {
+          color: var(--color-text-reversed);
+        }
+      }
+    `}</style>
+  );
+  const menuIsClosed = (
+    <style jsx>{`
+      .menu {
+        z-index: 50;
+        cursor: pointer;
+        position: fixed;
+        top: var(--margin-bottom-small);
+        right: 1rem;
+        width: 2.5rem;
+        background-color: transparent;
+        color: var(--color-accent-default);
+        transform: rotate(0);
+        transition-duration: 300ms;
+      }
+      .menu:hover {
+        color: var(--color-accent-focus);
+        transform: rotate(-60deg);
+      }
+      .hidden-menu-toggle {
+        top: -3rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .menu {
+          width: 3rem;
+          right: var(--padding-sides-default);
+        }
+      }
+    `}</style>
+  );
   return (
     <>
       {setHook ? (
-        <button
-          aria-label="Close menu"
-          className="z-50 fixed top-5 right-9 text-4xl text-gray-lightest hover:text-gray-darkest transition duration-300"
-          onClick={toggle}
-        >
+        <button aria-label="Close menu" className="menu" onClick={toggle}>
+          {menuIsOpen}
           {CLOSE}
         </button>
       ) : (
         <button
           aria-label="Menu"
-          className={`z-50 cursor-pointer fixed right-8 top-8 duration-300 ${position} transform hover:-rotate-90`}
+          className={`menu ${position}`}
           onClick={toggle}
         >
-          <Logo className="fill-current  duration-300 text-accent hover:text-accent-light w-8 md:w-12" />
+          {menuIsClosed}
+          <Logo />
         </button>
       )}
     </>

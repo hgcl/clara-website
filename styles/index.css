@@ -3,23 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "SourceSansProSmallCaps";
-    src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+000-2AF; /* Download small caps ranges */
-  }
-  html {
-    @apply bg-gray-lightest dark:bg-gray-dark text-gray-darkest dark:text-gray-lightest;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-serif capitalize font-normal !important; /* !important tag to overwrite the Tailwind CSS Typography default */
-  }
   p {
     @apply mt-0 !important; /* !important tag to overwrite the Tailwind CSS Typography default */
   }

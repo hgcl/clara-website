@@ -9,9 +9,23 @@ export default function PostPreview({
   excerpt,
   slug,
 }) {
+  const styles = (
+    <style jsx>{`
+      .h-entry {
+        margin-bottom: var(--margin-bottom-small);
+      }
+      .h-entry > h3 {
+        margin-bottom: 0.6rem;
+      }
+      .h-entry > div {
+        margin-bottom: 0.3rem;
+      }
+    `}</style>
+  );
   return (
-    <div className="h-entry mb-12">
-      <h3 className="text-3xl mb-1 leading-snug">
+    <div className="h-entry">
+      {styles}
+      <h3>
         <Link
           as={`/${BLOG_FOLDER}/${slug}`}
           href={`/${BLOG_FOLDER}/${slug}`}
@@ -21,10 +35,10 @@ export default function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-base tracking all-small-caps mb-2">
+      <div className="comment">
         <DateFormatter dateString={date} />
       </div>
-      <p className="p-summary text-lg leading-normal">{excerpt}</p>
+      <p className="p-summary">{excerpt}</p>
     </div>
   );
 }

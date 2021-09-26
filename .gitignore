@@ -4,6 +4,11 @@
 .drafts
 pages/test.js
 
+# to delete
+styles/index.css
+styles/index copy.css
+tailwind.config.js
+
 # dependencies
 /node_modules
 /.pnp

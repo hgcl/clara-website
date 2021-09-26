@@ -14,6 +14,12 @@ export default function CoverImage({
     <img
       src={src}
       alt={`Cover for ${title}`}
+      style={{
+        objectFit: "cover",
+        width: "100%",
+        height: "16rem",
+        borderRadius: "0.25rem",
+      }}
       className={className}
       {...props}
     />

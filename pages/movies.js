@@ -18,7 +18,6 @@ export default function Movies({ allMovies }) {
         <Header pageDescription={"Get the popcorn ready"} />
         {/* TODO replace checkbox by toggle */}
         <Checkbox
-          className="mt-1 whitespace-no-wrap"
           value={reviewFilter}
           onChange={toggleReviewFilter}
           label="Reviews only"

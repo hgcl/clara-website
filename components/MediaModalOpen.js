@@ -29,54 +29,94 @@ const MediaModalOpen = ({
     document.addEventListener("keydown", keydownHandler);
     return () => document.removeEventListener("keydown", keydownHandler);
   });
+
+  const styles = (
+    <style jsx>{`
+      .review-wrapper {
+        z-index: 40;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      .close-review {
+        z-index: 50;
+        cursor: pointer;
+        position: fixed;
+        top: var(--padding-sides-default);
+        right: var(--padding-sides-default);
+        width: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 0.5;
+        color: var(--color-text-reversed);
+      }
+      .review-background {
+        position: fixed;
+        background-color: var(--color-bg-transparent);
+        width: inherit;
+        height: inherit;
+      }
+      .review-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        margin: 0 auto;
+        padding-left: var(--padding-sides-default);
+        padding-right: var(--padding-sides-default);
+        max-width: 40rem;
+        color: var(--color-text-reversed);
+      }
+      .review-text > .type {
+        position: fixed;
+        top: var(--padding-sides-default);
+        font-family: "SourceSansProSmallCaps";
+        font-variant-caps: all-small-caps;
+        letter-spacing: 0.02rem;
+      }
+      .review-text > .e-content {
+        margin: 1.5rem 0;
+      }
+      .review-text > .date {
+        margin-top: 0.5rem;
+      }
+
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        .review-text {
+          color: var(--color-text-default);
+        }
+        .close-review {
+          color: var(--color-text-default);
+        }
+      }
+    `}</style>
+  );
   return (
     open && (
-      <div
-        onClick={onClose}
-        role="button"
-        className="h-review z-40 absolute -top-8 left-0 w-screen h-full"
-      >
-        <div
-          className="overflow-y-auto fixed top-0 left-0 h-screen w-screen md:max-w-2xl m-auto bg-gray-darkest bg-opacity-95 text-gray-lightest"
-          onClick={onClose}
-        >
-          <div className="sticky ml-auto w-12">
-            <button
-              onClick={onClose}
-              aria-label="Close"
-              className="absolute text-4xl top-3"
-            >
-              {CLOSE}
-            </button>
-          </div>
-          <div
-            role="button"
-            onClick={onClose}
-            className="flex items-center h-screen p-8"
-          >
-            <div className="text-xl relative w-full">
-              <div className="text-center md:text-left mb-6">
-                <p className="comment tracking mb-4 md:fixed md:top-6">
-                  {review ? "Review" : "Notes"}
-                </p>
-                <h2 className="p-name text-3xl leading-snug mb-1">{title}</h2>
-                {author && <p>by {author}</p>}
-              </div>
-              <p className="e-content mb-8">{review ? review : notes}</p>
-              {rating && (
-                <p className="text-gray-regular mb-4">
-                  <Rating rating={rating} pRating height="18" />
-                </p>
-              )}
-              {link && (
-                <div className="mb-2 comment">
-                  <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
-                </div>
-              )}
-              <p className="text-base text-gray-regular">
-                {dateLabel} <DateFormatter dateString={date} dtPublished />
+      <div onClick={onClose} role="button" className="review-wrapper h-review">
+        {styles}
+        <button onClick={onClose} aria-label="Close" className="close-review">
+          {CLOSE}
+        </button>
+        <div className="review-background" onClick={onClose}>
+          <div role="button" onClick={onClose} className="review-text">
+            <p className="type">{review ? "Review" : "Notes"}</p>
+            <h2 className="p-name">{title}</h2>
+            {author && <p>by {author}</p>}
+            <p className="e-content">{review ? review : notes}</p>
+            {rating && (
+              <p>
+                <Rating rating={rating} pRating height="18" />
               </p>
-            </div>
+            )}
+            {link && (
+              <Link href={link}>Recommendation source&ensp;{ARROW}</Link>
+            )}
+            <p className="date">
+              {dateLabel} <DateFormatter dateString={date} dtPublished />
+            </p>
           </div>
         </div>
       </div>

@@ -1,20 +1,19 @@
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Container from "../components/container";
-import markdownStyles from "../components/markdown-styles.module.css";
 import Link from "../components/link";
 import DatePost from "../components/DatePost";
+import articleStyles from "../components/articleStyles";
 
 export default function AboutWebsite() {
   return (
     <Layout title="About this website">
       <Container>
         <Header pageDescription={"About this website"} />
-        <div
-          className={`${markdownStyles["markdown"]} prose prose-lg lg:prose-xl max-w-3xl mx-auto`}
-        >
+        <div className="article-container">
+          {articleStyles}
           <DatePost dateString="2021-01-04 08:31:26" lastUpdated />
-          <p className="comment">
+          <p className="parenthesis">
             Disclaimer: I built this website as a super newbie to everything
             mentioned below. I used a lot of copy-pasting lack the right
             terminology and best practices—so don&apos;t take my word for it.
@@ -38,7 +37,6 @@ export default function AboutWebsite() {
             </Link>{" "}
             on Github.
           </p>
-
           <h2>Building Blocks</h2>
           <ul>
             <li>
@@ -57,14 +55,6 @@ export default function AboutWebsite() {
               Statically generated with{" "}
               <Link href="https://nextjs.org/">Next.js</Link> and deployed with{" "}
               <Link href="https://vercel.com/">Vercel</Link>
-            </li>
-            <li>
-              <Link href="https://tailwindcss.com/">Tailwind CSS</Link> for
-              general styling and{" "}
-              <Link href="https://github.com/tailwindlabs/tailwindcss-typography">
-                Tailwind CSS Typography
-              </Link>{" "}
-              to generate responsive text styling
             </li>
             <li>
               <Link href="https://github.com/jonschlinkert/gray-matter">
@@ -129,7 +119,7 @@ export default function AboutWebsite() {
               <Link href="https://code.visualstudio.com/">
                 Visual Studio Code
               </Link>{" "}
-              (a.k.a. VS Code) is apparently <em>the</em> code editor
+              is apparently <em>the</em> code editor
             </li>
             <li>
               <Link href="https://github.com/hgcl/clara-website">GitHub</Link>{" "}
@@ -138,13 +128,6 @@ export default function AboutWebsite() {
             <li>
               <Link href="https://prettier.io/">Prettier</Link> as a code
               formatter <span className="comment">(VS Code extension)</span>
-            </li>
-            <li>
-              <Link href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">
-                Tailwind CSS IntelliSense
-              </Link>{" "}
-              adds autocomplete and syntax-highlighting for Tailwind CSS{" "}
-              <span className="comment">(VS Code extension)</span>
             </li>
             <li>
               <Link href="https://marketplace.visualstudio.com/items?itemName=silvenon.mdx">
