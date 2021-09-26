@@ -12,11 +12,20 @@ export default function Intro() {
         height: 100vh;
       }
       .intro > h1 {
-        font-size: var(--font-size-h0);
+        font-size: var(--font-size-h1);
       }
       .intro > p {
-        font-size: var(--font-size-h2);
+        font-size: var(--font-size-h4);
         line-height: var(--line-height-h2);
+      }
+      @media screen and (min-width: 640px) {
+        .intro > h1 {
+          font-size: var(--font-size-h0);
+        }
+        .intro > p {
+          font-size: var(--font-size-h2);
+          line-height: var(--line-height-h2);
+        }
       }
     `}</style>
   );
@@ -24,7 +33,7 @@ export default function Intro() {
     <section className="intro">
       {styles}
       <h1>{WEBSITE_NAME}</h1>
-      <p className="text-2xl md:text-4xl">
+      <p>
         <Link href="/about">Polymath</Link>, currently{" "}
         <Link href="/portfolio">Designer</Link>. See what I am{" "}
         <Link href="/blog">writing</Link>, <Link href="/books">reading</Link> or{" "}

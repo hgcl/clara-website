@@ -64,9 +64,9 @@ export const MenuToggle = ({ toggle, setHook }) => {
         z-index: 50;
         cursor: pointer;
         position: fixed;
-        top: 1.25rem;
-        right: 2.25rem;
-        width: 3rem;
+        top: var(--margin-bottom-small);
+        right: 1rem;
+        width: 2.5rem;
         background-color: transparent;
         color: var(--color-accent-default);
         transform: rotate(0);
@@ -78,6 +78,13 @@ export const MenuToggle = ({ toggle, setHook }) => {
       }
       .hidden-menu-toggle {
         top: -3rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .menu {
+          width: 3rem;
+          right: var(--padding-sides-default);
+        }
       }
     `}</style>
   );

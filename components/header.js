@@ -5,7 +5,7 @@ export default function Header({ pageDescription }) {
   const styles = (
     <style jsx>{`
       .website-name {
-        margin-top: 3rem;
+        margin-top: var(--margin-bottom-small);
       }
       .page-description {
         margin-bottom: var(--margin-bottom-default);

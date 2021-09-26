@@ -14,12 +14,20 @@ export default function Portfolio() {
 
   const imageRowStyles = (
     <style jsx>{`
-      .flex {
-        margin-left: -10rem;
-        margin-right: -10rem;
-      }
       .flex img {
         border-radius: 0.25rem;
+      }
+      @media screen and (min-width: 768px) {
+        .flex {
+          margin-left: -4rem;
+          margin-right: -4rem;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .flex {
+          margin-left: -8rem;
+          margin-right: -8rem;
+        }
       }
     `}</style>
   );

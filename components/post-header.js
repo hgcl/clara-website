@@ -17,6 +17,14 @@ export default function PostHeader({
       .post-info {
         display: none;
       }
+      .post-date {
+        text-align: center;
+      }
+      @media screen and (min-width: 768px) {
+        .post-date {
+          text-align: left;
+        }
+      }
     `}</style>
   );
   return (
@@ -29,7 +37,7 @@ export default function PostHeader({
           Post URL
         </a>
       </div>
-      <div>
+      <div className="post-date">
         <DatePost dateString={date} dtPublished />
         {coverImage && <CoverImage title={title} src={coverImage} />}
       </div>

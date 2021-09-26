@@ -49,7 +49,7 @@ const MediaModalOpen = ({
         width: 1.5rem;
         font-size: 1.5rem;
         line-height: 0.5;
-        color: var(--color-text-default);
+        color: var(--color-text-reversed);
       }
       .review-background {
         position: fixed;
@@ -85,6 +85,9 @@ const MediaModalOpen = ({
       /* Dark mode */
       @media (prefers-color-scheme: dark) {
         .review-text {
+          color: var(--color-text-default);
+        }
+        .close-review {
           color: var(--color-text-default);
         }
       }
