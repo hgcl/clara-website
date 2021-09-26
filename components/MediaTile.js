@@ -149,8 +149,11 @@ const MediaModalClosed = ({
         display: flex;
         flex-direction: row;
       }
-      .rating {
+      .tile-info .rating {
         margin-right: 0.25rem;
+      }
+      .tile-info .date {
+        white-space: nowrap;
       }
 
       /* Tooltip */
@@ -211,7 +214,7 @@ const MediaModalClosed = ({
               {(review || notes) && <NoteIcon />}
             </span>
           </div>
-          <div>
+          <div className="date">
             <DateFormatter shortDate dateString={date} />
           </div>
         </div>
