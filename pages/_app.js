@@ -7,7 +7,6 @@ import "fontsource-source-sans-pro/400-italic.css";
 import "fontsource-source-sans-pro/700.css";
 import "fontsource-source-sans-pro/700-italic.css";
 
-import KBarWrapper from "../components/KBarWrapper";
 import splitbee from "@splitbee/web";
 import "../styles/preflight.css";
 import "../styles/global.css";
@@ -29,10 +28,8 @@ const mdComponents = {
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <KBarWrapper>
-      <MDXProvider components={mdComponents}>
-        <Component {...pageProps} />
-      </MDXProvider>
-    </KBarWrapper>
+    <MDXProvider components={mdComponents}>
+      <Component {...pageProps} />
+    </MDXProvider>
   );
 }
