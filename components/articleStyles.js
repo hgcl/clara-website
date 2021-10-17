@@ -1,5 +1,10 @@
 export const articleStyles = (
   <style jsx>{`
+    .article-container h1,
+    .article-container h2,
+    .article-container h3 {
+      color: var(--color-accent);
+    }
     .article-container {
       max-width: var(--container-width);
       margin: 0 auto;
@@ -43,8 +48,7 @@ export const articleStyles = (
     kbd {
       font-family: var(--font-family-code);
       font-size: 0.6rem;
-      background-color: var(--color-bg-contrast);
-      color: var(--color-text-reversed);
+      background-color: var(--color-bg-alternative);
       padding: 0.2rem 0.3rem;
       margin: 0 0.1rem;
       border-radius: 0.25rem;

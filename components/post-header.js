@@ -2,6 +2,7 @@ import DatePost from "./DatePost";
 import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
 import { RECIPE_FOLDER, BLOG_FOLDER } from "../lib/constants";
+import articleStyles from "./articleStyles";
 
 export default function PostHeader({
   coverImage,
@@ -29,6 +30,7 @@ export default function PostHeader({
   );
   return (
     <header>
+      {articleStyles}
       <PostTitle className="p-name fn">{title}</PostTitle>
       {styles}
       <div className="post-info">

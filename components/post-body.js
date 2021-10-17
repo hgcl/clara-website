@@ -13,7 +13,6 @@ export default function PostBody({ source, children }) {
   );
   return (
     <div className="article-container">
-      {articleStyles}
       <MDXRemote {...source} components={AllPostComponents} />
       {children}
     </div>
