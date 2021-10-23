@@ -1,7 +1,5 @@
 import React from "react";
 
-// Code very similar to more-stories.js
-
 import Container from "./container";
 import PostPreview from "./post-preview";
 
