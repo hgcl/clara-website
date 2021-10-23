@@ -3,7 +3,7 @@ import FigCaption from "./FigCaption";
 import Figure from "./Figure";
 import Image from "next/image";
 
-export default function FeaturedArtistImage({
+export default function FeaturedImage({
   artistHref,
   imageSrc,
   imageAlt,
@@ -15,6 +15,7 @@ export default function FeaturedArtistImage({
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        margin-bottom: var(--margin-bottom-small);
       }
       .tile-image {
         width: 100%;
@@ -43,9 +44,11 @@ export default function FeaturedArtistImage({
           className="custom-img"
         />
       </div>
-      <FigCaption>
-        Featured artist: <Link href={artistHref}>{artistName}</Link>
-      </FigCaption>
+      {artistHref && (
+        <FigCaption>
+          Featured artist: <Link href={artistHref}>{artistName}</Link>
+        </FigCaption>
+      )}
     </Figure>
   );
 }

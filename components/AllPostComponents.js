@@ -1,7 +1,7 @@
 import BigStat from "./BigStat";
 import Column from "./Column";
 import Comment from "./Comment";
-import FeaturedArtistImage from "./FeaturedArtistImage";
+import FeaturedImage from "./FeaturedImage";
 import Flex from "./Flex";
 import FigCaption from "./FigCaption";
 import Figure from "./Figure";
@@ -15,7 +15,7 @@ const AllPostComponents = {
   BigStat,
   Column,
   Comment,
-  FeaturedArtistImage,
+  FeaturedImage,
   Flex,
   FigCaption,
   Figure,
