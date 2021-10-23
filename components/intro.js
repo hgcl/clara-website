@@ -5,11 +5,9 @@ export default function Intro() {
   const styles = (
     <style jsx>{`
       .intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: absolute;
+        top: 45%;
         max-width: 36rem;
-        height: 100vh;
       }
       .intro > h1 {
         font-size: var(--font-size-h1);
@@ -32,7 +30,6 @@ export default function Intro() {
   return (
     <section className="intro">
       {styles}
-      <h1>{WEBSITE_NAME}</h1>
       <p>
         <Link href="/about">Polymath</Link>, currently{" "}
         <Link href="/portfolio">Designer</Link>. See what I am{" "}

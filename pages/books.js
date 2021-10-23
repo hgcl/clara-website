@@ -13,7 +13,7 @@ export default function Books() {
   const toggleStatusFilter = () => setStatus((value) => !value);
 
   return (
-    <Layout title={"Books"}>
+    <Layout title={"Books"} color="green">
       <Container>
         <Header
           pageDescription={

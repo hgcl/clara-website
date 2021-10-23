@@ -25,63 +25,45 @@ export const MenuToggle = ({ toggle, setHook }) => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
-
-  const menuIsOpen = (
+  const menu = (
     <style jsx>{`
-      .menu {
+      .open-menu,
+      .closed-menu {
         z-index: 50;
         cursor: pointer;
         position: fixed;
+        color: var(--color-accent);
+        background-color: transparent;
+      }
+      .open-menu {
         top: 2rem;
         right: 2rem;
         width: 3rem;
         font-size: 1.5rem;
         line-height: 0.5;
-        color: var(--color-text-reversed);
-        background-color: transparent;
-      }
-      @media (prefers-color-scheme: dark) {
-        .menu {
-          color: var(--color-text-default);
-        }
-      }
-      .menu:hover,
-      .menu:focus {
-        color: var(--color-text-default);
-        transition-duration: 300ms;
-      }
-      @media (prefers-color-scheme: dark) {
-        .menu:hover,
-        .menu:focus {
-          color: var(--color-text-reversed);
-        }
-      }
-    `}</style>
-  );
-  const menuIsClosed = (
-    <style jsx>{`
-      .menu {
-        z-index: 50;
-        cursor: pointer;
-        position: fixed;
-        top: var(--margin-bottom-small);
-        right: 1rem;
-        width: 2.5rem;
-        background-color: transparent;
-        color: var(--color-accent-default);
-        transform: rotate(0);
-        transition-duration: 300ms;
-      }
-      .menu:hover {
-        color: var(--color-accent-focus);
-        transform: rotate(-60deg);
       }
       .hidden-menu-toggle {
         top: -3rem;
       }
+      .closed-menu {
+        top: var(--margin-bottom-small);
+        right: 1rem;
+        width: 2.5rem;
+        transform: rotate(0);
+        transition-duration: 300ms;
+      }
+      .closed-menu:focus,
+      .open-menu:focus {
+        color: var(--color-accent-focus);
+      }
+      .closed-menu:hover,
+      .closed-menu:active {
+        color: var(--color-accent-focus);
+        transform: rotate(-60deg);
+      }
 
       @media screen and (min-width: 768px) {
-        .menu {
+        .closed-menu {
           width: 3rem;
           right: var(--padding-sides-default);
         }
@@ -91,17 +73,17 @@ export const MenuToggle = ({ toggle, setHook }) => {
   return (
     <>
       {setHook ? (
-        <button aria-label="Close menu" className="menu" onClick={toggle}>
-          {menuIsOpen}
+        <button aria-label="Close menu" className="open-menu" onClick={toggle}>
+          {menu}
           {CLOSE}
         </button>
       ) : (
         <button
           aria-label="Menu"
-          className={`menu ${position}`}
+          className={`closed-menu ${position}`}
           onClick={toggle}
         >
-          {menuIsClosed}
+          {menu}
           <Logo />
         </button>
       )}

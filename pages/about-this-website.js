@@ -7,7 +7,7 @@ import articleStyles from "../components/articleStyles";
 
 export default function AboutWebsite() {
   return (
-    <Layout title="About this website">
+    <Layout title="About this website" color="red">
       <Container>
         <Header pageDescription={"About this website"} />
         <div className="article-container">
@@ -108,7 +108,7 @@ export default function AboutWebsite() {
             </Link>
             .
           </p>
-          <h2>Tools & Extensions</h2>
+          <h2>Tools &#38; Extensions</h2>
           <p>
             This list will be useless for more seasoned coders, but might be
             handy for someone just starting out—<em>past me</em> would have

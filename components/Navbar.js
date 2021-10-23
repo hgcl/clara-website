@@ -22,11 +22,6 @@ const Navbar = () => {
     return () => document.removeEventListener("keydown", keydownHandler);
   });
 
-  const ulStyle =
-    "flex-1 font-serif text-xl sm:text-2xl max-w-2xl mx-auto px-8";
-  const liStyle = "py-1 sm:py-0";
-  const linkStyle = "hover:text-gray-darkest focus:text-gray-darkest";
-
   const navbarStyles = (
     <style jsx>{`
       nav {
@@ -43,8 +38,7 @@ const Navbar = () => {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--color-accent-subdued);
-        color: var(--color-text-reversed);
+        background-color: var(--color-bg-default);
         text-align: center;
       }
       .navbar > div > ul {
@@ -56,17 +50,9 @@ const Navbar = () => {
         line-height: 1.3;
         margin: 0;
       }
-      .navbar > div > ul > li > a:hover,
-      .navbar > div > ul > li > a:focus {
-        color: var(--color-text-default);
-      }
       @media (prefers-color-scheme: dark) {
         .navbar {
-          color: var(--color-text-default);
-        }
-        .navbar > div > ul > li > a:hover,
-        .navbar > div > ul > li > a:focus {
-          color: var(--color-text-reversed);
+          background-color: var(--color-grey-darkest);
         }
       }
       @media screen and (min-width: 640px) {
@@ -82,10 +68,7 @@ const Navbar = () => {
       {navbarStyles}
       <MenuToggle toggle={handleToggle} setHook={navbarOpen} />
       {navbarOpen && (
-        <div
-          onClick={() => setNavbarOpen(false)}
-          className="navbar text-gray-lightest"
-        >
+        <div onClick={() => setNavbarOpen(false)} className="navbar">
           <div>
             <ul>
               <li>

@@ -13,7 +13,7 @@ export default function Movies({ allMovies }) {
   const toggleReviewFilter = () => setReview((value) => !value);
 
   return (
-    <Layout title={"Movies"}>
+    <Layout title={"Movies"} color="green">
       <Container>
         <Header pageDescription={"Get the popcorn ready"} />
         {/* TODO replace checkbox by toggle */}

@@ -8,7 +8,7 @@ import DatePost from "../components/DatePost";
 
 export default function Now() {
   return (
-    <Layout title="Now">
+    <Layout title="Now" color="red">
       <Container>
         <Header pageDescription={"What I'm currently doing"} />
         <div className="article-container">

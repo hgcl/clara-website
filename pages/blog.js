@@ -30,7 +30,6 @@ const generateRss = (posts) => `
 `;
 
 export default function Index({ allPosts }) {
-  // const morePosts = allPosts.slice(1)
   return (
     <Layout title="Blog">
       <Container>

@@ -26,14 +26,30 @@
   --margin-bottom-small: 2rem;
   --padding-sides-default: 0.5rem;
   /* Colors */
-  --color-bg-default: #f5f5f6;
+  --color-black: #000000e6;
+  --color-white: rgb(246, 246, 246);
+  --color-grey-darkest: #1c1c1f;
+  /* Default colors */
   --color-bg-transparent: rgba(19, 19, 21, 0.96);
-  --color-bg-contrast: #1c1c1f;
-  --color-text-default: #1c1c1f;
-  --color-text-reversed: #f5f5f6;
-  --color-accent-default: #e83737;
-  --color-accent-focus: #fc4444;
-  --color-accent-subdued: #ab3535;
+  --color-text-reversed: var(--color-white);
+  /* Blue colors*/
+  --color-blue-lightest: rgb(219, 236, 255);
+  --color-blue-darkest: rgb(0, 47, 102);
+  --color-blue-subdued: rgba(59, 126, 255, 0.3);
+  --color-blue-accent: rgb(0, 75, 221);
+  --color-blue-bright: rgb(110, 220, 255);
+  /* Red colors*/
+  --color-red-lightest: rgb(255, 237, 235);
+  --color-red-darkest: rgb(87, 0, 26);
+  --color-red-subdued: rgba(221, 0, 0, 0.25);
+  --color-red-accent: rgb(197, 0, 35);
+  --color-red-bright: rgb(255, 117, 117);
+  /* Green colors*/
+  --color-green-lightest: rgb(235, 255, 251);
+  --color-green-darkest: rgb(0, 38, 31);
+  --color-green-subdued: rgba(0, 161, 132, 0.3);
+  --color-green-accent: rgb(0, 109, 89);
+  --color-green-bright: rgb(0, 245, 201);
   /* Font families */
   --font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     Liberation Mono, Courier New, monospace;
@@ -155,14 +171,5 @@ a:hover {
   }
   h1 {
     letter-spacing: -0.23rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg-default: #1c1c1f;
-    --color-bg-contrast: #f5f5f6;
-    --color-text-default: #f5f5f6;
-    --color-text-reversed: #1c1c1f;
   }
 }

@@ -13,10 +13,11 @@ export default function Link({
       a {
         font-family: "SourceSansProSmallCaps";
         font-variant-caps: all-small-caps;
+        color: var(--color-accent);
       }
       a:hover,
       a:focus {
-        color: var(--color-accent-default);
+        color: var(--color-accent-focus);
       }
       .heading-style {
         font-family: var(--font-family-heading);
