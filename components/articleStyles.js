@@ -1,10 +1,5 @@
 export const articleStyles = (
   <style jsx>{`
-    .article-container h1,
-    .article-container h2,
-    .article-container h3 {
-      color: var(--color-accent);
-    }
     .article-container {
       max-width: var(--container-width);
       margin: 0 auto;
