@@ -71,7 +71,7 @@ const MediaModalOpen = ({
       .review-text > .type {
         position: fixed;
         top: var(--padding-sides-default);
-        font-family: "SourceSansProSmallCaps";
+        font-family: var(--font-family-caps);
         font-variant-caps: all-small-caps;
         letter-spacing: 0.02rem;
       }

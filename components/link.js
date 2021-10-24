@@ -11,7 +11,7 @@ export default function Link({
   const linkStyles = (
     <style jsx>{`
       a {
-        font-family: "SourceSansProSmallCaps";
+        font-family: var(--font-family-caps);
         font-variant-caps: all-small-caps;
         color: var(--color-accent);
       }
